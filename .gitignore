@@ -17,3 +17,10 @@ Thumbs.db
 
 # Note: esp32/ and arduino/ each keep their own .gitignore for
 # toolchain-specific build output (ESP-IDF build/, Arduino build caches, etc).
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key
+.beads/proxieddb/
+*.gate.lock*
