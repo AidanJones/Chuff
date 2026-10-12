@@ -80,9 +80,7 @@ uv add <package>              # add a new dependency
 
 ## Task tracking
 
-The plan was to track work with [beads](https://github.com/steveyegge/beads)
-(`bd`), but `bd.exe` is currently blocked on this machine by Windows
-**Smart App Control** (an enforced, one-way reputation allow-list —
-see `TASKS.md` for the note on turning it off). Until that's resolved,
-`TASKS.md` is the backlog; it's written so it can be bulk-imported into
-real `bd` issues later with minimal rework.
+Tracked in [beads](https://github.com/steveyegge/beads) (`bd`) — run
+`bd ready` for actionable work, `bd list` for everything. See
+`TASKS.md` for a plain-text snapshot (no `bd` required to read it) and
+where the live data actually lives.
