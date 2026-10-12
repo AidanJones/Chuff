@@ -1,0 +1,24 @@
+[project]
+name = "chuff-mpu"
+version = "0.1.0"
+description = "Chuff robotic pet - Arduino UNO Q / MPU-side Python (audio, mood, IPC to MCU)"
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "Aidan Jones", email = "aidanjones@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "librosa>=0.11.0",
+    "numpy>=2.4.6",
+    "pyserial>=3.5",
+    "scikit-learn>=1.9.1",
+    "sounddevice>=0.5.6",
+]
+
+[project.scripts]
+chuff-mvp-demo = "chuff_mpu.mvp_demo:main"
+
+[build-system]
+requires = ["uv_build>=0.11.29,<0.12.0"]
+build-backend = "uv_build"

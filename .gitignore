@@ -1,0 +1,19 @@
+# ── Python (python/ uv project) ────────────────────────────────────────────
+python/.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# ── Eval harness output ─────────────────────────────────────────────────────
+eval/results/*
+!eval/results/.gitkeep
+
+# ── Editors / OS ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+/.vscode/*
+!/.vscode/extensions.json
+
+# Note: esp32/ and arduino/ each keep their own .gitignore for
+# toolchain-specific build output (ESP-IDF build/, Arduino build caches, etc).
