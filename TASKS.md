@@ -75,13 +75,19 @@ Status: `todo` / `in-progress` / `done` / `blocked`
   the real file scores 1.0. ESP32 C equivalent still `todo`.
 - [ ] **CH-22** `todo` — JSONL call-context/acknowledgement logging
   (`comms.py: log_event()`).
-- [ ] **CH-23** `blocked` — Bring up a second unit, 2-3m apart, observe
-  repertoire evolution over 48h+. Blocked on a second ESP32-S3 board (or
-  the UNO Q) being available. `sim/`'s `recognise_own_echo()` is a
-  single-unit stand-in for the acknowledgement step (does the agent's
-  own call survive mixing with noise?) — real two-unit acknowledgement
-  is still a different, harder thing: a second independent memory/voice,
-  not just "can I still hear myself."
+- [x] **CH-23a** `done` (software only) — Two independent simulated
+  units, one acoustic channel, no shared data structure:
+  `python/src/chuff_mpu/sim/two_unit_demo.py`. Reproduces the
+  social-gating prediction (contingent acknowledgement -> convergence
+  within ~5 rounds and stays stable; passive exposure alone -> 0% ack
+  rate, call choice never settles) — see
+  `shared/research_backlog.md` Theme 1.3/3.2 for the full writeup.
+- [ ] **CH-23b** `blocked` — The physical version: bring up a second
+  *real* unit, 2-3m apart, observe repertoire evolution over 48h+ of
+  actual room acoustics. Blocked on a second ESP32-S3 board (or the UNO
+  Q) being available. CH-23a is a stand-in, not a substitute — it
+  proves the mechanism is sufficient in a toy acoustic world, not that
+  it'll behave the same against a real room, real speakers, real mics.
 
 ## Phase 3 — Arduino UNO Q track (parallel)
 
@@ -127,3 +133,41 @@ Status: `todo` / `in-progress` / `done` / `blocked`
 - [ ] **CH-42** `todo` — Add a second `eval/tasks/` task once the first
   one has been run against a real model — candidates: the dream loop
   (CH-14/33), or the novelty->mood state machine (CH-13/33).
+
+## Research backlog follow-ups
+
+See `shared/research_backlog.md` for the full writeup (grounded in real
+sources) behind each of these.
+
+- [x] **CH-50** `done` — Frequency-dependent channel attenuation in
+  `sim/world.py` (`lowpass_filter`, `Environment.transmit`), tested via
+  `two_unit_demo.py --cutoff`/`--sweep-seeds`. Confirms the Acoustic
+  Adaptation Hypothesis's prediction (avg reinforced-call frequency
+  1903 Hz with no cutoff vs. 1483 Hz with a 900 Hz channel cutoff, 15
+  seeds) — but only after fixing two real bugs it exposed: a one-pole
+  filter was too gentle to matter, and `Repertoire` used to sort its
+  frequencies, which silently biased the untrained tie-break toward low
+  frequencies regardless of the channel. See `shared/research_backlog.md`
+  Theme 1.2 for both.
+- [ ] **CH-51** `todo` — Make call duration/bandwidth a learnable
+  parameter in `comms.Repertoire` (currently only *which* fixed call is
+  chosen varies) — needed before the compression-vs-redundancy-under-
+  noise question is even testable.
+- [x] **CH-52** `done` — Recency-weighted eviction policy for
+  `memory.EmbeddingStore` (`eviction="fifo"|"recency"`, default
+  unchanged), compared against FIFO in
+  `sim/memory_eviction_experiment.py` (`chuff-sim-memory`). Recency wins
+  on every metric at every capacity/churn ratio tried, but the margin
+  shrinks a lot under severe churn — see
+  `shared/research_backlog.md` Theme 2.2 for the numbers.
+- [ ] **CH-53** `todo` — Optional babbling warm-up phase in
+  `sim/run_demo.py` (play random repertoire calls with no external
+  trigger before any real sounds arrive), to test whether it changes
+  how cleanly the repertoire later specialises — motivated by the 2024
+  finding that active babbling, not passive listening, opens the
+  template-formation window in zebra finches.
+- [ ] **CH-54** `todo` — Once CH-23a logs both units' full
+  call-per-label history (currently only Unit A's), compare them after a
+  long run: do A and B converge on the *same* call-to-sound mapping, or
+  just two independently-stable ones? That's what "grounding" would
+  concretely mean here.

@@ -19,6 +19,8 @@ dependencies = [
 [project.scripts]
 chuff-mvp-demo = "chuff_mpu.mvp_demo:main"
 chuff-sim = "chuff_mpu.sim.run_demo:main"
+chuff-sim-2unit = "chuff_mpu.sim.two_unit_demo:main"
+chuff-sim-memory = "chuff_mpu.sim.memory_eviction_experiment:main"
 
 [build-system]
 requires = ["uv_build>=0.11.29,<0.12.0"]

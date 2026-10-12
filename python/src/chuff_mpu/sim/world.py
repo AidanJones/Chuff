@@ -13,6 +13,7 @@ the same method.
 from __future__ import annotations
 
 import numpy as np
+from scipy.signal import butter, lfilter
 
 from chuff_mpu.sim import tones
 
@@ -27,6 +28,26 @@ SOUND_LIBRARY: dict[str, dict] = {
     "dog_bark": {"kind": "chirp", "freq": 350, "freq_end": 520},
     "bird_call": {"kind": "chirp", "freq": 3200, "freq_end": 2600},
 }
+
+
+def lowpass_filter(signal: np.ndarray, sample_rate: int, cutoff_hz: float, order: int = 4) -> np.ndarray:
+    """4th-order Butterworth low-pass, standing in for frequency-dependent
+    loss over distance/reverberation — real atmospheric absorption and
+    reverberant energy loss both increase with frequency. See
+    shared/research_backlog.md Theme 1.2 (the Acoustic Adaptation
+    Hypothesis): for a pure tone, a cutoff below its frequency doesn't
+    distort it so much as crush its amplitude toward the noise floor,
+    which is exactly the failure mode that should make a too-high
+    repertoire call unrecognisable over a lossy channel.
+
+    A single one-pole filter (6 dB/octave) turned out too gentle to ever
+    push a repertoire-range tone below the noise floor within one
+    octave of the cutoff — empirically confirmed before settling on a
+    steeper order, not assumed.
+    """
+    nyquist = sample_rate / 2
+    b, a = butter(order, cutoff_hz / nyquist, btype="low")
+    return lfilter(b, a, signal).astype(np.float32)
 
 
 class Environment:
@@ -65,3 +86,14 @@ class Environment:
         noise = tones.white_noise(self.clip_duration_s, self.sample_rate, self.background_noise_amp, self.rng)
         mixed = tones.mix(tones.fit_length(signal, n), noise)
         return tones.fit_length(mixed, n)
+
+    def transmit(self, signal: np.ndarray, attenuation: float = 1.0, cutoff_hz: float | None = None) -> np.ndarray:
+        """What a *different* unit's mic picks up from `signal` after it
+        has travelled some distance: optional frequency-dependent loss
+        (`cutoff_hz`, see `lowpass_filter`), then amplitude attenuation,
+        then the same fresh-noise mixing as `hear()`. Distinct from
+        `hear()`, which models "my own mic, right here" — no distance,
+        so no attenuation or filtering, only room noise.
+        """
+        out = signal if cutoff_hz is None else lowpass_filter(signal, self.sample_rate, cutoff_hz)
+        return self.hear(out * attenuation)

@@ -57,7 +57,8 @@ arduino/
   chuff_mcu/        Track B, MCU side — Arduino sketch (LED matrix / Pixels, IPC)
 python/             Track B, MPU side — uv-managed Python package (chuff_mpu)
   src/chuff_mpu/    config, audio, memory, dream, mood, comms, ipc + mvp_demo
-shared/             Design docs shared by both tracks (mood grammar, MFCC notes, comms protocol)
+shared/             Design docs shared by both tracks (mood grammar, MFCC notes, comms protocol,
+                    research_backlog.md — the open ethology/cognition/comms questions behind them)
 body/               3D-printed body (placeholder until design is finalised)
 eval/               Prompt + grader harness for scoring a coding agent's attempt
                     at implementing a Chuff module (see eval/README.md)

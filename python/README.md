@@ -32,7 +32,17 @@ the real `audio.py`/`memory.py`/`comms.py` — no mic/speaker required:
 uv run chuff-sim
 ```
 
-See `src/chuff_mpu/sim/README.md` for what it does and doesn't prove.
+And a two-unit version — two independent simulated Chuffs talking over
+one noisy acoustic channel, no shared data structure:
+
+```
+uv run chuff-sim-2unit --condition social
+uv run chuff-sim-2unit --condition passive   # control
+```
+
+See `src/chuff_mpu/sim/README.md` for what both do and don't prove, and
+`../shared/research_backlog.md` for the research questions they
+answer (social gating, repertoire convergence).
 
 ## Package layout (`src/chuff_mpu/`)
 

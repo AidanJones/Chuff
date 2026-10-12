@@ -14,6 +14,20 @@ uv run chuff-sim --play                       # also attempt real playback (best
 uv run chuff-sim --log run1.jsonl             # append per-round JSONL
 ```
 
+There's a second demo, `two_unit_demo.py` (`chuff-sim-2unit`): two
+*independent* simulated units talking over one acoustic channel, no
+shared data structure — the software stand-in for `shared/
+comms_protocol.md`'s real two-unit experiment. See
+`../../../../shared/research_backlog.md` (Theme 1.3 / 3.2) for what it
+found: contingent acknowledgement converges to a stable shared
+call-per-sound mapping within a handful of rounds; passive exposure
+alone never converges at all.
+
+```
+uv run chuff-sim-2unit --condition social     # contingent acknowledgement
+uv run chuff-sim-2unit --condition passive    # control: B never acknowledges
+```
+
 ## What each round does
 
 1. **World presents a sound** (`doorbell`, `car_horn`, `dog_bark`, ... —
@@ -67,6 +81,22 @@ used in `eval/`'s grader.
 
 Doesn't prove: real two-unit emergent language (that needs a second
 physical unit, a real acoustic channel, and days of observation — see
-`shared/comms_protocol.md` and `TASKS.md` CH-23). Doesn't prove the
+`shared/comms_protocol.md` and `TASKS.md` CH-23b). Doesn't prove the
 thresholds hold on real-world audio (these are synthesised tones/chirps,
 not recordings) — see `TASKS.md` CH-32 for porting this to a real mic.
+
+## Two more experiments, each testing one research_backlog.md item
+
+```
+uv run chuff-sim-2unit --cutoff 900           # Theme 1.2: a band-limited channel
+uv run chuff-sim-2unit --sweep-seeds 15       # ...averaged over many seeds (one seed is too noisy to trust)
+
+uv run chuff-sim-memory                       # Theme 2.2: FIFO vs. recency-weighted eviction
+uv run chuff-sim-memory --capacity 3 --revisit-every 10
+```
+
+See `../../../../shared/research_backlog.md` Themes 1.2 and 2.2 for
+what each found — including two real bugs the channel-attenuation test
+exposed along the way (a too-gentle filter, and an accidental
+frequency/index bias in `comms.Repertoire` that was silently hiding the
+effect being tested for).

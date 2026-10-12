@@ -73,7 +73,14 @@ class Repertoire:
                 identical repertoires.
         """
         rng = np.random.default_rng(seed)
-        self.frequencies = np.sort(rng.uniform(freq_min_hz, freq_max_hz, size=size))
+        # Deliberately NOT sorted by frequency: closest_call()'s tie-break
+        # favours low call_index when nothing's been learned yet (see
+        # _base_default), so index order correlating with frequency order
+        # would silently bias every "no learning yet" choice toward one
+        # end of the frequency range — a confound discovered while
+        # testing the Acoustic Adaptation Hypothesis in sim/, see
+        # shared/research_backlog.md Theme 1.2.
+        self.frequencies = rng.uniform(freq_min_hz, freq_max_hz, size=size)
         # Per call: list of [context_vector, weight] exemplars, learned at runtime.
         self._exemplars: list[list] = [[] for _ in range(size)]
 

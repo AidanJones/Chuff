@@ -34,6 +34,7 @@ ACK_FREQ_HZ = 800
 ACK_DURATION_MS = 200
 REINFORCEMENT_RATE = 0.1
 DECAY_RATE = 0.05
+CHANNEL_ATTENUATION = 0.5  # amplitude scaling standing in for "2-3 metres apart" (see shared/comms_protocol.md)
 
 # --- Timing ---
 BORED_TIMEOUT_S = 1800  # 30 minutes no new sounds
