@@ -28,6 +28,10 @@ Status: `todo` / `in-progress` / `done` / `blocked`
 - [x] **CH-6** `done` — `eval/` prompt+grader harness for
   `sound_memory_and_voice` (memory.py + comms.py), validated against a
   null baseline (~0.0) and a reference solution (~1.0).
+- [x] **CH-7** `done` — `python/src/chuff_mpu/sim/`: an in-silico,
+  no-hardware test of the full listen -> remember -> repeat loop against
+  real synthesised audio, using the real (not stub) `audio.py` /
+  `memory.py` / `comms.py` (see CH-32/CH-32b). Run `uv run chuff-sim`.
 
 ## Phase 1 — ESP32-S3 single unit (Track A)
 
@@ -61,18 +65,23 @@ Status: `todo` / `in-progress` / `done` / `blocked`
 
 ## Phase 2 — Two-unit emergent comms
 
-- [ ] **CH-20** `todo` — Real tone synthesis + playback for `Repertoire`
-  on both tracks (today's reference solution in `eval/`'s
-  `Repertoire.play_call` is a no-op by design — it's not audio-graded).
-- [ ] **CH-21** `todo` — Port the `Repertoire` design validated in
+- [x] **CH-20** `done` — Real tone synthesis + playback for `Repertoire`
+  on the python track (`comms.py: Repertoire.play_call()`, routed through
+  `audio_safety.safe_play()`). ESP32 C equivalent still `todo`.
+- [x] **CH-21** `done` (python track only) — Ported the `Repertoire`
+  design validated in
   `eval/tasks/sound_memory_and_voice/reference_solution/comms.py` into
-  `python/src/chuff_mpu/comms.py` for real (currently a stub) and an
-  ESP32 C equivalent.
+  `python/src/chuff_mpu/comms.py` for real; re-running the grader against
+  the real file scores 1.0. ESP32 C equivalent still `todo`.
 - [ ] **CH-22** `todo` — JSONL call-context/acknowledgement logging
   (`comms.py: log_event()`).
 - [ ] **CH-23** `blocked` — Bring up a second unit, 2-3m apart, observe
   repertoire evolution over 48h+. Blocked on a second ESP32-S3 board (or
-  the UNO Q) being available.
+  the UNO Q) being available. `sim/`'s `recognise_own_echo()` is a
+  single-unit stand-in for the acknowledgement step (does the agent's
+  own call survive mixing with noise?) — real two-unit acknowledgement
+  is still a different, harder thing: a second independent memory/voice,
+  not just "can I still hear myself."
 
 ## Phase 3 — Arduino UNO Q track (parallel)
 
@@ -80,11 +89,23 @@ Status: `todo` / `in-progress` / `done` / `blocked`
   below needs the real hardware to verify.
 - [x] **CH-31** `done` — MVP proven without the hardware: mic RMS loudness
   -> mood -> serial JSON -> `chuff_mcu.ino` LED blink, via
-  `chuff-mvp-demo`. Real novelty scoring (CH-32/33) replaces the RMS
-  stand-in once it exists.
-- [ ] **CH-32** `todo` — Implement `audio.py` (real MFCC via librosa) and
-  `memory.py` (`EmbeddingStore`) for real — reuse the exact design
+  `chuff-mvp-demo`. Superseded for novelty scoring by CH-32's real
+  pipeline; kept as the simplest possible bench-test path.
+- [x] **CH-32** `done` — Implemented `audio.py` (real MFCC via librosa,
+  dropping coefficient 0 — see its docstring for why) and `memory.py`
+  (`EmbeddingStore`, cosine distance, now backed by
+  `sklearn.neighbors.NearestNeighbors`) for real, reusing the design
   validated in `eval/tasks/sound_memory_and_voice/reference_solution/`.
+  Proven end-to-end against real synthesised audio (not just abstract
+  feature vectors) in `python/src/chuff_mpu/sim/` — run `uv run
+  chuff-sim`. Still needs: a real-microphone test (everything so far is
+  synthetic audio), and `dream.py`/`mood.py` (CH-33) to actually drive
+  mood state from novelty/surprise.
+- [x] **CH-32b** `done` — Output safety guardrails (`audio_safety.py`):
+  NaN/Inf sanitising, duration cap, soft-knee limiter + hard peak
+  ceiling (`config.SAFE_*`). Every speaker-bound sample in `comms.py` and
+  `sim/` routes through it; `chuff-sim` demonstrates it clamping a
+  deliberately pathological signal before running any rounds.
 - [ ] **CH-33** `todo` — Implement `mood.py`'s state machine, `dream.py`.
 - [ ] **CH-34** `todo` — Replace `chuff_mcu.ino`'s LED_BUILTIN stand-in
   with the real 8x13 LED matrix + Modulino Pixels once the board/kit

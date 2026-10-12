@@ -24,9 +24,6 @@ from agents.base import Agent  # noqa: E402
 from agents.null_agent import NullAgent  # noqa: E402
 from agents.reference_agent import ReferenceAgent  # noqa: E402
 
-CHUFF_MPU_SRC = REPO_ROOT / "python" / "src" / "chuff_mpu"
-
-
 def get_agent(name: str) -> Agent:
     if name == "null":
         return NullAgent()
@@ -40,14 +37,22 @@ def get_agent(name: str) -> Agent:
 
 
 def load_task(task_name: str) -> tuple[str, dict[str, str], Path]:
-    """Return (prompt text, {filename: starting contents}, task_dir)."""
+    """Return (prompt text, {filename: starting contents}, task_dir).
+
+    Starting contents come from the task's own `stub/` directory, frozen
+    at task-authoring time — *not* from the live `python/src/chuff_mpu/`
+    package. Those production files have since been implemented for real
+    (see TASKS.md CH-32); reading starting state from them would hand a
+    freshly-attempted run the already-solved answer. `stub/` is what an
+    agent actually starts from.
+    """
     task_dir = TASKS_DIR / task_name
     prompt = (task_dir / "prompt.md").read_text()
 
     manifest_path = task_dir / "files.json"
     filenames = json.loads(manifest_path.read_text())["files"]
 
-    starting_files = {name: (CHUFF_MPU_SRC / name).read_text() for name in filenames}
+    starting_files = {name: (task_dir / "stub" / name).read_text() for name in filenames}
     return prompt, starting_files, task_dir
 
 

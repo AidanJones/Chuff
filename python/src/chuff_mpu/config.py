@@ -38,6 +38,17 @@ DECAY_RATE = 0.05
 # --- Timing ---
 BORED_TIMEOUT_S = 1800  # 30 minutes no new sounds
 
+# --- Audio output safety (see audio_safety.py) ---
+# Every sample Chuff plays through a real speaker goes through
+# audio_safety.safe_play()/limit_audio(), which enforces these. Chosen to
+# be conservative for a small, cheap speaker/amp (e.g. the AMOLED board's
+# built-in speaker, or a bench-test Arduino + passive buzzer/speaker) —
+# tune down further, never up, without first confirming the actual
+# hardware's safe limits.
+SAFE_PEAK_AMPLITUDE = 0.5  # max |sample| in a float32 [-1, 1] stream (~-6 dBFS)
+SAFE_MAX_DURATION_S = 3.0  # hard ceiling on any single played clip's length
+SAFE_LIMITER_KNEE = 0.8  # fraction of SAFE_PEAK_AMPLITUDE where soft-knee compression starts
+
 # --- MVP energy->mood demo (see mvp_demo.py) ---
 # Simple RMS-energy bands standing in for real novelty scoring until the
 # MFCC + KNN pipeline (audio.py / memory.py / mood.py) is implemented.

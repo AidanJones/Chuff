@@ -27,6 +27,7 @@ eval/
     sound_memory_and_voice/
       prompt.md             task description, handed to the agent
       files.json             which chuff_mpu files this task covers
+      stub/                   frozen starting point (what the agent edits) — see note below
       grader.py              scores an attempt, 0.0-1.0, with a breakdown
       fixtures.py             deterministic synthetic test data
       reference_solution/    known-good implementation (validates the grader itself)
@@ -99,3 +100,13 @@ iterative self-correction than blind resampling.
    reference` and confirm ~1.0) — this is the step that catches a grader
    that's secretly impossible to satisfy, or secretly satisfiable by a
    trivial wrong answer.
+
+**On `stub/` vs. the live `python/src/chuff_mpu/` package:** `harness/
+common.py:load_task()` reads an agent's starting files from the task's
+own `stub/` directory, not from the live package. That split matters the
+moment anyone actually finishes implementing the real feature (as
+happened here — `memory.py`/`comms.py` are no longer stubs in
+`python/`, see `TASKS.md` CH-32) — without it, every future attempt at
+the task would start from the already-solved answer. Keep `stub/` frozen
+at whatever the files looked like when the task was authored, even as
+the real package moves on.

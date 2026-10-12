@@ -6,21 +6,24 @@ calls that let it signal another Chuff unit about what it heard. You're
 implementing the two pieces of logic that make that possible, in an
 existing Python package.
 
-Repo layout you need:
+Your starting point is `stub/memory.py` and `stub/comms.py` in this
+task's own directory — full docstrings, type hints, and method
+signatures, every body `raise NotImplementedError`. Fill in the bodies.
+Don't change the public signatures — other code (`mood.py`, `dream.py`,
+the MVP demo script, `sim/`) calls them as specified.
+
+(The live `python/src/chuff_mpu/memory.py` / `comms.py` now contain a
+real implementation of this exact task — don't just copy it in. The
+point is doing the work; the grader is what tells you whether your own
+attempt is right.)
+
+Worth reading before you start:
 
 - `python/src/chuff_mpu/config.py` — tunable thresholds. Read it, don't
   change it.
-- `python/src/chuff_mpu/memory.py` — implement `EmbeddingStore`.
-- `python/src/chuff_mpu/comms.py` — implement `Repertoire`.
 - `shared/mood_grammar.md`, `shared/comms_protocol.md`,
   `shared/mfcc_notes.md` — background on why these exist and how they fit
-  the rest of the system. Worth reading before you start.
-
-Both files currently contain full docstrings, type hints, and method
-signatures with `raise NotImplementedError` bodies. Your job is to fill
-in the bodies. Don't change the public signatures — other modules
-(`mood.py`, `dream.py`, the MVP demo script) already call them as
-specified.
+  the rest of the system.
 
 ## 1. `EmbeddingStore` (memory.py)
 
@@ -82,14 +85,16 @@ experiment depends on.
 
 ## Scoring
 
-Run the grader yourself at any point:
+Run the grader yourself at any point, against whatever directory holds
+your in-progress `memory.py`/`comms.py` (e.g. a copy of `stub/` you're
+editing):
 
 ```
-uv run python eval/tasks/sound_memory_and_voice/grader.py --candidate-dir python/src/chuff_mpu
+uv run python eval/tasks/sound_memory_and_voice/grader.py --candidate-dir path/to/your/attempt
 ```
 
-(from the repo root; adjust the path if you copied the files elsewhere).
-It prints a JSON report: an `overall_score` in [0, 1], and a breakdown by
+(from the repo root). It prints a JSON report: an `overall_score` in
+[0, 1], and a breakdown by
 dimension (`sound_memory`, `communication`) and individual check, each
 with the specific input/assertion that failed if it did. Fix what's
 failing and re-run — there's no hidden test set beyond what the grader
