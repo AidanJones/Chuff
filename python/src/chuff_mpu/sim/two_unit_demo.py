@@ -29,12 +29,11 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import json
 import sys
 
 import numpy as np
 
-from chuff_mpu import audio, config, memory
+from chuff_mpu import audio, comms, config, memory
 from chuff_mpu.sim import tones
 from chuff_mpu.sim.agent import ChuffAgent
 from chuff_mpu.sim.world import Environment
@@ -51,9 +50,13 @@ def _detect_tone(clip: np.ndarray, sample_rate: int, target_freq: float, toleran
     spectrum = np.abs(np.fft.rfft(clip))
     freqs = np.fft.rfftfreq(len(clip), 1 / sample_rate)
     peak_idx = int(np.argmax(spectrum))
-    peak_freq, peak_mag = freqs[peak_idx], spectrum[peak_idx]
+    # Cast off numpy scalar types explicitly: left uncast, these compare to
+    # native Python bool/float|int fine at runtime but produce numpy.bool_,
+    # not bool — which json.dumps rejects. Found by actually exercising
+    # --log for the first time (ch-22), not by inspection.
+    peak_freq, peak_mag = float(freqs[peak_idx]), float(spectrum[peak_idx])
     noise_floor = float(np.median(spectrum)) + 1e-9
-    return abs(peak_freq - target_freq) < tolerance_hz and peak_mag > noise_floor * snr_factor
+    return bool(abs(peak_freq - target_freq) < tolerance_hz and peak_mag > noise_floor * snr_factor)
 
 
 class Listener:
@@ -90,65 +93,58 @@ def run(
     unit_a = ChuffAgent(seed=seed + 1)
     unit_b = Listener(config.MAX_EMBEDDINGS)
     ack_duration_s = config.ACK_DURATION_MS / 1000
-    log = open(log_path, "a", encoding="utf-8") if log_path else None
 
     ack_history: list[bool] = []
     reinforced_freqs: list[float] = []  # calls that got an ack this run — Theme 1.2's AAH test
     cutoff_label = "none" if cutoff_hz is None else f"{cutoff_hz:.0f} Hz"
     if verbose:
         print(f"=== {rounds} rounds, condition={condition}, attenuation={attenuation}, channel cutoff={cutoff_label} ===")
-    try:
-        for i in range(1, rounds + 1):
-            label, target = env.present()
-            mic_in = env.hear(target)
-            context_embedding, novelty, learned = unit_a.hear(mic_in)
-            call_index, freq, call_wave = unit_a.respond(context_embedding)
+    for i in range(1, rounds + 1):
+        label, target = env.present()
+        mic_in = env.hear(target)
+        context_embedding, novelty, learned = unit_a.hear(mic_in)
+        call_index, freq, call_wave = unit_a.respond(context_embedding)
 
-            # What B's mic actually picks up, 2-3m away: optional frequency-
-            # dependent loss, attenuation, then fresh room noise.
-            b_mic_in = env.transmit(call_wave, attenuation=attenuation, cutoff_hz=cutoff_hz)
+        # What B's mic actually picks up, 2-3m away: optional frequency-
+        # dependent loss, attenuation, then fresh room noise.
+        b_mic_in = env.transmit(call_wave, attenuation=attenuation, cutoff_hz=cutoff_hz)
 
-            if condition == "passive":
-                recognised_by_b = False  # B never acknowledges, no matter what it hears
-            else:
-                recognised_by_b = unit_b.hear_call(b_mic_in)
+        if condition == "passive":
+            recognised_by_b = False  # B never acknowledges, no matter what it hears
+        else:
+            recognised_by_b = unit_b.hear_call(b_mic_in)
 
-            heard_ack = False
-            if recognised_by_b:
-                ack_wave = tones.sine_tone(config.ACK_FREQ_HZ, ack_duration_s, config.SAMPLE_RATE, amplitude=0.6)
-                a_hears_ack = env.transmit(ack_wave, attenuation=attenuation, cutoff_hz=cutoff_hz)
-                heard_ack = _detect_tone(a_hears_ack, config.SAMPLE_RATE, config.ACK_FREQ_HZ)
+        heard_ack = False
+        if recognised_by_b:
+            ack_wave = tones.sine_tone(config.ACK_FREQ_HZ, ack_duration_s, config.SAMPLE_RATE, amplitude=0.6)
+            a_hears_ack = env.transmit(ack_wave, attenuation=attenuation, cutoff_hz=cutoff_hz)
+            heard_ack = _detect_tone(a_hears_ack, config.SAMPLE_RATE, config.ACK_FREQ_HZ)
 
-            unit_a.reinforce_or_decay(call_index, context_embedding, heard_ack)
-            ack_history.append(heard_ack)
-            if heard_ack:
-                reinforced_freqs.append(freq)
+        unit_a.reinforce_or_decay(call_index, context_embedding, heard_ack)
+        ack_history.append(heard_ack)
+        if heard_ack:
+            reinforced_freqs.append(freq)
 
-            if verbose:
-                print(
-                    f"[{i:03d}] A heard={label:<16} -> call#{call_index:<2} {freq:6.1f} Hz  "
-                    f"B recognised={'yes' if recognised_by_b else 'no ':<3} ack heard by A={'yes' if heard_ack else 'no'}"
-                )
-            if log:
-                log.write(
-                    json.dumps(
-                        {
-                            "round": i,
-                            "condition": condition,
-                            "cutoff_hz": cutoff_hz,
-                            "heard_label": label,
-                            "call_index": call_index,
-                            "call_freq_hz": freq,
-                            "b_recognised": recognised_by_b,
-                            "a_heard_ack": heard_ack,
-                            "b_memory_size": len(unit_b.store),
-                        }
-                    )
-                    + "\n"
-                )
-    finally:
-        if log:
-            log.close()
+        if verbose:
+            print(
+                f"[{i:03d}] A heard={label:<16} -> call#{call_index:<2} {freq:6.1f} Hz  "
+                f"B recognised={'yes' if recognised_by_b else 'no ':<3} ack heard by A={'yes' if heard_ack else 'no'}"
+            )
+        if log_path:
+            comms.log_event(
+                log_path,
+                {
+                    "round": i,
+                    "condition": condition,
+                    "cutoff_hz": cutoff_hz,
+                    "heard_label": label,
+                    "call_index": call_index,
+                    "call_freq_hz": freq,
+                    "b_recognised": recognised_by_b,
+                    "a_heard_ack": heard_ack,
+                    "b_memory_size": len(unit_b.store),
+                },
+            )
 
     n = len(ack_history)
     first_half = ack_history[: n // 2] or [False]

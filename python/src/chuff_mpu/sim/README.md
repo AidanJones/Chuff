@@ -100,3 +100,115 @@ what each found — including two real bugs the channel-attenuation test
 exposed along the way (a too-gentle filter, and an accidental
 frequency/index bias in `comms.Repertoire` that was silently hiding the
 effect being tested for).
+
+## A compositional call DSL + evolutionary search (`call_dsl.py`)
+
+Inspired by a separate project on this machine
+(`clebran-arc-agi` — evolves typed programs over a grid DSL for ARC
+tasks; see `../../../../shared/research_backlog.md`'s "Related work"
+section for the full comparison). Where `comms.Repertoire` represents
+each call as a single fixed frequency, `call_dsl.CallProgram`
+represents a call as a small program: one generator op (`tone`/`chirp`)
+plus up to 3 modifier ops (`am`, `envelope`), with mutation and
+crossover operators mirroring clebran's genome vocabulary at Chuff's
+scale.
+
+```
+uv run chuff-sim-dsl --target kettle_whistle   # pure-tone target
+uv run chuff-sim-dsl --target dog_bark         # wide-chirp target - a structural test
+```
+
+Both converge to ~0.97-0.98 fitness, but — honestly reported, not
+papered over — neither recovers the "intended" generator kind: the tone
+target gets matched by a near-zero-width chirp, the chirp target by a
+tone with layered AM. The MFCC-cosine fitness metric doesn't
+discriminate "right primitive" from "structural shortcut with a similar
+bulk spectral envelope" as sharply as hoped. See the research backlog's
+write-up for why that specifically blocks the next step (mining
+recurring motifs across evolved programs, Stitch-style) until the
+fitness metric is sharpened.
+
+## Two units, symmetric: does grounding actually happen? (`grounding_demo.py`)
+
+`two_unit_demo.py` is one-directional (A speaks, B only listens).
+`chuff-sim-grounding` makes B a full second `ChuffAgent` too — both
+units independently hear every sound, both speak, both acknowledge what
+they recognise, both reinforce their own choice:
+
+```
+uv run chuff-sim-grounding --rounds 200
+uv run chuff-sim-grounding --rounds 200 --cutoff 900
+```
+
+A 10-seed sweep (not just the first couple of runs — those looked like
+a fixed pattern and weren't) always gets exactly 2 distinct pairs at
+100% purity, and the majority pair is always call `#0`/`#0` (the
+untrained tie-break's structural favorite) — but *which* 1-2 labels
+break away from it varies by seed, with no consistent acoustic theme
+across which ones. Coarse, stable discrimination driven by
+presentation-order lock-in, not a fixed acoustic category boundary.
+
+```
+uv run chuff-sim-grounding --sweep-thresholds 10   # ch-63: does a tighter relevance gate help?
+```
+
+It doesn't — 0.3, 0.5, 0.7, and even 0.9 (near-impossible to clear) all
+land at ~2.0 distinct pairs, 100% purity. A clean negative result that
+redirects the real suspect to `Repertoire._base_default()`'s
+index-based tie-break instead (see
+`../../../../shared/research_backlog.md` Theme 3.3 for the full
+write-up and `TASKS.md` ch-64 for the correctly-targeted follow-up).
+
+## Does babbling before listening change anything? (`babbling_experiment.py`)
+
+`ChuffAgent.babble()` self-reinforces each repertoire call against its
+own clean signature before any real sound ever arrives — a "play each
+call once" phase alone would do nothing (`respond()` already caches
+self-reference lazily on first real use), so babbling had to be made
+self-directed reinforcement to matter at all:
+
+```
+uv run chuff-sim-babble --seeds 40
+```
+
+A clean positive result (240 trials, holds at both 20 and 40 seeds):
+babbling changes the very first real-world response 73% of the time,
+landing ~735-770 Hz closer to the target sound's own characteristic
+frequency on average than a cold start does. Without babbling, that
+first response is decided almost entirely by `Repertoire`'s untrained
+index-order tie-break, unrelated to what was actually heard.
+
+## A bug `--log` had been hiding since two_unit_demo.py was first written
+
+All three demos' `--log` flag reimplemented JSONL writing by hand
+instead of using `comms.log_event()` (already implemented, never
+called). Wiring them up to actually use it surfaced a real latent crash:
+`_detect_tone()` returned `numpy.bool_` (from comparisons on numpy FFT
+scalars), which `json.dumps` rejects — so `--log` had been silently
+broken on every acknowledgement-bearing demo since the day it was
+written, just never caught because `--log` had never actually been
+exercised in testing. Fixed by casting explicitly to Python `float`/`bool`
+in `_detect_tone()`. The lesson, not just the fix: a flag nobody runs is
+a flag nobody's tested, no matter how simple the code behind it looks.
+
+## Mood and the dream loop, actually exercised (`mood_demo.py`)
+
+Every other demo presents a sound every tick, so idle time never really
+accumulates. `chuff-sim-mood` has real gaps — most ticks nothing
+happens — so `config.IDLE_TIMEOUT_S` actually gets crossed, the dream
+loop (`dream.predict_next()`) gets a chance to fire, and the next real
+sound that arrives gets compared against the prediction
+(`dream.surprise_score()`), driving `mood.update_mood()`'s full 9-state
+machine from real data rather than hand-picked test inputs:
+
+```
+uv run chuff-sim-mood --ticks 300 --seed 5 --sound-probability 0.03
+```
+
+Across 5 seeds, every mood state fires from a real triggering
+condition — one seed alone hit `contentment`, `new_sound_learned`,
+`song_recognised`, `dreaming`, *and* `surprise` in a single run. Whether
+waking from a dream lands on `surprise` or `contentment` varies run to
+run, as it should (it depends on whether the interpolated prediction
+happened to resemble whatever sound came next) — see
+`../../../../shared/research_backlog.md` Theme 2.1.

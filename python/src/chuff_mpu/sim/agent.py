@@ -69,6 +69,34 @@ class ChuffAgent:
             )
         return call_index, freq, safe_wave
 
+    def babble(self, rate: float | None = None) -> None:
+        """Practice every repertoire call once, with no external trigger,
+        before any real sound is ever heard (ch-53).
+
+        Motivated by the 2024 zebra finch finding that active babbling —
+        not passive listening — opens the critical window for template
+        formation (shared/research_backlog.md Theme 1.1). A naive
+        "play each call once" babble phase would do nothing observable
+        here, because `respond()` already lazily caches a call's
+        self-reference the moment it's first used in a real round — so
+        this method also *self-reinforces* each call against its own
+        clean signature, giving every call a weak "home" association
+        before any real context competes for it. That's the mechanism
+        that can actually change later behaviour: a real sound that
+        happens to be acoustically close to one of these self-anchors
+        gets a head start toward that call, rather than every first
+        encounter being decided purely by index-order tie-breaking.
+        """
+        rate = config.BABBLE_REINFORCEMENT_RATE if rate is None else rate
+        for call_index in range(len(self.voice.frequencies)):
+            freq = float(self.voice.frequencies[call_index])
+            duration_s = config.CALL_DURATION_MS / 1000
+            raw = tones.sine_tone(freq, duration_s, config.SAMPLE_RATE, amplitude=0.6)
+            safe_wave = audio_safety.limit_audio(raw, config.SAMPLE_RATE)
+            reference = audio.extract_mfcc(safe_wave, config.SAMPLE_RATE, config.N_MFCC)
+            self._call_reference[call_index] = reference
+            self.voice.reinforce(call_index, reference, rate)
+
     def speak(self, waveform: np.ndarray, play: bool = False) -> np.ndarray:
         """Re-apply the safety limiter (cheap, idempotent) and optionally
         actually play `waveform`. Always returns the limited waveform."""

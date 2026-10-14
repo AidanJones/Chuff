@@ -35,6 +35,18 @@ ACK_DURATION_MS = 200
 REINFORCEMENT_RATE = 0.1
 DECAY_RATE = 0.05
 CHANNEL_ATTENUATION = 0.5  # amplitude scaling standing in for "2-3 metres apart" (see shared/comms_protocol.md)
+BABBLE_REINFORCEMENT_RATE = 0.05  # self-directed reinforcement during a pre-listening babbling phase (ch-53)
+
+# How similar a new context must be (cosine similarity) to a previously
+# learned context before that learning is allowed to influence the score
+# for the new context at all — see comms.Repertoire._score(). ch-54's
+# grounding_demo.py found the default lets too many different sounds
+# share one call (coarse grounding); ch-63 sweeps this.
+RELEVANCE_SIM_THRESHOLD = 0.5
+# How close (cosine distance) a context must be to an existing exemplar's
+# context before an update counts as "the same context again" rather than
+# a new exemplar for that call — see comms.Repertoire._update().
+SAME_CONTEXT_DISTANCE = 0.1
 
 # --- Timing ---
 BORED_TIMEOUT_S = 1800  # 30 minutes no new sounds

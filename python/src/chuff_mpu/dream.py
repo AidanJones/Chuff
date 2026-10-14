@@ -1,8 +1,9 @@
 """Dream loop: idle-time prediction and surprise scoring.
 
-Mirrors esp32/dream.py. After IDLE_TIMEOUT_S of no new audio, interpolates
-between two stored embeddings to form a prediction; compares the next real
-observation against that prediction to produce a surprise score that drives
+Mirrors the esp32 track's (not yet implemented) dream loop. After
+IDLE_TIMEOUT_S of no new audio, interpolates between two stored
+embeddings to form a prediction; compares the next real observation
+against that prediction to produce a surprise score that drives
 mood.py's "dreaming" / "surprise" states.
 """
 
@@ -23,11 +24,18 @@ def predict_next(store: EmbeddingStore, weight: float = 0.5) -> np.ndarray:
     Returns:
         Predicted embedding vector.
     """
-    raise NotImplementedError
+    a, b = store.sample_pair()
+    a = np.asarray(a, dtype=np.float32)
+    b = np.asarray(b, dtype=np.float32)
+    return (weight * a + (1.0 - weight) * b).astype(np.float32)
 
 
 def surprise_score(observed: np.ndarray, predicted: np.ndarray) -> float:
     """Cosine distance between an observed embedding and a prediction.
+
+    Same metric convention as memory.EmbeddingStore.novelty_score() and
+    comms.Repertoire's relevance gate — see memory.py's docstring for why
+    cosine distance (not Euclidean) is used consistently throughout.
 
     Args:
         observed: The newly captured MFCC embedding.
@@ -36,4 +44,7 @@ def surprise_score(observed: np.ndarray, predicted: np.ndarray) -> float:
     Returns:
         Cosine distance in [0, 2]; higher means more surprising.
     """
-    raise NotImplementedError
+    observed = np.asarray(observed, dtype=np.float32)
+    predicted = np.asarray(predicted, dtype=np.float32)
+    denom = (np.linalg.norm(observed) * np.linalg.norm(predicted)) or 1e-9
+    return float(1.0 - np.dot(observed, predicted) / denom)

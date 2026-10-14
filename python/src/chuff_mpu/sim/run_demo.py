@@ -17,12 +17,11 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import json
 import sys
 
 import numpy as np
 
-from chuff_mpu import audio_safety, config
+from chuff_mpu import audio_safety, comms, config
 from chuff_mpu.sim.agent import ChuffAgent
 from chuff_mpu.sim.world import Environment
 
@@ -52,50 +51,43 @@ def run(rounds: int, seed: int, play: bool, log_path: str | None, noise: float) 
 
     env = Environment(config.SAMPLE_RATE, config.CLIP_DURATION_S, seed=seed, background_noise_amp=noise)
     agent = ChuffAgent(seed=seed + 1)
-    log = open(log_path, "a", encoding="utf-8") if log_path else None
 
     print(f"=== {rounds} rounds ===")
-    try:
-        for i in range(1, rounds + 1):
-            label, target = env.present()
-            mic_in = env.hear(target)
-            embedding, novelty, learned = agent.hear(mic_in)
+    for i in range(1, rounds + 1):
+        label, target = env.present()
+        mic_in = env.hear(target)
+        embedding, novelty, learned = agent.hear(mic_in)
 
-            call_index, freq, call_wave = agent.respond(embedding)
-            agent.speak(call_wave, play=play)
+        call_index, freq, call_wave = agent.respond(embedding)
+        agent.speak(call_wave, play=play)
 
-            mic_echo = env.hear(call_wave)
-            recognised = agent.recognise_own_echo(call_index, mic_echo)
-            agent.reinforce_or_decay(call_index, embedding, recognised)
+        mic_echo = env.hear(call_wave)
+        recognised = agent.recognise_own_echo(call_index, mic_echo)
+        agent.reinforce_or_decay(call_index, embedding, recognised)
 
-            peak = float(np.max(np.abs(call_wave)))
-            print(
-                f"[{i:02d}] heard={label:<16} novelty={novelty:.3f} "
-                f"{'(learned)' if learned else '          '}  "
-                f"-> call#{call_index:<2} {freq:6.1f} Hz (peak={peak:.3f})  "
-                f"self-recognised={'yes' if recognised else 'no '}"
+        peak = float(np.max(np.abs(call_wave)))
+        print(
+            f"[{i:02d}] heard={label:<16} novelty={novelty:.3f} "
+            f"{'(learned)' if learned else '          '}  "
+            f"-> call#{call_index:<2} {freq:6.1f} Hz (peak={peak:.3f})  "
+            f"self-recognised={'yes' if recognised else 'no '}"
+        )
+
+        if log_path:
+            comms.log_event(
+                log_path,
+                {
+                    "round": i,
+                    "heard_label": label,
+                    "novelty_score": novelty,
+                    "learned": learned,
+                    "memory_size": len(agent.memory),
+                    "call_index": call_index,
+                    "call_freq_hz": freq,
+                    "call_peak_amplitude": peak,
+                    "self_recognised": recognised,
+                },
             )
-
-            if log:
-                log.write(
-                    json.dumps(
-                        {
-                            "round": i,
-                            "heard_label": label,
-                            "novelty_score": novelty,
-                            "learned": learned,
-                            "memory_size": len(agent.memory),
-                            "call_index": call_index,
-                            "call_freq_hz": freq,
-                            "call_peak_amplitude": peak,
-                            "self_recognised": recognised,
-                        }
-                    )
-                    + "\n"
-                )
-    finally:
-        if log:
-            log.close()
 
     print(f"\nFinal memory size: {len(agent.memory)} distinct sounds learned "
           f"(of {len(env.labels)} possible).")

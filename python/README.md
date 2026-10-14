@@ -54,7 +54,8 @@ answer (social gating, repertoire convergence).
   with `play_call()` always routed through `audio_safety`.
 - `audio_safety.py` — the output guardrail everything above routes
   through before any sample reaches a real speaker.
-- `dream.py`, `mood.py` — still stubs; see `TASKS.md`.
+- `dream.py` — real dream-loop prediction + cosine-distance surprise scoring.
+- `mood.py` — real 9-state mood machine (`Mood`, `MoodState`, `update_mood()`).
 - `ipc.py` — serial JSON bridge to the MCU side (fully implemented).
 - `mvp_demo.py` — the MVP demo described above.
 - `sim/` — the in-silico test described above.

@@ -36,13 +36,28 @@ compression (continuous MFCC -> a bounded set of stored vectors);
 template — a small, incrementally-built set of (context, weight) pairs
 per call.
 
-**Near-term experiment:** `sim/`'s `ChuffAgent` is purely reactive —
-it only ever responds to something it just heard, with no
-babbling-before-listening phase. A direct test of the PNAS finding: add
-an optional "babbling" warm-up to `run_demo.py` (play random repertoire
-calls with no external trigger, before any real sounds arrive) and
-compare how quickly/cleanly the repertoire specialises afterward against
-a cold start with no babbling phase.
+**In this repo — tested (CH-53, done):** a naive "play each call once"
+babble phase would do *nothing* observable here — `respond()` already
+lazily caches a call's self-reference the moment it's first needed, so
+there's no cold-start gap to fill. `ChuffAgent.babble()` instead
+self-reinforces each call against its own clean signature (a weak "home"
+association) before any real sound arrives — closer to what active
+babbling is thought to do (building the template via self-generated
+motor-auditory pairing, not just passive exposure).
+
+**Result (`babbling_experiment.py` / `chuff-sim-babble`, 40 seeds x 6
+sounds = 240 trials):** babbling changes the very first real-world
+response **73% of the time**, and the chosen call's frequency lands
+**~735-770 Hz closer** to the target sound's own characteristic
+frequency on average (1007 Hz error cold-start vs. 271 Hz babbled,
+consistent across a 20-seed and a 40-seed run). Without babbling, the
+first encounter with any sound is decided almost entirely by
+`Repertoire`'s untrained index-order tie-break, with no relationship to
+what was actually heard; with babbling, the self-anchors give the first
+real response something acoustically relevant to land near, before any
+external reinforcement has happened at all. A clean, repeatable
+positive result — unlike CH-60's fitness-metric snag, this one held up
+exactly as hypothesised.
 
 ### 1.2 Acoustic Niche Adaptation
 
@@ -155,18 +170,39 @@ negative affect (stress, anxiety), while accurate prediction corresponds
 to calm ([The free-energy principle: a unified brain theory?, Nat Rev
 Neurosci 2010](https://www.nature.com/articles/nrn2787)).
 
-**In this repo:** `dream.py`'s planned
+**In this repo — done (CH-33):** `dream.py`'s
 `surprise_score = cosine_distance(observed, predicted)` *is* this
-framework, reduced to one line — but `dream.py` is still a stub
-(`TASKS.md` CH-33).
+framework, reduced to one line, now implemented for real (not a stub),
+alongside `predict_next()` (interpolates two stored embeddings) and
+`mood.py`'s full 9-state `update_mood()` state machine (precedence:
+acknowledgement > dream-loop surprise > idle-time states > novelty
+score > hold). `sim/mood_demo.py` (`chuff-sim-mood`) wires both into a
+"day in the life" with real idle gaps (every other demo presents a
+sound every tick, so idle time never actually accumulates) — most
+ticks nothing happens; once idle crosses `IDLE_TIMEOUT_S`, the agent
+occasionally dreams, and the next real sound that arrives is compared
+against the dream's prediction.
 
-**Near-term experiment:** Implement `predict_next()` /
-`surprise_score()` for real (same cosine-distance convention already
-validated for `memory.py`), wire it into a minimal mood transition, and
-check — by ear, watching `sim/`'s logs — whether a human would actually
-read the resulting state change as "surprised" vs. just "a number
-changed." That's the real test of whether this one-line
-operationalisation earns the word "affect" or not.
+**Result, across 5 seeds (300 ticks, p(sound)=0.03 so idle gaps reliably
+cross the threshold):** every mood state the grammar describes shows up
+from real triggering conditions, not hand-picked test inputs — one seed
+alone (`--seed 5`) hit `contentment`, `new_sound_learned`,
+`song_recognised`, `dreaming`, *and* `surprise`, all from the same run.
+The dream loop fired 2-6 times per 300-tick run depending on seed, and
+whether waking from a dream produced `surprise` vs. `contentment`
+varied run to run (as it should — it depends on whether the
+interpolated prediction happened to resemble whatever sound came next).
+That's the actual test of whether the one-line free-energy
+operationalisation earns its name: it does produce a state that tracks
+whether reality matched an internally-generated expectation, driven
+by real audio, not a scripted "and then surprise happens" moment.
+
+**Near-term experiment, still open:** check — by ear, watching
+`sim/mood_demo.py`'s logs — whether a human would actually *read* the
+resulting state change as "surprised" vs. just "a number changed."
+That's a different, harder bar than the one this round cleared
+(the mechanism fires correctly); it's about whether the mapping from
+score to felt state is actually convincing, not just functioning.
 
 ### 2.2 Distributed vs. Local Memory Decay
 
@@ -327,16 +363,78 @@ pairs, never on a label or meaning. `two_unit_demo.py` makes this
 concrete: Unit B never learns *what* `doorbell` means, only that a
 particular acoustic pattern recurs and is worth acknowledging.
 
-**Near-term experiment:** now that two independent repertoires exist
-side by side (`two_unit_demo.py`), a genuinely answerable question
-opens up that wasn't answerable with one agent alone: does Unit A's
-call-to-context mapping converge toward the *same* association Unit B
-independently forms for recognising it, or do the two settle into
-self-consistent-but-different conventions — each internally stable, but
-not provably "about" the same thing from outside? Logging both units'
-full call-index-per-label history (not just A's, which
-`two_unit_demo.py` already logs) and comparing them after a long run
-would make "grounding" here something measured, not assumed.
+**In this repo — tested (CH-54, done):** `grounding_demo.py`
+(`chuff-sim-grounding`) makes Unit B a full second `ChuffAgent`, not a
+passive `Listener` — both units independently hear every sound (through
+their own noisy mic), both speak and both acknowledge, both
+reinforce/decay their own choice. After a run, for each of the 6 sound
+labels: has each unit settled on one call (purity of its last 30% of
+choices), and — the actual grounding question — do *different* labels
+map to *different* (A's call, B's call) pairs?
+
+**Result — corrected after a proper sweep, not the first read:** an
+initial 3 runs (2 seeds + a channel cutoff) all happened to produce the
+same split and were written up here as "it's the same partition every
+time." A 10-seed sweep (seeds 0-9, 150 rounds each) shows that was
+wrong — it isn't the same partition, but two things *about* it are
+reliably true:
+
+- **Always exactly 2 distinct (A-call, B-call) pairs**, and **always
+  100% purity** on every label, every seed — no indecision anywhere,
+  every run.
+- **The majority pair (capturing 4-5 of the 6 labels) is always call
+  `#0`/`#0`** — `Repertoire`'s untrained index-0 tie-break has a
+  structural head start that nothing in this run ever overcomes for
+  *most* labels.
+- **Which 1-2 labels break away from that majority varies by seed**:
+  `{kettle_whistle, bird_call}` in 3/10 seeds, `{car_horn, dog_bark}` in
+  4/10, `{phone_ring}` alone in 3/10. Three different minority groups,
+  no consistent acoustic theme across them (the first pairing is
+  high-frequency; the second is the two *lowest*-frequency sounds;
+  the third is a single mid-frequency tone).
+
+**Reading:** the earlier "acoustically coherent high/low split" claim
+doesn't survive more seeds — what's actually stable is a path-dependent
+dynamic, not a fixed category boundary. Call `#0`'s structural
+head-start means whichever label or two happens to arrive in a way that
+falls outside its relevance-gate radius *first* claims a different call
+and keeps it (100% purity once settled); everything else piles onto
+`#0` regardless of its own acoustic character. This is still
+coarse-but-real discrimination (2 distinct, perfectly stable
+conventions every time, not indiscriminate acking) — it's just driven
+by presentation-order lock-in rather than the sounds' own acoustic
+properties, which is a materially different, and more honest, story
+than the first write-up told.
+
+**Why, mechanistically — tested, hypothesis refuted (CH-63, done):**
+the obvious guess was the relevance gate (`RELEVANCE_SIM_THRESHOLD =
+0.5`, now in `config.py` and swept via a constructor override rather
+than monkeypatching a module constant — a small refactor this required).
+`grounding_demo.py --sweep-thresholds` tried 0.3, 0.5, 0.7, and
+**0.9** (near-impossible to clear — almost no exemplar would count as
+"relevant" to a different context) across 10 seeds each:
+
+| threshold | avg distinct pairs | avg purity |
+|---|---|---|
+| 0.30 | 2.0/6 | 100% |
+| 0.50 | 2.0/6 | 100% |
+| 0.70 | 2.1/6 | 100% |
+| 0.90 | 2.0/6 | 100% |
+
+**No effect, at any threshold tried.** This refutes the relevance-gate
+hypothesis cleanly rather than confirming it — worth stating plainly,
+not quietly dropping the question once the first guess didn't pan out.
+The real mechanism has to be `_base_default()`'s index-based tie-break:
+even at threshold 0.9, once call `#0` picks up *any* exemplar, a brand
+new context that fails to clear that strict a gate gets scored purely
+on `_base_default()` for every call — and call `#0` still wins that
+contest by construction, regardless of relevance, because nothing else
+has an exemplar either. The gate was never the thing keeping `#0`
+dominant; the unconditional index-ordering fallback was. Follow-up,
+correctly targeted this time, tracked as **CH-64**: test whether
+replacing `_base_default()`'s index ramp with a fixed-at-construction
+*random* per-call tie-break (still deterministic across repeated calls,
+just not correlated with index) produces finer-grained grounding.
 
 ---
 
@@ -367,3 +465,99 @@ would make "grounding" here something measured, not assumed.
   converge on the *same* call-to-sound mapping needs Unit B to be a full
   second `ChuffAgent` with its own repertoire, not just a `Listener` —
   a bigger change to `two_unit_demo.py`'s symmetry than the others.
+
+## Related work: clebran-arc-agi
+
+A separate project on this machine (`C:\Users\aidan\repos\clebran-arc-agi`,
+not part of this repo) is worth drawing on directly. It evolves typed
+programs over a grid DSL ([michaelhodel/arc-dsl](https://github.com/michaelhodel/arc-dsl))
+to solve ARC-AGI tasks, with multiple populations ("lineages") that
+diverge into different strategies and gossip fragments of what works to
+each other over a deliberately narrow channel — structurally close to
+Chuff's own comms track, even though the domain (abstract grid
+reasoning vs. acoustic signaling) is completely different. Two pieces
+transfer close to directly; one finding is a genuine caution.
+
+### 1. The gossip channel's design (directly reusable pattern)
+
+`clebran/channel.py` is a blackboard: lineages `publish()` scored
+messages each epoch, a channel variant (`ChNone` / `ChConstrained(K, M)`
+/ `ChUnconstrained`) admits a subset, other lineages `receive()` them.
+`ChConstrained` caps bandwidth two ways at once — message *complexity*
+(statement count for code, demo-pair count for a teaching task — not
+raw bytes) and message *count* per sender per epoch — then keeps the
+top-scoring messages that fit. `two_unit_demo.py`'s single fixed
+acknowledgement tone is the degenerate case of this (unconstrained
+content, one bit of information, capacity 1). If Chuff ever moves past
+a single ack tone — e.g. richer acknowledgement payloads, or more than
+two units — this admission-by-score-under-a-cap pattern is the one to
+reuse, not reinvent.
+
+### 2. The B5 central-library result and its Stitch-style miner (adapted: CH-60/61)
+
+clebran's headline finding: at matched compute, **a single learner that
+mines its own solved programs into a growing reusable abstraction
+library (B5) beats every multi-lineage gossip arm**, 7-10x more
+cost-efficient on top of solving more tasks. `dsl/abstraction.py`'s
+miner is how: find recurring dependency-closed program slices across
+many solved programs, group by structural skeleton, antiunify each
+group (a parameter stays an inline constant *only* if it's identical
+across every occurrence, otherwise it's lifted to an argument — minimal-
+arity generalisation), score by compression utility
+(`occurrences × (size − 1) − size − arity_penalty`), keep the best.
+
+**Built here, adapted to Chuff's scale (CH-60, done):**
+`python/src/chuff_mpu/sim/call_dsl.py` gives repertoire calls actual
+compositional structure — a `CallProgram` is one generator op
+(`tone`/`chirp`) plus 0-3 modifier ops (`am`, `envelope`), with
+`mutate_const`/`swap`/`grow`/`delete` and `crossover` mirroring
+clebran's genome vocabulary at a much smaller scale. `chuff-sim-dsl`
+(`dsl_evolution_demo.py`) evolves a population toward a target sound's
+MFCC via cosine-similarity fitness — the actual search loop, not just
+the representation.
+
+**What running it found, honestly — a real methodological snag, not a
+clean win:** both a pure-tone target (`kettle_whistle`, 2600 Hz) and a
+wide-chirp target (`dog_bark`, 350→520 Hz) converge to ~0.97-0.98
+fitness within 15-20 generations — but neither converges to the
+"intended" generator. The tone target gets matched by a *near-zero-width
+chirp* (2576→2529 Hz — functionally a tone, structurally a chirp); the
+chirp target gets matched by a *tone with three layered AM modifiers*.
+The MFCC-cosine fitness metric (same convention as `memory.py`'s
+novelty scoring, deliberately) is evidently not very discriminating
+between "the right spectral shape via the right primitive" and "a
+structural shortcut that happens to produce a similar bulk spectral
+envelope." **This directly blocks CH-61 (mining recurring motifs across
+evolved programs) until it's addressed** — mining structurally-diverse
+"successful" programs whose success is itself a fitness-metric artifact
+would mine artifacts, not reusable acoustic building blocks. Needs
+either a stricter/multi-target fitness (reward matching across several
+contexts at once, not cosine similarity to one target) or an explicit
+structural-match term, before CH-61 is worth running.
+
+### 3. A caution for the two-unit track (CH-62, decision)
+
+The B5-beats-gossip result isn't a side note — it's the paper's central,
+hard-won finding, replicated across many control conditions:
+**"communication is a transport mechanism, not a discovery mechanism"**
+in that domain. Translated: don't expect `two_unit_demo.py`'s two-unit
+setup to make either Chuff *learn calls faster or better* than a single,
+well-tuned Chuff mining its own memory would. That's consistent with
+what the two-unit demo already showed under the `social` condition — it
+produced a *stable shared convention*, not demonstrably *better*
+recognition than a single unit would achieve alone. The two-unit
+track's real value is the convention-formation/signaling phenomenon
+itself (Theme 3.3's grounding question — does a *shared* mapping emerge,
+not does anyone get smarter), and it should stay framed that way rather
+than drifting into an implicit "two units learn better than one" claim
+the evidence (here and in clebran) doesn't support.
+
+### What doesn't transfer
+
+ARC's substrate is a large, structured, typed program space over 160
+hand-designed primitives, searched for exact symbolic correctness
+against held-out test grids. Chuff's acoustic domain is low-dimensional,
+continuous, and success is "close enough in MFCC space," not "bit-exact."
+Lineage/population mechanics (hall-of-fame restarts, per-task RNG
+substreams, progress-weighted scheduling) solve problems specific to
+that search's scale and are not worth porting at Chuff's current scale.

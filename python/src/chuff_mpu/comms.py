@@ -24,20 +24,7 @@ import json
 
 import numpy as np
 
-from chuff_mpu import audio_safety
-
-# How similar a new context must be (cosine similarity) to a previously
-# learned context before that learning is allowed to influence the score
-# for the new context at all. Below this, the exemplar is irrelevant —
-# without this gate, strong reinforcement/decay learned for one context
-# can leak into an unrelated context's preference just because both
-# contexts share the same handful of calls to choose from.
-_RELEVANCE_SIM_THRESHOLD = 0.5
-# How close (cosine distance) a context must be to an existing exemplar's
-# context before an update is treated as "the same context again"
-# (update it) rather than "a new context for this call" (add a new
-# exemplar).
-_SAME_CONTEXT_DISTANCE = 0.1
+from chuff_mpu import audio_safety, config
 
 
 def _cosine_similarity(a: np.ndarray, b: np.ndarray) -> float:
@@ -56,6 +43,8 @@ class Repertoire:
         freq_min_hz: float,
         freq_max_hz: float,
         seed: int,
+        relevance_threshold: float | None = None,
+        same_context_distance: float | None = None,
     ) -> None:
         """Generate a fixed-seed starting repertoire of call frequencies.
 
@@ -71,7 +60,19 @@ class Repertoire:
             freq_max_hz: Upper bound of the frequency range.
             seed: RNG seed so two units start with overlapping-but-not-
                 identical repertoires.
+            relevance_threshold: Overrides config.RELEVANCE_SIM_THRESHOLD
+                for this instance — see `_score()`. Exposed as a
+                constructor param (not a bare module constant) so
+                experiments (ch-63) can sweep it without monkeypatching.
+            same_context_distance: Overrides config.SAME_CONTEXT_DISTANCE
+                for this instance — see `_update()`.
         """
+        self._relevance_threshold = (
+            config.RELEVANCE_SIM_THRESHOLD if relevance_threshold is None else relevance_threshold
+        )
+        self._same_context_distance = (
+            config.SAME_CONTEXT_DISTANCE if same_context_distance is None else same_context_distance
+        )
         rng = np.random.default_rng(seed)
         # Deliberately NOT sorted by frequency: closest_call()'s tie-break
         # favours low call_index when nothing's been learned yet (see
@@ -132,7 +133,7 @@ class Repertoire:
         score = self._base_default(call_index)
         for ctx, weight in self._exemplars[call_index]:
             sim = _cosine_similarity(context_embedding, ctx)
-            if sim > _RELEVANCE_SIM_THRESHOLD:
+            if sim > self._relevance_threshold:
                 score += weight * sim
         return score
 
@@ -140,7 +141,7 @@ class Repertoire:
         context_embedding = np.asarray(context_embedding, dtype=np.float32)
         for pair in self._exemplars[call_index]:
             ctx, weight = pair
-            if 1 - _cosine_similarity(context_embedding, ctx) < _SAME_CONTEXT_DISTANCE:
+            if 1 - _cosine_similarity(context_embedding, ctx) < self._same_context_distance:
                 pair[1] = weight + delta * (1 - weight) if delta >= 0 else weight + delta * (1 + weight)
                 return
         self._exemplars[call_index].append([context_embedding, float(np.clip(delta, -1.0, 1.0))])
