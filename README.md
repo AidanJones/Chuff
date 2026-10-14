@@ -62,6 +62,9 @@ shared/             Design docs shared by both tracks (mood grammar, MFCC notes,
 body/               3D-printed body (placeholder until design is finalised)
 eval/               Prompt + grader harness for scoring a coding agent's attempt
                     at implementing a Chuff module (see eval/README.md)
+papers/             Academic-style write-ups of the project's findings, one per
+                    round of work — 00-pilot-study.md is the first (background,
+                    the sim/ experiment suite, cited literature, next steps)
 TASKS.md            Backlog (plain markdown for now — see note below)
 ```
 
