@@ -1,262 +1,370 @@
-# Chuff: A Simulation-Based Pilot Study of Acoustic Novelty Memory, Affect, and Emergent Signaling in a Low-Cost Robotic Pet
+# Chuff: An Exploratory Simulation Study of Acoustic Memory, Reinforced Call Selection, and Affective Displays in a Robotic Pet
 
-**Aidan Jones**, with Claude (Sonnet 5) as coding/research assistant
+**Aidan Jones**
+
 October 2026
+
+Original implementation and draft developed with Claude as a coding/research assistant; literature and methodological revision assisted by Codex.
 
 ## Abstract
 
-Chuff is a small robotic pet intended to learn from its acoustic environment, express an internal affective state through light and animation, and — in a second phase — develop a shared signaling convention with a second unit over an acoustic-only channel. This paper reports a simulation-based pilot study conducted before any of the target hardware (an ESP32-S3 board and an Arduino UNO Q) was fully wired up for audio. We built a minimal but complete software pipeline — MFCC feature extraction, a cosine-distance k-nearest-neighbour novelty store, a reinforcement-learned call repertoire, a predictive "dream loop," and a nine-state mood machine — and used a synthetic acoustic world (tones, chirps, and noise) to run eight targeted experiments against specific, literature-grounded hypotheses. Three results confirmed their hypotheses cleanly: a contingent-acknowledgement condition reproduces the "social gating" prediction from infant language acquisition research, a self-directed "babbling" phase measurably improves an agent's first real response, and a band-limited channel measurably favours lower call frequencies, consistent with the Acoustic Adaptation Hypothesis. Two results were negative, and are reported as such: a relevance-threshold sweep across four orders of magnitude had no effect on how finely two agents' signaling conventions discriminated between sounds, refuting our mechanistic hypothesis; and an evolutionary search over a small compositional call-construction DSL reached high fitness through acoustically-plausible but structurally wrong solutions, exposing a degeneracy in the fitness metric itself. One finding was corrected mid-study: an initial claim that two agents converge on a fixed, acoustically-coherent partition of sounds did not survive a wider seed sweep, and the corrected, more interesting story is that the partition is stable in *shape* but not in *membership* — a path-dependent, not acoustically-determined, phenomenon. We also report a structural comparison with a separate research codebase (`clebran-arc-agi`) that evolves programs to solve abstract reasoning tasks under a similar gossip-channel design, whose headline finding — that a single learner mining its own solutions beats multi-agent sharing at matched compute — is a direct caution against over-claiming what Chuff's planned two-unit experiment can show. We close with a concrete, falsifiable research agenda for the next phase of work.
+Chuff is a low-cost robotic-pet project that combines acoustic novelty memory, adaptive call selection, and expressive state transitions. This exploratory pilot evaluates the software before deployment on the intended ESP32-S3 and Arduino UNO Q hardware. A synthetic world supplies four tones and two chirps to a pipeline comprising time-averaged Mel-frequency cepstral coefficients (MFCCs), bounded nearest-neighbour memory, context-dependent reinforcement of a fixed call repertoire, an idle-time embedding-interpolation routine, and a mood state machine. Selected checks reproduced during manuscript review include a behavioural-grader score of 1.0, a seed-5 acknowledgement rate rising from 0.933 to 1.000, and a babbling comparison across 20 seeds in which self-reinforcement reduced mean first-response frequency error from 1,021 to 251 Hz. The original pilot summaries also report lower frequencies among acknowledged calls under low-pass filtering, retention advantages on some measures for recency-based eviction, and stable but coarse call pairings whose category membership varies across seeds. A relevance-threshold sweep did not produce the predicted increase in discrimination. Program evolution achieved high MFCC similarity with differing generator structures, revealing a need to distinguish acoustic equivalence from failures of temporal fidelity. These findings establish useful implementation behaviour, but do not establish biological social gating, a free-energy mechanism of affect, or receiver understanding of an environmental referent. The principal next experiments are matched-feedback controls, sender-only observation with receiver decoding, causal message interventions, temporal acoustic evaluation, and measured hardware transfer.
 
 ## 1. Introduction
 
-Robotic pets are usually built to perform affect, not to generate it from an internal process. Chuff instead specifies the problem as a small, measurable agent-design question: what is the *minimum* functional loop — listen, remember, repeat — that produces behaviour an observer can read as learning, novelty-seeking, and signaling? That design brief forces engineering choices that are also, incidentally, testable cognitive-science hypotheses: how should memory decide what to keep; what should count as "surprise"; does a second interlocutor help an agent learn or merely let it broadcast; and does a signaling convention between two independent learners emerge from reinforcement alone, without a shared dictionary?
+Chuff asks how a small robotic pet can acquire acoustic memories, adapt its responses, and display internal state through light and animation. Affective robot control already has substantial precedent: Breazeal (2003), for example, studied emotion-inspired internal regulation and expressive behaviour in Kismet. The present contribution is a compact, inspectable implementation and an exploratory evaluation of its learning rules, rather than a claim to introduce internally regulated robot affect.
 
-The practical starting point was unglamorous. The project's intended hardware — an ESP32-S3 board with a microphone and speaker for a single-unit "Track A", and an Arduino UNO Q for a more capable "Track B" — was available but not yet wired for audio capture. Rather than block on hardware, we built the full software pipeline (feature extraction, memory, a signaling repertoire, output safety limiting, mood, and a dream loop) against a synthetic world of tones, chirps, and noise, and used it to run a sequence of small, pre-registered-in-spirit experiments, each targeting one specific question with a numerical answer rather than a demonstration. This paper reports what we found, including the parts that did not go as expected, and the one place where an initial finding did not survive a wider check.
+The intended hardware comprises an ESP32-S3 track and an Arduino UNO Q track. At the time of the pilot, neither had been fully wired for the intended audio experiments. Synthetic audio therefore provided a way to exercise the software and expose design problems before physical deployment. Environmental labels such as “dog_bark” identify synthesis recipes; they are not recordings or realistic models of those sound classes.
 
-The contributions are:
+The central questions are engineering questions informed by cognitive science: how should a bounded memory retain recurring inputs; how does acknowledgement affect call selection; what acoustic information survives the representation and channel; and what would count as evidence that a call conveys information to another agent?
 
-1. A validated software pipeline — real MFCC extraction, a cosine-distance KNN novelty store, a repertoire of calls with reinforcement/decay learning, an output-safety limiter, a predictive dream loop, and a mood state machine — exercised end-to-end against synthesised audio, not unit-tested in isolation.
-2. Eight targeted simulation experiments, each addressing one hypothesis drawn from a specific literature, with multi-seed statistics rather than single-run anecdotes (Section 5).
-3. An honest account of a corrected claim (Section 5.6) and a refuted hypothesis (Section 5.7) — reported as findings in their own right, not edited out.
-4. A structural comparison with an independent, much larger research codebase for evolutionary program synthesis (`clebran-arc-agi`), identifying what transfers to a continuous acoustic domain and what does not, and a caution the comparison raises for how Chuff's two-unit experiment should be interpreted (Section 6).
-5. A grader/prompt harness for scoring a coding agent's attempt at reimplementing the memory and signaling modules, used throughout to validate that our own implementations satisfy the same specification we would hold an external contributor to (Section 3.3).
+This study contributes:
+
+1. An integrated simulation pipeline for acoustic feature extraction, novelty memory, reinforced call selection, waveform limiting, and expressive state control.
+2. Exploratory comparisons of acknowledgement conditions, self-reinforcement, channel filtering, retention policies, and call-selection stability, with the sampling and evidential limits stated separately for each.
+3. An account of a corrected category-partition claim, an unsupported relevance-gate prediction, and a mismatch between program structure and the acoustic fitness objective.
+4. A literature-grounded research agenda that separates implementation verification, communicative function, and human interpretation.
+
+The experiments were developed iteratively; they were not preregistered. Hypotheses in this manuscript organise that exploratory work and should not be read as evidence that outcomes, stopping rules, or analyses were specified in advance.
 
 ## 2. Background and Related Work
 
-### 2.1 The sensorimotor bottleneck in vocal learning
+### 2.1 Vocal self-organisation and sensorimotor experience
 
-The textbook account of vocal learning separates a passive "sensory phase," in which a young songbird or infant forms an auditory template of a model's sound, from a later "sensorimotor phase," in which the learner practises against that template. Recent work complicates the ordering: in zebra finches, active babbling is necessary to *open* the sensory phase in the first place, rather than simply exploiting a template already formed (Leitão & Gahr, 2024). The auditory template itself is explicitly understood as the compressed representation bridging a continuous acoustic signal and a discrete motor program (Yazaki-Sugiyama, 2024).
+A close computational precedent is Oudeyer’s (2005) model of speech-sound self-organisation, in which coupled perceptual and motor systems in interacting agents generate structured vocal repertoires. This work makes clear that shared acoustic structure can arise from the interaction of architecture, experience, and learning constraints. Chuff is substantially simpler: its main experiments select among fixed pure-tone calls rather than learning a vocal tract or a combinatorial sound system.
 
-### 2.2 Social gating of vocal learning
+Biological studies provide motivation, with a different evidential role. Leitão and Gahr (2024) found that babbling was necessary for initiating tutor-song sensory learning in juvenile zebra finches under their experimental conditions. Yazaki-Sugiyama (2024) reviews auditory memories and their role in guiding birdsong sensorimotor learning. Chuff’s “babbling” instead explicitly reinforces each call against its own acoustic signature. Testing that warm start is useful, but it does not test a biological critical period or demonstrate that passive exposure cannot support learning.
 
-A separate body of work asks not *whether* a learner is exposed to a model sound, but *under what social conditions* exposure becomes learning. Goldstein, King, and West (2003) showed that contingent, responsive caregiver feedback to infant babbling accelerates and matures vocal behaviour in a way that non-contingent exposure to the same acoustic content does not; a companion commentary draws the same contingency effect out in zebra finch tutoring, where live, responsive tutors outperform passive playback of an identical song (Kuhl, 2003). This "social gating" claim — that passive exposure is a weaker teacher than contingent interaction, holding content fixed — is directly testable in an artificial agent and is one of the two hypotheses we could test computationally rather than only cite (Section 5.2).
+### 2.2 Social contingency and the appropriate control
 
-### 2.3 The Acoustic Adaptation Hypothesis
+Goldstein, King, and West (2003) manipulated the contingency of maternal responses to infant vocalisation, including a yoked comparison, and found changes in babbling quality. Kuhl, Tsao, and Liu (2003) compared live foreign-language exposure with recorded exposure in infant phonetic learning. These are complementary findings about social conditions; they do not establish that every benefit of feedback in an artificial learner is social gating.
 
-The Acoustic Adaptation Hypothesis (AAH) predicts that habitats with more reverberation and higher-frequency attenuation should select for lower-frequency, narrower-bandwidth calls, since high frequencies and rapid repetition degrade faster in transmission. A meta-analysis of the empirical bird-song literature found the evidence genuinely mixed rather than settled (Boncoraglio & Saino, 2007) — a useful calibration, since it means a simulation result consistent with AAH should be read as "consistent with one real hypothesis in an active literature," not as closing a solved question.
+For Chuff, the first question is whether the programmed reinforcement rule behaves differently with and without acknowledgement. A stronger contingency claim requires feedback matched in amount and acoustic content but disconnected from the current action, as well as equivalent listener exposure and learning. The existing comparison does not meet those requirements.
 
-### 2.4 Predictive coding and the free-energy framing of affect
+### 2.3 Acoustic adaptation and transmission
 
-Under the free-energy principle, a system is understood to maintain a generative model of its environment and to experience "surprise" as a quantity proportional to how unlikely its current sensory input is under that model; sustained, unresolved prediction error is associated with negative affective states, while accurate prediction is associated with calm (Friston, 2010). This is a strong, specific empirical claim about the *mechanism* of affect, not just a metaphor, and it is directly operationalisable: an agent that interpolates between remembered experiences to form a prediction, then scores the distance between that prediction and what actually happens next, is implementing exactly this framing in miniature (Section 5.8).
+Boncoraglio and Saino’s (2007) meta-analysis evaluates the acoustic adaptation hypothesis: habitat-dependent propagation can favour particular song features. Its support is qualified, with uncertainty about generality and differences across acoustic features. Chuff isolates one engineered pressure, high-frequency attenuation, rather than modelling habitat evolution. A lower average frequency among acknowledged calls can reflect transmission-based selection of observations as well as a learned shift in the emission policy; those explanations need separate controls.
 
-### 2.5 Catastrophic forgetting and reinforcement-weighted retention
+### 2.4 Prediction error, surprise, and affect
 
-Bounded-capacity memory systems face a stability-plasticity trade-off: new learning that simply overwrites old associations produces catastrophic forgetting, a long-studied failure mode in continual learning. Recent mitigation strategies converge on reinforcement-weighted retention — protecting memories in proportion to how often or how recently they have proven useful, rather than evicting strictly by age (Zhang, Fu, Peng, Yao, & He, 2024; Lou, Guo, Chen, & Yu, 2026). This motivates a direct empirical comparison between a naive first-in-first-out eviction policy and a recency-of-relevance-weighted one in exactly the kind of small KNN memory Chuff uses (Section 5.5).
+Friston (2010) distinguishes sensory surprisal, defined through a generative model’s probability of observations, from variational free energy, which bounds that surprisal. A cosine distance between two embeddings is neither quantity without additional modelling assumptions. Chuff has no learned temporal likelihood model, posterior inference, or free-energy objective.
 
-### 2.6 Shared perception-action representations
+We therefore describe the implemented routine as an **embedding-mismatch heuristic**. It samples and interpolates memories, compares the result with an observation, and supplies a score to a hand-designed display controller. “Dreaming,” “surprise,” and “contentment” are names for software states. Their emotional legibility requires human evaluation, as distinct from verification that the controller follows its rules (Breazeal, 2003).
 
-Computational models of mirror systems show that units with mirror-like properties — responding similarly whether an action is perceived or produced — emerge without being explicitly engineered, provided perception and production are trained to share one latent representation rather than running through two independent pipelines (Zhu et al., 2025). This is a design constraint we adopted from the outset rather than tested after the fact: an agent's self-produced call and an externally-heard sound are compared in the exact same feature space, with the same extraction function (Section 3.1).
+### 2.5 Bounded memory and retention
 
-### 2.7 Signaling games and the information bottleneck
+The directly tested problem is exemplar eviction from a bounded store. Chuff does not update neural-network parameters, so losing an exemplar through capacity pressure is not the same mechanism as catastrophic interference in a trained network. Continual-learning work nevertheless offers useful memory-management baselines: Chaudhry et al. (2019) investigate small episodic memories and replay, while Zhang et al. (2024) study adaptive replay allocation and representative sample selection. Neither establishes the superiority of Chuff’s particular retention rule.
 
-The classical account of how signals acquire meaning without a pre-existing shared dictionary comes from the philosophy of convention: meaning is *defined* as whatever mapping a repeated state-action-acknowledgement loop stabilises on (Lewis, 1969; Skyrms, 2010). Contemporary multi-agent emergent-communication work operationalises the same idea computationally and additionally shows that channel noise, specifically, pushes agents toward adding *redundancy* to their signals rather than simply shortening them (Rita et al., 2022), in tension with the more familiar claim that languages compress to a point of maximal informativeness for minimal complexity (Zaslavsky, Kemp, Regier, & Tishby, 2018). Chuff's `comms_protocol.md` design document had, before this study, only cited the compression half of this literature; Section 5.1's discussion notes the gap this exposed.
+Chuff’s “recency” policy refreshes whichever stored entry is the nearest neighbour of a query, even when the query is too distant to count as recognition. It is therefore more precisely a recency-of-nearest-match policy than a reward-weighted memory rule. Its benefits and failure modes should be measured against FIFO, random eviction, and reservoir sampling under the same stream.
 
-### 2.8 Program synthesis, library learning, and a structurally adjacent project
+### 2.6 Convention, information, and causal communication
 
-A separate, substantially larger research codebase on this machine, `clebran-arc-agi` (Jones, 2026, unpublished), evolves typed linear-IR programs over a hand-designed grid DSL (Hodel, n.d.) to solve tasks from the Abstraction and Reasoning Corpus, running multiple divergent populations ("lineages") that gossip fragments of working code to each other over a bandwidth-constrained channel. Its headline, extensively controlled result is that a single population mining its own solved programs into a growing reusable abstraction library — in the spirit of DreamCoder's wake-sleep library learning (Ellis et al., 2021) — significantly outperforms every multi-lineage gossip variant at matched compute. Despite the completely different domain (discrete, typed, symbolic program search versus continuous, low-dimensional acoustic signaling), the system shares Chuff's basic shape — independent learners, a constrained communication channel, reinforcement of what works — closely enough that we treat it as a direct source of transferable design ideas and cautions, detailed in Section 6.
+Lewis (1969) and Skyrms (2010) provide the conceptual basis for signalling conventions. A stable mapping is an important observation, but it is not sufficient to demonstrate successful reference. Lowe et al. (2019) distinguish evidence that messages correlate with an agent’s state from evidence that they influence another agent’s behaviour. Rita et al. (2022) further analyse overfitting and co-adaptation in Lewis games, motivating held-out inputs and partner tests.
 
-### 2.9 Acoustic features
+Efficient semantic categorisation and robust transmission also address different objectives. Zaslavsky et al. (2018) study information-bottleneck efficiency in colour naming; Vital, Sardinha, and Melo (2025) directly study redundancy under noisy emergent communication. These are compatible pressures: an economical category code can still require extra transmission redundancy. Chuff presently learns neither variable message length nor a receiver’s referent decoder, so it cannot yet evaluate this trade-off.
 
-All novelty, recognition, and signaling decisions in this work operate on Mel-frequency cepstral coefficients (MFCCs), the standard compact representation of short-time spectral envelope introduced for speech recognition by Davis and Mermelstein (1980). We depart from the textbook recipe in one respect, discussed in Section 3.1: we discard the zeroth coefficient, which encodes overall log-energy rather than spectral shape.
+### 2.7 Acoustic representation and reusable programs
+
+MFCCs have a long history in speech recognition (Davis & Mermelstein, 1980). Their suitability for Chuff’s tones, chirps, and later environmental recordings remains an empirical question. In particular, averaging across frames discards temporal order, making different frequency trajectories potentially similar under the current objective.
+
+DreamCoder (Ellis et al., 2021) and Stitch (Bowers et al., 2023) provide established approaches to learning reusable program libraries. They motivate mining useful structures from evolved call programs, provided usefulness is assessed beyond the training fitness score. Multi-resolution spectrogram objectives, used in waveform generation by Yamamoto, Song, and Kim (2020), offer one candidate evaluation component; they would need validation for this task.
 
 ## 3. System Architecture
 
-### 3.1 The core pipeline
+### 3.1 Perception, memory, and call selection
 
-Chuff's software (in the `python/src/chuff_mpu` package) implements, for a single unit:
+The Python implementation resides in python/src/chuff_mpu. Audio is sampled at 16 kHz; environmental windows are one second. The feature extractor computes 14 MFCCs, discards coefficient zero, and averages each remaining coefficient over frames to produce a 13-dimensional vector.
 
-- **`audio.py`** extracts a 13-dimensional MFCC vector from a raw audio clip via `librosa`. The zeroth coefficient, which is dominated by overall loudness, is discarded; retaining it was found empirically to make every clip look alike under the chosen similarity metric regardless of pitch or timbre, because a change in gain shifts all mel-band log-energies by the same additive constant, which loads almost entirely onto the zeroth DCT coefficient.
-- **`memory.py`** implements `EmbeddingStore`, a bounded-capacity KNN store over these vectors, using cosine distance (not Euclidean) for consistency with the free-energy-style surprise scoring in `dream.py`. Eviction policy is a first-class, swappable parameter (`"fifo"` or `"recency"`; Section 5.5).
-- **`comms.py`** implements `Repertoire`, a single unit's bank of call frequencies plus a per-call, per-context reinforcement-learned weighting (`reinforce()`/`decay()`), gated by a cosine-similarity relevance threshold that determines whether learning for one context is allowed to influence the score for a different one (Section 5.7).
-- **`audio_safety.py`** is a mandatory choke point every synthesised waveform passes through before being treated as "what gets played": non-finite samples are sanitised, clip length is capped, and a soft-knee limiter followed by a hard peak ceiling guarantees no output exceeds a configured safe amplitude, regardless of what produced it. This was treated as a hardware-safety requirement — a literal "never blow the speakers" guardrail — from the project's outset, not added after the fact.
-- **`mood.py`** implements a nine-state mood machine (`Mood`/`MoodState`/`update_mood()`), with an explicit precedence order over its possible triggering signals (Section 5.8).
-- **`dream.py`** implements the predictive loop: `predict_next()` interpolates two stored embeddings to form an expectation, and `surprise_score()` scores the cosine distance between that expectation and whatever is observed next — the Friston (2010) framing, implemented directly (Section 5.8).
+Coefficient zero captures the mean log-mel spectral level under this transform and is gain-sensitive; it is not a separately measured waveform-energy variable. Dropping it reduces one source of level dependence but does not guarantee invariance to noise, clipping, or frequency-dependent channel changes.
 
-Because perception and production both route through the same `extract_mfcc()` function with no separate encoder for each, the shared-representation property discussed in Section 2.6 holds by construction rather than needing to be separately engineered or verified.
+Memory stores at most 2,048 embeddings by default. Novelty is the nearest stored cosine distance,
 
-### 3.2 The synthetic world
+~~~text
+d(x, y) = 1 - (x · y) / (||x|| ||y||).
+~~~
 
-All experiments in this paper run against `sim/world.py`'s `Environment`: a library of six distinct synthetic sounds (four pure tones and two linear-frequency chirps, spanning roughly 350–3200 Hz) presented with small frequency jitter so that repeated presentations of "the same sound" are acoustically similar but not identical, mixed with Gaussian background noise standing in for an untreated room. A later addition, `Environment.transmit()`, adds a fourth-order Butterworth low-pass filter and configurable amplitude attenuation standing in for distance and reverberation, used in the Acoustic Adaptation Hypothesis test (Section 5.4).
+The empty-store score is assigned the sentinel value 1.0; nonzero-vector cosine distance can range from 0 to 2. Recognition uses distance below 0.2, and an environmental observation is added when novelty is at least 0.7. The intermediate region is not automatically stored.
 
-No field recordings, real microphones, or real speakers are used anywhere in this study; this is a stated limitation (Section 8), not an oversight.
+Each agent starts with 12 independently drawn call frequencies between 400 and 3,000 Hz. Calls last 500 ms. The repertoire does not initially choose the acoustically nearest call: it scores each call using a small index preference plus weighted similarities to learned context exemplars. An untrained repertoire therefore favours index zero. Acknowledgement reinforces the selected association at rate 0.1; missing acknowledgement decays it at rate 0.05. A cosine-similarity gate of 0.5 controls generalisation between contexts.
 
-### 3.3 An evaluation harness as a secondary contribution
+Self-generated and external audio use the same MFCC extractor. This makes their acoustic vectors comparable; it does not establish a learned joint motor-perceptual representation or a mirror-neuron mechanism.
 
-Because the memory and repertoire modules are intended to be reimplemented identically on resource-constrained hardware, we built a small, self-contained evaluation harness (`eval/`): a natural-language task prompt describing the required behaviour of `EmbeddingStore` and `Repertoire`, and an automated grader that scores any candidate implementation against a battery of behavioural checks (recognition accuracy over a synthetic sequence of repeated and novel sounds; capacity enforcement; determinism; whether reinforcement and decay behave as specified; whether learning for one context leaks into another). The grader was itself validated against a deliberately unimplemented stub (score 0.0) and a known-correct reference solution (score 1.0) before being trusted, and the same grader continues to score the live production implementation at 1.0 throughout this study, including after every refactor reported below.
+### 3.2 Channel and acknowledgement
 
-## 4. Methods
+The six environmental recipes comprise four tones and two linear chirps spanning approximately 350–3,200 Hz, with 15 Hz synthesis jitter and additive Gaussian noise of configured amplitude 0.03. The channel optionally applies a fourth-order Butterworth low-pass filter, then amplitude scaling (default 0.5) and fresh noise. It does not simulate a room impulse response, reverberant decay, microphone directivity, or calibrated physical distance.
 
-Each experiment below is a standalone script under `python/src/chuff_mpu/sim/`, installed as a `uv`-managed console command, and is independently re-runnable with a specified seed or seed range. Where a result is reported from a single seed, this is stated explicitly and treated as preliminary; the default standard throughout this study, adopted after Section 5.6 below, is a multi-seed sweep (typically 10–40 seeds) with the full range reported, not only the mean. All thresholds (novelty, recognition, reinforcement and decay rates, relevance gate, channel parameters) are named constants in a single `config.py` module, never hard-coded at point of use, so that every reported number is traceable to one place in the codebase.
+A listener acknowledges a call when its MFCC is sufficiently close to something in its separate call-recognition memory. Otherwise it stores that call for possible future recognition. The acknowledgement is a fixed, pre-agreed 800 Hz tone lasting 200 ms, detected by an FFT-peak rule. Thus the repertoire mapping is initially unshared, but timing and the acknowledgement protocol are supplied by the experimenter.
 
-## 5. Experiments and Results
+### 3.3 Output limiting and expressive state
 
-### 5.1 Single-unit listen-remember-repeat loop and the output-safety guardrail
+The ordinary agent response passes through a numerical limiter that sanitises non-finite samples, caps duration at three seconds, and imposes a peak-amplitude ceiling of 0.5. These are waveform constraints, not a calibration of loudspeaker power, acoustic sound-pressure level, or hearing safety. The simulated acknowledgement tones are constructed separately and passed directly to the channel; the claim that every synthesised waveform is limited is therefore too broad.
 
-Before any multi-unit or hypothesis-driven experiment, `sim/run_demo.py` exercises the full single-agent loop: hear a synthesised sound, score its novelty, commit it to memory if sufficiently novel, select the closest-matching call from the repertoire, synthesise and safety-limit that call, and finally "hear" the agent's own played-back call mixed with fresh noise to check self-recognition. Before running any rounds, the script feeds the safety limiter a deliberately pathological signal — fifty times full-scale amplitude, with injected NaN and Inf samples — and asserts that the output is fully finite and within the configured peak-amplitude ceiling. This proved the guardrail holds under conditions well beyond anything the rest of the system would ever produce on its own, rather than merely asserting it by inspection.
+The controller defines nine mood labels and prioritises acknowledgement, embedding mismatch, idle time, and novelty signals in that order. Defining nine labels does not make all nine reachable through the current update function (Section 5.8).
 
-### 5.2 Social gating: does signaling convergence require contingent acknowledgement?
+### 3.4 Behavioural grading
 
-**Hypothesis** (Section 2.2): a receiving unit that acknowledges a sender's call only when it recognises it (a *social* condition) should produce a stable, convergent signaling convention; a receiving unit that never acknowledges, regardless of what it hears (a *passive* condition, holding the acoustic content of what the sender says identical across conditions), should not.
+The evaluation harness checks recognition, capacity, sample-pair availability, call-frequency bounds, deterministic choice when weights are unchanged, reinforcement, context separation, and decay. The original project reports stub and reference-solution checks scoring 0.0 and 1.0. During this revision, the existing grader was rerun against the production modules and returned 1.0.
 
-**Method:** `sim/two_unit_demo.py` implements a one-directional loop — Unit A hears a sound, selects a call, and "speaks" it over a simulated channel; Unit B either acknowledges contingently (`social`) or never (`passive`); A reinforces or decays its own choice based on whether it heard an acknowledgement back.
+This verifies those behavioural checks. It does not validate biological analogies, communicative understanding, statistical claims, hardware fidelity, or every code path.
 
-**Result** (seed 5, 60 rounds): under `social`, the acknowledgement rate rises from 0.90 (first half of the run) to 1.00 (second half), and A's call choice for a given sound converges within approximately five rounds and remains stable thereafter. Under `passive`, the acknowledgement rate is 0.00 throughout by construction, and A's call choice never stabilises, switching nearly every time the same sound recurs even late in a 60-round run. This reproduces the social-gating prediction computationally: holding the acoustic content fixed and varying only whether feedback is contingent on recognition is sufficient, in this minimal system, to produce the entire difference between convergence and perpetual instability.
+## 4. Methods and Evidence Provenance
 
-We note explicitly that this demonstrates the *mechanism* in `comms.py`'s reinforcement/decay design is sufficient to reproduce the qualitative phenomenon reported in real infants and zebra finches; it is not evidence about the mechanism operating in those organisms.
+Each comparison uses a script under python/src/chuff_mpu/sim and a console entry in python/pyproject.toml. Important defaults are in config.py, but simulation-specific parameters and overrides also appear in scripts and command-line arguments. A reproducible experiment therefore needs the complete invocation and software revision, not config.py alone.
 
-### 5.3 Repertoire convergence dynamics
+This is an exploratory pilot with heterogeneous sampling. Section 5.2 uses one seed; the babbling check uses 20 paired seeds and six labels; the original channel summary uses 15 seeds; memory and grounding summaries use ten seeds; the original mood summary describes five runs. Repeated labels within a seed share an agent initialisation and are not independent replicates. Seed-level paired differences are the appropriate unit for uncertainty estimates in those comparisons.
 
-The same run reported in Section 5.2 directly answers a related but distinct question raised by signaling-game theory (Section 2.7): starting from a randomised repertoire with no shared dictionary, how quickly does a stable convention emerge under mutual reinforcement? For this specific acoustic world, channel, and parameterisation, convergence to a stable per-sound call choice took approximately five rounds and held for the remainder of a 60-round run — a concrete, re-runnable number for this system, not a general claim about signaling games.
+**Numerical provenance.** During the 14 October 2026 review, the grader, babbling comparison, and seed-5 acknowledgement summaries were rerun against code revision 77cbcb8e42b9e138b9efc3e510f42245f331b518. Other numerical aggregates below are retained from the original pilot manuscript and identified as such; they were not independently recomputed in this revision. Raw per-seed outputs and a complete experiment manifest are not supplied with those aggregates, so their precision, variability, and reproduction remain to be audited.
 
-### 5.4 The Acoustic Adaptation Hypothesis
+No confidence intervals, equivalence tests, or preregistered convergence criteria are available for the historical comparisons. We consequently report descriptive differences rather than statistical significance, proof of a null effect, or decisive mechanism identification. Agarwal et al. (2021) motivate this attention to uncertainty in evaluations based on small numbers of learning runs.
 
-**Hypothesis** (Section 2.3): a band-limited, lossy channel should favour lower-frequency calls among those that survive reinforcement.
+A further reproducibility limitation is that EmbeddingStore.sample_pair() constructs a fresh unseeded random generator. Passing a seed to the mood experiment does not fully determine its interpolation samples. This matters specifically for replaying mood/dream trajectories.
 
-**Method:** `Environment.transmit()` applies a fourth-order Butterworth low-pass filter before mixing in channel noise; `two_unit_demo.py --cutoff` runs the full two-unit loop through it, and `--sweep-seeds` averages a no-cutoff-versus-900 Hz-cutoff comparison over many seeds.
+## 5. Exploratory Results
 
-**Result** (15 seeds, 60 rounds each): with no cutoff, the mean frequency of reinforced (successfully acknowledged) calls across seeds was 1903 Hz, with a second-half acknowledgement rate of 0.99; with a 900 Hz cutoff, the mean frequency dropped to 1483 Hz, with the acknowledgement rate also falling to 0.86. A band-limited channel measurably pushes the surviving repertoire toward lower frequencies *and* makes overall convergence less reliable — both consistent with the Acoustic Adaptation Hypothesis in this toy channel model.
+### 5.1 Integrated loop and numerical output constraints
 
-Two methodological obstacles were encountered and are reported because they are the actual lesson of this experiment. First, a single one-pole low-pass filter (6 dB/octave roll-off) was measured directly and found far too gentle — even a 3000 Hz tone through a 900 Hz cutoff lost only around 10 dB, nowhere near enough to sink it below the ambient noise floor — and was replaced with a fourth-order Butterworth filter (roughly −46 dB at the same frequency/cutoff pair) only after this direct measurement, not by assumption. Second, the very first filtered run showed no effect whatsoever, traced to an unrelated confound: `Repertoire`'s constructor had been sorting its randomly generated call frequencies, so the lowest-index call was always also the lowest-frequency call, and the untrained tie-break that favours low indices was therefore *already* maximally biased toward low frequencies independent of any channel property. Removing the sort (and documenting why, in the source) was necessary before the intended effect could be observed at all.
+The single-agent demonstration runs feature extraction, novelty scoring, memory insertion, call synthesis, output limiting, and noisy self-recognition. Its limiter check supplies a high-amplitude input containing NaN and infinity, then asserts finite output within the configured ceiling. This is a useful integration check for the tested input. It does not prove physical speaker safety or universal robustness to every malformed input.
 
-### 5.5 Memory retention policy: FIFO versus recency-weighted eviction
+### 5.2 Acknowledgement availability and call-selection dynamics
 
-**Hypothesis** (Section 2.5): reinforcement-weighted retention should better protect a rarely-but-regularly-recurring memory from capacity pressure than naive first-in-first-out eviction.
+**Question.** Does call selection behave differently when recognition-triggered acknowledgement is available?
 
-**Method:** `EmbeddingStore` was extended with a swappable eviction policy (`"fifo"`, unchanged default behaviour, versus `"recency"`, which evicts whichever entry has gone longest without being any query's nearest neighbour, whether or not that query resulted in a fresh addition). `sim/memory_eviction_experiment.py` presents a fixed rare sound, revisited at a regular interval, competing against a stream of well-separated one-off filler sounds for a small capacity, at three capacity-to-revisit-interval ratios, each averaged over ten seeds.
+**Design.** In two_unit_demo.py, A hears an environmental sound and emits a call. B acknowledges a recognised call; A then reinforces or decays its context-call association. In the “passive” branch, B’s recognition/learning routine is bypassed and acknowledgement is forced absent.
 
-**Result:**
+**Verified result.** Rerunning seed 5 for 60 rounds with attenuation 0.5 and no filtering yielded an acknowledgement rate of 28/30 (0.933) in the first half and 30/30 (1.000) in the second. The original manuscript’s first-half value of 0.90 is replaced by this reproducible result. The passive condition yielded zero acknowledgements, as specified by its implementation.
 
-| capacity : revisit-gap ratio | FIFO still-recognised-at-end | Recency still-recognised-at-end |
-|---|---|---|
-| 3 : 10 (severe churn) | 90% of seeds | 100% of seeds |
-| 4 : 6 (moderate churn) | 100% of seeds | 100% of seeds, but final novelty 0.005 vs. 0.000, and revisit-recognition 57% vs. 71% |
-| 6 : 8 (mild churn) | 80% of seeds | 100% of seeds, revisit-recognition 78% vs. 89% |
+The original account also describes rapid stabilisation in the contingent condition and continuing turnover in the passive condition. A formal time-to-convergence endpoint was not specified, so the earlier estimate of “approximately five rounds” is not retained as an established measurement.
 
-Recency-weighted retention outperforms FIFO on every metric at every churn ratio tested, but the margin of improvement shrinks considerably as churn intensifies: under the most severe ratio tested, even recency-weighting cannot fully protect a rarely-revisited memory, because every capacity slot is contested within a handful of filler additions regardless of retention policy. We report this as "better, but not immune" rather than as an unqualified win, since the qualification is itself informative about where reinforcement-weighted retention's benefit saturates.
+**Interpretation.** This is a check of reinforcement with versus without feedback. It does not isolate contingency from feedback amount, hold realised call sequences fixed, or keep listener learning equivalent. Branch-dependent acknowledgement transmissions also consume random draws from the shared environment generator, so equal seeds do not guarantee matched later environmental sequences across conditions. A yoked-feedback comparison and separated random streams are needed before drawing a social-contingency conclusion.
 
-### 5.6 Grounding between two independently-learning units — a corrected finding
+### 5.3 Babbling as an explicit self-reinforcement warm start
 
-**Question** (Section 2.7): do two independently-learning units converge not merely on *a* stable convention each, but on conventions that *discriminate between different sounds* — one mutually-recognised pairing per sound, rather than all sounds collapsing onto one pairing?
+**Question.** Does practising and self-reinforcing each call alter the first response to an external sound?
 
-**Method:** `sim/grounding_demo.py` extends the one-directional design of Section 5.2 to be fully symmetric: both units are complete agents, each with independent memory and repertoire, each independently hearing every presented sound through its own simulated microphone position, each speaking and acknowledging in both directions, each reinforcing or decaying its own call choice based on whether it was acknowledged. After a run, for each of the six sound categories, we record each unit's majority call choice over the final 30% of that sound's occurrences (its "purity"), and count how many *distinct* (A's call, B's call) pairs exist across all six sounds.
+**Design.** babbling_experiment.py compares fresh agents with the same initial repertoire, with or without one babbling pass. That pass reinforces each call against its clean MFCC signature at rate 0.05. For each of six environmental labels and 20 seeds, the experiment measures absolute error between the chosen call frequency and a target characteristic frequency: the tone frequency or the midpoint of a chirp.
 
-**Initial result and its correction:** the first three runs attempted (two seeds, plus one run with a 900 Hz channel cutoff) all happened to produce the same two-way split of the six sounds — the two highest-frequency sounds sharing one convention, the remaining four sharing another — and were reported, provisionally, as evidence of a fixed, acoustically-coherent partition. A subsequent ten-seed sweep (seeds 0–9, 150 rounds each) showed this provisional claim was wrong. What is actually stable across all ten seeds is:
+**Verified result.** The selected call changed in 89/120 seed-label cases (74%). Mean absolute frequency error fell from 1,021 Hz without babbling to 251 Hz with babbling, a descriptive reduction of 770 Hz.
 
-- exactly two distinct (A-call, B-call) pairs emerge, every time, with 100% purity on every sound in every seed — no run ever left a sound undecided;
-- the majority pairing, capturing four or five of the six sounds, is in every seed the pair of calls at index zero for both units — `Repertoire`'s untrained tie-break structurally favours the lowest call index before any learning occurs, and this structural edge is never overcome for most sounds;
-- but *which* one or two sounds break away from that majority pairing varies by seed, with no consistent acoustic theme across the different minority groupings observed (one seed's minority pairing was the two highest-frequency sounds; another's was the two lowest-frequency sounds; a third's was a single mid-frequency tone, alone).
+**Interpretation.** Self-reinforcement supplies useful acoustic anchors compared with the untrained index preference. The 120 cases form 20 seed blocks, not 120 independent agent initialisations. The outcome is a frequency-proximity proxy, especially limited for chirps; it is not an imitation judgement or a measure of subsequent learning efficiency. The design also gives one condition extra reinforcement, so it cannot attribute the benefit specifically to producing sound rather than receiving equivalent feature anchors.
 
-We revise our interpretation accordingly: the system exhibits coarse-but-genuine discrimination (two distinct, perfectly stable conventions, not indiscriminate acknowledgement of anything), but the mechanism is presentation-order lock-in around a structural tie-break, not a category boundary determined by the sounds' own acoustic properties. We record this correction explicitly, including the now-superseded initial claim, because the methodological lesson — that two or three runs can look like a fixed pattern purely by chance, and that the correct response on noticing this is to run a wider sweep rather than to retain the more publishable-sounding first draft — is at least as important as the corrected result itself.
+### 5.4 Filtering and the frequency of acknowledged calls
 
-### 5.7 Testing the mechanism: a relevance-gate hypothesis, refuted
+**Question.** Does low-pass filtering change which calls receive acknowledgement?
 
-Section 5.6's corrected account proposes two candidate mechanisms for the coarse, majority-pairing-dominated discrimination observed: the relevance gate that determines whether learning for one acoustic context can influence scoring for another, and the index-based default tie-break that resolves ties when no call yet has a relevant exemplar for a given context.
+**Original pilot summary.** Across 15 seeds and 60 rounds per condition, mean frequency among acknowledged calls was reported as 1,903 Hz without filtering and 1,483 Hz with a 900 Hz cutoff, a difference of 420 Hz. Mean second-half acknowledgement rates were 0.99 and 0.86, respectively. Per-seed differences and intervals were not preserved in the manuscript.
 
-**Hypothesis:** tightening the relevance gate — raising the cosine-similarity threshold a learned exemplar must clear before it is allowed to generalise to a new context — should reduce how often one call's reinforcement for one sound "leaks" into dominating a different sound, and should therefore increase the number of distinct conventions that emerge.
+These summaries are consistent with preferential transmission of lower frequencies in this channel. They do not distinguish learned adaptation from measurement selection: even a fixed, nonlearning policy could have a lower mean frequency *among acknowledged calls* after high-frequency attenuation. Filtering affects both the outbound calls and the 800 Hz return acknowledgement. Separate forward- and return-channel manipulations are needed.
 
-**Method:** the relevance-gate and same-context-distance thresholds, previously hard-coded private constants in `comms.py`, were relocated to the project's single configuration module and exposed as an optional, backward-compatible constructor parameter on `Repertoire` (verified not to change default behaviour against the evaluation harness of Section 3.3, which continued to score 1.0). `grounding_demo.py --sweep-thresholds` then repeated the Section 5.6 experiment at relevance thresholds of 0.3, 0.5 (the original default), 0.7, and 0.9 — the last being near-impossible for an unrelated context to clear — across ten seeds each.
+The original development also exposed an index-frequency confound: sorting the initial repertoire placed low frequencies at preferred indices. Removing that sort prevents this specific confound, although index preference remains. Filter strength was adjusted during exploration, so the final comparison is not an independent confirmatory test of a previously fixed channel model.
 
-**Result:**
+### 5.5 Memory retention under capacity pressure
 
-| relevance threshold | mean distinct pairs (of 6 possible) | mean purity |
-|---|---|---|
+**Question.** Does recency-of-nearest-match eviction preserve recurring inputs better than FIFO?
+
+The experiment interleaves a recurring 1,500 Hz tone with filler tones, adding observations only above the novelty threshold. The original ten-seed summaries are:
+
+| Capacity : revisit gap | FIFO: recognised at end | Recency: recognised at end | Additional reported summary |
+|---|---:|---:|---|
+| 3 : 10 | 90% | 100% | No revisit-recognition estimate supplied |
+| 4 : 6 | 100% | 100% | Revisit recognition 57% versus 71%; final novelty 0.005 versus 0.000 |
+| 6 : 8 | 80% | 100% | Revisit recognition 78% versus 89% |
+
+The direction favours recency on several reported measures, with ties on others. Ten seeds give coarse endpoint percentages, and these summaries do not establish statistical reliability or how the advantage changes monotonically with churn.
+
+Several implementation details limit interpretation. The same rare-tone embedding is reused at each revisit; a forgotten exemplar can be re-added; and an acoustically similar filler can also yield recognition. End-of-run recognition therefore does not measure uninterrupted survival of the original memory. Filler frequencies are selected from a shuffled grid, but the experiment does not verify that all fillers are separated in MFCC space. A stronger retention experiment should track exemplar identity and evaluate fresh noisy instances at controlled times after a revisit.
+
+### 5.6 Stable call pairings and the limits of “grounding”
+
+Both agents in grounding_demo.py hear the same environmental event through independently added noise. Each emits a call, while a separate listener memory on the other side decides whether that call is familiar. After 150 rounds, the analysis selects each agent’s majority call for each label in the last 30% of that label’s occurrences. “Purity” is the fraction of that tail using the majority call; the pair-count metric counts distinct pairs of majority indices across labels.
+
+**Original pilot summary.** Ten seeds (0–9) reportedly produced two distinct pairs across six labels and 100% tail purity. Most labels used index zero on both agents. Which labels occupied the minority pairing varied by seed. An initial claim that the split consistently followed acoustic frequency was withdrawn after this wider sweep.
+
+This supports stable, coarse, path-dependent call selection in the sampled runs. It does not identify the causal mechanism conclusively or demonstrate a shared referential code. Both agents already observe the putative referent; their call-recognition memories do not decode environmental labels; and acknowledgement rewards familiarity rather than correct reference. Moreover, an (A-call, B-call) pair is an analyst’s joint summary, not a single message shown to support receiver discrimination. Tail purity also ignores earlier instability and depends on the number of observations per label.
+
+### 5.7 Relevance-threshold sensitivity
+
+**Prediction.** Raising the cross-context similarity gate would reduce generalisation and increase the number of distinct call pairs.
+
+**Original pilot summary.** Four thresholds were evaluated across ten seeds each:
+
+| Similarity threshold | Mean distinct pairs across six labels | Mean tail purity |
+|---|---:|---:|
 | 0.30 | 2.0 | 100% |
 | 0.50 | 2.0 | 100% |
 | 0.70 | 2.1 | 100% |
 | 0.90 | 2.0 | 100% |
 
-The hypothesis is refuted cleanly: there is no detectable effect of the relevance threshold on the number of distinct conventions that emerge, across a four-fold sweep spanning an easily-cleared gate to a near-unreachable one. We report this as a negative result rather than silently abandoning the question once the first mechanistic guess failed to pan out, since a clean refutation is itself informative: it rules out the relevance gate and implicates the index-based tie-break as the dominant mechanism instead — even an extremely strict gate still leaves the lowest-index call winning any brand-new context by default, because without a qualifying exemplar for *any* call, the contest is decided purely by the tie-break, which is structurally insensitive to the gate's strictness. A correctly-targeted follow-up — replacing the index-ordered tie-break with a fixed-at-construction random one and re-running the same sweep — is proposed as future work (Section 9).
+This range is 0.3–0.9, a threefold endpoint ratio, not four orders of magnitude. The predicted monotonic increase is absent in the reported means. These results do not demonstrate equivalence or rule out effects on other outcomes, longer runs, or different sound distributions.
 
-### 5.8 Predictive coding and mood: the dream loop, exercised under real idle time
+The index preference is a plausible alternative contributor because it acts before any relevant exemplar exists. A controlled intervention is still required to establish its causal contribution. Randomising one fixed global index order alone would retain a globally preferred call; it may simply relabel the dominant choice.
 
-**Hypothesis** (Section 2.4): an agent that forms a prediction by interpolating remembered experiences, and whose affective state depends on whether reality subsequently matches that prediction, should produce a surprise response that tracks genuine prediction error rather than a scripted event.
+### 5.8 Embedding mismatch and mood reachability
 
-**Method:** `mood.py` implements a nine-state mood machine with an explicit precedence order (an acknowledgement just received takes priority over a concluded dream comparison, which takes priority over idle-time states, which take priority over the latest novelty score, which in the absence of any new signal simply holds the current state). `dream.py` implements interpolation and cosine-distance surprise scoring directly from Friston's (2010) framing. Because every other experiment in this study presents a sound on every simulated tick, idle time never genuinely accumulates in those settings; `sim/mood_demo.py` instead presents a sound only with low probability per tick, so that idle time crosses the dreaming threshold under realistic, unscripted conditions, at which point the agent occasionally interpolates a prediction and compares it against whatever sound the world presents next.
+The mood demonstration uses sparse environmental presentations to accumulate simulated idle time. When the idle threshold is reached and at least two memories exist, it may interpolate two embeddings and immediately sample an additional synthetic sound for comparison. This wake observation is explicitly generated by the demonstration; it is not necessarily the next independently scheduled environmental event.
 
-**Result** (five seeds, 300 ticks each, sound probability 0.03 so that idle gaps reliably cross the threshold): every one of the nine mood states fires from a genuine triggering condition across the five seeds, with one seed alone producing `contentment`, `new_sound_learned`, `song_recognised`, `dreaming`, and `surprise` within a single run. The dream loop fired between two and six times per 300-tick run depending on seed, and whether waking from a dream produced `surprise` or `contentment` varied run to run, exactly as it should if the mechanism is genuinely sensitive to whether the interpolated prediction happens to resemble the next real observation, rather than defaulting to one outcome. This is the specific test of whether the free-energy operationalisation "earns its name" mechanically: it does, in the sense that it produces a state tracking actual prediction error from real audio. Whether the resulting state changes would be *read* by a human observer as "surprise" is a separate, harder, and still-open question (Section 9).
+The original five-run account reports two to six interpolation events per 300 ticks at sound probability 0.03, with different subsequent “surprise” and “contentment” outputs. These event counts are not fully seed-reproducible because of unseeded memory-pair sampling.
 
-### 5.9 A compositional call-construction DSL and its fitness-metric degeneracy
+The original claim that all nine mood labels were exercised is inconsistent with the current implementation. update_mood() never returns STRONG_NOVELTY: high novelty instead returns NEW_SOUND_LEARNED. The demonstration never passes ack_received=True, so it cannot emit ACKNOWLEDGEMENT. Thus it cannot exercise all nine labels, regardless of seed.
 
-Motivated by the structural comparison with `clebran-arc-agi` (Section 6), we built `sim/call_dsl.py`: a `CallProgram` is a short, typed program — one generator operation (a pure tone or a linear chirp) optionally followed by up to three modifier operations (amplitude modulation, an attack/decay envelope) — with mutation operators (perturb a constant, swap a modifier, grow, delete) and a crossover operator mirroring, at a much smaller scale, the genetic-programming vocabulary `clebran-arc-agi` uses over its grid-program representation. `sim/dsl_evolution_demo.py` evolves a population of such programs toward a target sound via elitism and mutation, using cosine similarity between a candidate's synthesised MFCC and the target's as fitness.
+The defensible result is that the integration supports idle-triggered embedding comparison and corresponding state transitions. It does not establish forecasting skill, subjective affect, or a free-energy implementation. Those questions require distinct models and evaluations.
 
-**Result:** against both a pure-tone target and a wide-chirp target, evolution reliably reaches 0.97–0.98 fitness within fifteen to twenty generations — but does not reliably recover the target's own generator type. The tone target was matched, in one run, by a chirp of near-zero bandwidth (functionally indistinguishable from a tone, but structurally a different primitive); the chirp target was matched by a tone layered with three amplitude-modulation operations approximating the chirp's bulk spectral envelope. We interpret this as a genuine degeneracy in the fitness metric rather than a search failure: cosine similarity over MFCCs with the zeroth coefficient dropped (Section 3.1) is, by design, insensitive to overall energy and evidently also fails to discriminate cleanly between "the right spectral shape via the intended primitive" and "a structurally different shortcut that happens to produce a similar bulk envelope." This directly blocks the natural next step — mining recurring structural motifs across many evolved programs, in the spirit of `clebran-arc-agi`'s library learning (Section 6.2) — since mining programs whose apparent success is itself an artifact of a permissive fitness metric would recover artifacts, not genuinely reusable acoustic building blocks. We report this as a finding rather than a failure to be quietly fixed before publication, since the degeneracy is informative about the limits of the chosen similarity metric.
+### 5.9 Evolved call programs and objective ambiguity
 
-## 6. Structural Comparison with `clebran-arc-agi`
+The call DSL combines a tone or chirp generator with optional amplitude modulation and envelopes. Evolution uses elitism, mutation, and crossover to optimise cosine similarity to a target’s time-averaged MFCC.
 
-`clebran-arc-agi` is a separate, substantially larger research codebase on the same machine, evolving typed programs to solve tasks from the Abstraction and Reasoning Corpus (ARC-AGI). Despite operating in a completely different domain — large, discrete, typed symbolic program search against held-out test grids, versus Chuff's low-dimensional, continuous, "close enough in feature space" acoustic signaling — its basic shape (independent learners, a constrained communication channel, reinforcement of what works) is close enough to Chuff's own comms track that we treat it as a direct source of transferable ideas, rather than only a thematically-related citation.
+**Original pilot observations.** Tone and chirp examples reportedly reached fitness around 0.97–0.98 within roughly 15–20 generations, sometimes using a different generator type from the target. The manuscript does not provide a sufficient seed-level summary to support the stronger claim that this happens reliably.
 
-### 6.1 A reusable channel design
+A near-zero-bandwidth chirp may be acoustically equivalent to a tone despite a different syntax. Generator mismatch alone is therefore not failure. Conversely, a modulated tone that matches a chirp’s averaged spectrum may miss its temporal trajectory. This is an identifiability and objective-validity problem to investigate, rather than a demonstrated universal degeneracy. Acoustic fidelity, perceptual similarity, and recovery of the original program must be evaluated separately.
 
-`clebran`'s communication channel is a blackboard onto which lineages publish scored messages each epoch; a channel variant determines which messages are admitted, capping bandwidth on two independent axes at once — message *complexity* (not raw byte count) and message *count* per sender per epoch — and retaining only the highest-scoring messages that fit within both caps. Chuff's current acknowledgement signal (a single fixed tone, carrying one bit of information, at a channel capacity of one message) is the degenerate case of this design. Should Chuff's comms track ever need a richer acknowledgement payload, or more than two communicating units, this admission-by-score-under-dual-caps pattern is the one to adopt rather than reinvent.
+## 6. Relation to the Unpublished clebran-arc-agi Project
 
-### 6.2 A caution, not just an opportunity
+The original manuscript discusses clebran-arc-agi (Jones, 2026), an unpublished program-synthesis project described as using multiple search populations, constrained sharing, and reusable abstractions. That comparison is useful as a source of design hypotheses, but its experiments and numerical evidence are not presented or independently verified here. We therefore do not use its claimed performance advantage for a single learner as an established result supporting Chuff.
 
-`clebran`'s central, heavily-controlled finding is that a single population mining its own solved programs into a growing, reusable abstraction library significantly outperforms every multi-population gossip variant at matched computational budget — by a wide margin, and consistently across many experimental controls designed specifically to make this null result trustworthy rather than an artifact of insufficient baselines. The authors' own framing of this result is that communication, in their system, is "a transport mechanism, not a discovery mechanism": sharing what one learner already knows does not substitute for a mechanism by which an individual learner discovers something new.
+Published library-learning work provides the firmer methodological foundation (Ellis et al., 2021; Bowers et al., 2023). The relevant question is whether reusable call motifs improve held-out acoustic tasks at matched search cost. Comparing one learner with multiple communicating learners would additionally require matching total evaluations, memory, interaction opportunities, and any library-building budget. A successful two-agent interaction alone would not answer that efficiency question.
 
-This is directly relevant to how Chuff's planned two-unit experiment should be framed and interpreted. It would be a mistake to present a successful two-unit signaling demonstration as evidence that communication makes either unit *learn better* than a single, well-tuned unit mining its own memory would — the present study provides no such evidence, and `clebran`'s result is a specific, hard-won caution against assuming it. What Section 5.6's grounding experiment *does* show is that a stable, mutually-recognised, partially-discriminating convention emerges between two independent learners from reinforcement alone — a demonstration of signaling-game convention formation (Section 2.7), not of comparative learning efficiency. We adopt this framing going forward rather than retrofit a stronger claim the evidence does not support.
-
-### 6.3 What does not transfer
-
-`clebran`'s search operates over 160 hand-designed, typed primitives and a population-management machinery (hall-of-fame restarts, per-task random-number substreams, progress-weighted task scheduling) built specifically to close gaps at the scale and discreteness of exact symbolic program search. None of this machinery is motivated at Chuff's current scale, where the search space is a handful of continuous acoustic parameters and success is a graded similarity score rather than exact correctness against held-out tests. We note this explicitly to avoid the common failure mode of importing structural complexity from an adjacent project because it is available, rather than because the present problem needs it.
+A scored, bandwidth-limited message admission scheme from the adjacent project could be explored if Chuff expands to larger populations. It is a design option, not yet an empirically justified choice for this acoustic task. The current presence/absence acknowledgement is a binary feedback variable within an agreed listening window; its physical channel capacity has not been measured.
 
 ## 7. Discussion
 
-Three methodological patterns recur across this study strongly enough to generalise beyond any one experiment. First, single-seed results mislead in exactly the way Section 5.6 demonstrates: a result that looks clean and even thematically satisfying (an "acoustically coherent" split) can simply be a coincidence of a small sample, and the correct response on noticing a clean-looking pattern is to widen the sweep before trusting it, not to stop at the first satisfying answer. Second, untested code paths hide real bugs regardless of how simple they look: a latent crash in acknowledgement-tone detection, present since the very first version of the two-unit demonstration, was only discovered once the logging flag that would have exercised it was finally wired up to a production code path and actually run — a flag nobody runs is a flag nobody has tested. Third, a clean negative result (Section 5.7) is worth exactly as much space in a write-up as a clean positive one (Section 5.2, 5.4, 5.5): reporting a refuted hypothesis plainly, and using it to redirect toward the mechanism the evidence actually implicates, is the same scientific move in both directions.
+The strongest present conclusions concern implementation and experimental design. Self-reinforcement changes first-response selection, acknowledgement activates the intended reinforcement loop, and the existing grader confirms its specified memory and repertoire behaviours. The historical sweeps suggest useful patterns to reproduce, particularly coarse call-selection stability and a possible retention advantage.
 
-Taken together, the eight experiments demonstrate that a very small system — a KNN novelty store, a reinforcement-learned repertoire, a predictive dream loop, and a mood machine, none individually sophisticated — is sufficient to reproduce several specific, named phenomena from the vocal-learning and signaling-game literatures (social gating, acoustic adaptation, convention formation under reinforcement) as emergent consequences of the system's existing mechanisms, without any of those phenomena having been separately engineered in. The two negative results are, if anything, more informative about the system's actual mechanism than the positive ones, since they rule out an initially plausible explanation in favour of a more specific and more surprising one (an untrained tie-break, not a relevance gate, drives coarse grounding; a permissive similarity metric, not a search failure, prevents clean motif discovery).
+The review also exposes how evaluation can overstate the phenomenon being tested. Familiarity recognition is not environmental decoding; stability is not proof of causal communication; a mismatch score is not probabilistic surprise; and a syntactically different program need not be acoustically wrong. In each case, a clearer operational definition leads to a more informative next experiment.
+
+The corrected frequency-partition claim remains instructive. A few seeds appeared to support an appealing acoustic explanation that a larger sample did not sustain. The threshold sweep then failed to support the proposed remedy, but did not causally establish a replacement explanation. Negative or inconsistent evidence should constrain the claim at precisely the level measured.
+
+Chuff is therefore best positioned as an inspectable platform for developing and testing small acoustic-agent mechanisms. Its connection to vocal learning, signalling theory, and robot affect is a source of experimental questions, rather than evidence that those broader phenomena have already been reproduced.
 
 ## 8. Limitations
 
-This study is entirely in silico. Every sound is a synthesised tone, chirp, or Gaussian noise sample; no field recording, real microphone, or real speaker was used anywhere. The six-sound, twelve-call-repertoire scale used throughout is small by design, to keep experiments fast and interpretable, and none of the reported effect sizes should be assumed to hold at a materially larger scale without re-running the relevant sweep. The acoustic channel model (a single fourth-order Butterworth filter plus Gaussian noise) is a deliberately crude stand-in for real room acoustics and real distance attenuation. The two-unit experiments in this paper are entirely symmetric, synchronous simulations; no asynchronous, physically-separated, or genuinely noisy real-world two-unit experiment has yet been attempted. Finally, MFCC-with-cosine-distance was adopted as a consistent convention throughout for its simplicity and its established role in speech processing (Davis & Mermelstein, 1980), not because it was independently verified to be the uniquely correct representation or metric for this problem — Section 5.9's fitness-metric degeneracy is itself partial evidence that it is not without real limitations.
+All inputs and transmissions are synthetic. The sound inventory, fixed repertoire, synchronous schedule, Gaussian noise, and low-pass model leave substantial gaps to real acoustic environments. Both agents observe each event, and timing plus the acknowledgement convention are pre-agreed. No human participant study or physical audio experiment is reported.
 
-## 9. Next Steps
+The study is exploratory, with development-driven changes and incomplete historical run provenance. Several summaries lack exact invocations, per-seed outputs, and uncertainty estimates. The grader covers a limited behavioural contract. Randomness is not fully controlled in the interpolation routine, and common random seeds do not guarantee matched experience across feedback branches.
 
-The following items follow directly and specifically from the results reported above, each with a stated rationale rather than as a generic to-do list:
+Feature averaging removes temporal order; call familiarity can be rewarded independently of referential usefulness; memory recognition can reflect relearning or feature collisions; and mood labels encode designer choices. None of the observed effects establishes subjective feeling, biological learning mechanisms, or superior sample efficiency from communication. These limitations define the next research stage.
 
-1. **Replace the index-ordered tie-break with a randomised, fixed-at-construction one** and re-run Section 5.6's ten-seed grounding sweep, now that Section 5.7 has ruled out the relevance gate as the mechanism and implicated the tie-break specifically.
-2. **Sharpen or diversify the call-DSL fitness metric** — for instance, requiring a high score against several distinct contexts rather than cosine similarity to a single target — before attempting the Stitch-style motif-mining step that Section 5.9 identified as currently blocked by fitness-metric degeneracy.
-3. **Make call duration and bandwidth themselves learnable parameters**, rather than only which fixed-shape call is selected, which is a prerequisite for testing the compression-versus-redundancy tension identified in Section 2.7 (Rita et al., 2022, versus Zaslavsky et al., 2018) at all.
-4. **Port the validated memory and repertoire design to the ESP32-S3 track in C**, reusing the same cosine-distance convention validated by the evaluation harness (Section 3.3), and complete the still-unimplemented I2S microphone capture and FFT/MFCC pipeline on that hardware, which this entire simulation study was built to prepare for rather than substitute for.
-5. **Attempt a genuinely asynchronous, physically-separated two-unit experiment** once a second unit exists, explicitly as a test of whether the coarse, path-dependent grounding reported in Section 5.6 reproduces outside a synchronous, symmetric simulation — and explicitly *not* framed, per Section 6.2's caution, as a test of whether communication improves either unit's learning.
-6. **Evaluate whether a human observer reads the mood machine's state transitions as emotionally legible**, which Section 5.8 identified as a separate and harder bar than mechanical correctness.
-7. **Run a real coding model against the evaluation harness** described in Section 3.3, to test whether an external, independently-written implementation of the memory and repertoire modules satisfies the same behavioural specification our own implementation does.
+## 9. Future Work
 
-## Acknowledgments
+### 9.1 Establish a reproducible baseline before enlarging the model
 
-This work was carried out as a human–AI collaboration: the experimental design, implementation, simulation runs, and this manuscript were produced in direct, iterative conversation between the author and Claude (Sonnet 5), which served throughout as a coding and research assistant with direct tool access to the codebase, search, and the experiment outputs reported here. We disclose this plainly rather than note it only in passing, consistent with this paper's broader commitment to reporting methodology accurately, including where it was unglamorous.
+The immediate priority is an immutable experiment manifest: code revision, dependency lockfile, complete arguments, independent random streams for environment, agents, channels, feedback and memory sampling, and raw per-round outcomes. Reproduce the historical channel, memory, grounding, threshold and mood summaries before treating them as a reference benchmark. Report all selected seeds, including runs with no acknowledgement, and account for missing frequency means in those runs.
+
+For new comparisons, choose primary outcomes and practically meaningful effect sizes before running the final evaluation. Estimate uncertainty from independent seed blocks, with paired comparisons where experience is genuinely matched. Determine replication counts from pilot variability and desired precision; a nominal number of seeds is not by itself a reliability guarantee (Agarwal et al., 2021).
+
+### 9.2 Isolate contingency and the effect of self-experience
+
+Use contingent, yoked, randomly timed rate-matched, and absent-feedback conditions. Keep listener exposure and updates identical, and replay the same environmental inputs and channel-noise sequences. Measure call-switch rates, time to a predefined stability criterion, and held-out performance rather than acknowledgement rate alone.
+
+The contingency prediction is that feedback tied to the current action improves these outcomes beyond feedback with the same rate and acoustic content. If yoked feedback performs similarly, the result supports feedback availability rather than contingency. This design follows the logic of the primary infant work without claiming biological equivalence (Goldstein et al., 2003).
+
+For babbling, compare active self-production with playback of the same calls, feature-anchor insertion without playback, and equal-budget random reinforcement. Compare against a simple nearest-call acoustic baseline as well as the current index-biased cold start. A production-specific explanation requires benefits beyond matched anchors and extra updates; otherwise the simpler explanation is representational initialisation.
+
+### 9.3 Test whether a receiver actually uses the signal
+
+Introduce a referential task in which only the sender observes the environmental event. The receiver must choose a label or task action using the transmitted waveform, with neither shared event timing that reveals the answer nor a direct copy of the environmental sound. Reward correct decisions rather than familiarity.
+
+Compare learned messages with silence, shuffled messages, fixed signals, and a designed frequency code. At evaluation, replace or permute messages while holding the receiver’s other inputs fixed. Evidence for functional communication requires the correct messages to improve held-out receiver decisions and interventions to change those decisions in the predicted direction (Lowe et al., 2019). A balanced six-class decoder has chance accuracy 1/6; also report the empirical majority-class baseline when event frequencies differ.
+
+Evaluate novel acoustic instances, new noise levels, and unfamiliar partners. Measure receiver accuracy, confusion matrices, message-use entropy, and state-message dependence alongside causal interventions. Success with a familiar partner alone can reflect co-adaptation rather than a general code (Rita et al., 2022).
+
+### 9.4 Identify the mechanism behind coarse partitions
+
+Cross tie-breaking rules with relevance thresholds: the current index preference, a fixed random permutation, random choice among tied calls on each decision, and controlled exploration. Permute presentation order while holding the event multiset and repertoire frequencies fixed. Separate any effect of call frequency from the ranking used to resolve untrained choices.
+
+A fixed permutation tests whether a preferred index merely changes identity; random tie selection and exploration test whether a universal initial favourite contributes to collapse. The causal prediction is a change in pair counts, category coverage, and receiver accuracy when the hypothesised mechanism is removed. If only the identity of the majority call changes, the proposed remedy has not solved coarse discrimination. Retain purity as a stability measure, not as the communication endpoint.
+
+### 9.5 Evaluate acoustic fidelity and reusable call structure
+
+Create held-out targets with matched average spectra but different temporal structure, including ascending versus descending chirps. Compare the present averaged-MFCC score with framewise features, multi-resolution spectrogram distances, frequency-trajectory error, and onset/envelope measures. Validate which metrics agree with task-relevant discrimination and, where appropriate, blinded listening judgements. Yamamoto et al. (2020) motivate time-frequency objectives, without establishing which combination is best for Chuff.
+
+Define acoustic equivalence classes in the DSL so a tone and an effectively constant chirp need not count as different solutions. Evaluate structural recovery only for targets identifiable under the chosen observations and explicit program priors. Then test DreamCoder- or Stitch-inspired motif libraries against primitive-only search at equal synthesis-evaluation budgets, measuring held-out fidelity and total description length including library cost (Ellis et al., 2021; Bowers et al., 2023). This makes library reuse a measurable benefit rather than an assumption.
+
+### 9.6 Separate channel selection, learning, and coding efficiency
+
+Run frozen-policy and adaptive-policy agents through the same channels. Measure both the unconditional emitted-frequency distribution and frequency conditional on acknowledgement; estimate acknowledgement probability by frequency. A filtering effect in the frozen policy would quantify transmission selection, while a subsequent change in emissions would provide evidence for learning.
+
+Vary forward-path and acknowledgement-path filtering separately, then add measured room impulse responses, real background recordings, dropouts, and different speaker/microphone responses. Once receiver decoding is established, permit duration, bandwidth, repetition, and amplitude to vary under explicit energy or airtime costs. Trace receiver error versus transmission cost across noise levels. This can test efficient representation and protective redundancy as complementary objectives (Zaslavsky et al., 2018; Vital et al., 2025).
+
+### 9.7 Measure durable memory and predictive value
+
+For memory, track exemplar identity separately from recognition and relearning. Use fresh jittered/noisy instances on every revisit, randomise the endpoint’s position within the revisit cycle, and vary event frequency and distribution shifts. Compare FIFO, current recency, recognition-gated recency, random eviction, and reservoir sampling at equal capacity. Report rare-event recall, false recognition, continuous retention duration, and lookup cost. This separates useful retention from accidental matches and endpoint effects.
+
+For the idle routine, first make memory sampling seed-controlled and compare interpolation with persistence, random-memory, mean-memory, and a simple learned transition predictor. Use temporally structured worlds with held-out transitions. Lower held-out prediction error than these baselines would demonstrate predictive value; if no advantage appears, interpolation should remain described as memory recombination. Any future probabilistic-surprise or active-inference claim would require an explicit likelihood model and an appropriate objective (Friston, 2010).
+
+### 9.8 Transfer to hardware and asynchronous interaction
+
+Port the memory and feature pipeline with recorded reference vectors, comparing numerical parity, recognition performance, RAM, latency, and energy on the target board. Measure microphone gain and frequency response, speaker response, limiter behaviour, end-to-end delay, and acknowledgement false positives. Route every physical output, including acknowledgements, through the calibrated output path.
+
+Progress from controlled loopback to physically separated devices with independent clocks. Evaluate missed windows, variable latency, collisions, self-echo, and simultaneous calls before treating synchronous simulation success as transferable. Turn-taking is itself a learning and coordination problem, as illustrated by Taillandier et al. (2023); start with an explicit scheduling baseline before attempting learned timing.
+
+### 9.9 Evaluate affective legibility separately from learning
+
+First resolve which mood labels the controller is intended to reach and verify those transitions. Then conduct a blinded, counterbalanced observer study using identical displays driven by learning-linked states, matched scripted sequences, and shuffled state sequences. Measure emotion-label agreement, confidence, and ability to identify learning events; report confusions between labels rather than only overall appeal.
+
+If observers distinguish learning-linked sequences and interpret them consistently, that supports affective legibility and behavioural transparency. It does not establish felt emotion. Participant-facing claims should stay at that level, consistent with the distinction between internal control and perceived expression in sociable robotics (Breazeal, 2003).
+
+An independently authored implementation can additionally be evaluated against held-out behavioural checks, numerical reference vectors, and hardware traces. This would extend the engineering evidence supplied by the current grader, rather than serve as a cognitive-science experiment.
+
+## Acknowledgments and AI Assistance
+
+The original implementation, exploratory runs, and manuscript were developed through iterative collaboration between Aidan Jones and Claude, acting as a coding and research assistant. Codex assisted with this revision by inspecting the implementation, checking primary literature, rerunning selected comparisons and the existing grader, and revising the claims and proposed experiments. The author retains responsibility for verifying the historical results and the final manuscript.
 
 ## References
 
-Boncoraglio, G., & Saino, N. (2007). Habitat structure and the evolution of bird song: a meta-analysis of the evidence for the acoustic adaptation hypothesis. *Functional Ecology*, 21(1), 134–142. https://doi.org/10.1111/j.1365-2435.2006.01207.x
+Agarwal, R., Schwarzer, M., Castro, P. S., Courville, A. C., & Bellemare, M. G. (2021). Deep reinforcement learning at the edge of the statistical precipice. *Advances in Neural Information Processing Systems*, 34, 29304–29320. [Proceedings](https://proceedings.neurips.cc/paper/2021/hash/f514cec81cb148559cf475e7426eed5e-Abstract.html).
 
-Davis, S., & Mermelstein, P. (1980). Comparison of parametric representations for monosyllabic word recognition in continuously spoken sentences. *IEEE Transactions on Acoustics, Speech, and Signal Processing*, 28(4), 357–366.
+Boncoraglio, G., & Saino, N. (2007). Habitat structure and the evolution of bird song: A meta-analysis of the evidence for the acoustic adaptation hypothesis. *Functional Ecology*, 21(1), 134–142. [doi:10.1111/j.1365-2435.2006.01207.x](https://doi.org/10.1111/j.1365-2435.2006.01207.x).
 
-Ellis, K., Wong, C., Nye, M., Sablé-Meyer, M., Morales, L., Hewitt, L., Cary, L., Solar-Lezama, A., & Tenenbaum, J. B. (2021). DreamCoder: bootstrapping inductive program synthesis with wake-sleep library learning. *Proceedings of the 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation (PLDI 2021)*. https://doi.org/10.1145/3453483.3454080
+Bowers, M., Olausson, T. X., Wong, L., Grand, G., Tenenbaum, J. B., Ellis, K., & Solar-Lezama, A. (2023). Top-down synthesis for library learning. *Proceedings of the ACM on Programming Languages*, 7(POPL), Article 41, 1182–1213. [doi:10.1145/3571234](https://doi.org/10.1145/3571234).
 
-Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience*, 11, 127–138. https://www.nature.com/articles/nrn2787
+Breazeal, C. (2003). Emotion and sociable humanoid robots. *International Journal of Human-Computer Studies*, 59(1–2), 119–155. [doi:10.1016/S1071-5819(03)00018-1](https://doi.org/10.1016/S1071-5819(03)00018-1).
 
-Goldstein, M. H., King, A. P., & West, M. J. (2003). Social interaction shapes babbling: Testing parallels between birdsong and speech. *Proceedings of the National Academy of Sciences*, 100(13), 8030–8035. https://doi.org/10.1073/pnas.1332441100
+Chaudhry, A., Rohrbach, M., Elhoseiny, M., Ajanthan, T., Dokania, P. K., Torr, P. H. S., & Ranzato, M. (2019). On tiny episodic memories in continual learning. *arXiv preprint*, arXiv:1902.10486. [Author manuscript](https://arxiv.org/abs/1902.10486).
 
-Hodel, M. (n.d.). *arc-dsl* [Software repository]. https://github.com/michaelhodel/arc-dsl
+Davis, S., & Mermelstein, P. (1980). Comparison of parametric representations for monosyllabic word recognition in continuously spoken sentences. *IEEE Transactions on Acoustics, Speech, and Signal Processing*, 28(4), 357–366. [doi:10.1109/TASSP.1980.1163420](https://doi.org/10.1109/TASSP.1980.1163420).
 
-Jones, A. (2026). *clebran-arc-agi* [Unpublished software repository].
+Ellis, K., Wong, C., Nye, M., Sablé-Meyer, M., Morales, L., Hewitt, L., Cary, L., Solar-Lezama, A., & Tenenbaum, J. B. (2021). DreamCoder: Bootstrapping inductive program synthesis with wake-sleep library learning. *Proceedings of PLDI 2021*, 835–850. [doi:10.1145/3453483.3454080](https://doi.org/10.1145/3453483.3454080).
 
-Kuhl, P. K. (2003). Human speech and birdsong: Communication and the social brain. *Proceedings of the National Academy of Sciences*, 100(17), 9645–9646. https://doi.org/10.1073/pnas.1733998100
+Friston, K. (2010). The free-energy principle: A unified brain theory? *Nature Reviews Neuroscience*, 11, 127–138. [doi:10.1038/nrn2787](https://doi.org/10.1038/nrn2787).
 
-Leitão, A., & Gahr, M. (2024). Babbling opens the sensory phase for imitative vocal learning. *Proceedings of the National Academy of Sciences*, 121(17). https://doi.org/10.1073/pnas.2312323121
+Goldstein, M. H., King, A. P., & West, M. J. (2003). Social interaction shapes babbling: Testing parallels between birdsong and speech. *Proceedings of the National Academy of Sciences*, 100(13), 8030–8035. [doi:10.1073/pnas.1332441100](https://doi.org/10.1073/pnas.1332441100).
+
+Jones, A. (2026). *clebran-arc-agi* [Unpublished software project; comparison described in the original Chuff pilot manuscript, without a public archival identifier].
+
+Kuhl, P. K., Tsao, F.-M., & Liu, H.-M. (2003). Foreign-language experience in infancy: Effects of short-term exposure and social interaction on phonetic learning. *Proceedings of the National Academy of Sciences*, 100(15), 9096–9101. [doi:10.1073/pnas.1532872100](https://doi.org/10.1073/pnas.1532872100).
+
+Leitão, A., & Gahr, M. (2024). Babbling opens the sensory phase for imitative vocal learning. *Proceedings of the National Academy of Sciences*, 121(18), e2312323121. [doi:10.1073/pnas.2312323121](https://doi.org/10.1073/pnas.2312323121).
 
 Lewis, D. K. (1969). *Convention: A Philosophical Study*. Harvard University Press.
 
-Lou, M., Guo, H., Chen, L., & Yu, Y. (2026). Overcoming catastrophic forgetting in visual continual learning with reinforcement fine-tuning. *arXiv preprint arXiv:2605.09640*.
+Lowe, R., Foerster, J., Boureau, Y.-L., Pineau, J., & Dauphin, Y. (2019). On the pitfalls of measuring emergent communication. *Proceedings of AAMAS 2019*, 693–701. [Proceedings](https://ifaamas.org/Proceedings/aamas2019/pdfs/p693.pdf).
 
-Rita, M., Tallec, C., Michel, P., Grill, J.-B., Pietquin, O., Dupoux, E., & Strub, F. (2022). Emergent communication: generalization and overfitting in Lewis games. *Advances in Neural Information Processing Systems 35 (NeurIPS 2022)*. arXiv:2209.15342.
+Oudeyer, P.-Y. (2005). The self-organization of speech sounds. *Journal of Theoretical Biology*, 233(3), 435–449. [doi:10.1016/j.jtbi.2004.10.025](https://doi.org/10.1016/j.jtbi.2004.10.025).
+
+Rita, M., Tallec, C., Michel, P., Grill, J.-B., Pietquin, O., Dupoux, E., & Strub, F. (2022). Emergent communication: Generalization and overfitting in Lewis games. *Advances in Neural Information Processing Systems*, 35. [Proceedings](https://proceedings.neurips.cc/paper_files/paper/2022/hash/093b08a7ad6e6dd8d34b9cc86bb5f07c-Abstract-Conference.html).
 
 Skyrms, B. (2010). *Signals: Evolution, Learning, and Information*. Oxford University Press.
 
-Yazaki-Sugiyama, Y. (2024). Tutor auditory memory for guiding sensorimotor learning in birdsong. *Frontiers in Neural Circuits*. https://doi.org/10.3389/fncir.2024.1431119
+Taillandier, V., Hupkes, D., Sagot, B., Dupoux, E., & Michel, P. (2023). Neural agents struggle to take turns in bidirectional emergent communication. *International Conference on Learning Representations*. [Proceedings](https://openreview.net/forum?id=GULFHQfgw0g).
 
-Zaslavsky, N., Kemp, C., Regier, T., & Tishby, N. (2018). Efficient compression in color naming and its evolution. *Proceedings of the National Academy of Sciences*, 115(31), 7937–7942. https://doi.org/10.1073/pnas.1800521115
+Vital, F., Sardinha, A., & Melo, F. S. (2025). Implicit repair with reinforcement learning in emergent communication. *Proceedings of AAMAS 2025*. [Author manuscript](https://arxiv.org/abs/2502.12624).
 
-Zhang, J., Fu, Y., Peng, Z., Yao, D., & He, K. (2024). CORE: mitigating catastrophic forgetting in continual learning through cognitive replay. *Proceedings of the 46th Annual Meeting of the Cognitive Science Society (CogSci 2024)*. arXiv:2402.01348.
+Yamamoto, R., Song, E., & Kim, J.-M. (2020). Parallel WaveGAN: A fast waveform generation model based on generative adversarial networks with multi-resolution spectrogram. *Proceedings of ICASSP 2020*. [Author manuscript](https://arxiv.org/abs/1910.11480).
 
-Zhu, W., Zhang, Z., Ren, Y., Huang, Y., Xu, H., & Wang, Y. (2025). Embodied representation alignment with mirror neurons. *Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV 2025)*. arXiv:2509.21136.
+Yazaki-Sugiyama, Y. (2024). Tutor auditory memory for guiding sensorimotor learning in birdsong. *Frontiers in Neural Circuits*, 18, 1431119. [doi:10.3389/fncir.2024.1431119](https://doi.org/10.3389/fncir.2024.1431119).
+
+Zaslavsky, N., Kemp, C., Regier, T., & Tishby, N. (2018). Efficient compression in color naming and its evolution. *Proceedings of the National Academy of Sciences*, 115(31), 7937–7942. [doi:10.1073/pnas.1800521115](https://doi.org/10.1073/pnas.1800521115).
+
+Zhang, J., Fu, Y., Peng, Z., Yao, D., & He, K. (2024). CORE: Mitigating catastrophic forgetting in continual learning through cognitive replay. *arXiv preprint*, arXiv:2402.01348. [Author manuscript](https://arxiv.org/abs/2402.01348).
+
+## Appendix A. Commands for the Selected Review Checks
+
+Run from the python directory with the project environment. The review used its existing .venv/Scripts/python.exe interpreter; the following uv equivalents use the same project.
+
+~~~powershell
+uv run python ../eval/tasks/sound_memory_and_voice/grader.py --candidate-dir src/chuff_mpu
+uv run chuff-sim-babble --seeds 20
+uv run chuff-sim-2unit --rounds 60 --seed 5 --condition social --attenuation 0.5
+uv run chuff-sim-2unit --rounds 60 --seed 5 --condition passive --attenuation 0.5
+~~~
+
+Observed review outputs were grader score 1.0; babbling 89/120 changed choices and rounded frequency errors 1,021 versus 251 Hz; contingent acknowledgement 28/30 then 30/30; absent-feedback acknowledgement 0/30 in each half. The last comparison was run through the same two_unit_demo.run() function with verbose output disabled. These selected checks are not a replication of the remaining historical sweeps.
