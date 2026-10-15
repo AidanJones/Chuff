@@ -280,6 +280,8 @@ dependencies = [
     { name = "numpy", version = "2.5.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
     { name = "pyserial" },
     { name = "scikit-learn" },
+    { name = "scipy", version = "1.17.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
+    { name = "scipy", version = "1.18.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
     { name = "sounddevice" },
 ]
 
@@ -289,6 +291,7 @@ requires-dist = [
     { name = "numpy", specifier = ">=2.4.6" },
     { name = "pyserial", specifier = ">=3.5" },
     { name = "scikit-learn", specifier = ">=1.9.1" },
+    { name = "scipy", specifier = ">=1.15" },
     { name = "sounddevice", specifier = ">=0.5.6" },
 ]
 

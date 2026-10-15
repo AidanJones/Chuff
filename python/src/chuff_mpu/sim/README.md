@@ -1,5 +1,13 @@
 # sim/ — Chuff, tested in silico
 
+For **foreground novelty in a changing room**, start with
+[ATTENTION.md](ATTENTION.md). The newer `chuff-sim-attention` experiment
+uses coloured ambience, hum, nuisance transients, echoes and microphone
+filtering, and learns recurring foreground patterns from the mixture alone.
+It compares background-aware admission with the historical whole-clip rule
+described below. [Initial results](../../../../papers/01-foreground-novelty.md)
+include both the successful noise levels and a strongly masked failure case.
+
 A from-the-ground-up test of the listen -> remember -> repeat loop with
 no physical hardware at all: `world.py` synthesises a handful of
 distinct sounds and background noise standing in for a room + mic;

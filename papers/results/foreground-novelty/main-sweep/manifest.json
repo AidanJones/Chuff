@@ -1,0 +1,83 @@
+{
+  "created_utc": "2026-10-15T18:46:39.926555+00:00",
+  "software": {
+    "revision": "6094aed59f3305feea0110cafd69f5826f4f5c72",
+    "dirty": true,
+    "sha256": {
+      "python\\src\\chuff_mpu\\attention.py": "fce447a351e4e820683fbe245451356231a7309aab7c39563e836da5255ad482",
+      "python\\src\\chuff_mpu\\audio.py": "9d521941041a3364fdebcbea9548ab0408cd8f7eb716df3b7e7ad32f2dbc0929",
+      "python\\src\\chuff_mpu\\config.py": "2e5324a31350a3b9f16d8bc48d4afdeaf5d183ff122525e0438fa19de754b8fa",
+      "python\\src\\chuff_mpu\\sim\\attention_experiment.py": "87c4d976d2ddb4e51a138b764d5fb23ff0684d969363783689a20fb1d9d13653",
+      "python\\src\\chuff_mpu\\sim\\scene.py": "d241951a9710cf0bc261edbe49b973e534a90cd25ed75d4de14a9a8b5b13188a",
+      "python\\uv.lock": "f870579959f40738c9d6267a52fa890354a75fa97f7ad04f95d9c17c08911d15"
+    },
+    "dependencies": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "librosa": "0.11.0"
+    }
+  },
+  "attention": {
+    "sample_rate": 16000,
+    "n_fft": 512,
+    "hop": 160,
+    "bands": 32,
+    "warmup_clips": 3,
+    "background_rate": 0.15,
+    "subtraction": 2.0,
+    "min_excess_ratio": 0.8,
+    "min_duration_s": 0.06,
+    "max_duration_s": 0.75,
+    "max_flatness": 0.35,
+    "match_distance": 0.18,
+    "confirmations": 2,
+    "candidate_ttl": 40,
+    "capacity": 32
+  },
+  "scenes": [
+    {
+      "sample_rate": 16000,
+      "duration_s": 1.0,
+      "rounds": 120,
+      "warmup": 6,
+      "event_probability": 0.35,
+      "nuisance_probability": 0.12,
+      "snr_db": 0.0,
+      "background_rms": 0.025,
+      "room_decay_s": 0.12,
+      "background_change": true,
+      "structured_distractors": true
+    },
+    {
+      "sample_rate": 16000,
+      "duration_s": 1.0,
+      "rounds": 120,
+      "warmup": 6,
+      "event_probability": 0.35,
+      "nuisance_probability": 0.12,
+      "snr_db": 6.0,
+      "background_rms": 0.025,
+      "room_decay_s": 0.12,
+      "background_change": true,
+      "structured_distractors": true
+    },
+    {
+      "sample_rate": 16000,
+      "duration_s": 1.0,
+      "rounds": 120,
+      "warmup": 6,
+      "event_probability": 0.35,
+      "nuisance_probability": 0.12,
+      "snr_db": 12.0,
+      "background_rms": 0.025,
+      "room_decay_s": 0.12,
+      "background_change": true,
+      "structured_distractors": true
+    }
+  ],
+  "seed_start": 100,
+  "seeds": 5,
+  "include_baseline": true,
+  "snr_definition": "active source segment before common room/microphone channel",
+  "independence": "paired mixtures within seed; use seeds, not clips, for uncertainty"
+}
