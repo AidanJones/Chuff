@@ -465,6 +465,11 @@ Evaluator-only candidate tracing is available in `memory_provenance.py`;
 see `PROVENANCE.md` for its fresh-actor API and event semantics. It preserves
 exact decisions and memory vectors in cross-family tests, logs stored and
 current feature hashes separately, and isolates source-removal branch
-histories. It supplies no labels to actors. Birth-label rescoring is still
-separate observed-data work in Beads ch-6w4.10.7.2; the existing published
-scores remain unchanged.
+histories. It supplies no labels to actors. The observed-data provenance
+replay and separate birth-label scorer now reproduce all 126,000 original
+decisions and 40,000 probes, validating 121,767 lifecycle events and 5,940
+admissions. `audit_provenance.py` checks exact original links and recomputes
+lifecycle/context and label scores. `provenance_report.py` retains suite
+correlation in paired-seed sensitivity intervals. Paper 09 reports results
+and the birth-label causality limits; existing published scores remain
+unchanged. Feature dependence at birth/confirmation is ch-6w4.10.8.

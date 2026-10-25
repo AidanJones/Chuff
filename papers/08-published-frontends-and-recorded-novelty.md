@@ -151,10 +151,14 @@ prototype. Source removal tests current-episode dependence of recognition,
 not the origin of every stored feature. Pure no-target controls remain
 unambiguous evidence that the system commits background prototypes. The
 candidate-provenance audit in ch-6w4.10.7 addresses the mixed-stream ambiguity.
-Its evaluator-only tracer now passes exact decision/memory comparisons
-across eight frontend families and isolates copied-branch histories;
-recorded replay and birth-label rescoring remain pending. No reported score
-has been replaced by a birth-label diagnostic.
+Its evaluator-only tracer passes exact decision/memory comparisons across
+eight frontend families and isolates copied-branch histories. The completed
+[paper-09 audit](09-candidate-birth-and-admission-labels.md) reproduces all
+126,000 decisions and preserves both label views. For example, Quiet160's
+strict identity is 21.25% under admission labels and 24.75% under birth
+labels, with most extra hits concentrated in one dog recording. No reported
+score here is replaced by that diagnostic, and neither window label proves
+the acoustic cause of the stored feature.
 Here, background denotes the experimental bed; it does not mean every sound
 in that recording is intrinsically unimportant to a robot.
 

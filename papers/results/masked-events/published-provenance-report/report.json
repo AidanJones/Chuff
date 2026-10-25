@@ -1,0 +1,2610 @@
+{
+  "schema": "chuff.recorded.provenance-report.v1",
+  "modes": {
+    "adaptive_gain": {
+      "transitions": {
+        "positive": {
+          "same_recording": 140,
+          "foreground_to_background": 36,
+          "background_to_foreground": 52,
+          "different_recording": 46,
+          "background_to_background": 114,
+          "admissions": 388,
+          "birth_with_room_tail": 16,
+          "background_birth_with_room_tail": 16,
+          "bed_only_birth": 150,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 388
+        },
+        "control": {
+          "same_recording": 0,
+          "foreground_to_background": 0,
+          "background_to_foreground": 0,
+          "different_recording": 0,
+          "background_to_background": 124,
+          "admissions": 124,
+          "birth_with_room_tail": 0,
+          "background_birth_with_room_tail": 0,
+          "bed_only_birth": 124,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 124
+        }
+      },
+      "metrics": {
+        "repeat_identity": {
+          "admission": {
+            "mean": 0.3475,
+            "bootstrap_95": [
+              0.255,
+              0.4374999999999999
+            ]
+          },
+          "birth": {
+            "mean": 0.39749999999999996,
+            "bootstrap_95": [
+              0.325,
+              0.46499999999999997
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.05000000000000001,
+            "bootstrap_95": [
+              -0.022499999999999985,
+              0.12250000000000001
+            ]
+          }
+        },
+        "source_dependent_repeat": {
+          "admission": {
+            "mean": 0.305,
+            "bootstrap_95": [
+              0.23000000000000004,
+              0.3775
+            ]
+          },
+          "birth": {
+            "mean": 0.35,
+            "bootstrap_95": [
+              0.25749999999999995,
+              0.43499999999999994
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.045000000000000005,
+            "bootstrap_95": [
+              -0.01749999999999999,
+              0.11499999999999999
+            ]
+          }
+        },
+        "strict_episode_exclusion": {
+          "admission": {
+            "mean": 0.2675,
+            "bootstrap_95": [
+              0.2125,
+              0.3225
+            ]
+          },
+          "birth": {
+            "mean": 0.32500000000000007,
+            "bootstrap_95": [
+              0.22999999999999998,
+              0.4125000000000001
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.057499999999999996,
+            "bootstrap_95": [
+              -0.005000000000000014,
+              0.12250000000000001
+            ]
+          }
+        },
+        "wrong_repeat_identity": {
+          "admission": {
+            "mean": 0.7225,
+            "bootstrap_95": [
+              0.6475,
+              0.805
+            ]
+          },
+          "birth": {
+            "mean": 0.735,
+            "bootstrap_95": [
+              0.6799999999999999,
+              0.7925
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.012499999999999978,
+            "bootstrap_95": [
+              -0.040000000000000056,
+              0.06250000000000003
+            ]
+          }
+        },
+        "deletion_repeat_identity": {
+          "admission": {
+            "mean": 0.0825,
+            "bootstrap_95": [
+              0.03500000000000001,
+              0.13999999999999999
+            ]
+          },
+          "birth": {
+            "mean": 0.08000000000000002,
+            "bootstrap_95": [
+              0.0325,
+              0.1375
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.0024999999999999953,
+            "bootstrap_95": [
+              -0.0825,
+              0.0675
+            ]
+          }
+        }
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 159,
+            "correct_repeat_episodes": 16,
+            "source_dependent_repeat_episodes": 6,
+            "deletion_correct_repeat_episodes": 12,
+            "wrong_repeat_episodes": 72,
+            "strict_episode_exclusion_hits": 4
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 159,
+            "correct_repeat_episodes": 8,
+            "source_dependent_repeat_episodes": 5,
+            "deletion_correct_repeat_episodes": 4,
+            "wrong_repeat_episodes": 79,
+            "strict_episode_exclusion_hits": 4
+          }
+        },
+        "4-164021-A-1.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 36,
+            "source_dependent_repeat_episodes": 35,
+            "deletion_correct_repeat_episodes": 4,
+            "wrong_repeat_episodes": 46,
+            "strict_episode_exclusion_hits": 32
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 38,
+            "source_dependent_repeat_episodes": 34,
+            "deletion_correct_repeat_episodes": 6,
+            "wrong_repeat_episodes": 46,
+            "strict_episode_exclusion_hits": 32
+          }
+        },
+        "4-167077-A-20.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 38,
+            "source_dependent_repeat_episodes": 36,
+            "deletion_correct_repeat_episodes": 3,
+            "wrong_repeat_episodes": 57,
+            "strict_episode_exclusion_hits": 35
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 46,
+            "source_dependent_repeat_episodes": 37,
+            "deletion_correct_repeat_episodes": 11,
+            "wrong_repeat_episodes": 60,
+            "strict_episode_exclusion_hits": 36
+          }
+        },
+        "4-175945-A-38.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 147,
+            "correct_repeat_episodes": 11,
+            "source_dependent_repeat_episodes": 11,
+            "deletion_correct_repeat_episodes": 3,
+            "wrong_repeat_episodes": 47,
+            "strict_episode_exclusion_hits": 8
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 147,
+            "correct_repeat_episodes": 13,
+            "source_dependent_repeat_episodes": 10,
+            "deletion_correct_repeat_episodes": 6,
+            "wrong_repeat_episodes": 45,
+            "strict_episode_exclusion_hits": 8
+          }
+        },
+        "4-182395-A-0.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 38,
+            "source_dependent_repeat_episodes": 34,
+            "deletion_correct_repeat_episodes": 11,
+            "wrong_repeat_episodes": 67,
+            "strict_episode_exclusion_hits": 28
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 54,
+            "source_dependent_repeat_episodes": 54,
+            "deletion_correct_repeat_episodes": 5,
+            "wrong_repeat_episodes": 64,
+            "strict_episode_exclusion_hits": 50
+          }
+        }
+      }
+    },
+    "mcra128-f0-l3.5-b1.5": {
+      "transitions": {
+        "positive": {
+          "same_recording": 31,
+          "foreground_to_background": 45,
+          "background_to_foreground": 75,
+          "different_recording": 34,
+          "background_to_background": 121,
+          "admissions": 306,
+          "birth_with_room_tail": 21,
+          "background_birth_with_room_tail": 21,
+          "bed_only_birth": 175,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 306
+        },
+        "control": {
+          "same_recording": 0,
+          "foreground_to_background": 0,
+          "background_to_foreground": 0,
+          "different_recording": 0,
+          "background_to_background": 148,
+          "admissions": 148,
+          "birth_with_room_tail": 0,
+          "background_birth_with_room_tail": 0,
+          "bed_only_birth": 148,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 148
+        }
+      },
+      "metrics": {
+        "repeat_identity": {
+          "admission": {
+            "mean": 0.12250000000000001,
+            "bootstrap_95": [
+              0.075,
+              0.17250000000000001
+            ]
+          },
+          "birth": {
+            "mean": 0.11000000000000001,
+            "bootstrap_95": [
+              0.085,
+              0.135
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.012499999999999999,
+            "bootstrap_95": [
+              -0.06749999999999999,
+              0.04000000000000001
+            ]
+          }
+        },
+        "source_dependent_repeat": {
+          "admission": {
+            "mean": 0.05,
+            "bootstrap_95": [
+              0.019999999999999997,
+              0.08500000000000002
+            ]
+          },
+          "birth": {
+            "mean": 0.05750000000000001,
+            "bootstrap_95": [
+              0.03250000000000001,
+              0.08750000000000001
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.0075,
+            "bootstrap_95": [
+              -0.0225,
+              0.0375
+            ]
+          }
+        },
+        "strict_episode_exclusion": {
+          "admission": {
+            "mean": 0.045,
+            "bootstrap_95": [
+              0.015000000000000003,
+              0.07999999999999999
+            ]
+          },
+          "birth": {
+            "mean": 0.045,
+            "bootstrap_95": [
+              0.0175,
+              0.07750000000000001
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 2.7755575615628915e-18,
+            "bootstrap_95": [
+              -0.02749999999999999,
+              0.0225
+            ]
+          }
+        },
+        "wrong_repeat_identity": {
+          "admission": {
+            "mean": 0.8150000000000001,
+            "bootstrap_95": [
+              0.7424999999999999,
+              0.875
+            ]
+          },
+          "birth": {
+            "mean": 0.8275,
+            "bootstrap_95": [
+              0.7700000000000001,
+              0.8800000000000001
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.012500000000000011,
+            "bootstrap_95": [
+              -0.024999999999999977,
+              0.055000000000000014
+            ]
+          }
+        },
+        "deletion_repeat_identity": {
+          "admission": {
+            "mean": 0.12000000000000002,
+            "bootstrap_95": [
+              0.07750000000000001,
+              0.1625
+            ]
+          },
+          "birth": {
+            "mean": 0.0825,
+            "bootstrap_95": [
+              0.0475,
+              0.12250000000000001
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.0375,
+            "bootstrap_95": [
+              -0.0825,
+              0.014999999999999994
+            ]
+          }
+        }
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 11,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 13,
+            "wrong_repeat_episodes": 66,
+            "strict_episode_exclusion_hits": 1
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 10,
+            "source_dependent_repeat_episodes": 4,
+            "deletion_correct_repeat_episodes": 11,
+            "wrong_repeat_episodes": 66,
+            "strict_episode_exclusion_hits": 1
+          }
+        },
+        "4-164021-A-1.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 146,
+            "correct_repeat_episodes": 5,
+            "source_dependent_repeat_episodes": 3,
+            "deletion_correct_repeat_episodes": 9,
+            "wrong_repeat_episodes": 52,
+            "strict_episode_exclusion_hits": 3
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 146,
+            "correct_repeat_episodes": 3,
+            "source_dependent_repeat_episodes": 3,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 54,
+            "strict_episode_exclusion_hits": 3
+          }
+        },
+        "4-167077-A-20.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 147,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 74,
+            "strict_episode_exclusion_hits": 1
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 147,
+            "correct_repeat_episodes": 8,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 11,
+            "wrong_repeat_episodes": 71,
+            "strict_episode_exclusion_hits": 1
+          }
+        },
+        "4-175945-A-38.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 159,
+            "correct_repeat_episodes": 16,
+            "source_dependent_repeat_episodes": 8,
+            "deletion_correct_repeat_episodes": 16,
+            "wrong_repeat_episodes": 60,
+            "strict_episode_exclusion_hits": 6
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 159,
+            "correct_repeat_episodes": 10,
+            "source_dependent_repeat_episodes": 7,
+            "deletion_correct_repeat_episodes": 4,
+            "wrong_repeat_episodes": 68,
+            "strict_episode_exclusion_hits": 6
+          }
+        },
+        "4-182395-A-0.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 16,
+            "source_dependent_repeat_episodes": 7,
+            "deletion_correct_repeat_episodes": 10,
+            "wrong_repeat_episodes": 74,
+            "strict_episode_exclusion_hits": 7
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 13,
+            "source_dependent_repeat_episodes": 7,
+            "deletion_correct_repeat_episodes": 6,
+            "wrong_repeat_episodes": 72,
+            "strict_episode_exclusion_hits": 7
+          }
+        }
+      }
+    },
+    "mcra128-f1-l3.5-b1.5": {
+      "transitions": {
+        "positive": {
+          "same_recording": 31,
+          "foreground_to_background": 94,
+          "background_to_foreground": 97,
+          "different_recording": 48,
+          "background_to_background": 188,
+          "admissions": 458,
+          "birth_with_room_tail": 45,
+          "background_birth_with_room_tail": 45,
+          "bed_only_birth": 240,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 458
+        },
+        "control": {
+          "same_recording": 0,
+          "foreground_to_background": 0,
+          "background_to_foreground": 0,
+          "different_recording": 0,
+          "background_to_background": 256,
+          "admissions": 256,
+          "birth_with_room_tail": 0,
+          "background_birth_with_room_tail": 0,
+          "bed_only_birth": 256,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 256
+        }
+      },
+      "metrics": {
+        "repeat_identity": {
+          "admission": {
+            "mean": 0.10250000000000001,
+            "bootstrap_95": [
+              0.075,
+              0.13499999999999998
+            ]
+          },
+          "birth": {
+            "mean": 0.0925,
+            "bootstrap_95": [
+              0.06500000000000002,
+              0.11750000000000001
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.010000000000000005,
+            "bootstrap_95": [
+              -0.05,
+              0.03
+            ]
+          }
+        },
+        "source_dependent_repeat": {
+          "admission": {
+            "mean": 0.030000000000000006,
+            "bootstrap_95": [
+              0.015,
+              0.05500000000000001
+            ]
+          },
+          "birth": {
+            "mean": 0.0425,
+            "bootstrap_95": [
+              0.027500000000000007,
+              0.055000000000000014
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.012500000000000002,
+            "bootstrap_95": [
+              -0.012499999999999997,
+              0.035
+            ]
+          }
+        },
+        "strict_episode_exclusion": {
+          "admission": {
+            "mean": 0.0225,
+            "bootstrap_95": [
+              0.01,
+              0.037500000000000006
+            ]
+          },
+          "birth": {
+            "mean": 0.035,
+            "bootstrap_95": [
+              0.02,
+              0.05
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.0125,
+            "bootstrap_95": [
+              -0.012500000000000002,
+              0.03250000000000001
+            ]
+          }
+        },
+        "wrong_repeat_identity": {
+          "admission": {
+            "mean": 0.6950000000000001,
+            "bootstrap_95": [
+              0.6425000000000001,
+              0.7475
+            ]
+          },
+          "birth": {
+            "mean": 0.6975,
+            "bootstrap_95": [
+              0.6649999999999999,
+              0.7325
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.0025000000000000135,
+            "bootstrap_95": [
+              -0.02749999999999998,
+              0.035000000000000045
+            ]
+          }
+        },
+        "deletion_repeat_identity": {
+          "admission": {
+            "mean": 0.10500000000000001,
+            "bootstrap_95": [
+              0.06250000000000001,
+              0.1600624999999991
+            ]
+          },
+          "birth": {
+            "mean": 0.085,
+            "bootstrap_95": [
+              0.052500000000000005,
+              0.11750000000000002
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.020000000000000007,
+            "bootstrap_95": [
+              -0.06999999999999999,
+              0.032499999999999994
+            ]
+          }
+        }
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 15,
+            "source_dependent_repeat_episodes": 5,
+            "deletion_correct_repeat_episodes": 16,
+            "wrong_repeat_episodes": 60,
+            "strict_episode_exclusion_hits": 3
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 6,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 6,
+            "wrong_repeat_episodes": 67,
+            "strict_episode_exclusion_hits": 1
+          }
+        },
+        "4-164021-A-1.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 146,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 3,
+            "wrong_repeat_episodes": 40,
+            "strict_episode_exclusion_hits": 0
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 146,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 40,
+            "strict_episode_exclusion_hits": 1
+          }
+        },
+        "4-167077-A-20.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 147,
+            "correct_repeat_episodes": 4,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 6,
+            "wrong_repeat_episodes": 54,
+            "strict_episode_exclusion_hits": 0
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 147,
+            "correct_repeat_episodes": 5,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 8,
+            "wrong_repeat_episodes": 53,
+            "strict_episode_exclusion_hits": 1
+          }
+        },
+        "4-175945-A-38.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 159,
+            "correct_repeat_episodes": 15,
+            "source_dependent_repeat_episodes": 6,
+            "deletion_correct_repeat_episodes": 11,
+            "wrong_repeat_episodes": 60,
+            "strict_episode_exclusion_hits": 5
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 159,
+            "correct_repeat_episodes": 18,
+            "source_dependent_repeat_episodes": 13,
+            "deletion_correct_repeat_episodes": 10,
+            "wrong_repeat_episodes": 58,
+            "strict_episode_exclusion_hits": 10
+          }
+        },
+        "4-182395-A-0.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 6,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 6,
+            "wrong_repeat_episodes": 64,
+            "strict_episode_exclusion_hits": 1
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 7,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 8,
+            "wrong_repeat_episodes": 61,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      }
+    },
+    "pcen160-f0-l2.5-b1.5": {
+      "transitions": {
+        "positive": {
+          "same_recording": 108,
+          "foreground_to_background": 25,
+          "background_to_foreground": 45,
+          "different_recording": 30,
+          "background_to_background": 76,
+          "admissions": 284,
+          "birth_with_room_tail": 6,
+          "background_birth_with_room_tail": 6,
+          "bed_only_birth": 115,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 284
+        },
+        "control": {
+          "same_recording": 0,
+          "foreground_to_background": 0,
+          "background_to_foreground": 0,
+          "different_recording": 0,
+          "background_to_background": 82,
+          "admissions": 82,
+          "birth_with_room_tail": 0,
+          "background_birth_with_room_tail": 0,
+          "bed_only_birth": 82,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 82
+        }
+      },
+      "metrics": {
+        "repeat_identity": {
+          "admission": {
+            "mean": 0.26749999999999996,
+            "bootstrap_95": [
+              0.20249999999999999,
+              0.33249999999999996
+            ]
+          },
+          "birth": {
+            "mean": 0.2725,
+            "bootstrap_95": [
+              0.20249999999999999,
+              0.3375
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.004999999999999996,
+            "bootstrap_95": [
+              -0.04249999999999997,
+              0.059999999999999984
+            ]
+          }
+        },
+        "source_dependent_repeat": {
+          "admission": {
+            "mean": 0.20249999999999999,
+            "bootstrap_95": [
+              0.1375,
+              0.2625
+            ]
+          },
+          "birth": {
+            "mean": 0.23000000000000004,
+            "bootstrap_95": [
+              0.1575,
+              0.29250000000000004
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.027500000000000007,
+            "bootstrap_95": [
+              0.007500000000000004,
+              0.05250000000000001
+            ]
+          }
+        },
+        "strict_episode_exclusion": {
+          "admission": {
+            "mean": 0.18250000000000002,
+            "bootstrap_95": [
+              0.12250000000000001,
+              0.2375
+            ]
+          },
+          "birth": {
+            "mean": 0.2,
+            "bootstrap_95": [
+              0.1375,
+              0.25250000000000006
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.017499999999999998,
+            "bootstrap_95": [
+              -0.0025000000000000105,
+              0.03500000000000001
+            ]
+          }
+        },
+        "wrong_repeat_identity": {
+          "admission": {
+            "mean": 0.5374999999999999,
+            "bootstrap_95": [
+              0.4875,
+              0.5900000000000001
+            ]
+          },
+          "birth": {
+            "mean": 0.5250000000000001,
+            "bootstrap_95": [
+              0.49000000000000005,
+              0.5625
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.012500000000000022,
+            "bootstrap_95": [
+              -0.04000000000000002,
+              0.014999999999999986
+            ]
+          }
+        },
+        "deletion_repeat_identity": {
+          "admission": {
+            "mean": 0.0875,
+            "bootstrap_95": [
+              0.052500000000000005,
+              0.11750000000000001
+            ]
+          },
+          "birth": {
+            "mean": 0.07750000000000001,
+            "bootstrap_95": [
+              0.045,
+              0.11499999999999999
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.009999999999999995,
+            "bootstrap_95": [
+              -0.0625,
+              0.05250000000000001
+            ]
+          }
+        }
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 36,
+            "source_dependent_repeat_episodes": 26,
+            "deletion_correct_repeat_episodes": 13,
+            "wrong_repeat_episodes": 43,
+            "strict_episode_exclusion_hits": 23
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 30,
+            "source_dependent_repeat_episodes": 27,
+            "deletion_correct_repeat_episodes": 7,
+            "wrong_repeat_episodes": 45,
+            "strict_episode_exclusion_hits": 23
+          }
+        },
+        "4-164021-A-1.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 141,
+            "correct_repeat_episodes": 9,
+            "source_dependent_repeat_episodes": 6,
+            "deletion_correct_repeat_episodes": 4,
+            "wrong_repeat_episodes": 43,
+            "strict_episode_exclusion_hits": 5
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 141,
+            "correct_repeat_episodes": 14,
+            "source_dependent_repeat_episodes": 10,
+            "deletion_correct_repeat_episodes": 8,
+            "wrong_repeat_episodes": 41,
+            "strict_episode_exclusion_hits": 6
+          }
+        },
+        "4-167077-A-20.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 150,
+            "correct_repeat_episodes": 29,
+            "source_dependent_repeat_episodes": 26,
+            "deletion_correct_repeat_episodes": 4,
+            "wrong_repeat_episodes": 42,
+            "strict_episode_exclusion_hits": 26
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 150,
+            "correct_repeat_episodes": 30,
+            "source_dependent_repeat_episodes": 26,
+            "deletion_correct_repeat_episodes": 6,
+            "wrong_repeat_episodes": 43,
+            "strict_episode_exclusion_hits": 25
+          }
+        },
+        "4-175945-A-38.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 108,
+            "correct_repeat_episodes": 8,
+            "source_dependent_repeat_episodes": 4,
+            "deletion_correct_repeat_episodes": 8,
+            "wrong_repeat_episodes": 37,
+            "strict_episode_exclusion_hits": 0
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 108,
+            "correct_repeat_episodes": 8,
+            "source_dependent_repeat_episodes": 4,
+            "deletion_correct_repeat_episodes": 7,
+            "wrong_repeat_episodes": 38,
+            "strict_episode_exclusion_hits": 1
+          }
+        },
+        "4-182395-A-0.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 159,
+            "correct_repeat_episodes": 25,
+            "source_dependent_repeat_episodes": 19,
+            "deletion_correct_repeat_episodes": 6,
+            "wrong_repeat_episodes": 50,
+            "strict_episode_exclusion_hits": 19
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 159,
+            "correct_repeat_episodes": 27,
+            "source_dependent_repeat_episodes": 25,
+            "deletion_correct_repeat_episodes": 3,
+            "wrong_repeat_episodes": 43,
+            "strict_episode_exclusion_hits": 25
+          }
+        }
+      }
+    },
+    "pcen160-f0-l3.5-b1.5": {
+      "transitions": {
+        "positive": {
+          "same_recording": 74,
+          "foreground_to_background": 21,
+          "background_to_foreground": 40,
+          "different_recording": 21,
+          "background_to_background": 62,
+          "admissions": 218,
+          "birth_with_room_tail": 1,
+          "background_birth_with_room_tail": 1,
+          "bed_only_birth": 101,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 218
+        },
+        "control": {
+          "same_recording": 0,
+          "foreground_to_background": 0,
+          "background_to_foreground": 0,
+          "different_recording": 0,
+          "background_to_background": 70,
+          "admissions": 70,
+          "birth_with_room_tail": 0,
+          "background_birth_with_room_tail": 0,
+          "bed_only_birth": 70,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 70
+        }
+      },
+      "metrics": {
+        "repeat_identity": {
+          "admission": {
+            "mean": 0.18250000000000002,
+            "bootstrap_95": [
+              0.14250000000000002,
+              0.22749999999999998
+            ]
+          },
+          "birth": {
+            "mean": 0.18,
+            "bootstrap_95": [
+              0.12250000000000001,
+              0.23500000000000001
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.0025000000000000022,
+            "bootstrap_95": [
+              -0.042499999999999996,
+              0.042499999999999996
+            ]
+          }
+        },
+        "source_dependent_repeat": {
+          "admission": {
+            "mean": 0.1275,
+            "bootstrap_95": [
+              0.085,
+              0.16750000000000004
+            ]
+          },
+          "birth": {
+            "mean": 0.15,
+            "bootstrap_95": [
+              0.0975,
+              0.1975
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.02249999999999999,
+            "bootstrap_95": [
+              -1.1102230246251566e-17,
+              0.04749999999999999
+            ]
+          }
+        },
+        "strict_episode_exclusion": {
+          "admission": {
+            "mean": 0.12,
+            "bootstrap_95": [
+              0.0775,
+              0.16
+            ]
+          },
+          "birth": {
+            "mean": 0.14,
+            "bootstrap_95": [
+              0.09,
+              0.185
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.019999999999999997,
+            "bootstrap_95": [
+              0.004999999999999999,
+              0.03749999999999999
+            ]
+          }
+        },
+        "wrong_repeat_identity": {
+          "admission": {
+            "mean": 0.5,
+            "bootstrap_95": [
+              0.465,
+              0.5374999999999999
+            ]
+          },
+          "birth": {
+            "mean": 0.5024999999999998,
+            "bootstrap_95": [
+              0.48250000000000004,
+              0.5225000000000001
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.0024999999999999966,
+            "bootstrap_95": [
+              -0.020000000000000007,
+              0.02749999999999998
+            ]
+          }
+        },
+        "deletion_repeat_identity": {
+          "admission": {
+            "mean": 0.06499999999999999,
+            "bootstrap_95": [
+              0.037500000000000006,
+              0.09
+            ]
+          },
+          "birth": {
+            "mean": 0.045000000000000005,
+            "bootstrap_95": [
+              0.0225,
+              0.06999999999999999
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.020000000000000004,
+            "bootstrap_95": [
+              -0.057499999999999996,
+              0.02
+            ]
+          }
+        }
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 155,
+            "correct_repeat_episodes": 31,
+            "source_dependent_repeat_episodes": 23,
+            "deletion_correct_repeat_episodes": 9,
+            "wrong_repeat_episodes": 40,
+            "strict_episode_exclusion_hits": 22
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 155,
+            "correct_repeat_episodes": 25,
+            "source_dependent_repeat_episodes": 24,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 42,
+            "strict_episode_exclusion_hits": 24
+          }
+        },
+        "4-164021-A-1.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 114,
+            "correct_repeat_episodes": 4,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 3,
+            "wrong_repeat_episodes": 40,
+            "strict_episode_exclusion_hits": 2
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 114,
+            "correct_repeat_episodes": 8,
+            "source_dependent_repeat_episodes": 4,
+            "deletion_correct_repeat_episodes": 6,
+            "wrong_repeat_episodes": 39,
+            "strict_episode_exclusion_hits": 2
+          }
+        },
+        "4-167077-A-20.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 130,
+            "correct_repeat_episodes": 19,
+            "source_dependent_repeat_episodes": 16,
+            "deletion_correct_repeat_episodes": 3,
+            "wrong_repeat_episodes": 40,
+            "strict_episode_exclusion_hits": 16
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 130,
+            "correct_repeat_episodes": 18,
+            "source_dependent_repeat_episodes": 15,
+            "deletion_correct_repeat_episodes": 4,
+            "wrong_repeat_episodes": 41,
+            "strict_episode_exclusion_hits": 15
+          }
+        },
+        "4-175945-A-38.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 94,
+            "correct_repeat_episodes": 9,
+            "source_dependent_repeat_episodes": 3,
+            "deletion_correct_repeat_episodes": 8,
+            "wrong_repeat_episodes": 36,
+            "strict_episode_exclusion_hits": 1
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 94,
+            "correct_repeat_episodes": 7,
+            "source_dependent_repeat_episodes": 5,
+            "deletion_correct_repeat_episodes": 4,
+            "wrong_repeat_episodes": 40,
+            "strict_episode_exclusion_hits": 3
+          }
+        },
+        "4-182395-A-0.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 143,
+            "correct_repeat_episodes": 10,
+            "source_dependent_repeat_episodes": 7,
+            "deletion_correct_repeat_episodes": 3,
+            "wrong_repeat_episodes": 44,
+            "strict_episode_exclusion_hits": 7
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 143,
+            "correct_repeat_episodes": 14,
+            "source_dependent_repeat_episodes": 12,
+            "deletion_correct_repeat_episodes": 3,
+            "wrong_repeat_episodes": 39,
+            "strict_episode_exclusion_hits": 12
+          }
+        }
+      }
+    },
+    "pcen160-f1-l2.5-b1.15": {
+      "transitions": {
+        "positive": {
+          "same_recording": 107,
+          "foreground_to_background": 81,
+          "background_to_foreground": 95,
+          "different_recording": 77,
+          "background_to_background": 219,
+          "admissions": 579,
+          "birth_with_room_tail": 50,
+          "background_birth_with_room_tail": 50,
+          "bed_only_birth": 264,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 579
+        },
+        "control": {
+          "same_recording": 0,
+          "foreground_to_background": 0,
+          "background_to_foreground": 0,
+          "different_recording": 0,
+          "background_to_background": 314,
+          "admissions": 314,
+          "birth_with_room_tail": 0,
+          "background_birth_with_room_tail": 0,
+          "bed_only_birth": 314,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 314
+        }
+      },
+      "metrics": {
+        "repeat_identity": {
+          "admission": {
+            "mean": 0.2425,
+            "bootstrap_95": [
+              0.20249999999999999,
+              0.28250000000000003
+            ]
+          },
+          "birth": {
+            "mean": 0.24750000000000005,
+            "bootstrap_95": [
+              0.20249999999999999,
+              0.29
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.004999999999999996,
+            "bootstrap_95": [
+              -0.0375,
+              0.045
+            ]
+          }
+        },
+        "source_dependent_repeat": {
+          "admission": {
+            "mean": 0.14250000000000002,
+            "bootstrap_95": [
+              0.10993750000000005,
+              0.17750000000000002
+            ]
+          },
+          "birth": {
+            "mean": 0.175,
+            "bootstrap_95": [
+              0.135,
+              0.215
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.032499999999999994,
+            "bootstrap_95": [
+              -0.004999999999999995,
+              0.06999999999999999
+            ]
+          }
+        },
+        "strict_episode_exclusion": {
+          "admission": {
+            "mean": 0.11750000000000001,
+            "bootstrap_95": [
+              0.0875,
+              0.155
+            ]
+          },
+          "birth": {
+            "mean": 0.14500000000000002,
+            "bootstrap_95": [
+              0.10250000000000001,
+              0.19
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.027499999999999997,
+            "bootstrap_95": [
+              -0.005000000000000002,
+              0.05750000000000001
+            ]
+          }
+        },
+        "wrong_repeat_identity": {
+          "admission": {
+            "mean": 0.6250000000000001,
+            "bootstrap_95": [
+              0.5625,
+              0.69
+            ]
+          },
+          "birth": {
+            "mean": 0.6125,
+            "bootstrap_95": [
+              0.5525,
+              0.67
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.0125,
+            "bootstrap_95": [
+              -0.0425,
+              0.017500000000000005
+            ]
+          }
+        },
+        "deletion_repeat_identity": {
+          "admission": {
+            "mean": 0.14,
+            "bootstrap_95": [
+              0.12000000000000002,
+              0.16499999999999998
+            ]
+          },
+          "birth": {
+            "mean": 0.10750000000000001,
+            "bootstrap_95": [
+              0.08249999999999999,
+              0.13749999999999998
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.032499999999999994,
+            "bootstrap_95": [
+              -0.0675,
+              0.0
+            ]
+          }
+        }
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 18,
+            "source_dependent_repeat_episodes": 9,
+            "deletion_correct_repeat_episodes": 10,
+            "wrong_repeat_episodes": 52,
+            "strict_episode_exclusion_hits": 8
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 14,
+            "source_dependent_repeat_episodes": 10,
+            "deletion_correct_repeat_episodes": 6,
+            "wrong_repeat_episodes": 53,
+            "strict_episode_exclusion_hits": 8
+          }
+        },
+        "4-164021-A-1.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 12,
+            "source_dependent_repeat_episodes": 4,
+            "deletion_correct_repeat_episodes": 10,
+            "wrong_repeat_episodes": 43,
+            "strict_episode_exclusion_hits": 2
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 12,
+            "source_dependent_repeat_episodes": 9,
+            "deletion_correct_repeat_episodes": 6,
+            "wrong_repeat_episodes": 40,
+            "strict_episode_exclusion_hits": 6
+          }
+        },
+        "4-167077-A-20.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 29,
+            "source_dependent_repeat_episodes": 23,
+            "deletion_correct_repeat_episodes": 10,
+            "wrong_repeat_episodes": 49,
+            "strict_episode_exclusion_hits": 20
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 34,
+            "source_dependent_repeat_episodes": 28,
+            "deletion_correct_repeat_episodes": 10,
+            "wrong_repeat_episodes": 50,
+            "strict_episode_exclusion_hits": 25
+          }
+        },
+        "4-175945-A-38.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 156,
+            "correct_repeat_episodes": 24,
+            "source_dependent_repeat_episodes": 16,
+            "deletion_correct_repeat_episodes": 14,
+            "wrong_repeat_episodes": 49,
+            "strict_episode_exclusion_hits": 13
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 156,
+            "correct_repeat_episodes": 20,
+            "source_dependent_repeat_episodes": 18,
+            "deletion_correct_repeat_episodes": 6,
+            "wrong_repeat_episodes": 47,
+            "strict_episode_exclusion_hits": 14
+          }
+        },
+        "4-182395-A-0.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 14,
+            "source_dependent_repeat_episodes": 5,
+            "deletion_correct_repeat_episodes": 12,
+            "wrong_repeat_episodes": 57,
+            "strict_episode_exclusion_hits": 4
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 19,
+            "source_dependent_repeat_episodes": 5,
+            "deletion_correct_repeat_episodes": 15,
+            "wrong_repeat_episodes": 55,
+            "strict_episode_exclusion_hits": 5
+          }
+        }
+      }
+    },
+    "quiet128-f0-l3.5-b1.5": {
+      "transitions": {
+        "positive": {
+          "same_recording": 115,
+          "foreground_to_background": 33,
+          "background_to_foreground": 69,
+          "different_recording": 44,
+          "background_to_background": 105,
+          "admissions": 366,
+          "birth_with_room_tail": 16,
+          "background_birth_with_room_tail": 16,
+          "bed_only_birth": 158,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 366
+        },
+        "control": {
+          "same_recording": 0,
+          "foreground_to_background": 0,
+          "background_to_foreground": 0,
+          "different_recording": 0,
+          "background_to_background": 128,
+          "admissions": 128,
+          "birth_with_room_tail": 0,
+          "background_birth_with_room_tail": 0,
+          "bed_only_birth": 128,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 128
+        }
+      },
+      "metrics": {
+        "repeat_identity": {
+          "admission": {
+            "mean": 0.33249999999999996,
+            "bootstrap_95": [
+              0.2525,
+              0.39499999999999996
+            ]
+          },
+          "birth": {
+            "mean": 0.30500000000000005,
+            "bootstrap_95": [
+              0.24500000000000002,
+              0.35500000000000004
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.02749999999999999,
+            "bootstrap_95": [
+              -0.06249999999999998,
+              0.007500000000000012
+            ]
+          }
+        },
+        "source_dependent_repeat": {
+          "admission": {
+            "mean": 0.24,
+            "bootstrap_95": [
+              0.17750000000000005,
+              0.29500000000000004
+            ]
+          },
+          "birth": {
+            "mean": 0.255,
+            "bootstrap_95": [
+              0.19250000000000003,
+              0.305
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.014999999999999994,
+            "bootstrap_95": [
+              -0.0075000000000000015,
+              0.039999999999999994
+            ]
+          }
+        },
+        "strict_episode_exclusion": {
+          "admission": {
+            "mean": 0.20249999999999999,
+            "bootstrap_95": [
+              0.14750000000000002,
+              0.2525
+            ]
+          },
+          "birth": {
+            "mean": 0.24500000000000002,
+            "bootstrap_95": [
+              0.18,
+              0.2975
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.042499999999999996,
+            "bootstrap_95": [
+              0.009999999999999992,
+              0.08
+            ]
+          }
+        },
+        "wrong_repeat_identity": {
+          "admission": {
+            "mean": 0.9099999999999999,
+            "bootstrap_95": [
+              0.885,
+              0.9375
+            ]
+          },
+          "birth": {
+            "mean": 0.93,
+            "bootstrap_95": [
+              0.9075000000000001,
+              0.9550000000000001
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.020000000000000018,
+            "bootstrap_95": [
+              -0.009999999999999976,
+              0.052500000000000026
+            ]
+          }
+        },
+        "deletion_repeat_identity": {
+          "admission": {
+            "mean": 0.1375,
+            "bootstrap_95": [
+              0.09500000000000001,
+              0.1775
+            ]
+          },
+          "birth": {
+            "mean": 0.07,
+            "bootstrap_95": [
+              0.034999999999999996,
+              0.1075
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.0675,
+            "bootstrap_95": [
+              -0.1275,
+              -5.551115123125783e-18
+            ]
+          }
+        }
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 12,
+            "source_dependent_repeat_episodes": 10,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 77,
+            "strict_episode_exclusion_hits": 10
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 16,
+            "source_dependent_repeat_episodes": 13,
+            "deletion_correct_repeat_episodes": 3,
+            "wrong_repeat_episodes": 77,
+            "strict_episode_exclusion_hits": 13
+          }
+        },
+        "4-164021-A-1.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 31,
+            "source_dependent_repeat_episodes": 21,
+            "deletion_correct_repeat_episodes": 16,
+            "wrong_repeat_episodes": 68,
+            "strict_episode_exclusion_hits": 16
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 23,
+            "source_dependent_repeat_episodes": 18,
+            "deletion_correct_repeat_episodes": 7,
+            "wrong_repeat_episodes": 71,
+            "strict_episode_exclusion_hits": 16
+          }
+        },
+        "4-167077-A-20.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 29,
+            "source_dependent_repeat_episodes": 27,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 77,
+            "strict_episode_exclusion_hits": 27
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 34,
+            "source_dependent_repeat_episodes": 28,
+            "deletion_correct_repeat_episodes": 10,
+            "wrong_repeat_episodes": 76,
+            "strict_episode_exclusion_hits": 27
+          }
+        },
+        "4-175945-A-38.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 158,
+            "correct_repeat_episodes": 33,
+            "source_dependent_repeat_episodes": 18,
+            "deletion_correct_repeat_episodes": 27,
+            "wrong_repeat_episodes": 66,
+            "strict_episode_exclusion_hits": 8
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 158,
+            "correct_repeat_episodes": 14,
+            "source_dependent_repeat_episodes": 10,
+            "deletion_correct_repeat_episodes": 5,
+            "wrong_repeat_episodes": 72,
+            "strict_episode_exclusion_hits": 9
+          }
+        },
+        "4-182395-A-0.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 28,
+            "source_dependent_repeat_episodes": 20,
+            "deletion_correct_repeat_episodes": 8,
+            "wrong_repeat_episodes": 76,
+            "strict_episode_exclusion_hits": 20
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 35,
+            "source_dependent_repeat_episodes": 33,
+            "deletion_correct_repeat_episodes": 3,
+            "wrong_repeat_episodes": 76,
+            "strict_episode_exclusion_hits": 33
+          }
+        }
+      }
+    },
+    "quiet128-f1-l3.5-b1.5": {
+      "transitions": {
+        "positive": {
+          "same_recording": 170,
+          "foreground_to_background": 75,
+          "background_to_foreground": 111,
+          "different_recording": 55,
+          "background_to_background": 205,
+          "admissions": 616,
+          "birth_with_room_tail": 39,
+          "background_birth_with_room_tail": 39,
+          "bed_only_birth": 277,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 616
+        },
+        "control": {
+          "same_recording": 0,
+          "foreground_to_background": 0,
+          "background_to_foreground": 0,
+          "different_recording": 0,
+          "background_to_background": 250,
+          "admissions": 250,
+          "birth_with_room_tail": 0,
+          "background_birth_with_room_tail": 0,
+          "bed_only_birth": 250,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 250
+        }
+      },
+      "metrics": {
+        "repeat_identity": {
+          "admission": {
+            "mean": 0.36750000000000005,
+            "bootstrap_95": [
+              0.2774375,
+              0.44749999999999995
+            ]
+          },
+          "birth": {
+            "mean": 0.3225,
+            "bootstrap_95": [
+              0.23500000000000001,
+              0.395
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.045000000000000005,
+            "bootstrap_95": [
+              -0.09999999999999998,
+              0.01749999999999998
+            ]
+          }
+        },
+        "source_dependent_repeat": {
+          "admission": {
+            "mean": 0.25,
+            "bootstrap_95": [
+              0.17500000000000002,
+              0.31256249999999913
+            ]
+          },
+          "birth": {
+            "mean": 0.255,
+            "bootstrap_95": [
+              0.18,
+              0.31999999999999995
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.004999999999999999,
+            "bootstrap_95": [
+              -0.025000000000000005,
+              0.032500000000000015
+            ]
+          }
+        },
+        "strict_episode_exclusion": {
+          "admission": {
+            "mean": 0.2125,
+            "bootstrap_95": [
+              0.15,
+              0.2675
+            ]
+          },
+          "birth": {
+            "mean": 0.24,
+            "bootstrap_95": [
+              0.16999999999999998,
+              0.305
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.027500000000000014,
+            "bootstrap_95": [
+              0.0025000000000000243,
+              0.05250000000000001
+            ]
+          }
+        },
+        "wrong_repeat_identity": {
+          "admission": {
+            "mean": 0.8200000000000001,
+            "bootstrap_95": [
+              0.7725,
+              0.86
+            ]
+          },
+          "birth": {
+            "mean": 0.8525,
+            "bootstrap_95": [
+              0.8025,
+              0.9025000000000001
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.03249999999999999,
+            "bootstrap_95": [
+              -0.012500000000000034,
+              0.07250000000000002
+            ]
+          }
+        },
+        "deletion_repeat_identity": {
+          "admission": {
+            "mean": 0.16250000000000003,
+            "bootstrap_95": [
+              0.12250000000000001,
+              0.205
+            ]
+          },
+          "birth": {
+            "mean": 0.09,
+            "bootstrap_95": [
+              0.06000000000000001,
+              0.12250000000000001
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.0725,
+            "bootstrap_95": [
+              -0.11500000000000002,
+              -0.02749999999999999
+            ]
+          }
+        }
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 23,
+            "source_dependent_repeat_episodes": 11,
+            "deletion_correct_repeat_episodes": 12,
+            "wrong_repeat_episodes": 68,
+            "strict_episode_exclusion_hits": 11
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 27,
+            "source_dependent_repeat_episodes": 15,
+            "deletion_correct_repeat_episodes": 14,
+            "wrong_repeat_episodes": 70,
+            "strict_episode_exclusion_hits": 13
+          }
+        },
+        "4-164021-A-1.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 27,
+            "source_dependent_repeat_episodes": 15,
+            "deletion_correct_repeat_episodes": 16,
+            "wrong_repeat_episodes": 61,
+            "strict_episode_exclusion_hits": 13
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 17,
+            "source_dependent_repeat_episodes": 14,
+            "deletion_correct_repeat_episodes": 4,
+            "wrong_repeat_episodes": 64,
+            "strict_episode_exclusion_hits": 14
+          }
+        },
+        "4-167077-A-20.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 37,
+            "source_dependent_repeat_episodes": 31,
+            "deletion_correct_repeat_episodes": 9,
+            "wrong_repeat_episodes": 69,
+            "strict_episode_exclusion_hits": 29
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 35,
+            "source_dependent_repeat_episodes": 32,
+            "deletion_correct_repeat_episodes": 8,
+            "wrong_repeat_episodes": 70,
+            "strict_episode_exclusion_hits": 29
+          }
+        },
+        "4-175945-A-38.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 158,
+            "correct_repeat_episodes": 26,
+            "source_dependent_repeat_episodes": 20,
+            "deletion_correct_repeat_episodes": 14,
+            "wrong_repeat_episodes": 62,
+            "strict_episode_exclusion_hits": 12
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 158,
+            "correct_repeat_episodes": 22,
+            "source_dependent_repeat_episodes": 18,
+            "deletion_correct_repeat_episodes": 4,
+            "wrong_repeat_episodes": 67,
+            "strict_episode_exclusion_hits": 18
+          }
+        },
+        "4-182395-A-0.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 34,
+            "source_dependent_repeat_episodes": 23,
+            "deletion_correct_repeat_episodes": 14,
+            "wrong_repeat_episodes": 68,
+            "strict_episode_exclusion_hits": 20
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 28,
+            "source_dependent_repeat_episodes": 23,
+            "deletion_correct_repeat_episodes": 6,
+            "wrong_repeat_episodes": 70,
+            "strict_episode_exclusion_hits": 22
+          }
+        }
+      }
+    },
+    "quiet160-f0-l3.5-b1.5": {
+      "transitions": {
+        "positive": {
+          "same_recording": 116,
+          "foreground_to_background": 32,
+          "background_to_foreground": 69,
+          "different_recording": 36,
+          "background_to_background": 104,
+          "admissions": 357,
+          "birth_with_room_tail": 17,
+          "background_birth_with_room_tail": 17,
+          "bed_only_birth": 156,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 357
+        },
+        "control": {
+          "same_recording": 0,
+          "foreground_to_background": 0,
+          "background_to_foreground": 0,
+          "different_recording": 0,
+          "background_to_background": 121,
+          "admissions": 121,
+          "birth_with_room_tail": 0,
+          "background_birth_with_room_tail": 0,
+          "bed_only_birth": 121,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 121
+        }
+      },
+      "metrics": {
+        "repeat_identity": {
+          "admission": {
+            "mean": 0.355,
+            "bootstrap_95": [
+              0.2775,
+              0.425
+            ]
+          },
+          "birth": {
+            "mean": 0.2975,
+            "bootstrap_95": [
+              0.24,
+              0.35000000000000003
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.05750000000000003,
+            "bootstrap_95": [
+              -0.11500000000000002,
+              -0.0025000000000000187
+            ]
+          }
+        },
+        "source_dependent_repeat": {
+          "admission": {
+            "mean": 0.23750000000000004,
+            "bootstrap_95": [
+              0.175,
+              0.29000000000000004
+            ]
+          },
+          "birth": {
+            "mean": 0.26,
+            "bootstrap_95": [
+              0.195,
+              0.31000000000000005
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.022500000000000003,
+            "bootstrap_95": [
+              0.00500000000000001,
+              0.04249999999999999
+            ]
+          }
+        },
+        "strict_episode_exclusion": {
+          "admission": {
+            "mean": 0.2125,
+            "bootstrap_95": [
+              0.15749999999999997,
+              0.2625
+            ]
+          },
+          "birth": {
+            "mean": 0.2475,
+            "bootstrap_95": [
+              0.18,
+              0.3
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.035,
+            "bootstrap_95": [
+              0.004999999999999979,
+              0.06750000000000002
+            ]
+          }
+        },
+        "wrong_repeat_identity": {
+          "admission": {
+            "mean": 0.9125,
+            "bootstrap_95": [
+              0.8875,
+              0.9375000000000002
+            ]
+          },
+          "birth": {
+            "mean": 0.9475,
+            "bootstrap_95": [
+              0.9175000000000001,
+              0.975
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.034999999999999976,
+            "bootstrap_95": [
+              0.00499999999999996,
+              0.05999999999999998
+            ]
+          }
+        },
+        "deletion_repeat_identity": {
+          "admission": {
+            "mean": 0.14500000000000002,
+            "bootstrap_95": [
+              0.11000000000000001,
+              0.18250000000000002
+            ]
+          },
+          "birth": {
+            "mean": 0.05750000000000001,
+            "bootstrap_95": [
+              0.025,
+              0.09749999999999999
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.08750000000000001,
+            "bootstrap_95": [
+              -0.145,
+              -0.02000000000000001
+            ]
+          }
+        }
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 12,
+            "source_dependent_repeat_episodes": 10,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 78,
+            "strict_episode_exclusion_hits": 10
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 12,
+            "source_dependent_repeat_episodes": 9,
+            "deletion_correct_repeat_episodes": 3,
+            "wrong_repeat_episodes": 78,
+            "strict_episode_exclusion_hits": 9
+          }
+        },
+        "4-164021-A-1.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 35,
+            "source_dependent_repeat_episodes": 23,
+            "deletion_correct_repeat_episodes": 18,
+            "wrong_repeat_episodes": 68,
+            "strict_episode_exclusion_hits": 17
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 25,
+            "source_dependent_repeat_episodes": 22,
+            "deletion_correct_repeat_episodes": 4,
+            "wrong_repeat_episodes": 73,
+            "strict_episode_exclusion_hits": 21
+          }
+        },
+        "4-167077-A-20.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 29,
+            "source_dependent_repeat_episodes": 27,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 79,
+            "strict_episode_exclusion_hits": 27
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 35,
+            "source_dependent_repeat_episodes": 29,
+            "deletion_correct_repeat_episodes": 12,
+            "wrong_repeat_episodes": 78,
+            "strict_episode_exclusion_hits": 26
+          }
+        },
+        "4-175945-A-38.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 158,
+            "correct_repeat_episodes": 35,
+            "source_dependent_repeat_episodes": 15,
+            "deletion_correct_repeat_episodes": 25,
+            "wrong_repeat_episodes": 63,
+            "strict_episode_exclusion_hits": 11
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 158,
+            "correct_repeat_episodes": 14,
+            "source_dependent_repeat_episodes": 12,
+            "deletion_correct_repeat_episodes": 3,
+            "wrong_repeat_episodes": 73,
+            "strict_episode_exclusion_hits": 11
+          }
+        },
+        "4-182395-A-0.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 31,
+            "source_dependent_repeat_episodes": 20,
+            "deletion_correct_repeat_episodes": 11,
+            "wrong_repeat_episodes": 77,
+            "strict_episode_exclusion_hits": 20
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 33,
+            "source_dependent_repeat_episodes": 32,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 77,
+            "strict_episode_exclusion_hits": 32
+          }
+        }
+      }
+    },
+    "quiet160-f1-l3.5-b1.5": {
+      "transitions": {
+        "positive": {
+          "same_recording": 166,
+          "foreground_to_background": 88,
+          "background_to_foreground": 115,
+          "different_recording": 50,
+          "background_to_background": 203,
+          "admissions": 622,
+          "birth_with_room_tail": 44,
+          "background_birth_with_room_tail": 44,
+          "bed_only_birth": 274,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 622
+        },
+        "control": {
+          "same_recording": 0,
+          "foreground_to_background": 0,
+          "background_to_foreground": 0,
+          "different_recording": 0,
+          "background_to_background": 253,
+          "admissions": 253,
+          "birth_with_room_tail": 0,
+          "background_birth_with_room_tail": 0,
+          "bed_only_birth": 253,
+          "stored_hash_changed_since_birth": 0,
+          "stored_differs_from_admission_observation": 253
+        }
+      },
+      "metrics": {
+        "repeat_identity": {
+          "admission": {
+            "mean": 0.37250000000000005,
+            "bootstrap_95": [
+              0.2925,
+              0.44000000000000006
+            ]
+          },
+          "birth": {
+            "mean": 0.3225,
+            "bootstrap_95": [
+              0.255,
+              0.38749999999999996
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.05000000000000001,
+            "bootstrap_95": [
+              -0.11000000000000001,
+              0.02249999999999998
+            ]
+          }
+        },
+        "source_dependent_repeat": {
+          "admission": {
+            "mean": 0.25,
+            "bootstrap_95": [
+              0.185,
+              0.3
+            ]
+          },
+          "birth": {
+            "mean": 0.26000000000000006,
+            "bootstrap_95": [
+              0.2,
+              0.305
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.01,
+            "bootstrap_95": [
+              -0.020000000000000007,
+              0.03500000000000001
+            ]
+          }
+        },
+        "strict_episode_exclusion": {
+          "admission": {
+            "mean": 0.205,
+            "bootstrap_95": [
+              0.15,
+              0.2475
+            ]
+          },
+          "birth": {
+            "mean": 0.23499999999999996,
+            "bootstrap_95": [
+              0.17750000000000002,
+              0.27999999999999997
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.029999999999999992,
+            "bootstrap_95": [
+              0.004999999999999999,
+              0.05750000000000001
+            ]
+          }
+        },
+        "wrong_repeat_identity": {
+          "admission": {
+            "mean": 0.805,
+            "bootstrap_95": [
+              0.7575,
+              0.8525
+            ]
+          },
+          "birth": {
+            "mean": 0.8574999999999999,
+            "bootstrap_95": [
+              0.8099999999999999,
+              0.905
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": 0.052500000000000005,
+            "bootstrap_95": [
+              0.01749999999999995,
+              0.09000000000000004
+            ]
+          }
+        },
+        "deletion_repeat_identity": {
+          "admission": {
+            "mean": 0.175,
+            "bootstrap_95": [
+              0.1375,
+              0.215
+            ]
+          },
+          "birth": {
+            "mean": 0.095,
+            "bootstrap_95": [
+              0.06000000000000001,
+              0.1325
+            ]
+          },
+          "birth_minus_admission": {
+            "mean": -0.08,
+            "bootstrap_95": [
+              -0.14250000000000002,
+              -0.014999999999999996
+            ]
+          }
+        }
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 20,
+            "source_dependent_repeat_episodes": 9,
+            "deletion_correct_repeat_episodes": 12,
+            "wrong_repeat_episodes": 68,
+            "strict_episode_exclusion_hits": 8
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 26,
+            "source_dependent_repeat_episodes": 13,
+            "deletion_correct_repeat_episodes": 17,
+            "wrong_repeat_episodes": 71,
+            "strict_episode_exclusion_hits": 9
+          }
+        },
+        "4-164021-A-1.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 28,
+            "source_dependent_repeat_episodes": 16,
+            "deletion_correct_repeat_episodes": 15,
+            "wrong_repeat_episodes": 61,
+            "strict_episode_exclusion_hits": 14
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 18,
+            "source_dependent_repeat_episodes": 16,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 66,
+            "strict_episode_exclusion_hits": 16
+          }
+        },
+        "4-167077-A-20.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 36,
+            "source_dependent_repeat_episodes": 31,
+            "deletion_correct_repeat_episodes": 9,
+            "wrong_repeat_episodes": 73,
+            "strict_episode_exclusion_hits": 28
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 35,
+            "source_dependent_repeat_episodes": 30,
+            "deletion_correct_repeat_episodes": 11,
+            "wrong_repeat_episodes": 71,
+            "strict_episode_exclusion_hits": 27
+          }
+        },
+        "4-175945-A-38.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 158,
+            "correct_repeat_episodes": 32,
+            "source_dependent_repeat_episodes": 22,
+            "deletion_correct_repeat_episodes": 19,
+            "wrong_repeat_episodes": 53,
+            "strict_episode_exclusion_hits": 14
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 158,
+            "correct_repeat_episodes": 23,
+            "source_dependent_repeat_episodes": 20,
+            "deletion_correct_repeat_episodes": 5,
+            "wrong_repeat_episodes": 62,
+            "strict_episode_exclusion_hits": 18
+          }
+        },
+        "4-182395-A-0.wav": {
+          "admission": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 33,
+            "source_dependent_repeat_episodes": 22,
+            "deletion_correct_repeat_episodes": 15,
+            "wrong_repeat_episodes": 67,
+            "strict_episode_exclusion_hits": 18
+          },
+          "birth": {
+            "episodes": 160,
+            "eligible_repeat_episodes": 80,
+            "detected_episodes": 160,
+            "correct_repeat_episodes": 27,
+            "source_dependent_repeat_episodes": 25,
+            "deletion_correct_repeat_episodes": 3,
+            "wrong_repeat_episodes": 73,
+            "strict_episode_exclusion_hits": 24
+          }
+        }
+      }
+    }
+  },
+  "scope": "Observed-data label sensitivity, not a replacement accuracy estimate or a newly held-out method",
+  "uncertainty": "10000 paired seed-bootstrap draws, jointly across positive suites; conditional on five fixed foreground recordings",
+  "causality": "Birth and admission window labels do not identify the acoustic cause of a stored vector. Background births with prior source tails are explicit.",
+  "seeds": [
+    2900,
+    2901,
+    2902,
+    2903,
+    2904,
+    2905,
+    2906,
+    2907,
+    2908,
+    2909
+  ]
+}

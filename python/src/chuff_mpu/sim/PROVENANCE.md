@@ -62,7 +62,15 @@ branch comparisons. All existing learner source files remain unchanged.
 
 The trace alone does not establish acoustic causality or revise reported
 accuracy. A birth-window recording label still does not prove that its
-foreground caused the stored embedding. The observed-recording replay and
-admission-versus-birth scoring comparison are a separate Beads task,
-ch-6w4.10.7.2. Historical admission-time scores and frozen archives must remain
-available alongside those diagnostics.
+foreground caused the stored embedding. The completed observed-recording
+replay in `provenance_replay.py` matches the original 126,000 decisions and
+40,000 probes, then joins labels outside actors. `audit_provenance.py`
+validates lifecycle coverage, contexts and both scoring views;
+`provenance_report.py` derives paired-seed label sensitivity. The diagnostic
+scorer in `provenance_metrics.py` is separate from the unchanged historical
+scorer and must reproduce it given admission labels in every stream.
+
+Paper 09 and Beads ch-6w4.10.7.2 document the completed audit. Historical
+scores and frozen archives remain available alongside birth-label
+diagnostics. Candidate feature dependence at birth/confirmation is a
+different question, tracked in ch-6w4.10.8; window labels alone do not answer it.
