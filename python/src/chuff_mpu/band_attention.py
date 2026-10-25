@@ -50,17 +50,9 @@ class BandForegroundLearner(ForegroundLearner):
     def _is_calibrating(self):
         return self._tick <= self.settings.warmup_clips
 
-    def observe(self, clip: np.ndarray) -> Observation:
+    def _noise_background(self, power):
+        """Return a bin floor vector, or a frame-wise matrix in research adapters."""
         c = self.settings
-        clip = np.asarray(clip, dtype=np.float64)
-        if clip.ndim != 1 or len(clip) < c.n_fft or not np.isfinite(clip).all():
-            raise ValueError("expected a finite mono clip at least one FFT window long")
-        self._tick += 1
-        self._candidates = [p for p in self._candidates if self._tick - p.last_seen <= c.candidate_ttl]
-        _, _, spectrum = stft(clip, fs=c.sample_rate, nperseg=c.n_fft,
-                              noverlap=c.n_fft - c.hop, boundary=None, padded=False)
-        power = np.abs(spectrum) ** 2
-        power = self._prepare_power(power)
         if c.noise_mode == 0:
             floor = np.maximum(np.quantile(power, 0.3, axis=1) / -np.log(0.7), 1e-12)
         else:
@@ -74,11 +66,35 @@ class BandForegroundLearner(ForegroundLearner):
             self._background = floor.copy()
         background = np.maximum(self._background, floor)
         self._background += c.background_rate * (floor - self._background)
+        return background
+
+    def _detection_relative(self, power, bands, noise):
+        return bands/(noise[:, None] if noise.ndim == 1 else noise)
+
+    def _feature_matrix(self, power, background, smoothed):
+        c = self.settings
+        if c.feature_mode == 0:
+            background = background[:, None] if background.ndim == 1 else background
+            return self._filters @ np.maximum(power - c.subtraction * background, 0)
+        return np.maximum(smoothed - 1.5, 0)
+
+    def observe(self, clip: np.ndarray) -> Observation:
+        c = self.settings
+        clip = np.asarray(clip, dtype=np.float64)
+        if clip.ndim != 1 or len(clip) < c.n_fft or not np.isfinite(clip).all():
+            raise ValueError("expected a finite mono clip at least one FFT window long")
+        self._tick += 1
+        self._candidates = [p for p in self._candidates if self._tick - p.last_seen <= c.candidate_ttl]
+        _, _, spectrum = stft(clip, fs=c.sample_rate, nperseg=c.n_fft,
+                              noverlap=c.n_fft - c.hop, boundary=None, padded=False)
+        power = np.abs(spectrum) ** 2
+        power = self._prepare_power(power)
+        background = self._noise_background(power)
         if self._is_calibrating():
             return Observation("calibrating")
         bands = self._filters @ power
         noise = np.maximum(self._filters @ background, 1e-12)
-        relative = bands / noise[:, None]
+        relative = self._detection_relative(power, bands, noise)
         smoothed = uniform_filter1d(relative, c.smoothing_frames, axis=1, mode="nearest")
         evidence = np.maximum(smoothed.max(axis=0) / c.local_threshold,
                               smoothed.mean(axis=0) / c.broad_threshold)
@@ -95,10 +111,7 @@ class BandForegroundLearner(ForegroundLearner):
         if not regions:
             return Observation("background", salience)
         start, stop = max(regions, key=lambda region: float(evidence[region[0]:region[1]].sum()))
-        if c.feature_mode == 0:
-            features = self._filters @ np.maximum(power - c.subtraction * background[:, None], 0)
-        else:
-            features = np.maximum(smoothed - 1.5, 0)
+        features = self._feature_matrix(power, background, smoothed)
         vectors = []
         for segment in np.array_split(features[:, start:stop], 3, axis=1):
             vector = segment.mean(axis=1)

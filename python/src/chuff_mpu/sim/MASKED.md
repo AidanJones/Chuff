@@ -399,3 +399,31 @@ sources and raw-input hashes. Original source IDs are disjoint across
 partitions; uncertainty is conditional on these fixed clips. Existing
 learners remain unchanged. Broader category coverage, active-support SNR
 and published frontend baselines remain open Beads tasks.
+
+The research adapters in `published_attention.py` now provide stateful PCEN
+and MCRA primitives with the same candidate, prototype and memory backend.
+PCEN calls librosa 0.11 with persistent filter state on magnitude mel bands,
+undoes SciPy's Hann normalization and uses an amplitude scale of 2**31.
+It retains this project's 32 HTK bands, 512-sample FFT and 160-sample hop;
+this differs from the original keyword-spotting frontend. An additional
+quiet-frame background estimate converts PCEN output to detector evidence.
+Warmup processes the filter state. See the
+[librosa PCEN reference](https://librosa.org/doc/0.11.0/generated/librosa.pcen.html).
+
+MCRA follows the recursions and defaults in Cohen and Berdugo (2002),
+[Noise Estimation by Minima Controlled Recursive Averaging for Robust Speech Enhancement](https://doi.org/10.1109/97.988717):
+16 kHz, FFT 512, hop 128, smoothing coefficients .8/.95/.2, threshold 5
+and minimum block length 125 frames. The three-bin frequency weights
+[.25, .5, .25] and nearest-edge extension are explicit implementation choices.
+The first power frame initializes the noise estimate; the estimate for the
+current frame precedes its update for the next frame. Sustained sources can
+eventually enter the noise estimate. These adapters do not implement full
+keyword spotting or OM-LSA speech enhancement.
+
+Both adapters separate detection normalization from stored features:
+`feature_mode=0` stores raw spectral excess, while mode 1 stores relative
+detector features. Saved memories use distinct schemas and reload with fresh
+frontend state. Reference, chunk-parity and frozen-default trajectory tests
+cover these implementations. Their comparative accuracy and runtime have
+not yet been established; the fresh-recording comparison is tracked in
+Beads ch-6w4.7.2.
