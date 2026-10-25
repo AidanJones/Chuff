@@ -449,3 +449,14 @@ one no-target control per ambience condition/seed. `audit_published.py`
 recomputes the raw-row metrics, runtime summaries and selection and checks
 the complete matrix, source/input/output hashes and physical evidence.
 Paper 08 and Beads ch-6w4.7.2 document this comparison's status and scope.
+
+That frozen comparison is complete: development retains 123,480 actual
+decisions and evaluation 126,000, with independent audits of raw/probe
+matrices and exact selection. `published_report.py` derives paired-seed
+aggregate and contrast intervals while keeping suites correlated within
+each seed. It preserves the original evaluation and labels post-run
+contrasts as exploratory. `plot_published.py` is a standalone optional
+matplotlib renderer; it does not change the experiment dependencies.
+Paper 08 reports the foreground/background trade-offs and source-specific
+failures, including admission-label ambiguity. New methods need fresh
+frozen evaluation sources; these recordings are now observed evidence.

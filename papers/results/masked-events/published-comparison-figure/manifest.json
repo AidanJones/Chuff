@@ -1,0 +1,14 @@
+{
+  "schema": "chuff.recorded.published-figure.v1",
+  "matplotlib": "3.10.7",
+  "input_sha256": {
+    "input/report.json": "1e7e31cd236bbec9dbdf21a01a7fd1be12a0f39581dbd921f2d43b29626645e1"
+  },
+  "source_sha256": {
+    "python/src/chuff_mpu/sim/plot_published.py": "cacd5a82bc4de77d69548e5204db108c25f2044695a9aaf24ef2d1c8b08e4b0f"
+  },
+  "output_sha256": {
+    "comparison.png": "5030fd48a3fce2325a9bddbac5a8716d14b0386e8956ea672ffc54a25e9c4773",
+    "comparison.svg": "4cb8645d43dd02a0ea88cdc9370da147280b0270ca2fbf865965b1f08c6fa765"
+  }
+}

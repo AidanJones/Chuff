@@ -1,7 +1,9 @@
-# Published frontends for recorded novelty: a frozen comparison protocol
+# Published frontends for recorded novelty: a source-separated comparison
 
-**Status:** Development selection completed and audited. No held-out
-evaluation result is available. The final configuration list is frozen.
+**Status:** Frozen development and held-out evaluation completed and audited.
+PCEN trades fewer background commitments for missed foreground episodes;
+the tested MCRA adapter retains only 4.5% strict repeat identity. No method
+avoids frequent background commitments; semantic relevance remains unevaluated.
 
 ## Question
 
@@ -62,11 +64,12 @@ alternative takes. Twenty newly selected source IDs are mutually distinct
 and disjoint from the twenty pilot sources. Selection uses pinned upstream
 metadata and lexical filename order, without choosing favorable waveforms.
 
-The reservation precedes new audio materialization. Only its ten development
-recordings have been downloaded: five foreground categories and five
+The reservation preceded new audio materialization. Its ten development
+recordings were downloaded first: five foreground categories and five
 background categories, each a complete five-second recording. Evaluation
-materialization is deferred until development selection is archived. The
-catalog builder can enforce separate partition downloads and verifies WAV
+materialization followed the archived development selection and commit
+`5cfe07c`. The catalog builder enforces separate partition downloads and
+verifies WAV
 format, file hashes and individual attribution. ESC-10 data retain their
 upstream CC BY 3.0 terms and source attribution [4].
 
@@ -141,6 +144,16 @@ their updates. They retain earlier actual exposure; they are not a complete
 episode-deleted learning history. The less strict, same-window-conditioned
 endpoint and wrong-identity rates are retained as separate diagnostics.
 
+Identity scoring assigns a prototype the recording label of its admission
+window. The stored candidate vector may have been created in an earlier
+window, so admission labels do not prove the origin of a mixed-stream
+prototype. Source removal tests current-episode dependence of recognition,
+not the origin of every stored feature. Pure no-target controls remain
+unambiguous evidence that the system commits background prototypes. The
+candidate-provenance audit in ch-6w4.10.7 addresses the mixed-stream ambiguity.
+Here, background denotes the experimental bed; it does not mean every sound
+in that recording is intrinsically unimportant to a robot.
+
 Runtime uses `perf_counter_ns` around each actual `observe`, excluding
 rendering, branch copying and probe observations. Imports/JIT are warmed
 using disposable actors before measurements; the first three measured
@@ -190,16 +203,119 @@ Detection and novelty are high in that diagnostic (95% each), demonstrating
 that detecting change alone does not establish stable source identity.
 
 The full grid, feature-specific selections, infeasibility labels and
-deduplicated evaluation list are in `selection.json`. Final evaluation will
-use nine configurations plus the untuned adaptive-gain anchor. The raw PCEN
+deduplicated evaluation list are in `selection.json`. Final evaluation used
+nine configurations plus the untuned adaptive-gain anchor. The raw PCEN
 default is retained alongside its tuned choice; its development detection
 and strict recall do not meet the declared screening requirements. Both
 raw and relative feature choices remain represented. No additional tuning
 or threshold relaxation follows these outcomes.
 
+## Held-out findings
+
+The evaluation archive at
+[`published-evaluation/`](results/masked-events/published-evaluation/)
+contains 126,000 actual decisions and 40,000 source-removal probes across
+sixty 210-second streams. All method settings, defaults, feature-specific
+choices and development infeasibility labels remained fixed. The offline
+audit verified the complete matrix and recomputed physical, timing and
+identity evidence. The separate
+[`published-comparison/`](results/masked-events/published-comparison/)
+archive preserves a descriptive paired-seed aggregation and its sources.
+
+The following means equally weight the four positive suites or the two
+unique control suites, then the ten seeds. Strict-repeat intervals resample
+seeds jointly across suites, retaining condition/SNR correlation. They are
+conditional on five fixed foreground recordings, not corpus-generalization
+intervals. There are 400 eligible repeat episodes per method, with 80 per
+recording; those repeats are not independent source recordings.
+
+| Method | Strict identity %, 95% interval | Control commitments / 210 s | Control attention % | Episode detection % | Wrong identity % | Observe ms |
+|---|---:|---:|---:|---:|---:|---:|
+| Quiet160, raw default/selected | 21.25 [15.75, 26.25] | 6.05 | 77.98 | 99.75 | 91.25 | 1.27 |
+| Quiet128, raw default/selected | 20.25 [14.75, 25.25] | 6.40 | 78.00 | 99.75 | 91.00 | 1.41 |
+| PCEN160, selected raw | 18.25 [12.25, 23.75] | 4.10 | 47.60 | 89.75 | 53.75 | 1.73 |
+| MCRA128, raw diagnostic | 4.50 [1.50, 8.00] | 7.40 | 57.90 | 96.50 | 81.50 | 4.08 |
+| Adaptive-gain anchor | 26.75 [21.25, 32.25] | 6.20 | 48.95 | 98.25 | 72.25 | 1.58 |
+
+The paired PCEN-minus-Quiet160 difference is −1.95 commitments per control
+stream [−2.65, −1.20], but −3.00 percentage points of strict identity
+[−6.75, +1.00] and −10.00 points of episode detection [−11.88, −8.13].
+This supports a background-attention/retention trade-off on these inputs,
+not superior foreground learning. The adaptive anchor has a descriptive
++5.50-point strict difference from Quiet160 [0.00, +11.25]; that interval
+does not establish broad superiority. These exploratory contrast intervals
+are not adjusted for multiple comparisons.
+
+![Held-out background commitments, strict identity and warmed inference timing](results/masked-events/published-comparison-figure/comparison.png)
+
+The standalone [SVG](results/masked-events/published-comparison-figure/comparison.svg)
+and PNG preserve their input report, plotting source and hashes. Timing is
+mean warmed actual-observe cost, excluding source-removal probes, rendering,
+copying and initial calibration. It measures these Python implementations
+on this shared desktop. In particular, MCRA's Python per-frame loop is not
+an estimate of optimized MCRA algorithmic complexity or embedded power use.
+
+### Condition dependence and missed events
+
+| Positive suite | Quiet160 strict % | Quiet128 strict % | PCEN selected strict % | MCRA diagnostic strict % | Adaptive strict % |
+|---|---:|---:|---:|---:|---:|
+| Recorded, 0 dB | 43 | 37 | 28 | 5 | 30 |
+| Recorded, −6 dB | 17 | 16 | 14 | 4 | 20 |
+| Modulated, 0 dB | 19 | 20 | 21 | 8 | 34 |
+| Modulated, −6 dB | 6 | 8 | 10 | 1 | 23 |
+
+PCEN's unmodulated episode detection falls to 86.5% at 0 dB and 72.5% at
+−6 dB, compared with Quiet160's 99.5% in each. Its development detection
+constraint therefore does not transfer to the −6 dB evaluation suite.
+Under modulation PCEN detects every episode, yet wrong-identity episodes
+reach 95% at both SNRs. Quiet160 reaches 100% wrong identity under modulated
+−6 dB. Detecting change is clearly insufficient for stable identity here.
+Wrong and correct recognition can occur within the same episode; the
+admission-label ambiguity described above also limits these identity labels.
+
+Performance differs by recording, not just suite. Strict hits across all
+conditions and seeds are:
+
+| One held-out recording | Quiet160 / 80 | PCEN selected / 80 | MCRA diagnostic / 80 | Adaptive / 80 |
+|---|---:|---:|---:|---:|
+| Sneezing | 10 | 23 | 1 | 4 |
+| Rooster | 17 | 5 | 3 | 32 |
+| Crying baby | 27 | 26 | 1 | 35 |
+| Clock tick | 11 | 0 | 6 | 8 |
+| Dog | 20 | 19 | 7 | 28 |
+
+These are eighty eligible replays of one file per row. PCEN's overall result
+conceals better sneeze replay and loss of clock-tick identity; it does not
+show generalization to those categories. Quiet160's development strict mean
+was 47.5%, versus 21.25% here; selected PCEN falls from 31.25% to 18.25%.
+The partitions change both fixed recordings and mixer seeds, so those shifts
+cannot isolate source diversity from seed variation or selection effects.
+
+### Stored-feature and default controls
+
+The full ten-configuration table and paired contrasts remain in the
+comparison archive. At matched thresholds, relative features change
+Quiet160 strict identity from 21.25% to 20.50% while control commitments rise
+from 6.05 to 12.65; Quiet128 changes from 20.25% to 21.25% with commitments
+6.40 to 12.50. MCRA raw/relative changes 4.50% to 2.25% and 7.40 to 12.80
+commitments. Relative storage does not resolve background learning here.
+
+The separately selected PCEN relative pipeline yields 11.75% strict identity
+and 15.70 control commitments, but also uses a different broad threshold
+from the raw choice. That comparison cannot isolate the feature mode.
+The untuned raw PCEN default yields 12.00% strict identity and 3.50 control
+commitments; fewer commitments alone do not make it a preferable learner.
+No evaluation result triggers retuning or a relaxed feasibility criterion.
+
 ## Remaining scope
 
-The comparison and its follow-through are tracked in Beads ch-6w4.7.2.
+The frozen comparison is tracked in Beads ch-6w4.7.2. The resulting priorities
+are candidate birth/admission provenance (ch-6w4.10.7), continuous STFT
+framing (ch-6w4.7.3), and MCRA noise/feature-state drift diagnostics
+(ch-6w4.7.4). The latter must distinguish sustained-source noise absorption,
+initialization and representation drift from a presumed implementation
+failure. Existing observed recordings can support diagnosis; revised methods
+require a new frozen source split for evaluation.
 Active-support calibration without cropping remains ch-6w4.1.4; broader
 categories and more original recordings remain ch-6w4.1.3. Importance and
 one-off relevance learning remain ch-6w4.3. These methods can emphasize

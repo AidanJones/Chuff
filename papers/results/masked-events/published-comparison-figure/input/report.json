@@ -1,0 +1,3115 @@
+{
+  "schema": "chuff.recorded.published-report.v1",
+  "modes": {
+    "adaptive_gain": {
+      "metrics": {
+        "episode_detection": {
+          "mean": 0.9825000000000002,
+          "bootstrap_95": [
+            0.96875,
+            0.99375
+          ]
+        },
+        "first_episode_novel_attention": {
+          "mean": 0.905,
+          "bootstrap_95": [
+            0.8350000000000002,
+            0.97
+          ]
+        },
+        "repeat_identity": {
+          "mean": 0.3475,
+          "bootstrap_95": [
+            0.255,
+            0.4374999999999999
+          ]
+        },
+        "source_dependent_repeat": {
+          "mean": 0.305,
+          "bootstrap_95": [
+            0.23000000000000004,
+            0.3775
+          ]
+        },
+        "strict_episode_exclusion": {
+          "mean": 0.2675,
+          "bootstrap_95": [
+            0.2125,
+            0.3225
+          ]
+        },
+        "wrong_repeat_identity": {
+          "mean": 0.7225,
+          "bootstrap_95": [
+            0.6475,
+            0.805
+          ]
+        },
+        "control_admissions": {
+          "mean": 6.2,
+          "bootstrap_95": [
+            5.3,
+            7.1
+          ]
+        },
+        "control_attention": {
+          "mean": 0.48952380952380947,
+          "bootstrap_95": [
+            0.45928571428571424,
+            0.5209523809523811
+          ]
+        },
+        "observe_ms": {
+          "mean": 1.5796721980676327,
+          "bootstrap_95": [
+            1.54938029931562,
+            1.6064446378824477
+          ]
+        }
+      },
+      "positive_counts": {
+        "windows": 8400,
+        "background_windows": 4400,
+        "background_attention": 2144,
+        "background_admissions": 150,
+        "background_with_room_tail": 800,
+        "room_tail_attention": 461,
+        "background_without_room_tail": 3600,
+        "no_room_tail_attention": 1683,
+        "episodes": 800,
+        "eligible_repeat_episodes": 400,
+        "detected_episodes": 786,
+        "correct_repeat_episodes": 139,
+        "source_dependent_repeat_episodes": 122,
+        "deletion_correct_repeat_episodes": 33,
+        "deletion_attention_episodes": 750,
+        "wrong_repeat_episodes": 289,
+        "wrong_only_repeat_episodes": 212,
+        "first_episode_novel_attention": 181,
+        "strict_episode_exclusion_hits": 107,
+        "recording_run_pairs": 200,
+        "admitted_recording_run_pairs": 154,
+        "distinct_input_recordings": 5
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 159,
+          "correct_repeat_episodes": 16,
+          "source_dependent_repeat_episodes": 6,
+          "deletion_correct_repeat_episodes": 12,
+          "wrong_repeat_episodes": 72,
+          "strict_episode_exclusion_hits": 4
+        },
+        "4-164021-A-1.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 36,
+          "source_dependent_repeat_episodes": 35,
+          "deletion_correct_repeat_episodes": 4,
+          "wrong_repeat_episodes": 46,
+          "strict_episode_exclusion_hits": 32
+        },
+        "4-167077-A-20.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 38,
+          "source_dependent_repeat_episodes": 36,
+          "deletion_correct_repeat_episodes": 3,
+          "wrong_repeat_episodes": 57,
+          "strict_episode_exclusion_hits": 35
+        },
+        "4-175945-A-38.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 147,
+          "correct_repeat_episodes": 11,
+          "source_dependent_repeat_episodes": 11,
+          "deletion_correct_repeat_episodes": 3,
+          "wrong_repeat_episodes": 47,
+          "strict_episode_exclusion_hits": 8
+        },
+        "4-182395-A-0.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 38,
+          "source_dependent_repeat_episodes": 34,
+          "deletion_correct_repeat_episodes": 11,
+          "wrong_repeat_episodes": 67,
+          "strict_episode_exclusion_hits": 28
+        }
+      },
+      "seed_values": {
+        "episode_detection": [
+          0.975,
+          1.0,
+          0.9875,
+          1.0,
+          1.0,
+          1.0,
+          0.95,
+          1.0,
+          0.95,
+          0.9624999999999999
+        ],
+        "first_episode_novel_attention": [
+          1.0,
+          0.8,
+          0.95,
+          1.0,
+          1.0,
+          0.75,
+          0.8,
+          0.75,
+          1.0,
+          1.0
+        ],
+        "repeat_identity": [
+          0.22500000000000003,
+          0.475,
+          0.3,
+          0.6,
+          0.42500000000000004,
+          0.44999999999999996,
+          0.2,
+          0.125,
+          0.225,
+          0.44999999999999996
+        ],
+        "source_dependent_repeat": [
+          0.22500000000000003,
+          0.475,
+          0.22499999999999998,
+          0.44999999999999996,
+          0.4,
+          0.35,
+          0.2,
+          0.1,
+          0.225,
+          0.4
+        ],
+        "strict_episode_exclusion": [
+          0.22500000000000003,
+          0.42500000000000004,
+          0.2,
+          0.30000000000000004,
+          0.325,
+          0.35,
+          0.2,
+          0.1,
+          0.225,
+          0.325
+        ],
+        "wrong_repeat_identity": [
+          0.7249999999999999,
+          0.6499999999999999,
+          0.675,
+          0.575,
+          0.525,
+          0.675,
+          0.75,
+          0.975,
+          0.875,
+          0.8
+        ],
+        "control_admissions": [
+          7.0,
+          8.5,
+          5.5,
+          4.0,
+          6.5,
+          7.0,
+          5.0,
+          4.0,
+          8.0,
+          6.5
+        ],
+        "control_attention": [
+          0.41666666666666663,
+          0.4523809523809524,
+          0.4476190476190476,
+          0.4976190476190476,
+          0.45714285714285713,
+          0.5476190476190477,
+          0.4357142857142857,
+          0.5595238095238095,
+          0.5333333333333333,
+          0.5476190476190477
+        ],
+        "observe_ms": [
+          1.6394262479871176,
+          1.640008373590982,
+          1.4798888083735913,
+          1.5836230273752012,
+          1.5823986312399356,
+          1.6085840579710142,
+          1.5241949275362316,
+          1.5758163446054751,
+          1.567455877616747,
+          1.5953256843800319
+        ]
+      }
+    },
+    "mcra128-f0-l3.5-b1.5": {
+      "metrics": {
+        "episode_detection": {
+          "mean": 0.9649999999999999,
+          "bootstrap_95": [
+            0.9499999999999998,
+            0.97875
+          ]
+        },
+        "first_episode_novel_attention": {
+          "mean": 0.6849999999999999,
+          "bootstrap_95": [
+            0.575,
+            0.8
+          ]
+        },
+        "repeat_identity": {
+          "mean": 0.12250000000000001,
+          "bootstrap_95": [
+            0.075,
+            0.17250000000000001
+          ]
+        },
+        "source_dependent_repeat": {
+          "mean": 0.05,
+          "bootstrap_95": [
+            0.019999999999999997,
+            0.08500000000000002
+          ]
+        },
+        "strict_episode_exclusion": {
+          "mean": 0.045,
+          "bootstrap_95": [
+            0.015000000000000003,
+            0.07999999999999999
+          ]
+        },
+        "wrong_repeat_identity": {
+          "mean": 0.8150000000000001,
+          "bootstrap_95": [
+            0.7424999999999999,
+            0.875
+          ]
+        },
+        "control_admissions": {
+          "mean": 7.4,
+          "bootstrap_95": [
+            6.65,
+            8.15
+          ]
+        },
+        "control_attention": {
+          "mean": 0.579047619047619,
+          "bootstrap_95": [
+            0.5645178571428571,
+            0.5938095238095238
+          ]
+        },
+        "observe_ms": {
+          "mean": 4.075323945249597,
+          "bootstrap_95": [
+            3.9974375907809985,
+            4.153147692230274
+          ]
+        }
+      },
+      "positive_counts": {
+        "windows": 8400,
+        "background_windows": 4400,
+        "background_attention": 2615,
+        "background_admissions": 166,
+        "background_with_room_tail": 800,
+        "room_tail_attention": 668,
+        "background_without_room_tail": 3600,
+        "no_room_tail_attention": 1947,
+        "episodes": 800,
+        "eligible_repeat_episodes": 400,
+        "detected_episodes": 772,
+        "correct_repeat_episodes": 49,
+        "source_dependent_repeat_episodes": 20,
+        "deletion_correct_repeat_episodes": 48,
+        "deletion_attention_episodes": 794,
+        "wrong_repeat_episodes": 326,
+        "wrong_only_repeat_episodes": 300,
+        "first_episode_novel_attention": 137,
+        "strict_episode_exclusion_hits": 18,
+        "recording_run_pairs": 200,
+        "admitted_recording_run_pairs": 102,
+        "distinct_input_recordings": 5
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 11,
+          "source_dependent_repeat_episodes": 1,
+          "deletion_correct_repeat_episodes": 13,
+          "wrong_repeat_episodes": 66,
+          "strict_episode_exclusion_hits": 1
+        },
+        "4-164021-A-1.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 146,
+          "correct_repeat_episodes": 5,
+          "source_dependent_repeat_episodes": 3,
+          "deletion_correct_repeat_episodes": 9,
+          "wrong_repeat_episodes": 52,
+          "strict_episode_exclusion_hits": 3
+        },
+        "4-167077-A-20.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 147,
+          "correct_repeat_episodes": 1,
+          "source_dependent_repeat_episodes": 1,
+          "deletion_correct_repeat_episodes": 0,
+          "wrong_repeat_episodes": 74,
+          "strict_episode_exclusion_hits": 1
+        },
+        "4-175945-A-38.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 159,
+          "correct_repeat_episodes": 16,
+          "source_dependent_repeat_episodes": 8,
+          "deletion_correct_repeat_episodes": 16,
+          "wrong_repeat_episodes": 60,
+          "strict_episode_exclusion_hits": 6
+        },
+        "4-182395-A-0.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 16,
+          "source_dependent_repeat_episodes": 7,
+          "deletion_correct_repeat_episodes": 10,
+          "wrong_repeat_episodes": 74,
+          "strict_episode_exclusion_hits": 7
+        }
+      },
+      "seed_values": {
+        "episode_detection": [
+          0.9875,
+          0.95,
+          0.975,
+          0.95,
+          1.0,
+          0.9875,
+          0.95,
+          0.975,
+          0.9624999999999999,
+          0.9125
+        ],
+        "first_episode_novel_attention": [
+          0.65,
+          0.6,
+          1.0,
+          0.9,
+          0.8,
+          0.6,
+          0.39999999999999997,
+          0.5499999999999999,
+          0.8500000000000001,
+          0.5
+        ],
+        "repeat_identity": [
+          0.05,
+          0.125,
+          0.05,
+          0.15000000000000002,
+          0.22499999999999998,
+          0.15000000000000002,
+          0.125,
+          0.0,
+          0.07500000000000001,
+          0.275
+        ],
+        "source_dependent_repeat": [
+          0.025,
+          0.025,
+          0.05,
+          0.0,
+          0.15,
+          0.025,
+          0.0,
+          0.0,
+          0.07500000000000001,
+          0.15000000000000002
+        ],
+        "strict_episode_exclusion": [
+          0.0,
+          0.025,
+          0.05,
+          0.0,
+          0.15,
+          0.025,
+          0.0,
+          0.0,
+          0.07500000000000001,
+          0.125
+        ],
+        "wrong_repeat_identity": [
+          0.825,
+          0.875,
+          0.975,
+          0.825,
+          0.7249999999999999,
+          0.7999999999999999,
+          0.9,
+          0.825,
+          0.8500000000000001,
+          0.55
+        ],
+        "control_admissions": [
+          8.5,
+          8.0,
+          5.5,
+          8.0,
+          7.5,
+          7.5,
+          6.0,
+          6.0,
+          7.5,
+          9.5
+        ],
+        "control_attention": [
+          0.5523809523809524,
+          0.6095238095238096,
+          0.6190476190476191,
+          0.5809523809523809,
+          0.5714285714285714,
+          0.5928571428571429,
+          0.5904761904761905,
+          0.5523809523809524,
+          0.5785714285714285,
+          0.5428571428571429
+        ],
+        "observe_ms": [
+          4.277741545893719,
+          4.289797745571659,
+          3.837904750402577,
+          4.097025603864734,
+          4.086047584541062,
+          4.101236473429952,
+          3.9928732689210946,
+          4.025298309178744,
+          3.975409903381642,
+          4.069904267310789
+        ]
+      }
+    },
+    "mcra128-f1-l3.5-b1.5": {
+      "metrics": {
+        "episode_detection": {
+          "mean": 0.9649999999999999,
+          "bootstrap_95": [
+            0.9499999999999998,
+            0.97875
+          ]
+        },
+        "first_episode_novel_attention": {
+          "mean": 0.8200000000000001,
+          "bootstrap_95": [
+            0.735,
+            0.905
+          ]
+        },
+        "repeat_identity": {
+          "mean": 0.10250000000000001,
+          "bootstrap_95": [
+            0.075,
+            0.13499999999999998
+          ]
+        },
+        "source_dependent_repeat": {
+          "mean": 0.030000000000000006,
+          "bootstrap_95": [
+            0.015,
+            0.05500000000000001
+          ]
+        },
+        "strict_episode_exclusion": {
+          "mean": 0.0225,
+          "bootstrap_95": [
+            0.01,
+            0.037500000000000006
+          ]
+        },
+        "wrong_repeat_identity": {
+          "mean": 0.6950000000000001,
+          "bootstrap_95": [
+            0.6425000000000001,
+            0.7475
+          ]
+        },
+        "control_admissions": {
+          "mean": 12.8,
+          "bootstrap_95": [
+            12.1,
+            13.5
+          ]
+        },
+        "control_attention": {
+          "mean": 0.579047619047619,
+          "bootstrap_95": [
+            0.5645178571428571,
+            0.5938095238095238
+          ]
+        },
+        "observe_ms": {
+          "mean": 3.9784519645732686,
+          "bootstrap_95": [
+            3.9042313719806763,
+            4.05510904347826
+          ]
+        }
+      },
+      "positive_counts": {
+        "windows": 8400,
+        "background_windows": 4400,
+        "background_attention": 2615,
+        "background_admissions": 282,
+        "background_with_room_tail": 800,
+        "room_tail_attention": 668,
+        "background_without_room_tail": 3600,
+        "no_room_tail_attention": 1947,
+        "episodes": 800,
+        "eligible_repeat_episodes": 400,
+        "detected_episodes": 772,
+        "correct_repeat_episodes": 41,
+        "source_dependent_repeat_episodes": 12,
+        "deletion_correct_repeat_episodes": 42,
+        "deletion_attention_episodes": 794,
+        "wrong_repeat_episodes": 278,
+        "wrong_only_repeat_episodes": 256,
+        "first_episode_novel_attention": 164,
+        "strict_episode_exclusion_hits": 9,
+        "recording_run_pairs": 200,
+        "admitted_recording_run_pairs": 121,
+        "distinct_input_recordings": 5
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 15,
+          "source_dependent_repeat_episodes": 5,
+          "deletion_correct_repeat_episodes": 16,
+          "wrong_repeat_episodes": 60,
+          "strict_episode_exclusion_hits": 3
+        },
+        "4-164021-A-1.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 146,
+          "correct_repeat_episodes": 1,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 3,
+          "wrong_repeat_episodes": 40,
+          "strict_episode_exclusion_hits": 0
+        },
+        "4-167077-A-20.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 147,
+          "correct_repeat_episodes": 4,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 6,
+          "wrong_repeat_episodes": 54,
+          "strict_episode_exclusion_hits": 0
+        },
+        "4-175945-A-38.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 159,
+          "correct_repeat_episodes": 15,
+          "source_dependent_repeat_episodes": 6,
+          "deletion_correct_repeat_episodes": 11,
+          "wrong_repeat_episodes": 60,
+          "strict_episode_exclusion_hits": 5
+        },
+        "4-182395-A-0.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 6,
+          "source_dependent_repeat_episodes": 1,
+          "deletion_correct_repeat_episodes": 6,
+          "wrong_repeat_episodes": 64,
+          "strict_episode_exclusion_hits": 1
+        }
+      },
+      "seed_values": {
+        "episode_detection": [
+          0.9875,
+          0.95,
+          0.975,
+          0.95,
+          1.0,
+          0.9875,
+          0.95,
+          0.975,
+          0.9624999999999999,
+          0.9125
+        ],
+        "first_episode_novel_attention": [
+          0.95,
+          0.8,
+          0.95,
+          1.0,
+          1.0,
+          0.75,
+          0.7500000000000001,
+          0.7000000000000001,
+          0.75,
+          0.55
+        ],
+        "repeat_identity": [
+          0.175,
+          0.05,
+          0.125,
+          0.2,
+          0.125,
+          0.07500000000000001,
+          0.07500000000000001,
+          0.07500000000000001,
+          0.05,
+          0.07500000000000001
+        ],
+        "source_dependent_repeat": [
+          0.125,
+          0.0,
+          0.025,
+          0.0,
+          0.025,
+          0.025,
+          0.025,
+          0.025,
+          0.025,
+          0.025
+        ],
+        "strict_episode_exclusion": [
+          0.07500000000000001,
+          0.0,
+          0.0,
+          0.0,
+          0.025,
+          0.025,
+          0.025,
+          0.025,
+          0.025,
+          0.025
+        ],
+        "wrong_repeat_identity": [
+          0.55,
+          0.7,
+          0.65,
+          0.825,
+          0.675,
+          0.625,
+          0.6749999999999999,
+          0.825,
+          0.7749999999999999,
+          0.65
+        ],
+        "control_admissions": [
+          14.0,
+          14.0,
+          11.5,
+          12.0,
+          13.5,
+          14.0,
+          14.0,
+          11.0,
+          12.0,
+          12.0
+        ],
+        "control_attention": [
+          0.5523809523809524,
+          0.6095238095238096,
+          0.6190476190476191,
+          0.5809523809523809,
+          0.5714285714285714,
+          0.5928571428571429,
+          0.5904761904761905,
+          0.5523809523809524,
+          0.5785714285714285,
+          0.5428571428571429
+        ],
+        "observe_ms": [
+          4.200025523349436,
+          4.166133172302737,
+          3.766565458937198,
+          3.9770226247987117,
+          4.003487842190016,
+          4.008906038647343,
+          3.9023970209339773,
+          3.916036312399356,
+          3.8656287439613526,
+          3.9783169082125602
+        ]
+      }
+    },
+    "pcen160-f0-l2.5-b1.5": {
+      "metrics": {
+        "episode_detection": {
+          "mean": 0.8975000000000002,
+          "bootstrap_95": [
+            0.8762500000000001,
+            0.9175000000000001
+          ]
+        },
+        "first_episode_novel_attention": {
+          "mean": 0.8,
+          "bootstrap_95": [
+            0.7298749999999999,
+            0.8699999999999999
+          ]
+        },
+        "repeat_identity": {
+          "mean": 0.26749999999999996,
+          "bootstrap_95": [
+            0.20249999999999999,
+            0.33249999999999996
+          ]
+        },
+        "source_dependent_repeat": {
+          "mean": 0.20249999999999999,
+          "bootstrap_95": [
+            0.1375,
+            0.2625
+          ]
+        },
+        "strict_episode_exclusion": {
+          "mean": 0.18250000000000002,
+          "bootstrap_95": [
+            0.12250000000000001,
+            0.2375
+          ]
+        },
+        "wrong_repeat_identity": {
+          "mean": 0.5374999999999999,
+          "bootstrap_95": [
+            0.4875,
+            0.5900000000000001
+          ]
+        },
+        "control_admissions": {
+          "mean": 4.1,
+          "bootstrap_95": [
+            3.3,
+            4.85
+          ]
+        },
+        "control_attention": {
+          "mean": 0.47595238095238096,
+          "bootstrap_95": [
+            0.4590476190476191,
+            0.49309523809523814
+          ]
+        },
+        "observe_ms": {
+          "mean": 1.730079879227053,
+          "bootstrap_95": [
+            1.6957246054750403,
+            1.7645433285024152
+          ]
+        }
+      },
+      "positive_counts": {
+        "windows": 8400,
+        "background_windows": 4400,
+        "background_attention": 2042,
+        "background_admissions": 101,
+        "background_with_room_tail": 800,
+        "room_tail_attention": 389,
+        "background_without_room_tail": 3600,
+        "no_room_tail_attention": 1653,
+        "episodes": 800,
+        "eligible_repeat_episodes": 400,
+        "detected_episodes": 718,
+        "correct_repeat_episodes": 107,
+        "source_dependent_repeat_episodes": 81,
+        "deletion_correct_repeat_episodes": 35,
+        "deletion_attention_episodes": 528,
+        "wrong_repeat_episodes": 215,
+        "wrong_only_repeat_episodes": 153,
+        "first_episode_novel_attention": 160,
+        "strict_episode_exclusion_hits": 73,
+        "recording_run_pairs": 200,
+        "admitted_recording_run_pairs": 125,
+        "distinct_input_recordings": 5
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 36,
+          "source_dependent_repeat_episodes": 26,
+          "deletion_correct_repeat_episodes": 13,
+          "wrong_repeat_episodes": 43,
+          "strict_episode_exclusion_hits": 23
+        },
+        "4-164021-A-1.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 141,
+          "correct_repeat_episodes": 9,
+          "source_dependent_repeat_episodes": 6,
+          "deletion_correct_repeat_episodes": 4,
+          "wrong_repeat_episodes": 43,
+          "strict_episode_exclusion_hits": 5
+        },
+        "4-167077-A-20.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 150,
+          "correct_repeat_episodes": 29,
+          "source_dependent_repeat_episodes": 26,
+          "deletion_correct_repeat_episodes": 4,
+          "wrong_repeat_episodes": 42,
+          "strict_episode_exclusion_hits": 26
+        },
+        "4-175945-A-38.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 108,
+          "correct_repeat_episodes": 8,
+          "source_dependent_repeat_episodes": 4,
+          "deletion_correct_repeat_episodes": 8,
+          "wrong_repeat_episodes": 37,
+          "strict_episode_exclusion_hits": 0
+        },
+        "4-182395-A-0.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 159,
+          "correct_repeat_episodes": 25,
+          "source_dependent_repeat_episodes": 19,
+          "deletion_correct_repeat_episodes": 6,
+          "wrong_repeat_episodes": 50,
+          "strict_episode_exclusion_hits": 19
+        }
+      },
+      "seed_values": {
+        "episode_detection": [
+          0.8375,
+          0.8875,
+          0.9,
+          0.9375,
+          0.85,
+          0.8875,
+          0.8875,
+          0.925,
+          0.9375,
+          0.925
+        ],
+        "first_episode_novel_attention": [
+          0.8,
+          0.9,
+          0.8500000000000001,
+          0.95,
+          0.75,
+          0.75,
+          0.55,
+          0.7500000000000001,
+          0.95,
+          0.75
+        ],
+        "repeat_identity": [
+          0.2,
+          0.4,
+          0.375,
+          0.39999999999999997,
+          0.25,
+          0.17500000000000002,
+          0.15000000000000002,
+          0.1,
+          0.275,
+          0.35
+        ],
+        "source_dependent_repeat": [
+          0.1,
+          0.325,
+          0.27499999999999997,
+          0.30000000000000004,
+          0.22499999999999998,
+          0.125,
+          0.15000000000000002,
+          0.0,
+          0.275,
+          0.25
+        ],
+        "strict_episode_exclusion": [
+          0.07500000000000001,
+          0.275,
+          0.24999999999999997,
+          0.25,
+          0.19999999999999998,
+          0.1,
+          0.15000000000000002,
+          0.0,
+          0.275,
+          0.25
+        ],
+        "wrong_repeat_identity": [
+          0.45,
+          0.65,
+          0.42500000000000004,
+          0.55,
+          0.475,
+          0.55,
+          0.55,
+          0.45,
+          0.6,
+          0.675
+        ],
+        "control_admissions": [
+          5.0,
+          5.0,
+          2.0,
+          5.5,
+          3.0,
+          5.5,
+          3.0,
+          2.5,
+          4.5,
+          5.0
+        ],
+        "control_attention": [
+          0.48333333333333334,
+          0.48333333333333334,
+          0.4380952380952381,
+          0.5095238095238095,
+          0.4404761904761905,
+          0.47619047619047616,
+          0.4619047619047619,
+          0.4452380952380952,
+          0.5166666666666666,
+          0.5047619047619047
+        ],
+        "observe_ms": [
+          1.830535507246377,
+          1.8046299516908213,
+          1.6252862318840577,
+          1.7519820450885668,
+          1.72293115942029,
+          1.7245595008051533,
+          1.6761883252818033,
+          1.7019402576489533,
+          1.7189883252818035,
+          1.7437574879227054
+        ]
+      }
+    },
+    "pcen160-f0-l3.5-b1.5": {
+      "metrics": {
+        "episode_detection": {
+          "mean": 0.7950000000000002,
+          "bootstrap_95": [
+            0.7737499999999999,
+            0.8175000000000001
+          ]
+        },
+        "first_episode_novel_attention": {
+          "mean": 0.695,
+          "bootstrap_95": [
+            0.62,
+            0.7649999999999999
+          ]
+        },
+        "repeat_identity": {
+          "mean": 0.18250000000000002,
+          "bootstrap_95": [
+            0.14250000000000002,
+            0.22749999999999998
+          ]
+        },
+        "source_dependent_repeat": {
+          "mean": 0.1275,
+          "bootstrap_95": [
+            0.085,
+            0.16750000000000004
+          ]
+        },
+        "strict_episode_exclusion": {
+          "mean": 0.12,
+          "bootstrap_95": [
+            0.0775,
+            0.16
+          ]
+        },
+        "wrong_repeat_identity": {
+          "mean": 0.5,
+          "bootstrap_95": [
+            0.465,
+            0.5374999999999999
+          ]
+        },
+        "control_admissions": {
+          "mean": 3.5,
+          "bootstrap_95": [
+            2.95,
+            4.05
+          ]
+        },
+        "control_attention": {
+          "mean": 0.44666666666666666,
+          "bootstrap_95": [
+            0.434047619047619,
+            0.4590476190476191
+          ]
+        },
+        "observe_ms": {
+          "mean": 1.6680026811594204,
+          "bootstrap_95": [
+            1.6367129603462158,
+            1.6980393335346218
+          ]
+        }
+      },
+      "positive_counts": {
+        "windows": 8400,
+        "background_windows": 4400,
+        "background_attention": 1912,
+        "background_admissions": 83,
+        "background_with_room_tail": 800,
+        "room_tail_attention": 353,
+        "background_without_room_tail": 3600,
+        "no_room_tail_attention": 1559,
+        "episodes": 800,
+        "eligible_repeat_episodes": 400,
+        "detected_episodes": 636,
+        "correct_repeat_episodes": 73,
+        "source_dependent_repeat_episodes": 51,
+        "deletion_correct_repeat_episodes": 26,
+        "deletion_attention_episodes": 489,
+        "wrong_repeat_episodes": 200,
+        "wrong_only_repeat_episodes": 158,
+        "first_episode_novel_attention": 139,
+        "strict_episode_exclusion_hits": 48,
+        "recording_run_pairs": 200,
+        "admitted_recording_run_pairs": 102,
+        "distinct_input_recordings": 5
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 155,
+          "correct_repeat_episodes": 31,
+          "source_dependent_repeat_episodes": 23,
+          "deletion_correct_repeat_episodes": 9,
+          "wrong_repeat_episodes": 40,
+          "strict_episode_exclusion_hits": 22
+        },
+        "4-164021-A-1.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 114,
+          "correct_repeat_episodes": 4,
+          "source_dependent_repeat_episodes": 2,
+          "deletion_correct_repeat_episodes": 3,
+          "wrong_repeat_episodes": 40,
+          "strict_episode_exclusion_hits": 2
+        },
+        "4-167077-A-20.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 130,
+          "correct_repeat_episodes": 19,
+          "source_dependent_repeat_episodes": 16,
+          "deletion_correct_repeat_episodes": 3,
+          "wrong_repeat_episodes": 40,
+          "strict_episode_exclusion_hits": 16
+        },
+        "4-175945-A-38.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 94,
+          "correct_repeat_episodes": 9,
+          "source_dependent_repeat_episodes": 3,
+          "deletion_correct_repeat_episodes": 8,
+          "wrong_repeat_episodes": 36,
+          "strict_episode_exclusion_hits": 1
+        },
+        "4-182395-A-0.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 143,
+          "correct_repeat_episodes": 10,
+          "source_dependent_repeat_episodes": 7,
+          "deletion_correct_repeat_episodes": 3,
+          "wrong_repeat_episodes": 44,
+          "strict_episode_exclusion_hits": 7
+        }
+      },
+      "seed_values": {
+        "episode_detection": [
+          0.75,
+          0.8375,
+          0.8125,
+          0.8,
+          0.775,
+          0.75,
+          0.7625,
+          0.85,
+          0.8375,
+          0.775
+        ],
+        "first_episode_novel_attention": [
+          0.7,
+          0.8,
+          0.8,
+          0.85,
+          0.7,
+          0.6,
+          0.44999999999999996,
+          0.65,
+          0.8,
+          0.6
+        ],
+        "repeat_identity": [
+          0.125,
+          0.15000000000000002,
+          0.325,
+          0.22499999999999998,
+          0.175,
+          0.15,
+          0.125,
+          0.1,
+          0.17500000000000002,
+          0.275
+        ],
+        "source_dependent_repeat": [
+          0.05,
+          0.07500000000000001,
+          0.225,
+          0.17500000000000002,
+          0.15000000000000002,
+          0.1,
+          0.125,
+          0.0,
+          0.17500000000000002,
+          0.2
+        ],
+        "strict_episode_exclusion": [
+          0.025,
+          0.07500000000000001,
+          0.2,
+          0.17500000000000002,
+          0.125,
+          0.1,
+          0.125,
+          0.0,
+          0.17500000000000002,
+          0.2
+        ],
+        "wrong_repeat_identity": [
+          0.42500000000000004,
+          0.6,
+          0.4,
+          0.525,
+          0.475,
+          0.5,
+          0.575,
+          0.5,
+          0.525,
+          0.475
+        ],
+        "control_admissions": [
+          3.5,
+          4.5,
+          2.0,
+          3.5,
+          3.0,
+          5.0,
+          3.0,
+          2.5,
+          4.5,
+          3.5
+        ],
+        "control_attention": [
+          0.45,
+          0.4523809523809524,
+          0.41666666666666663,
+          0.45476190476190476,
+          0.4214285714285714,
+          0.46190476190476193,
+          0.45,
+          0.41904761904761906,
+          0.48095238095238096,
+          0.4595238095238095
+        ],
+        "observe_ms": [
+          1.7491687600644124,
+          1.7377796296296293,
+          1.5685745571658616,
+          1.6832719806763288,
+          1.6727446859903383,
+          1.6666373590982284,
+          1.6205093397745574,
+          1.642251690821256,
+          1.6574202898550727,
+          1.6816685185185183
+        ]
+      }
+    },
+    "pcen160-f1-l2.5-b1.15": {
+      "metrics": {
+        "episode_detection": {
+          "mean": 0.9949999999999999,
+          "bootstrap_95": [
+            0.99,
+            1.0
+          ]
+        },
+        "first_episode_novel_attention": {
+          "mean": 0.9800000000000001,
+          "bootstrap_95": [
+            0.9599999999999997,
+            1.0
+          ]
+        },
+        "repeat_identity": {
+          "mean": 0.2425,
+          "bootstrap_95": [
+            0.20249999999999999,
+            0.28250000000000003
+          ]
+        },
+        "source_dependent_repeat": {
+          "mean": 0.14250000000000002,
+          "bootstrap_95": [
+            0.10993750000000005,
+            0.17750000000000002
+          ]
+        },
+        "strict_episode_exclusion": {
+          "mean": 0.11750000000000001,
+          "bootstrap_95": [
+            0.0875,
+            0.155
+          ]
+        },
+        "wrong_repeat_identity": {
+          "mean": 0.6250000000000001,
+          "bootstrap_95": [
+            0.5625,
+            0.69
+          ]
+        },
+        "control_admissions": {
+          "mean": 15.7,
+          "bootstrap_95": [
+            14.75,
+            16.65
+          ]
+        },
+        "control_attention": {
+          "mean": 0.7066666666666667,
+          "bootstrap_95": [
+            0.6857142857142857,
+            0.725
+          ]
+        },
+        "observe_ms": {
+          "mean": 1.7168751127214172,
+          "bootstrap_95": [
+            1.6827601495571658,
+            1.7502170867552338
+          ]
+        }
+      },
+      "positive_counts": {
+        "windows": 8400,
+        "background_windows": 4400,
+        "background_attention": 3111,
+        "background_admissions": 300,
+        "background_with_room_tail": 800,
+        "room_tail_attention": 667,
+        "background_without_room_tail": 3600,
+        "no_room_tail_attention": 2444,
+        "episodes": 800,
+        "eligible_repeat_episodes": 400,
+        "detected_episodes": 796,
+        "correct_repeat_episodes": 97,
+        "source_dependent_repeat_episodes": 57,
+        "deletion_correct_repeat_episodes": 56,
+        "deletion_attention_episodes": 793,
+        "wrong_repeat_episodes": 250,
+        "wrong_only_repeat_episodes": 182,
+        "first_episode_novel_attention": 196,
+        "strict_episode_exclusion_hits": 47,
+        "recording_run_pairs": 200,
+        "admitted_recording_run_pairs": 149,
+        "distinct_input_recordings": 5
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 18,
+          "source_dependent_repeat_episodes": 9,
+          "deletion_correct_repeat_episodes": 10,
+          "wrong_repeat_episodes": 52,
+          "strict_episode_exclusion_hits": 8
+        },
+        "4-164021-A-1.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 12,
+          "source_dependent_repeat_episodes": 4,
+          "deletion_correct_repeat_episodes": 10,
+          "wrong_repeat_episodes": 43,
+          "strict_episode_exclusion_hits": 2
+        },
+        "4-167077-A-20.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 29,
+          "source_dependent_repeat_episodes": 23,
+          "deletion_correct_repeat_episodes": 10,
+          "wrong_repeat_episodes": 49,
+          "strict_episode_exclusion_hits": 20
+        },
+        "4-175945-A-38.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 156,
+          "correct_repeat_episodes": 24,
+          "source_dependent_repeat_episodes": 16,
+          "deletion_correct_repeat_episodes": 14,
+          "wrong_repeat_episodes": 49,
+          "strict_episode_exclusion_hits": 13
+        },
+        "4-182395-A-0.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 14,
+          "source_dependent_repeat_episodes": 5,
+          "deletion_correct_repeat_episodes": 12,
+          "wrong_repeat_episodes": 57,
+          "strict_episode_exclusion_hits": 4
+        }
+      },
+      "seed_values": {
+        "episode_detection": [
+          0.975,
+          0.9875,
+          0.9875,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "first_episode_novel_attention": [
+          0.9,
+          1.0,
+          0.95,
+          1.0,
+          1.0,
+          1.0,
+          0.95,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "repeat_identity": [
+          0.225,
+          0.325,
+          0.35,
+          0.275,
+          0.17500000000000002,
+          0.2,
+          0.275,
+          0.225,
+          0.125,
+          0.25
+        ],
+        "source_dependent_repeat": [
+          0.07500000000000001,
+          0.25,
+          0.125,
+          0.15000000000000002,
+          0.15000000000000002,
+          0.125,
+          0.2,
+          0.125,
+          0.05,
+          0.175
+        ],
+        "strict_episode_exclusion": [
+          0.07500000000000001,
+          0.25,
+          0.125,
+          0.1,
+          0.1,
+          0.1,
+          0.17500000000000002,
+          0.07500000000000001,
+          0.05,
+          0.125
+        ],
+        "wrong_repeat_identity": [
+          0.675,
+          0.65,
+          0.5,
+          0.65,
+          0.44999999999999996,
+          0.625,
+          0.7,
+          0.55,
+          0.825,
+          0.625
+        ],
+        "control_admissions": [
+          15.5,
+          17.5,
+          15.5,
+          17.0,
+          14.0,
+          18.5,
+          14.0,
+          16.0,
+          13.5,
+          15.5
+        ],
+        "control_attention": [
+          0.7142857142857143,
+          0.7333333333333333,
+          0.6785714285714286,
+          0.7214285714285714,
+          0.6880952380952381,
+          0.7404761904761905,
+          0.7166666666666667,
+          0.638095238095238,
+          0.7452380952380953,
+          0.6904761904761905
+        ],
+        "observe_ms": [
+          1.8099883252818036,
+          1.7910315619967794,
+          1.6156016103059583,
+          1.7264700483091786,
+          1.7283194847020935,
+          1.7400336553945248,
+          1.660969001610306,
+          1.685077133655394,
+          1.6832454106280192,
+          1.7280148953301129
+        ]
+      }
+    },
+    "quiet128-f0-l3.5-b1.5": {
+      "metrics": {
+        "episode_detection": {
+          "mean": 0.9974999999999999,
+          "bootstrap_95": [
+            0.9924999999999999,
+            1.0
+          ]
+        },
+        "first_episode_novel_attention": {
+          "mean": 0.8699999999999999,
+          "bootstrap_95": [
+            0.7899999999999999,
+            0.9399999999999998
+          ]
+        },
+        "repeat_identity": {
+          "mean": 0.33249999999999996,
+          "bootstrap_95": [
+            0.2525,
+            0.39499999999999996
+          ]
+        },
+        "source_dependent_repeat": {
+          "mean": 0.24,
+          "bootstrap_95": [
+            0.17750000000000005,
+            0.29500000000000004
+          ]
+        },
+        "strict_episode_exclusion": {
+          "mean": 0.20249999999999999,
+          "bootstrap_95": [
+            0.14750000000000002,
+            0.2525
+          ]
+        },
+        "wrong_repeat_identity": {
+          "mean": 0.9099999999999999,
+          "bootstrap_95": [
+            0.885,
+            0.9375
+          ]
+        },
+        "control_admissions": {
+          "mean": 6.4,
+          "bootstrap_95": [
+            5.85,
+            6.95
+          ]
+        },
+        "control_attention": {
+          "mean": 0.78,
+          "bootstrap_95": [
+            0.7685714285714286,
+            0.7919107142857141
+          ]
+        },
+        "observe_ms": {
+          "mean": 1.412285,
+          "bootstrap_95": [
+            1.3904091869967794,
+            1.4367070360305956
+          ]
+        }
+      },
+      "positive_counts": {
+        "windows": 8400,
+        "background_windows": 4400,
+        "background_attention": 3278,
+        "background_admissions": 138,
+        "background_with_room_tail": 800,
+        "room_tail_attention": 621,
+        "background_without_room_tail": 3600,
+        "no_room_tail_attention": 2657,
+        "episodes": 800,
+        "eligible_repeat_episodes": 400,
+        "detected_episodes": 798,
+        "correct_repeat_episodes": 133,
+        "source_dependent_repeat_episodes": 96,
+        "deletion_correct_repeat_episodes": 55,
+        "deletion_attention_episodes": 796,
+        "wrong_repeat_episodes": 364,
+        "wrong_only_repeat_episodes": 251,
+        "first_episode_novel_attention": 174,
+        "strict_episode_exclusion_hits": 81,
+        "recording_run_pairs": 200,
+        "admitted_recording_run_pairs": 148,
+        "distinct_input_recordings": 5
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 12,
+          "source_dependent_repeat_episodes": 10,
+          "deletion_correct_repeat_episodes": 2,
+          "wrong_repeat_episodes": 77,
+          "strict_episode_exclusion_hits": 10
+        },
+        "4-164021-A-1.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 31,
+          "source_dependent_repeat_episodes": 21,
+          "deletion_correct_repeat_episodes": 16,
+          "wrong_repeat_episodes": 68,
+          "strict_episode_exclusion_hits": 16
+        },
+        "4-167077-A-20.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 29,
+          "source_dependent_repeat_episodes": 27,
+          "deletion_correct_repeat_episodes": 2,
+          "wrong_repeat_episodes": 77,
+          "strict_episode_exclusion_hits": 27
+        },
+        "4-175945-A-38.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 158,
+          "correct_repeat_episodes": 33,
+          "source_dependent_repeat_episodes": 18,
+          "deletion_correct_repeat_episodes": 27,
+          "wrong_repeat_episodes": 66,
+          "strict_episode_exclusion_hits": 8
+        },
+        "4-182395-A-0.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 28,
+          "source_dependent_repeat_episodes": 20,
+          "deletion_correct_repeat_episodes": 8,
+          "wrong_repeat_episodes": 76,
+          "strict_episode_exclusion_hits": 20
+        }
+      },
+      "seed_values": {
+        "episode_detection": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.975,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "first_episode_novel_attention": [
+          0.8,
+          0.95,
+          0.95,
+          1.0,
+          0.95,
+          0.6,
+          0.75,
+          0.8500000000000001,
+          1.0,
+          0.85
+        ],
+        "repeat_identity": [
+          0.375,
+          0.425,
+          0.4,
+          0.325,
+          0.425,
+          0.24999999999999997,
+          0.4,
+          0.025,
+          0.275,
+          0.425
+        ],
+        "source_dependent_repeat": [
+          0.225,
+          0.35000000000000003,
+          0.325,
+          0.25,
+          0.35000000000000003,
+          0.15000000000000002,
+          0.25,
+          0.025,
+          0.2,
+          0.275
+        ],
+        "strict_episode_exclusion": [
+          0.17500000000000002,
+          0.3,
+          0.30000000000000004,
+          0.25,
+          0.30000000000000004,
+          0.15000000000000002,
+          0.175,
+          0.025,
+          0.125,
+          0.22499999999999998
+        ],
+        "wrong_repeat_identity": [
+          0.875,
+          0.9249999999999999,
+          0.8500000000000001,
+          0.975,
+          0.875,
+          0.975,
+          0.875,
+          0.9,
+          0.9,
+          0.95
+        ],
+        "control_admissions": [
+          6.5,
+          8.0,
+          6.0,
+          7.0,
+          5.0,
+          6.0,
+          5.5,
+          5.5,
+          7.5,
+          7.0
+        ],
+        "control_attention": [
+          0.7547619047619047,
+          0.7857142857142858,
+          0.8023809523809524,
+          0.7714285714285715,
+          0.7738095238095238,
+          0.7547619047619047,
+          0.8142857142857143,
+          0.7857142857142857,
+          0.7642857142857142,
+          0.7928571428571428
+        ],
+        "observe_ms": [
+          1.482438727858293,
+          1.476616344605475,
+          1.3536735909822866,
+          1.4143752012882447,
+          1.4179906602254428,
+          1.3955098228663445,
+          1.3817844605475038,
+          1.397681964573269,
+          1.3902987117552332,
+          1.4124805152979067
+        ]
+      }
+    },
+    "quiet128-f1-l3.5-b1.5": {
+      "metrics": {
+        "episode_detection": {
+          "mean": 0.9974999999999999,
+          "bootstrap_95": [
+            0.9924999999999999,
+            1.0
+          ]
+        },
+        "first_episode_novel_attention": {
+          "mean": 0.97,
+          "bootstrap_95": [
+            0.9399999999999998,
+            0.9949999999999999
+          ]
+        },
+        "repeat_identity": {
+          "mean": 0.36750000000000005,
+          "bootstrap_95": [
+            0.2774375,
+            0.44749999999999995
+          ]
+        },
+        "source_dependent_repeat": {
+          "mean": 0.25,
+          "bootstrap_95": [
+            0.17500000000000002,
+            0.31256249999999913
+          ]
+        },
+        "strict_episode_exclusion": {
+          "mean": 0.2125,
+          "bootstrap_95": [
+            0.15,
+            0.2675
+          ]
+        },
+        "wrong_repeat_identity": {
+          "mean": 0.8200000000000001,
+          "bootstrap_95": [
+            0.7725,
+            0.86
+          ]
+        },
+        "control_admissions": {
+          "mean": 12.5,
+          "bootstrap_95": [
+            11.45,
+            13.45
+          ]
+        },
+        "control_attention": {
+          "mean": 0.78,
+          "bootstrap_95": [
+            0.7685714285714286,
+            0.7919107142857141
+          ]
+        },
+        "observe_ms": {
+          "mean": 1.3210343397745572,
+          "bootstrap_95": [
+            1.2990452232286636,
+            1.3431219225040254
+          ]
+        }
+      },
+      "positive_counts": {
+        "windows": 8400,
+        "background_windows": 4400,
+        "background_attention": 3278,
+        "background_admissions": 280,
+        "background_with_room_tail": 800,
+        "room_tail_attention": 621,
+        "background_without_room_tail": 3600,
+        "no_room_tail_attention": 2657,
+        "episodes": 800,
+        "eligible_repeat_episodes": 400,
+        "detected_episodes": 798,
+        "correct_repeat_episodes": 147,
+        "source_dependent_repeat_episodes": 100,
+        "deletion_correct_repeat_episodes": 65,
+        "deletion_attention_episodes": 796,
+        "wrong_repeat_episodes": 328,
+        "wrong_only_repeat_episodes": 218,
+        "first_episode_novel_attention": 194,
+        "strict_episode_exclusion_hits": 85,
+        "recording_run_pairs": 200,
+        "admitted_recording_run_pairs": 172,
+        "distinct_input_recordings": 5
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 23,
+          "source_dependent_repeat_episodes": 11,
+          "deletion_correct_repeat_episodes": 12,
+          "wrong_repeat_episodes": 68,
+          "strict_episode_exclusion_hits": 11
+        },
+        "4-164021-A-1.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 27,
+          "source_dependent_repeat_episodes": 15,
+          "deletion_correct_repeat_episodes": 16,
+          "wrong_repeat_episodes": 61,
+          "strict_episode_exclusion_hits": 13
+        },
+        "4-167077-A-20.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 37,
+          "source_dependent_repeat_episodes": 31,
+          "deletion_correct_repeat_episodes": 9,
+          "wrong_repeat_episodes": 69,
+          "strict_episode_exclusion_hits": 29
+        },
+        "4-175945-A-38.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 158,
+          "correct_repeat_episodes": 26,
+          "source_dependent_repeat_episodes": 20,
+          "deletion_correct_repeat_episodes": 14,
+          "wrong_repeat_episodes": 62,
+          "strict_episode_exclusion_hits": 12
+        },
+        "4-182395-A-0.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 34,
+          "source_dependent_repeat_episodes": 23,
+          "deletion_correct_repeat_episodes": 14,
+          "wrong_repeat_episodes": 68,
+          "strict_episode_exclusion_hits": 20
+        }
+      },
+      "seed_values": {
+        "episode_detection": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.975,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "first_episode_novel_attention": [
+          1.0,
+          0.95,
+          1.0,
+          1.0,
+          1.0,
+          0.95,
+          1.0,
+          0.8500000000000001,
+          1.0,
+          0.95
+        ],
+        "repeat_identity": [
+          0.425,
+          0.425,
+          0.525,
+          0.275,
+          0.475,
+          0.24999999999999997,
+          0.475,
+          0.05,
+          0.30000000000000004,
+          0.47500000000000003
+        ],
+        "source_dependent_repeat": [
+          0.35000000000000003,
+          0.325,
+          0.37499999999999994,
+          0.2,
+          0.275,
+          0.125,
+          0.3,
+          0.0,
+          0.2,
+          0.35
+        ],
+        "strict_episode_exclusion": [
+          0.275,
+          0.3,
+          0.35,
+          0.15,
+          0.19999999999999998,
+          0.125,
+          0.22499999999999998,
+          0.0,
+          0.2,
+          0.3
+        ],
+        "wrong_repeat_identity": [
+          0.7749999999999999,
+          0.8500000000000001,
+          0.8500000000000001,
+          0.9,
+          0.825,
+          0.875,
+          0.875,
+          0.7499999999999999,
+          0.8500000000000001,
+          0.65
+        ],
+        "control_admissions": [
+          9.5,
+          12.5,
+          12.0,
+          13.0,
+          14.5,
+          12.5,
+          10.0,
+          12.5,
+          14.5,
+          14.0
+        ],
+        "control_attention": [
+          0.7547619047619047,
+          0.7857142857142858,
+          0.8023809523809524,
+          0.7714285714285715,
+          0.7738095238095238,
+          0.7547619047619047,
+          0.8142857142857143,
+          0.7857142857142857,
+          0.7642857142857142,
+          0.7928571428571428
+        ],
+        "observe_ms": [
+          1.384972383252818,
+          1.3660412238325284,
+          1.261024959742351,
+          1.328103784219002,
+          1.346569726247987,
+          1.3121781803542671,
+          1.283814412238325,
+          1.3013659420289858,
+          1.297219806763285,
+          1.3290529790660226
+        ]
+      }
+    },
+    "quiet160-f0-l3.5-b1.5": {
+      "metrics": {
+        "episode_detection": {
+          "mean": 0.9974999999999999,
+          "bootstrap_95": [
+            0.9924999999999999,
+            1.0
+          ]
+        },
+        "first_episode_novel_attention": {
+          "mean": 0.885,
+          "bootstrap_95": [
+            0.82,
+            0.945
+          ]
+        },
+        "repeat_identity": {
+          "mean": 0.355,
+          "bootstrap_95": [
+            0.2775,
+            0.425
+          ]
+        },
+        "source_dependent_repeat": {
+          "mean": 0.23750000000000004,
+          "bootstrap_95": [
+            0.175,
+            0.29000000000000004
+          ]
+        },
+        "strict_episode_exclusion": {
+          "mean": 0.2125,
+          "bootstrap_95": [
+            0.15749999999999997,
+            0.2625
+          ]
+        },
+        "wrong_repeat_identity": {
+          "mean": 0.9125,
+          "bootstrap_95": [
+            0.8875,
+            0.9375000000000002
+          ]
+        },
+        "control_admissions": {
+          "mean": 6.05,
+          "bootstrap_95": [
+            5.2,
+            6.95
+          ]
+        },
+        "control_attention": {
+          "mean": 0.7797619047619048,
+          "bootstrap_95": [
+            0.7707142857142857,
+            0.7892857142857144
+          ]
+        },
+        "observe_ms": {
+          "mean": 1.2746516586151366,
+          "bootstrap_95": [
+            1.254471944041868,
+            1.2958117777777778
+          ]
+        }
+      },
+      "positive_counts": {
+        "windows": 8400,
+        "background_windows": 4400,
+        "background_attention": 3302,
+        "background_admissions": 136,
+        "background_with_room_tail": 800,
+        "room_tail_attention": 619,
+        "background_without_room_tail": 3600,
+        "no_room_tail_attention": 2683,
+        "episodes": 800,
+        "eligible_repeat_episodes": 400,
+        "detected_episodes": 798,
+        "correct_repeat_episodes": 142,
+        "source_dependent_repeat_episodes": 95,
+        "deletion_correct_repeat_episodes": 58,
+        "deletion_attention_episodes": 796,
+        "wrong_repeat_episodes": 365,
+        "wrong_only_repeat_episodes": 244,
+        "first_episode_novel_attention": 177,
+        "strict_episode_exclusion_hits": 85,
+        "recording_run_pairs": 200,
+        "admitted_recording_run_pairs": 143,
+        "distinct_input_recordings": 5
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 12,
+          "source_dependent_repeat_episodes": 10,
+          "deletion_correct_repeat_episodes": 2,
+          "wrong_repeat_episodes": 78,
+          "strict_episode_exclusion_hits": 10
+        },
+        "4-164021-A-1.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 35,
+          "source_dependent_repeat_episodes": 23,
+          "deletion_correct_repeat_episodes": 18,
+          "wrong_repeat_episodes": 68,
+          "strict_episode_exclusion_hits": 17
+        },
+        "4-167077-A-20.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 29,
+          "source_dependent_repeat_episodes": 27,
+          "deletion_correct_repeat_episodes": 2,
+          "wrong_repeat_episodes": 79,
+          "strict_episode_exclusion_hits": 27
+        },
+        "4-175945-A-38.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 158,
+          "correct_repeat_episodes": 35,
+          "source_dependent_repeat_episodes": 15,
+          "deletion_correct_repeat_episodes": 25,
+          "wrong_repeat_episodes": 63,
+          "strict_episode_exclusion_hits": 11
+        },
+        "4-182395-A-0.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 31,
+          "source_dependent_repeat_episodes": 20,
+          "deletion_correct_repeat_episodes": 11,
+          "wrong_repeat_episodes": 77,
+          "strict_episode_exclusion_hits": 20
+        }
+      },
+      "seed_values": {
+        "episode_detection": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.975,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "first_episode_novel_attention": [
+          0.8,
+          0.95,
+          0.95,
+          1.0,
+          0.95,
+          0.7,
+          0.75,
+          0.8500000000000001,
+          1.0,
+          0.8999999999999999
+        ],
+        "repeat_identity": [
+          0.42500000000000004,
+          0.30000000000000004,
+          0.42500000000000004,
+          0.42500000000000004,
+          0.4,
+          0.275,
+          0.375,
+          0.07500000000000001,
+          0.3,
+          0.55
+        ],
+        "source_dependent_repeat": [
+          0.19999999999999998,
+          0.25000000000000006,
+          0.325,
+          0.32499999999999996,
+          0.325,
+          0.125,
+          0.25,
+          0.025,
+          0.22499999999999998,
+          0.325
+        ],
+        "strict_episode_exclusion": [
+          0.19999999999999998,
+          0.19999999999999998,
+          0.30000000000000004,
+          0.3,
+          0.30000000000000004,
+          0.125,
+          0.175,
+          0.025,
+          0.2,
+          0.3
+        ],
+        "wrong_repeat_identity": [
+          0.875,
+          0.925,
+          0.8500000000000001,
+          0.975,
+          0.875,
+          0.975,
+          0.925,
+          0.925,
+          0.925,
+          0.875
+        ],
+        "control_admissions": [
+          5.5,
+          8.5,
+          5.5,
+          6.5,
+          4.5,
+          5.5,
+          4.5,
+          4.5,
+          7.5,
+          8.0
+        ],
+        "control_attention": [
+          0.7595238095238095,
+          0.7880952380952382,
+          0.7976190476190477,
+          0.7761904761904762,
+          0.7714285714285714,
+          0.7595238095238095,
+          0.8047619047619048,
+          0.7666666666666666,
+          0.7857142857142857,
+          0.7880952380952382
+        ],
+        "observe_ms": [
+          1.330266344605475,
+          1.3317144122383253,
+          1.218583655394525,
+          1.2816520128824478,
+          1.2845299516908213,
+          1.2653306763285024,
+          1.243048953301127,
+          1.2642119967793881,
+          1.2508934782608694,
+          1.2762851046698873
+        ]
+      }
+    },
+    "quiet160-f1-l3.5-b1.5": {
+      "metrics": {
+        "episode_detection": {
+          "mean": 0.9974999999999999,
+          "bootstrap_95": [
+            0.9924999999999999,
+            1.0
+          ]
+        },
+        "first_episode_novel_attention": {
+          "mean": 0.97,
+          "bootstrap_95": [
+            0.9399999999999998,
+            0.9949999999999999
+          ]
+        },
+        "repeat_identity": {
+          "mean": 0.37250000000000005,
+          "bootstrap_95": [
+            0.2925,
+            0.44000000000000006
+          ]
+        },
+        "source_dependent_repeat": {
+          "mean": 0.25,
+          "bootstrap_95": [
+            0.185,
+            0.3
+          ]
+        },
+        "strict_episode_exclusion": {
+          "mean": 0.205,
+          "bootstrap_95": [
+            0.15,
+            0.2475
+          ]
+        },
+        "wrong_repeat_identity": {
+          "mean": 0.805,
+          "bootstrap_95": [
+            0.7575,
+            0.8525
+          ]
+        },
+        "control_admissions": {
+          "mean": 12.65,
+          "bootstrap_95": [
+            11.7,
+            13.55
+          ]
+        },
+        "control_attention": {
+          "mean": 0.7797619047619048,
+          "bootstrap_95": [
+            0.7707142857142857,
+            0.7892857142857144
+          ]
+        },
+        "observe_ms": {
+          "mean": 1.2132670209339775,
+          "bootstrap_95": [
+            1.1934991296296296,
+            1.2329985217391304
+          ]
+        }
+      },
+      "positive_counts": {
+        "windows": 8400,
+        "background_windows": 4400,
+        "background_attention": 3302,
+        "background_admissions": 291,
+        "background_with_room_tail": 800,
+        "room_tail_attention": 619,
+        "background_without_room_tail": 3600,
+        "no_room_tail_attention": 2683,
+        "episodes": 800,
+        "eligible_repeat_episodes": 400,
+        "detected_episodes": 798,
+        "correct_repeat_episodes": 149,
+        "source_dependent_repeat_episodes": 100,
+        "deletion_correct_repeat_episodes": 70,
+        "deletion_attention_episodes": 796,
+        "wrong_repeat_episodes": 322,
+        "wrong_only_repeat_episodes": 214,
+        "first_episode_novel_attention": 194,
+        "strict_episode_exclusion_hits": 82,
+        "recording_run_pairs": 200,
+        "admitted_recording_run_pairs": 170,
+        "distinct_input_recordings": 5
+      },
+      "by_recording": {
+        "4-156843-A-21.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 20,
+          "source_dependent_repeat_episodes": 9,
+          "deletion_correct_repeat_episodes": 12,
+          "wrong_repeat_episodes": 68,
+          "strict_episode_exclusion_hits": 8
+        },
+        "4-164021-A-1.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 28,
+          "source_dependent_repeat_episodes": 16,
+          "deletion_correct_repeat_episodes": 15,
+          "wrong_repeat_episodes": 61,
+          "strict_episode_exclusion_hits": 14
+        },
+        "4-167077-A-20.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 36,
+          "source_dependent_repeat_episodes": 31,
+          "deletion_correct_repeat_episodes": 9,
+          "wrong_repeat_episodes": 73,
+          "strict_episode_exclusion_hits": 28
+        },
+        "4-175945-A-38.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 158,
+          "correct_repeat_episodes": 32,
+          "source_dependent_repeat_episodes": 22,
+          "deletion_correct_repeat_episodes": 19,
+          "wrong_repeat_episodes": 53,
+          "strict_episode_exclusion_hits": 14
+        },
+        "4-182395-A-0.wav": {
+          "episodes": 160,
+          "eligible_repeat_episodes": 80,
+          "detected_episodes": 160,
+          "correct_repeat_episodes": 33,
+          "source_dependent_repeat_episodes": 22,
+          "deletion_correct_repeat_episodes": 15,
+          "wrong_repeat_episodes": 67,
+          "strict_episode_exclusion_hits": 18
+        }
+      },
+      "seed_values": {
+        "episode_detection": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.975,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "first_episode_novel_attention": [
+          1.0,
+          0.95,
+          0.95,
+          1.0,
+          1.0,
+          0.95,
+          1.0,
+          0.8500000000000001,
+          1.0,
+          1.0
+        ],
+        "repeat_identity": [
+          0.425,
+          0.375,
+          0.525,
+          0.30000000000000004,
+          0.42500000000000004,
+          0.3,
+          0.475,
+          0.07500000000000001,
+          0.35,
+          0.47500000000000003
+        ],
+        "source_dependent_repeat": [
+          0.35000000000000003,
+          0.24999999999999997,
+          0.325,
+          0.25,
+          0.3,
+          0.175,
+          0.3,
+          0.0,
+          0.25,
+          0.30000000000000004
+        ],
+        "strict_episode_exclusion": [
+          0.175,
+          0.225,
+          0.30000000000000004,
+          0.175,
+          0.25,
+          0.175,
+          0.22499999999999998,
+          0.0,
+          0.25,
+          0.275
+        ],
+        "wrong_repeat_identity": [
+          0.7249999999999999,
+          0.85,
+          0.7999999999999999,
+          0.8250000000000001,
+          0.7,
+          0.925,
+          0.825,
+          0.75,
+          0.925,
+          0.725
+        ],
+        "control_admissions": [
+          11.5,
+          14.5,
+          13.5,
+          13.0,
+          14.5,
+          13.0,
+          10.0,
+          10.5,
+          12.0,
+          14.0
+        ],
+        "control_attention": [
+          0.7595238095238095,
+          0.7880952380952382,
+          0.7976190476190477,
+          0.7761904761904762,
+          0.7714285714285714,
+          0.7595238095238095,
+          0.8047619047619048,
+          0.7666666666666666,
+          0.7857142857142857,
+          0.7880952380952382
+        ],
+        "observe_ms": [
+          1.2642270531400968,
+          1.2618667471819645,
+          1.160176731078905,
+          1.2204772141706925,
+          1.2272280193236715,
+          1.2121950080515298,
+          1.179421336553945,
+          1.192994766505636,
+          1.1864009661835748,
+          1.2276823671497583
+        ]
+      }
+    }
+  },
+  "contrasts": {
+    "pcen_minus_quiet160": {
+      "current": "pcen160-f0-l2.5-b1.5",
+      "reference": "quiet160-f0-l3.5-b1.5",
+      "metrics": {
+        "episode_detection": {
+          "mean": -0.1,
+          "bootstrap_95": [
+            -0.11875000000000002,
+            -0.08125
+          ]
+        },
+        "first_episode_novel_attention": {
+          "mean": -0.08499999999999996,
+          "bootstrap_95": [
+            -0.13499999999999995,
+            -0.03500000000000001
+          ]
+        },
+        "repeat_identity": {
+          "mean": -0.08750000000000001,
+          "bootstrap_95": [
+            -0.15250000000000002,
+            -0.02250000000000002
+          ]
+        },
+        "source_dependent_repeat": {
+          "mean": -0.03499999999999999,
+          "bootstrap_95": [
+            -0.07,
+            0.002500000000000008
+          ]
+        },
+        "strict_episode_exclusion": {
+          "mean": -0.03,
+          "bootstrap_95": [
+            -0.06749999999999999,
+            0.010000000000000004
+          ]
+        },
+        "wrong_repeat_identity": {
+          "mean": -0.375,
+          "bootstrap_95": [
+            -0.42000000000000004,
+            -0.32249999999999995
+          ]
+        },
+        "control_admissions": {
+          "mean": -1.95,
+          "bootstrap_95": [
+            -2.65,
+            -1.2
+          ]
+        },
+        "control_attention": {
+          "mean": -0.3038095238095238,
+          "bootstrap_95": [
+            -0.3235714285714286,
+            -0.2847619047619048
+          ]
+        },
+        "observe_ms": {
+          "mean": 0.45542822061191623,
+          "bootstrap_95": [
+            0.4397729871175523,
+            0.470934118357488
+          ]
+        }
+      }
+    },
+    "mcra_diagnostic_minus_quiet128": {
+      "current": "mcra128-f0-l3.5-b1.5",
+      "reference": "quiet128-f0-l3.5-b1.5",
+      "metrics": {
+        "episode_detection": {
+          "mean": -0.032500000000000015,
+          "bootstrap_95": [
+            -0.05000000000000003,
+            -0.015000000000000003
+          ]
+        },
+        "first_episode_novel_attention": {
+          "mean": -0.185,
+          "bootstrap_95": [
+            -0.27,
+            -0.09999999999999996
+          ]
+        },
+        "repeat_identity": {
+          "mean": -0.21000000000000002,
+          "bootstrap_95": [
+            -0.2699999999999999,
+            -0.1475
+          ]
+        },
+        "source_dependent_repeat": {
+          "mean": -0.19,
+          "bootstrap_95": [
+            -0.24000000000000005,
+            -0.135
+          ]
+        },
+        "strict_episode_exclusion": {
+          "mean": -0.15750000000000003,
+          "bootstrap_95": [
+            -0.20750000000000002,
+            -0.1075
+          ]
+        },
+        "wrong_repeat_identity": {
+          "mean": -0.09500000000000001,
+          "bootstrap_95": [
+            -0.18000000000000002,
+            -0.017500000000000026
+          ]
+        },
+        "control_admissions": {
+          "mean": 1.0,
+          "bootstrap_95": [
+            0.4,
+            1.65
+          ]
+        },
+        "control_attention": {
+          "mean": -0.20095238095238094,
+          "bootstrap_95": [
+            -0.2176190476190476,
+            -0.18571428571428575
+          ]
+        },
+        "observe_ms": {
+          "mean": 2.6630389452495975,
+          "bootstrap_95": [
+            2.606192458534622,
+            2.7180175543478264
+          ]
+        }
+      }
+    },
+    "quiet128_minus_quiet160": {
+      "current": "quiet128-f0-l3.5-b1.5",
+      "reference": "quiet160-f0-l3.5-b1.5",
+      "metrics": {
+        "episode_detection": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "first_episode_novel_attention": {
+          "mean": -0.01499999999999999,
+          "bootstrap_95": [
+            -0.03499999999999999,
+            0.0
+          ]
+        },
+        "repeat_identity": {
+          "mean": -0.022500000000000027,
+          "bootstrap_95": [
+            -0.06250000000000003,
+            0.019999999999999976
+          ]
+        },
+        "source_dependent_repeat": {
+          "mean": 0.0025000000000000135,
+          "bootstrap_95": [
+            -0.024999999999999984,
+            0.03000000000000001
+          ]
+        },
+        "strict_episode_exclusion": {
+          "mean": -0.009999999999999995,
+          "bootstrap_95": [
+            -0.039999999999999994,
+            0.020062499999999105
+          ]
+        },
+        "wrong_repeat_identity": {
+          "mean": -0.0025000000000000243,
+          "bootstrap_95": [
+            -0.020000000000000028,
+            0.01749999999999998
+          ]
+        },
+        "control_admissions": {
+          "mean": 0.35,
+          "bootstrap_95": [
+            -0.05,
+            0.7
+          ]
+        },
+        "control_attention": {
+          "mean": 0.00023809523809523725,
+          "bootstrap_95": [
+            -0.006190476190476213,
+            0.006428571428571428
+          ]
+        },
+        "observe_ms": {
+          "mean": 0.13763334138486305,
+          "bootstrap_95": [
+            0.13413048933172295,
+            0.14177863003220603
+          ]
+        }
+      }
+    },
+    "adaptive_minus_quiet160": {
+      "current": "adaptive_gain",
+      "reference": "quiet160-f0-l3.5-b1.5",
+      "metrics": {
+        "episode_detection": {
+          "mean": -0.015000000000000013,
+          "bootstrap_95": [
+            -0.030000000000000027,
+            -0.0012499999999999955
+          ]
+        },
+        "first_episode_novel_attention": {
+          "mean": 0.020000000000000018,
+          "bootstrap_95": [
+            -0.03500000000000001,
+            0.08
+          ]
+        },
+        "repeat_identity": {
+          "mean": -0.007500000000000032,
+          "bootstrap_95": [
+            -0.09500000000000001,
+            0.07999999999999995
+          ]
+        },
+        "source_dependent_repeat": {
+          "mean": 0.06749999999999998,
+          "bootstrap_95": [
+            0.005000000000000007,
+            0.12999999999999995
+          ]
+        },
+        "strict_episode_exclusion": {
+          "mean": 0.055000000000000014,
+          "bootstrap_95": [
+            0.0,
+            0.11250000000000002
+          ]
+        },
+        "wrong_repeat_identity": {
+          "mean": -0.19000000000000003,
+          "bootstrap_95": [
+            -0.27249999999999996,
+            -0.10500000000000005
+          ]
+        },
+        "control_admissions": {
+          "mean": 0.15,
+          "bootstrap_95": [
+            -0.7,
+            0.95
+          ]
+        },
+        "control_attention": {
+          "mean": -0.2902380952380953,
+          "bootstrap_95": [
+            -0.32452380952380955,
+            -0.25476190476190474
+          ]
+        },
+        "observe_ms": {
+          "mean": 0.3050205394524959,
+          "bootstrap_95": [
+            0.2916965837359098,
+            0.31759261030595803
+          ]
+        }
+      }
+    },
+    "quiet160_relative_pipeline_minus_raw_pipeline": {
+      "current": "quiet160-f1-l3.5-b1.5",
+      "reference": "quiet160-f0-l3.5-b1.5",
+      "metrics": {
+        "episode_detection": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "first_episode_novel_attention": {
+          "mean": 0.085,
+          "bootstrap_95": [
+            0.025,
+            0.15
+          ]
+        },
+        "repeat_identity": {
+          "mean": 0.01749999999999998,
+          "bootstrap_95": [
+            -0.027500000000000014,
+            0.057499999999999975
+          ]
+        },
+        "source_dependent_repeat": {
+          "mean": 0.012500000000000002,
+          "bootstrap_95": [
+            -0.019999999999999993,
+            0.05249999999999997
+          ]
+        },
+        "strict_episode_exclusion": {
+          "mean": -0.0075000000000000015,
+          "bootstrap_95": [
+            -0.042499999999999996,
+            0.022500000000000003
+          ]
+        },
+        "wrong_repeat_identity": {
+          "mean": -0.10750000000000004,
+          "bootstrap_95": [
+            -0.14250000000000002,
+            -0.07000000000000003
+          ]
+        },
+        "control_admissions": {
+          "mean": 6.6,
+          "bootstrap_95": [
+            5.75,
+            7.55
+          ]
+        },
+        "control_attention": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "observe_ms": {
+          "mean": -0.06138463768115945,
+          "bootstrap_95": [
+            -0.06549585688405804,
+            -0.05711758454106286
+          ]
+        }
+      }
+    },
+    "quiet128_relative_pipeline_minus_raw_pipeline": {
+      "current": "quiet128-f1-l3.5-b1.5",
+      "reference": "quiet128-f0-l3.5-b1.5",
+      "metrics": {
+        "episode_detection": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "first_episode_novel_attention": {
+          "mean": 0.1,
+          "bootstrap_95": [
+            0.030000000000000016,
+            0.18
+          ]
+        },
+        "repeat_identity": {
+          "mean": 0.034999999999999996,
+          "bootstrap_95": [
+            0.007500000000000004,
+            0.0625
+          ]
+        },
+        "source_dependent_repeat": {
+          "mean": 0.009999999999999986,
+          "bootstrap_95": [
+            -0.025000000000000012,
+            0.04749999999999999
+          ]
+        },
+        "strict_episode_exclusion": {
+          "mean": 0.009999999999999986,
+          "bootstrap_95": [
+            -0.03250000000000002,
+            0.05
+          ]
+        },
+        "wrong_repeat_identity": {
+          "mean": -0.09,
+          "bootstrap_95": [
+            -0.14500000000000002,
+            -0.045
+          ]
+        },
+        "control_admissions": {
+          "mean": 6.1,
+          "bootstrap_95": [
+            5.05,
+            7.15
+          ]
+        },
+        "control_attention": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "observe_ms": {
+          "mean": -0.09125066022544273,
+          "bootstrap_95": [
+            -0.0976271688808372,
+            -0.08496551892109497
+          ]
+        }
+      }
+    },
+    "pcen160_relative_pipeline_minus_raw_pipeline": {
+      "current": "pcen160-f1-l2.5-b1.15",
+      "reference": "pcen160-f0-l2.5-b1.5",
+      "metrics": {
+        "episode_detection": {
+          "mean": 0.0975,
+          "bootstrap_95": [
+            0.08,
+            0.11625
+          ]
+        },
+        "first_episode_novel_attention": {
+          "mean": 0.18,
+          "bootstrap_95": [
+            0.11499999999999996,
+            0.24999999999999994
+          ]
+        },
+        "repeat_identity": {
+          "mean": -0.024999999999999998,
+          "bootstrap_95": [
+            -0.07999999999999999,
+            0.034999999999999996
+          ]
+        },
+        "source_dependent_repeat": {
+          "mean": -0.06000000000000001,
+          "bootstrap_95": [
+            -0.12000000000000002,
+            0.002499999999999991
+          ]
+        },
+        "strict_episode_exclusion": {
+          "mean": -0.06499999999999999,
+          "bootstrap_95": [
+            -0.12000000000000002,
+            -0.012499999999999994
+          ]
+        },
+        "wrong_repeat_identity": {
+          "mean": 0.08749999999999998,
+          "bootstrap_95": [
+            0.03249999999999999,
+            0.14499999999999996
+          ]
+        },
+        "control_admissions": {
+          "mean": 11.6,
+          "bootstrap_95": [
+            10.7,
+            12.45
+          ]
+        },
+        "control_attention": {
+          "mean": 0.2307142857142857,
+          "bootstrap_95": [
+            0.21476190476190476,
+            0.2454761904761905
+          ]
+        },
+        "observe_ms": {
+          "mean": -0.013204766505636113,
+          "bootstrap_95": [
+            -0.021417023349436376,
+            -0.004399479468599139
+          ]
+        }
+      }
+    },
+    "mcra128_relative_pipeline_minus_raw_pipeline": {
+      "current": "mcra128-f1-l3.5-b1.5",
+      "reference": "mcra128-f0-l3.5-b1.5",
+      "metrics": {
+        "episode_detection": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "first_episode_novel_attention": {
+          "mean": 0.135,
+          "bootstrap_95": [
+            0.04999999999999999,
+            0.21500000000000002
+          ]
+        },
+        "repeat_identity": {
+          "mean": -0.02,
+          "bootstrap_95": [
+            -0.07999999999999999,
+            0.0375
+          ]
+        },
+        "source_dependent_repeat": {
+          "mean": -0.02,
+          "bootstrap_95": [
+            -0.06000000000000001,
+            0.02
+          ]
+        },
+        "strict_episode_exclusion": {
+          "mean": -0.0225,
+          "bootstrap_95": [
+            -0.05750000000000001,
+            0.0125
+          ]
+        },
+        "wrong_repeat_identity": {
+          "mean": -0.11999999999999997,
+          "bootstrap_95": [
+            -0.19999999999999996,
+            -0.03750000000000005
+          ]
+        },
+        "control_admissions": {
+          "mean": 5.4,
+          "bootstrap_95": [
+            4.5,
+            6.25
+          ]
+        },
+        "control_attention": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "observe_ms": {
+          "mean": -0.09687198067632856,
+          "bootstrap_95": [
+            -0.10750499698067643,
+            -0.0866132852254429
+          ]
+        }
+      }
+    }
+  },
+  "uncertainty": "10000 paired seed-bootstrap draws jointly across suites; conditional on five fixed foreground recordings, not corpus-level confidence",
+  "scope": "Post-run descriptive aggregation; no retuning or new selection. Contrast intervals are exploratory and unadjusted for multiple comparisons.",
+  "features": "Selected raw/relative pipelines may have different thresholds, especially PCEN; their difference is not an isolated stored-feature effect.",
+  "runtime": "Mean warmed actual-observe milliseconds across six equally weighted suites per seed; desktop shared, not CPU-isolated",
+  "seeds": [
+    2900,
+    2901,
+    2902,
+    2903,
+    2904,
+    2905,
+    2906,
+    2907,
+    2908,
+    2909
+  ],
+  "positive_suites": [
+    "recorded/0/positive",
+    "recorded/-6/positive",
+    "modulated/0/positive",
+    "modulated/-6/positive"
+  ],
+  "control_suites": [
+    "recorded/0/control",
+    "modulated/0/control"
+  ]
+}

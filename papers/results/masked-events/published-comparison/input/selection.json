@@ -1,0 +1,810 @@
+{
+  "schema": "chuff.recorded.published-selection.v1",
+  "scores": {
+    "quiet160-f0-l1.5-b1.15": {
+      "family": "quiet160",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.4,
+      "first_novel": 1.0,
+      "wrong": 0.9375,
+      "control_admissions": 10.0,
+      "feasible": true
+    },
+    "quiet160-f0-l1.5-b1.5": {
+      "family": "quiet160",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.4,
+      "first_novel": 1.0,
+      "wrong": 0.9375,
+      "control_admissions": 10.0,
+      "feasible": true
+    },
+    "quiet160-f0-l2.5-b1.15": {
+      "family": "quiet160",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.375,
+      "first_novel": 1.0,
+      "wrong": 0.8999999999999999,
+      "control_admissions": 8.75,
+      "feasible": true
+    },
+    "quiet160-f0-l2.5-b1.5": {
+      "family": "quiet160",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.3875,
+      "first_novel": 1.0,
+      "wrong": 0.9,
+      "control_admissions": 9.25,
+      "feasible": true
+    },
+    "quiet160-f0-l3.5-b1.15": {
+      "family": "quiet160",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.35,
+      "first_novel": 1.0,
+      "wrong": 0.875,
+      "control_admissions": 9.25,
+      "feasible": true
+    },
+    "quiet160-f0-l3.5-b1.5": {
+      "family": "quiet160",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.475,
+      "first_novel": 1.0,
+      "wrong": 0.8375000000000001,
+      "control_admissions": 8.5,
+      "feasible": true
+    },
+    "quiet160-f1-l1.5-b1.15": {
+      "family": "quiet160",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.225,
+      "first_novel": 1.0,
+      "wrong": 0.7125,
+      "control_admissions": 20.0,
+      "feasible": true
+    },
+    "quiet160-f1-l1.5-b1.5": {
+      "family": "quiet160",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.225,
+      "first_novel": 1.0,
+      "wrong": 0.7125,
+      "control_admissions": 20.0,
+      "feasible": true
+    },
+    "quiet160-f1-l2.5-b1.15": {
+      "family": "quiet160",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.3125,
+      "first_novel": 1.0,
+      "wrong": 0.7250000000000001,
+      "control_admissions": 16.25,
+      "feasible": true
+    },
+    "quiet160-f1-l2.5-b1.5": {
+      "family": "quiet160",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.3125,
+      "first_novel": 1.0,
+      "wrong": 0.725,
+      "control_admissions": 16.75,
+      "feasible": true
+    },
+    "quiet160-f1-l3.5-b1.15": {
+      "family": "quiet160",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.35000000000000003,
+      "first_novel": 1.0,
+      "wrong": 0.6625,
+      "control_admissions": 15.0,
+      "feasible": true
+    },
+    "quiet160-f1-l3.5-b1.5": {
+      "family": "quiet160",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.41250000000000003,
+      "first_novel": 1.0,
+      "wrong": 0.725,
+      "control_admissions": 12.25,
+      "feasible": true
+    },
+    "quiet128-f0-l1.5-b1.15": {
+      "family": "quiet128",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.2875,
+      "first_novel": 1.0,
+      "wrong": 0.8500000000000001,
+      "control_admissions": 9.0,
+      "feasible": true
+    },
+    "quiet128-f0-l1.5-b1.5": {
+      "family": "quiet128",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.2875,
+      "first_novel": 1.0,
+      "wrong": 0.8500000000000001,
+      "control_admissions": 9.0,
+      "feasible": true
+    },
+    "quiet128-f0-l2.5-b1.15": {
+      "family": "quiet128",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.4375,
+      "first_novel": 1.0,
+      "wrong": 0.9,
+      "control_admissions": 9.75,
+      "feasible": true
+    },
+    "quiet128-f0-l2.5-b1.5": {
+      "family": "quiet128",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.4125,
+      "first_novel": 1.0,
+      "wrong": 0.8875,
+      "control_admissions": 10.0,
+      "feasible": true
+    },
+    "quiet128-f0-l3.5-b1.15": {
+      "family": "quiet128",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.375,
+      "first_novel": 1.0,
+      "wrong": 0.8500000000000001,
+      "control_admissions": 8.5,
+      "feasible": true
+    },
+    "quiet128-f0-l3.5-b1.5": {
+      "family": "quiet128",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.425,
+      "first_novel": 1.0,
+      "wrong": 0.8500000000000001,
+      "control_admissions": 8.5,
+      "feasible": true
+    },
+    "quiet128-f1-l1.5-b1.15": {
+      "family": "quiet128",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.1875,
+      "first_novel": 1.0,
+      "wrong": 0.7,
+      "control_admissions": 15.25,
+      "feasible": false
+    },
+    "quiet128-f1-l1.5-b1.5": {
+      "family": "quiet128",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.1875,
+      "first_novel": 1.0,
+      "wrong": 0.7,
+      "control_admissions": 15.25,
+      "feasible": false
+    },
+    "quiet128-f1-l2.5-b1.15": {
+      "family": "quiet128",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.3125,
+      "first_novel": 1.0,
+      "wrong": 0.7875000000000001,
+      "control_admissions": 16.75,
+      "feasible": true
+    },
+    "quiet128-f1-l2.5-b1.5": {
+      "family": "quiet128",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.3125,
+      "first_novel": 1.0,
+      "wrong": 0.75,
+      "control_admissions": 16.5,
+      "feasible": true
+    },
+    "quiet128-f1-l3.5-b1.15": {
+      "family": "quiet128",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.3375,
+      "first_novel": 1.0,
+      "wrong": 0.7,
+      "control_admissions": 15.25,
+      "feasible": true
+    },
+    "quiet128-f1-l3.5-b1.5": {
+      "family": "quiet128",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.3875,
+      "first_novel": 1.0,
+      "wrong": 0.675,
+      "control_admissions": 13.75,
+      "feasible": true
+    },
+    "pcen160-f0-l1.5-b1.15": {
+      "family": "pcen160",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.33749999999999997,
+      "first_novel": 1.0,
+      "wrong": 0.95,
+      "control_admissions": 9.0,
+      "feasible": true
+    },
+    "pcen160-f0-l1.5-b1.5": {
+      "family": "pcen160",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.33749999999999997,
+      "first_novel": 1.0,
+      "wrong": 0.9375,
+      "control_admissions": 9.0,
+      "feasible": true
+    },
+    "pcen160-f0-l2.5-b1.15": {
+      "family": "pcen160",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.1875,
+      "first_novel": 0.925,
+      "wrong": 0.7875000000000001,
+      "control_admissions": 6.25,
+      "feasible": false
+    },
+    "pcen160-f0-l2.5-b1.5": {
+      "family": "pcen160",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 0.95,
+        "recorded/-6/positive": 0.875,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.3125,
+      "first_novel": 0.925,
+      "wrong": 0.5625,
+      "control_admissions": 5.25,
+      "feasible": true
+    },
+    "pcen160-f0-l3.5-b1.15": {
+      "family": "pcen160",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.2,
+      "first_novel": 0.925,
+      "wrong": 0.8125,
+      "control_admissions": 6.25,
+      "feasible": true
+    },
+    "pcen160-f0-l3.5-b1.5": {
+      "family": "pcen160",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 0.725,
+        "recorded/-6/positive": 0.6,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.16249999999999998,
+      "first_novel": 0.8,
+      "wrong": 0.4875,
+      "control_admissions": 4.25,
+      "feasible": false
+    },
+    "pcen160-f1-l1.5-b1.15": {
+      "family": "pcen160",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.1125,
+      "first_novel": 1.0,
+      "wrong": 0.75,
+      "control_admissions": 20.5,
+      "feasible": false
+    },
+    "pcen160-f1-l1.5-b1.5": {
+      "family": "pcen160",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.1,
+      "first_novel": 1.0,
+      "wrong": 0.7375,
+      "control_admissions": 20.25,
+      "feasible": false
+    },
+    "pcen160-f1-l2.5-b1.15": {
+      "family": "pcen160",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.2,
+      "first_novel": 0.975,
+      "wrong": 0.65,
+      "control_admissions": 14.25,
+      "feasible": true
+    },
+    "pcen160-f1-l2.5-b1.5": {
+      "family": "pcen160",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 0.95,
+        "recorded/-6/positive": 0.875,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.1875,
+      "first_novel": 0.95,
+      "wrong": 0.5,
+      "control_admissions": 4.5,
+      "feasible": false
+    },
+    "pcen160-f1-l3.5-b1.15": {
+      "family": "pcen160",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 1.0,
+        "recorded/-6/positive": 1.0,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.1375,
+      "first_novel": 0.95,
+      "wrong": 0.675,
+      "control_admissions": 14.25,
+      "feasible": false
+    },
+    "pcen160-f1-l3.5-b1.5": {
+      "family": "pcen160",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 0.725,
+        "recorded/-6/positive": 0.6,
+        "modulated/0/positive": 1.0,
+        "modulated/-6/positive": 1.0
+      },
+      "strict": 0.11250000000000002,
+      "first_novel": 0.85,
+      "wrong": 0.5,
+      "control_admissions": 4.25,
+      "feasible": false
+    },
+    "mcra128-f0-l1.5-b1.15": {
+      "family": "mcra128",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 0.6,
+        "recorded/-6/positive": 0.6499999999999999,
+        "modulated/0/positive": 0.7,
+        "modulated/-6/positive": 0.7250000000000001
+      },
+      "strict": 0.0625,
+      "first_novel": 0.675,
+      "wrong": 0.375,
+      "control_admissions": 4.25,
+      "feasible": false
+    },
+    "mcra128-f0-l1.5-b1.5": {
+      "family": "mcra128",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 0.6,
+        "recorded/-6/positive": 0.6499999999999999,
+        "modulated/0/positive": 0.7,
+        "modulated/-6/positive": 0.7250000000000001
+      },
+      "strict": 0.0625,
+      "first_novel": 0.675,
+      "wrong": 0.375,
+      "control_admissions": 4.25,
+      "feasible": false
+    },
+    "mcra128-f0-l2.5-b1.15": {
+      "family": "mcra128",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 0.8500000000000001,
+        "recorded/-6/positive": 0.8500000000000001,
+        "modulated/0/positive": 0.8500000000000001,
+        "modulated/-6/positive": 0.8999999999999999
+      },
+      "strict": 0.05,
+      "first_novel": 0.8500000000000001,
+      "wrong": 0.475,
+      "control_admissions": 5.25,
+      "feasible": false
+    },
+    "mcra128-f0-l2.5-b1.5": {
+      "family": "mcra128",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 0.8500000000000001,
+        "recorded/-6/positive": 0.8500000000000001,
+        "modulated/0/positive": 0.875,
+        "modulated/-6/positive": 0.8999999999999999
+      },
+      "strict": 0.0625,
+      "first_novel": 0.8500000000000001,
+      "wrong": 0.48749999999999993,
+      "control_admissions": 5.5,
+      "feasible": false
+    },
+    "mcra128-f0-l3.5-b1.15": {
+      "family": "mcra128",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 0.9,
+        "recorded/-6/positive": 0.9,
+        "modulated/0/positive": 0.925,
+        "modulated/-6/positive": 0.925
+      },
+      "strict": 0.1125,
+      "first_novel": 0.9,
+      "wrong": 0.5625,
+      "control_admissions": 5.75,
+      "feasible": false
+    },
+    "mcra128-f0-l3.5-b1.5": {
+      "family": "mcra128",
+      "feature_mode": 0,
+      "detection_by_suite": {
+        "recorded/0/positive": 0.95,
+        "recorded/-6/positive": 0.95,
+        "modulated/0/positive": 0.95,
+        "modulated/-6/positive": 0.95
+      },
+      "strict": 0.1375,
+      "first_novel": 0.95,
+      "wrong": 0.7124999999999999,
+      "control_admissions": 6.25,
+      "feasible": false
+    },
+    "mcra128-f1-l1.5-b1.15": {
+      "family": "mcra128",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 0.6,
+        "recorded/-6/positive": 0.6499999999999999,
+        "modulated/0/positive": 0.7,
+        "modulated/-6/positive": 0.7250000000000001
+      },
+      "strict": 0.0,
+      "first_novel": 0.7,
+      "wrong": 0.1125,
+      "control_admissions": 7.25,
+      "feasible": false
+    },
+    "mcra128-f1-l1.5-b1.5": {
+      "family": "mcra128",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 0.6,
+        "recorded/-6/positive": 0.6499999999999999,
+        "modulated/0/positive": 0.7,
+        "modulated/-6/positive": 0.7250000000000001
+      },
+      "strict": 0.0,
+      "first_novel": 0.7,
+      "wrong": 0.1125,
+      "control_admissions": 7.25,
+      "feasible": false
+    },
+    "mcra128-f1-l2.5-b1.15": {
+      "family": "mcra128",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 0.8500000000000001,
+        "recorded/-6/positive": 0.8500000000000001,
+        "modulated/0/positive": 0.8500000000000001,
+        "modulated/-6/positive": 0.8999999999999999
+      },
+      "strict": 0.0125,
+      "first_novel": 0.9,
+      "wrong": 0.3,
+      "control_admissions": 9.25,
+      "feasible": false
+    },
+    "mcra128-f1-l2.5-b1.5": {
+      "family": "mcra128",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 0.8500000000000001,
+        "recorded/-6/positive": 0.8500000000000001,
+        "modulated/0/positive": 0.875,
+        "modulated/-6/positive": 0.8999999999999999
+      },
+      "strict": 0.0125,
+      "first_novel": 0.925,
+      "wrong": 0.3375,
+      "control_admissions": 9.0,
+      "feasible": false
+    },
+    "mcra128-f1-l3.5-b1.15": {
+      "family": "mcra128",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 0.9,
+        "recorded/-6/positive": 0.9,
+        "modulated/0/positive": 0.925,
+        "modulated/-6/positive": 0.925
+      },
+      "strict": 0.025,
+      "first_novel": 0.95,
+      "wrong": 0.375,
+      "control_admissions": 8.75,
+      "feasible": false
+    },
+    "mcra128-f1-l3.5-b1.5": {
+      "family": "mcra128",
+      "feature_mode": 1,
+      "detection_by_suite": {
+        "recorded/0/positive": 0.95,
+        "recorded/-6/positive": 0.95,
+        "modulated/0/positive": 0.95,
+        "modulated/-6/positive": 0.95
+      },
+      "strict": 0.037500000000000006,
+      "first_novel": 0.975,
+      "wrong": 0.4625,
+      "control_admissions": 10.0,
+      "feasible": false
+    }
+  },
+  "selections": {
+    "quiet160": {
+      "selected": "quiet160-f0-l3.5-b1.5",
+      "diagnostic": "quiet160-f0-l3.5-b1.5",
+      "feasible_count": 12,
+      "candidates": 12
+    },
+    "quiet160/feature0": {
+      "selected": "quiet160-f0-l3.5-b1.5",
+      "diagnostic": "quiet160-f0-l3.5-b1.5",
+      "feasible_count": 6,
+      "candidates": 6
+    },
+    "quiet160/feature1": {
+      "selected": "quiet160-f1-l3.5-b1.5",
+      "diagnostic": "quiet160-f1-l3.5-b1.5",
+      "feasible_count": 6,
+      "candidates": 6
+    },
+    "quiet128": {
+      "selected": "quiet128-f0-l3.5-b1.5",
+      "diagnostic": "quiet128-f0-l2.5-b1.15",
+      "feasible_count": 10,
+      "candidates": 12
+    },
+    "quiet128/feature0": {
+      "selected": "quiet128-f0-l3.5-b1.5",
+      "diagnostic": "quiet128-f0-l2.5-b1.15",
+      "feasible_count": 6,
+      "candidates": 6
+    },
+    "quiet128/feature1": {
+      "selected": "quiet128-f1-l3.5-b1.5",
+      "diagnostic": "quiet128-f1-l3.5-b1.5",
+      "feasible_count": 4,
+      "candidates": 6
+    },
+    "pcen160": {
+      "selected": "pcen160-f0-l2.5-b1.5",
+      "diagnostic": "pcen160-f0-l1.5-b1.5",
+      "feasible_count": 5,
+      "candidates": 12
+    },
+    "pcen160/feature0": {
+      "selected": "pcen160-f0-l2.5-b1.5",
+      "diagnostic": "pcen160-f0-l1.5-b1.5",
+      "feasible_count": 4,
+      "candidates": 6
+    },
+    "pcen160/feature1": {
+      "selected": "pcen160-f1-l2.5-b1.15",
+      "diagnostic": "pcen160-f1-l2.5-b1.15",
+      "feasible_count": 1,
+      "candidates": 6
+    },
+    "mcra128": {
+      "selected": null,
+      "diagnostic": "mcra128-f0-l3.5-b1.5",
+      "feasible_count": 0,
+      "candidates": 12
+    },
+    "mcra128/feature0": {
+      "selected": null,
+      "diagnostic": "mcra128-f0-l3.5-b1.5",
+      "feasible_count": 0,
+      "candidates": 6
+    },
+    "mcra128/feature1": {
+      "selected": null,
+      "diagnostic": "mcra128-f1-l3.5-b1.5",
+      "feasible_count": 0,
+      "candidates": 6
+    }
+  },
+  "evaluation_ids": [
+    "mcra128-f0-l3.5-b1.5",
+    "mcra128-f1-l3.5-b1.5",
+    "pcen160-f0-l2.5-b1.5",
+    "pcen160-f0-l3.5-b1.5",
+    "pcen160-f1-l2.5-b1.15",
+    "quiet128-f0-l3.5-b1.5",
+    "quiet128-f1-l3.5-b1.5",
+    "quiet160-f0-l3.5-b1.5",
+    "quiet160-f1-l3.5-b1.5"
+  ]
+}
