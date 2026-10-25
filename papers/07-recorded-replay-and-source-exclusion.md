@@ -166,6 +166,13 @@ recordings remain ch-6w4.1.3; relevance/one-off importance learning remains
 ch-6w4.3. Physical capture/cue-echo work still needs the bench access in
 `HUMAN_TODO.md`. The broad recorded benchmark parent remains open.
 
+[Paper 08](08-published-frontends-and-recorded-novelty.md) now records the
+direct PCEN/MCRA adapter comparison protocol. It reserves new fold-2/fold-4
+sources excluding every pilot source ID, fixes equal finite tuning grids
+and requires foreground retention when selecting for fewer background
+admissions. Its development experiment is separate from this pilot; no
+held-out frontend-comparison result is claimed here.
+
 This pilot establishes replay/scoring infrastructure and exposes limitations;
 it does not establish missing-category coverage, clean natural-event stems,
 calibrated physical acoustics, semantic relevance or field robustness.

@@ -1,0 +1,241 @@
+{
+  "schema": "chuff.recorded.esc10-reservation.v1",
+  "revision": "33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6",
+  "repository": "https://github.com/karolpiczak/ESC-50",
+  "selection_plan": {
+    "development_fold": 2,
+    "evaluation_fold": 4,
+    "excluded_sources": [
+      "100032",
+      "116765",
+      "151085",
+      "170338",
+      "17150",
+      "172649",
+      "17367",
+      "177957",
+      "181766",
+      "186924",
+      "187207",
+      "187979",
+      "194930",
+      "200461",
+      "201194",
+      "203128",
+      "21934",
+      "26143",
+      "26806",
+      "28135"
+    ]
+  },
+  "selected_rows": [
+    {
+      "filename": "2-114280-A-0.wav",
+      "fold": "2",
+      "target": "0",
+      "category": "dog",
+      "esc10": "True",
+      "src_file": "114280",
+      "take": "A",
+      "split": "development"
+    },
+    {
+      "filename": "2-100786-A-1.wav",
+      "fold": "2",
+      "target": "1",
+      "category": "rooster",
+      "esc10": "True",
+      "src_file": "100786",
+      "take": "A",
+      "split": "development"
+    },
+    {
+      "filename": "2-101676-A-10.wav",
+      "fold": "2",
+      "target": "10",
+      "category": "rain",
+      "esc10": "True",
+      "src_file": "101676",
+      "take": "A",
+      "split": "development"
+    },
+    {
+      "filename": "2-102852-A-11.wav",
+      "fold": "2",
+      "target": "11",
+      "category": "sea_waves",
+      "esc10": "True",
+      "src_file": "102852",
+      "take": "A",
+      "split": "development"
+    },
+    {
+      "filename": "2-18766-A-12.wav",
+      "fold": "2",
+      "target": "12",
+      "category": "crackling_fire",
+      "esc10": "True",
+      "src_file": "18766",
+      "take": "A",
+      "split": "development"
+    },
+    {
+      "filename": "2-107351-A-20.wav",
+      "fold": "2",
+      "target": "20",
+      "category": "crying_baby",
+      "esc10": "True",
+      "src_file": "107351",
+      "take": "A",
+      "split": "development"
+    },
+    {
+      "filename": "2-109505-A-21.wav",
+      "fold": "2",
+      "target": "21",
+      "category": "sneezing",
+      "esc10": "True",
+      "src_file": "109505",
+      "take": "A",
+      "split": "development"
+    },
+    {
+      "filename": "2-119748-A-38.wav",
+      "fold": "2",
+      "target": "38",
+      "category": "clock_tick",
+      "esc10": "True",
+      "src_file": "119748",
+      "take": "A",
+      "split": "development"
+    },
+    {
+      "filename": "2-188822-A-40.wav",
+      "fold": "2",
+      "target": "40",
+      "category": "helicopter",
+      "esc10": "True",
+      "src_file": "188822",
+      "take": "A",
+      "split": "development"
+    },
+    {
+      "filename": "2-50667-A-41.wav",
+      "fold": "2",
+      "target": "41",
+      "category": "chainsaw",
+      "esc10": "True",
+      "src_file": "50667",
+      "take": "A",
+      "split": "development"
+    },
+    {
+      "filename": "4-182395-A-0.wav",
+      "fold": "4",
+      "target": "0",
+      "category": "dog",
+      "esc10": "True",
+      "src_file": "182395",
+      "take": "A",
+      "split": "evaluation"
+    },
+    {
+      "filename": "4-164021-A-1.wav",
+      "fold": "4",
+      "target": "1",
+      "category": "rooster",
+      "esc10": "True",
+      "src_file": "164021",
+      "take": "A",
+      "split": "evaluation"
+    },
+    {
+      "filename": "4-160999-A-10.wav",
+      "fold": "4",
+      "target": "10",
+      "category": "rain",
+      "esc10": "True",
+      "src_file": "160999",
+      "take": "A",
+      "split": "evaluation"
+    },
+    {
+      "filename": "4-167063-A-11.wav",
+      "fold": "4",
+      "target": "11",
+      "category": "sea_waves",
+      "esc10": "True",
+      "src_file": "167063",
+      "take": "A",
+      "split": "evaluation"
+    },
+    {
+      "filename": "4-164661-A-12.wav",
+      "fold": "4",
+      "target": "12",
+      "category": "crackling_fire",
+      "esc10": "True",
+      "src_file": "164661",
+      "take": "A",
+      "split": "evaluation"
+    },
+    {
+      "filename": "4-167077-A-20.wav",
+      "fold": "4",
+      "target": "20",
+      "category": "crying_baby",
+      "esc10": "True",
+      "src_file": "167077",
+      "take": "A",
+      "split": "evaluation"
+    },
+    {
+      "filename": "4-156843-A-21.wav",
+      "fold": "4",
+      "target": "21",
+      "category": "sneezing",
+      "esc10": "True",
+      "src_file": "156843",
+      "take": "A",
+      "split": "evaluation"
+    },
+    {
+      "filename": "4-175945-A-38.wav",
+      "fold": "4",
+      "target": "38",
+      "category": "clock_tick",
+      "esc10": "True",
+      "src_file": "175945",
+      "take": "A",
+      "split": "evaluation"
+    },
+    {
+      "filename": "4-125929-A-40.wav",
+      "fold": "4",
+      "target": "40",
+      "category": "helicopter",
+      "esc10": "True",
+      "src_file": "125929",
+      "take": "A",
+      "split": "evaluation"
+    },
+    {
+      "filename": "4-149294-A-41.wav",
+      "fold": "4",
+      "target": "41",
+      "category": "chainsaw",
+      "esc10": "True",
+      "src_file": "149294",
+      "take": "A",
+      "split": "evaluation"
+    }
+  ],
+  "scope": "Metadata-only reservation; no audio downloaded, decoded, listened to or evaluated by this operation",
+  "file_sha256": {
+    "upstream/esc50.csv": "ca660da60191a97de289983a05821c9382d852a38a2ba8428980816b68cf6246",
+    "upstream/LICENSE": "f6aec3a3283a2efdcbb1feff334adad7ab17c097bdec0cbb4eebdb9e16886074",
+    "upstream/README.md": "60a3ae8cecca8488f5381ef54f302396dbd1b0d82ae0d14afc92a4bfd6b34501",
+    "excluded/catalog-00.json": "99d78fcd68ae665989e3dcef46937c187f8472013e1477cc54ac24b89d2fd5f0",
+    "source/recorded_catalog.py": "d6c958453774f30c9e66572836e2371294b515b4efa132b70409c66f9ffb6717"
+  }
+}

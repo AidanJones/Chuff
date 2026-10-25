@@ -8,6 +8,7 @@ import gzip
 import hashlib
 import json
 from pathlib import Path
+from time import perf_counter_ns
 
 import numpy as np
 
@@ -33,7 +34,7 @@ def rms(signal):
     return float(np.sqrt(np.mean(np.asarray(signal, dtype=np.float64)**2)))
 
 
-def evaluate(scene, actors, *, probes=True, example=None):
+def evaluate(scene, actors, *, probes=True, example=None, timing=False):
     rows, episodes, occurrences = [], [], Counter()
     max_error = 0.
     background_digest = hashlib.sha256()
@@ -70,7 +71,9 @@ def evaluate(scene, actors, *, probes=True, example=None):
             window_snr = float(20*np.log10(numerator/denominator)) if min(numerator, denominator) > 1e-15 else None
             for mode, actor in actors.items():
                 branch = deepcopy(actor).observe(removed) if episode is not None and probes else None
+                started = perf_counter_ns() if timing else 0
                 observation = actor.observe(audio)
+                elapsed = perf_counter_ns()-started if timing else None
                 row = dict(step=chunk*5+offset, chunk=chunk, mode=mode, episode_id=episode,
                     recording_id=frame.label, occurrence=occurrences[frame.label] if episode is not None else None,
                     episode_offset=offset if episode is not None else None,
@@ -81,6 +84,8 @@ def evaluate(scene, actors, *, probes=True, example=None):
                     status=observation.status, prototype_id=observation.prototype_id,
                     novelty=observation.novelty, salience=observation.salience, memory_size=actor.memory_size,
                     region_start_s=observation.region_start_s, region_stop_s=observation.region_stop_s)
+                if timing:
+                    row["observe_ns"] = elapsed
                 if branch is not None:
                     row["without_episode_probe"] = dict(status=branch.status, prototype_id=branch.prototype_id)
                 rows.append(row)

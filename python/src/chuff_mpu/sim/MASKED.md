@@ -427,3 +427,25 @@ frontend state. Reference, chunk-parity and frozen-default trajectory tests
 cover these implementations. Their comparative accuracy and runtime have
 not yet been established; the fresh-recording comparison is tracked in
 Beads ch-6w4.7.2.
+
+The published-frontend comparison has a separate metadata-only source
+reservation in `papers/data/esc10-published-reservation`. It uses folds 2/4
+and excludes all original source IDs from the observed folds 1/5 pilot.
+`recorded_catalog reserve` archives the deterministic rule, exclusions and
+pinned metadata without accessing audio. `prepare --reservation ...
+--partition development` materializes only development inputs; evaluation
+can be materialized separately after selection. Version 2 partition catalogs
+retain the reservation and their own audio hashes; the auditor still accepts
+the frozen version 1 catalogs. See the reservation README for exact commands.
+
+`published_protocol.py` declares 12 configurations per frontend family and
+selects for reduced background admissions only when detection, first-episode
+novelty and strict source-exclusion repeat retention constraints hold.
+Infeasible groups retain a null selection and a separately labelled
+diagnostic candidate. The full grid and untuned defaults remain available.
+`published_experiment.py` runs the frozen development/evaluation matrix,
+archives source-removal probes and warmed per-observation timings, and keeps
+one no-target control per ambience condition/seed. `audit_published.py`
+recomputes the raw-row metrics, runtime summaries and selection and checks
+the complete matrix, source/input/output hashes and physical evidence.
+Paper 08 and Beads ch-6w4.7.2 document this comparison's status and scope.

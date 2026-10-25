@@ -43,10 +43,11 @@ class RecordedSceneTests(unittest.TestCase):
         a = BandForegroundLearner(BandAttentionConfig(sample_rate=8000))
         b = deepcopy(a)
         without, physical_a = evaluate(self.scene(), {"band": a}, probes=False)
-        with_probes, physical_b = evaluate(self.scene(), {"band": b}, probes=True)
+        with_probes, physical_b = evaluate(self.scene(), {"band": b}, probes=True, timing=True)
         self.assertEqual(physical_a, physical_b)
         for first, second in zip(without, with_probes):
             second.pop("without_episode_probe", None)
+            self.assertGreater(second.pop("observe_ns"), 0)
             self.assertEqual(first, second)
 
     def test_same_episode_learning_does_not_count_as_prior_repeat_identity(self):
