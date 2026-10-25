@@ -473,3 +473,12 @@ lifecycle/context and label scores. `provenance_report.py` retains suite
 correlation in paired-seed sensitivity intervals. Paper 09 reports results
 and the birth-label causality limits; existing published scores remain
 unchanged. Feature dependence at birth/confirmation is ch-6w4.10.8.
+
+The probe engine is available in `feature_probes.py` with an outer
+`InterventionScene`/`FeatureProbeEvaluator` facade; see `FEATURE_PROBES.md`.
+It preserves the legacy evaluator and actual learner state while comparing
+current-episode removal and all-foreground removal from the same prior
+state. Archived vectors support independent numerical checks. Identical-
+audio, absent-feature, zero-feature and moved-region controls distinguish
+selected-match dependence from acoustic identity. The full recorded study
+is ch-6w4.10.8.2; no empirical dependence result is claimed from unit tests.

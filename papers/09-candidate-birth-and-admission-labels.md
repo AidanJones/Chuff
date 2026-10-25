@@ -211,7 +211,16 @@ feature dependence at birth and confirmation using same-prior-state
 foreground-removal probes, including older tails where relevant. It will
 compare detection, regions and similarity to the stored vector. Such probes
 are evaluator evidence; clean stems must not become a deployable admission
-oracle. The source-diversity, active-support-SNR,
+oracle.
+
+The probe instrument now preserves exact legacy observations and histories
+in eight-family tests, with saved-vector checks and explicit identical-
+audio/zero-feature controls. The full recorded probe replay is pending in
+ch-6w4.10.8.2; instrument validation alone does not establish feature
+dependence on these recordings. The probe-engine checkpoint passes all 149
+software tests, with the original grader still at 1.0.
+
+The source-diversity, active-support-SNR,
 continuous-framing and MCRA-state investigations in paper 08 remain relevant.
 Any admission-policy or representation change derived from these observed
 recordings needs a new frozen source evaluation. Human bench dependencies

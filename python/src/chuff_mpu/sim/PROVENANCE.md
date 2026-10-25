@@ -74,3 +74,7 @@ Paper 09 and Beads ch-6w4.10.7.2 document the completed audit. Historical
 scores and frozen archives remain available alongside birth-label
 diagnostics. Candidate feature dependence at birth/confirmation is a
 different question, tracked in ch-6w4.10.8; window labels alone do not answer it.
+The outer evaluator in `feature_probes.py`, documented in `FEATURE_PROBES.md`,
+now provides same-prior-state selected-feature interventions with stored
+vectors and explicit no-op/zero-feature controls. Its full recorded replay
+and dependence results remain a separate task.
