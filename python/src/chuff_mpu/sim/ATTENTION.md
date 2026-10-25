@@ -1,5 +1,9 @@
 # Foreground novelty rather than room memorisation
 
+The listener now also has an opt-in [capture/replay controller](../SELECTIVE.md)
+with mood messages and versioned saved memories. That integration keeps this
+frontend's features separate from the legacy voice/dream representation.
+
 The older demos ask whether a whole one-second MFCC vector is unfamiliar.
 That can memorise the ambience first, then classify a short event mixed into
 the same ambience as familiar. This experiment instead asks **what changed

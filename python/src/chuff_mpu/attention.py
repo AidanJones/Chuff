@@ -7,7 +7,11 @@ a prototype. It is deliberately separate from the legacy MFCC/voice contract.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass, replace
+import json
+import os
+from pathlib import Path
+import tempfile
 
 import numpy as np
 from scipy.signal import stft
@@ -53,6 +57,8 @@ class Observation:
     novelty: float | None = None
     prototype_id: int | None = None
     embedding: np.ndarray | None = None
+    region_start_s: float | None = None
+    region_stop_s: float | None = None
 
 
 @dataclass(eq=False)
@@ -76,8 +82,11 @@ class ForegroundLearner:
     cases here, not solved semantic signal/noise separation.
     """
 
+    FEATURE_SCHEMA = "chuff.foreground.mel-temporal-excess.v1"
+    SETTINGS_CLASS = AttentionConfig
+
     def __init__(self, settings: AttentionConfig | None = None) -> None:
-        self.settings = settings or AttentionConfig()
+        self.settings = settings or self.SETTINGS_CLASS()
         c = self.settings
         frequencies = np.fft.rfftfreq(c.n_fft, 1 / c.sample_rate)
         # Triangular mel bands, without a runtime dependency on librosa defaults.
@@ -100,6 +109,76 @@ class ForegroundLearner:
     @property
     def candidate_count(self) -> int:
         return len(self._candidates)
+
+    def save(self, path: str | Path) -> None:
+        """Atomically persist admitted patterns, not pending candidates or room noise.
+
+        The schema is specific to this frontend. On restart the room estimator,
+        pending confirmations, window counter and controller timers recalibrate.
+        Prototype IDs, hit counts and eviction ordering survive the restart.
+        """
+        path = Path(path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        patterns = sorted(self._patterns, key=lambda pattern: pattern.last_seen)
+        metadata = json.dumps({"schema": self.FEATURE_SCHEMA,
+                               "settings": asdict(self.settings), "next_id": self._next_id}, allow_nan=False)
+        features = np.stack([p.embedding for p in patterns]) if patterns else np.empty((0, 3 * self.settings.bands))
+        temporary = None
+        try:
+            with tempfile.NamedTemporaryFile(dir=path.parent, suffix=".npz", delete=False) as handle:
+                temporary = Path(handle.name)
+                np.savez_compressed(handle, metadata=np.array(metadata), features=features,
+                                    identifiers=np.array([p.identifier for p in patterns], dtype=np.int64),
+                                    hits=np.array([p.hits for p in patterns], dtype=np.int64))
+            os.replace(temporary, path)
+        finally:
+            if temporary is not None:
+                temporary.unlink(missing_ok=True)
+
+    @classmethod
+    def load(cls, path: str | Path) -> ForegroundLearner:
+        """Read a validated, non-pickle foreground snapshot; reject legacy MFCC files."""
+        try:
+            with np.load(path, allow_pickle=False) as data:
+                if set(data.files) != {"metadata", "features", "identifiers", "hits"}:
+                    raise ValueError("not a foreground memory snapshot")
+                metadata = json.loads(str(data["metadata"].item()))
+                if metadata["schema"] != cls.FEATURE_SCHEMA:
+                    raise ValueError("unsupported foreground feature schema")
+                if set(metadata["settings"]) != set(cls.SETTINGS_CLASS.__dataclass_fields__):
+                    raise ValueError("incompatible foreground settings")
+                integer_settings = {"sample_rate", "n_fft", "hop", "bands", "warmup_clips",
+                                    "confirmations", "candidate_ttl", "capacity"}
+                for name, value in metadata["settings"].items():
+                    if type(value) not in (int, float) or not np.isfinite(value):
+                        raise ValueError("foreground settings must be finite numbers")
+                    if name in integer_settings and type(value) is not int:
+                        raise ValueError("foreground sizes and counts must be integers")
+                learner = cls(cls.SETTINGS_CLASS(**metadata["settings"]))
+                features = np.asarray(data["features"], dtype=np.float32)
+                identifiers, hits = data["identifiers"], data["hits"]
+                count = len(features)
+                if features.shape != (count, 3 * learner.settings.bands) or count > learner.settings.capacity:
+                    raise ValueError("incompatible foreground feature dimensions or capacity")
+                if not np.isfinite(features).all() or (features < 0).any():
+                    raise ValueError("foreground features must be finite and nonnegative")
+                if count and not np.allclose(np.linalg.norm(features, axis=1), 1, atol=1e-4):
+                    raise ValueError("foreground features must be unit vectors")
+                for values in (identifiers, hits):
+                    if values.shape != (count,) or values.dtype.kind not in "iu":
+                        raise ValueError("invalid foreground identity or hit counts")
+                next_id = metadata["next_id"]
+                if (type(next_id) is not int or next_id < 0 or (identifiers < 0).any()
+                        or len(set(identifiers.tolist())) != count
+                        or (count and next_id <= int(identifiers.max()))
+                        or (hits < learner.settings.confirmations).any()):
+                    raise ValueError("invalid foreground identity or confirmation history")
+                learner._patterns = [_Pattern(row.copy(), int(hit), 0, int(identifier))
+                                     for row, hit, identifier in zip(features, hits, identifiers)]
+                learner._next_id = next_id
+            return learner
+        except (KeyError, TypeError, OverflowError, AttributeError) as error:
+            raise ValueError("invalid foreground memory snapshot") from error
 
     def observe(self, clip: np.ndarray) -> Observation:
         """Consume one mono window; only this waveform reaches the learner.
@@ -156,7 +235,13 @@ class ForegroundLearner:
             features.append(vector)
         embedding = np.concatenate(features)
         embedding /= max(float(np.linalg.norm(embedding)), 1e-12)
-        return self._remember(embedding.astype(np.float32), salience)
+        observation = self._remember(embedding.astype(np.float32), salience)
+        return replace(observation, region_start_s=float(indices[0] * c.hop / c.sample_rate),
+                       region_stop_s=float((indices[-1] * c.hop + c.n_fft) / c.sample_rate))
+
+    def _admission_allowed(self, candidate_embedding: np.ndarray) -> bool:
+        """Research hook for new prototypes; established matches bypass this gate."""
+        return True
 
     def _remember(self, embedding: np.ndarray, salience: float) -> Observation:
         c = self.settings
@@ -180,7 +265,7 @@ class ForegroundLearner:
             if len(self._candidates) >= c.capacity:
                 self._candidates.remove(min(self._candidates, key=lambda p: p.last_seen))
             self._candidates.append(pattern)
-        if pattern.hits < c.confirmations:
+        if pattern.hits < c.confirmations or not self._admission_allowed(pattern.embedding):
             return Observation("candidate", salience, novelty, embedding=embedding)
         self._candidates.remove(pattern)
         if len(self._patterns) >= c.capacity:

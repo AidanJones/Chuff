@@ -1,0 +1,18 @@
+{
+  "source_sha256": {
+    "python/src/chuff_mpu/sim/overlap_controls.py": "84d349f49b6e174694d25473ea1a22f994b096a9dd019dc1e8e9c2fec1593ffb",
+    "python/src/chuff_mpu/sim/localization.py": "a336543d42212174a8ba52f3f54b8faf09c1b31dea00227e1898feed24a6da2e",
+    "python/src/chuff_mpu/sim/audit_localization.py": "012c402e2e4d9c4c68672320c1364ad40272828b7b9e7f4d3802c85263fdc980",
+    "python/src/chuff_mpu/sim/audit_modulation.py": "d8eb0b1787aea7e2a2940f7003a40c148e837c1deb09d7ecb32bc2daad3650c2",
+    "python/src/chuff_mpu/sim/audit_admission.py": "06d4bf23aea742aed10de39ef91587c62326d2019588b5c46cf212bc6f32a4ad",
+    "python/src/chuff_mpu/sim/audit_masked.py": "17058b6cb78387aad8582d598a8b47fc8b07f1f6f9fa4b1058cac24b141a503e",
+    "python/src/chuff_mpu/sim/masked_experiment.py": "90e6810cb05315e2f8ae6e24e6f003fdff7361c12a546e754927cc979b8b7045",
+    "python/src/chuff_mpu/sim/memory_diagnostics.py": "23d5594c2b912ac6ea853dda04beaa42901e2a0dda0f43d75f313487ef5cdacf"
+  },
+  "input_manifest_sha256": "0a767b19114d3c7207fb860d67705271e3248b9c875dd320695eea134188cb72",
+  "input_observations_sha256": "90b03b08c21c5f24994e3b73f92d38689c88c351adf2321a947c68ff8d614e37",
+  "quadrature_positions": 200,
+  "scope": "Post-hoc diagnostics on observed seeds 1000-1009; not a causal or permutation significance test",
+  "counterfactual": "Entire matched background-only trajectory; learner history differs from the source-bearing trajectory",
+  "interval_null": "Uniform generator-legal positions, fixed length, no wrap, fixed selected region"
+}

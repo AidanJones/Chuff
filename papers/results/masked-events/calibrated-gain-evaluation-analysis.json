@@ -1,0 +1,2444 @@
+{
+  "controls": [
+    {
+      "suite": "varied/varied/stationary/ambience",
+      "n_seeds": 10,
+      "modes": {
+        "original": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "quiet_band": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "binwise": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "gain_0.02s": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "spectral_gain": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "calibrated_gain": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/slow/ambience",
+      "n_seeds": 10,
+      "modes": {
+        "original": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "quiet_band": {
+          "false_admissions": 10,
+          "affected_streams": 10
+        },
+        "binwise": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "gain_0.02s": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "spectral_gain": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "calibrated_gain": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/fast/ambience",
+      "n_seeds": 10,
+      "modes": {
+        "original": {
+          "false_admissions": 2,
+          "affected_streams": 2
+        },
+        "quiet_band": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "binwise": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "gain_0.02s": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "spectral_gain": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "calibrated_gain": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        }
+      }
+    }
+  ],
+  "paired_noise_estimator_contrasts": [
+    {
+      "suite": "varied/varied/fast/ambience",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/ambience",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/ambience",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/ambience",
+      "snr_db": -6,
+      "mode": "calibrated_gain",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.025219941348973606,
+      "bootstrap_95": [
+        -0.08416422287390028,
+        0.024633431085043983
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "event_detection_rate",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "false_admissions",
+      "mean": 0.6,
+      "bootstrap_95": [
+        0.3,
+        0.9
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "repeat_recognition_rate",
+      "mean": 0.1408146492892573,
+      "bootstrap_95": [
+        0.06589913793886129,
+        0.20826643828931476
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "event_detection_rate",
+      "mean": -0.6102016025089314,
+      "bootstrap_95": [
+        -0.6521433833760395,
+        -0.5663399644647317
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "false_admissions",
+      "mean": -0.1,
+      "bootstrap_95": [
+        -0.3,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "repeat_recognition_rate",
+      "mean": 0.44235247965523605,
+      "bootstrap_95": [
+        0.3444801218643037,
+        0.537954584229895
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "event_detection_rate",
+      "mean": -0.29460611779965706,
+      "bootstrap_95": [
+        -0.35153429341530773,
+        -0.23873951077356903
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "false_admissions",
+      "mean": -0.1,
+      "bootstrap_95": [
+        -0.3,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "calibrated_gain",
+      "metric": "repeat_recognition_rate",
+      "mean": 0.43708932176049925,
+      "bootstrap_95": [
+        0.3332794961247348,
+        0.5357638337207086
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "calibrated_gain",
+      "metric": "event_detection_rate",
+      "mean": -0.28933935993372,
+      "bootstrap_95": [
+        -0.3473304326104576,
+        -0.23145287281275417
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "calibrated_gain",
+      "metric": "false_admissions",
+      "mean": -0.1,
+      "bootstrap_95": [
+        -0.3,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/ambience",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "false_admissions",
+      "mean": -1.0,
+      "bootstrap_95": [
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/ambience",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "false_admissions",
+      "mean": -1.0,
+      "bootstrap_95": [
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/ambience",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "false_admissions",
+      "mean": -1.0,
+      "bootstrap_95": [
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/ambience",
+      "snr_db": -6,
+      "mode": "calibrated_gain",
+      "metric": "false_admissions",
+      "mean": -1.0,
+      "bootstrap_95": [
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.005197334374404181,
+      "bootstrap_95": [
+        -0.04702432292565119,
+        0.038030560271646856
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "event_detection_rate",
+      "mean": -0.24581577181743955,
+      "bootstrap_95": [
+        -0.29502175603062364,
+        -0.19039778105983868
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "false_admissions",
+      "mean": -0.9,
+      "bootstrap_95": [
+        -1.0,
+        -0.7
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "repeat_recognition_rate",
+      "mean": 0.0009351857736457747,
+      "bootstrap_95": [
+        -0.05329193260882066,
+        0.06466497814205165
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "event_detection_rate",
+      "mean": -0.35490826745041415,
+      "bootstrap_95": [
+        -0.3816582257310594,
+        -0.3224564964770605
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "false_admissions",
+      "mean": -0.9,
+      "bootstrap_95": [
+        -1.0,
+        -0.7
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "repeat_recognition_rate",
+      "mean": 0.23706368274273748,
+      "bootstrap_95": [
+        0.1713299982749698,
+        0.3014580609601457
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "event_detection_rate",
+      "mean": -0.0845978925888888,
+      "bootstrap_95": [
+        -0.1358609107606055,
+        -0.03808095575279887
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "false_admissions",
+      "mean": -0.9,
+      "bootstrap_95": [
+        -1.0,
+        -0.7
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "calibrated_gain",
+      "metric": "repeat_recognition_rate",
+      "mean": 0.23706368274273748,
+      "bootstrap_95": [
+        0.1713299982749698,
+        0.3014580609601457
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "calibrated_gain",
+      "metric": "event_detection_rate",
+      "mean": -0.08165671611830058,
+      "bootstrap_95": [
+        -0.13460809454276715,
+        -0.032384553542036607
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "calibrated_gain",
+      "metric": "false_admissions",
+      "mean": -0.9,
+      "bootstrap_95": [
+        -1.0,
+        -0.7
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/ambience",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/ambience",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/ambience",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/ambience",
+      "snr_db": -6,
+      "mode": "calibrated_gain",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.34054331641593205,
+      "bootstrap_95": [
+        -0.4121963407797137,
+        -0.2737759009878068
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "event_detection_rate",
+      "mean": -0.33803442024683444,
+      "bootstrap_95": [
+        -0.3923235926651772,
+        -0.28433758283599425
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.4689053283761413,
+      "bootstrap_95": [
+        -0.5668042936228356,
+        -0.3799754977620003
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "event_detection_rate",
+      "mean": -0.5065747449063385,
+      "bootstrap_95": [
+        -0.5781273260067736,
+        -0.44090554378790775
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.25240232205708335,
+      "bootstrap_95": [
+        -0.3445205997827824,
+        -0.16101230899830224
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "event_detection_rate",
+      "mean": -0.24589720244923852,
+      "bootstrap_95": [
+        -0.30810338683808886,
+        -0.18395086221421664
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "calibrated_gain",
+      "metric": "repeat_recognition_rate",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "calibrated_gain",
+      "metric": "event_detection_rate",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "calibrated_gain",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "localization_estimates": [
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.14647153167602245,
+      "bootstrap_95": [
+        0.056896551724137934,
+        0.24097127222982215
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.7672324499773908,
+        "bootstrap_95": [
+          -0.8596176932778895,
+          -0.6740082079343366
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.14647153167602245,
+      "bootstrap_95": [
+        0.056896551724137934,
+        0.24097127222982215
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.7223292234331555,
+        "bootstrap_95": [
+          -0.8121179992275099,
+          -0.6292385713061125
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.11794895985659701,
+      "bootstrap_95": [
+        0.046197933864804946,
+        0.1941537926317278
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.3765103191865334,
+        "bootstrap_95": [
+          -0.45565210569538017,
+          -0.3001678459675771
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.027859237536656888,
+      "bootstrap_95": [
+        0.0,
+        0.055718475073313775
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.027126099706744865,
+        "bootstrap_95": [
+          -0.07492668621700879,
+          0.016862170087976542
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.027859237536656888,
+      "bootstrap_95": [
+        0.0,
+        0.055718475073313775
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.023900293255131967,
+        "bootstrap_95": [
+          -0.07302052785923754,
+          0.019512463343108345
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.027859237536656888,
+      "bootstrap_95": [
+        0.0,
+        0.055718475073313775
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.00718475073313783,
+        "bootstrap_95": [
+          -0.029032258064516127,
+          0.041495601173020535
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.9137039816534133,
+      "bootstrap_95": [
+        0.887051554866558,
+        0.9399066851352336
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.8688007551091779,
+      "bootstrap_95": [
+        0.8361159599437938,
+        0.8965554757942359
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.4944592790431305,
+      "bootstrap_95": [
+        0.4518895183566007,
+        0.5310407981340256
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.05498533724340175,
+      "bootstrap_95": [
+        0.015542521994134898,
+        0.10102639296187683
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.051759530791788855,
+      "bootstrap_95": [
+        0.012903225806451613,
+        0.09970674486803519
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.02067448680351906,
+      "bootstrap_95": [
+        0.0,
+        0.04325513196480938
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.7654963670230976,
+      "bootstrap_95": [
+        0.7269194367903242,
+        0.8010260561175698
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.14820761463031562,
+        "bootstrap_95": [
+          -0.19035875753159814,
+          -0.10895986195746798
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.6645831109415439,
+      "bootstrap_95": [
+        0.6141851801635178,
+        0.7183717126900662
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.20421764416763422,
+        "bootstrap_95": [
+          -0.24353635594497,
+          -0.16017760252689947
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.4285172543212637,
+      "bootstrap_95": [
+        0.3858863881772735,
+        0.47278750720434126
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.06594202472186675,
+        "bootstrap_95": [
+          -0.1086221555388847,
+          -0.02600282423547064
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.032991202346041054,
+      "bootstrap_95": [
+        0.0,
+        0.06744868035190615
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.021994134897360705,
+        "bootstrap_95": [
+          -0.07625366568914956,
+          0.024633431085043987
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.02976539589442815,
+      "bootstrap_95": [
+        0.0,
+        0.0627565982404692
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.021994134897360705,
+        "bootstrap_95": [
+          -0.07712609970674486,
+          0.024633431085043983
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.023313782991202344,
+      "bootstrap_95": [
+        0.0,
+        0.05381231671554252
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.0026392961876832836,
+        "bootstrap_95": [
+          -0.025806451612903226,
+          0.027859237536656888
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.3897983974910686,
+      "bootstrap_95": [
+        0.34785661662396056,
+        0.4336600355352683
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.5239055841623446,
+        "bootstrap_95": [
+          -0.5623223176157154,
+          -0.4851037133860883
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.3751388502513175,
+      "bootstrap_95": [
+        0.3388526477960691,
+        0.410171525524752
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.49366190485786055,
+        "bootstrap_95": [
+          -0.5389887012251865,
+          -0.4510074487992427
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.191193145726348,
+      "bootstrap_95": [
+        0.15755229800673476,
+        0.22577394778960888
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.3032661333167824,
+        "bootstrap_95": [
+          -0.34509018772879646,
+          -0.26142679561071347
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.19902579298427198,
+      "bootstrap_95": [
+        0.15073886475990303,
+        0.24652255524257854
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.14404045574087018,
+        "bootstrap_95": [
+          0.07354530020064824,
+          0.2089122772025155
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.19902579298427198,
+      "bootstrap_95": [
+        0.15073886475990303,
+        0.24652255524257854
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.1472662621924831,
+        "bootstrap_95": [
+          0.07805538453419646,
+          0.21082342528576486
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.13366581777023204,
+      "bootstrap_95": [
+        0.08780804650923497,
+        0.17762000308689613
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.11299133096671296,
+        "bootstrap_95": [
+          0.06253495266759274,
+          0.1607063847301538
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.705393882200343,
+      "bootstrap_95": [
+        0.6484657065846923,
+        0.761260489226431
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.20831009945307027,
+        "bootstrap_95": [
+          -0.2703485591571228,
+          -0.14311343767314383
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.686173635962313,
+      "bootstrap_95": [
+        0.6233814029007437,
+        0.7481736099554422
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.1826271191468652,
+        "bootstrap_95": [
+          -0.2542407660738714,
+          -0.10624997167987067
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.42331935487098765,
+      "bootstrap_95": [
+        0.3778880186289888,
+        0.4649004360623623
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.07113992417214268,
+        "bootstrap_95": [
+          -0.13227210545951995,
+          -0.012276176191844401
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.5005636233502507,
+      "bootstrap_95": [
+        0.41580313301041977,
+        0.5899858101135191
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.44557828610684896,
+        "bootstrap_95": [
+          0.3517314990512334,
+          0.5383404311137945
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.49279236235318324,
+      "bootstrap_95": [
+        0.40896607421715414,
+        0.5799328675751825
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.44103283156139444,
+        "bootstrap_95": [
+          0.34520486814111345,
+          0.5343202123224656
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.36008039926882934,
+      "bootstrap_95": [
+        0.2970045385128122,
+        0.42991236487263523
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.33940591246531027,
+        "bootstrap_95": [
+          0.267498029077351,
+          0.4149138856229326
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "calibrated_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.71066064006628,
+      "bootstrap_95": [
+        0.6526695673895424,
+        0.7685471271872458
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.20304334158713316,
+        "bootstrap_95": [
+          -0.2664926733250711,
+          -0.1354341803841765
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "calibrated_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.69144039382825,
+      "bootstrap_95": [
+        0.6276644771152682,
+        0.7564469519171544
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.1773603612809281,
+        "bootstrap_95": [
+          -0.2508410525091166,
+          -0.098902305880653
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "calibrated_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.4256449362663365,
+      "bootstrap_95": [
+        0.3802136000243377,
+        0.46693226114015135
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.06881434277679384,
+        "bootstrap_95": [
+          -0.12990136315273115,
+          -0.010825982357658382
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "calibrated_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.49530046545551387,
+      "bootstrap_95": [
+        0.4032812031858584,
+        0.589655568972457
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.44031512821211216,
+        "bootstrap_95": [
+          0.34174834079333233,
+          0.5363668282369284
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "calibrated_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.4875292044584464,
+      "bootstrap_95": [
+        0.39595595706641973,
+        0.5797461983134048
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.43576967366665764,
+        "bootstrap_95": [
+          0.33367762533706186,
+          0.5329640690587084
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "calibrated_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.3515914349224796,
+      "bootstrap_95": [
+        0.2844466209079711,
+        0.42518014459989895
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.3309169481189605,
+        "bootstrap_95": [
+          0.25490502498267403,
+          0.4101783926161141
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.13934239476028573,
+      "bootstrap_95": [
+        0.07671831751041208,
+        0.20974986664177878
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.5250872418301269,
+        "bootstrap_95": [
+          -0.587989886007598,
+          -0.46199584886079537
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.13469123196958804,
+      "bootstrap_95": [
+        0.07257916490616909,
+        0.20519699566541397
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.47788811961119243,
+        "bootstrap_95": [
+          -0.5410443743611543,
+          -0.41889476311775714
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.04653765030168968,
+      "bootstrap_95": [
+        0.024771634084991834,
+        0.06903624088916074
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.3653144558036983,
+        "bootstrap_95": [
+          -0.4249577422937699,
+          -0.31467027126964303
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.04605830602035536,
+      "bootstrap_95": [
+        0.012333965844402276,
+        0.09151285147490082
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.1897771155074161,
+        "bootstrap_95": [
+          -0.2367556371792427,
+          -0.1461484946463537
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.04605830602035536,
+      "bootstrap_95": [
+        0.012333965844402276,
+        0.09151285147490082
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.1759452484497426,
+        "bootstrap_95": [
+          -0.21778008759067757,
+          -0.13615835777126098
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.018785578747628085,
+      "bootstrap_95": [
+        0.0,
+        0.03757115749525617
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.15069310464577867,
+        "bootstrap_95": [
+          -0.21114369501466274,
+          -0.09647177419354838
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.6644296365904128,
+      "bootstrap_95": [
+        0.6384141564560881,
+        0.6866720657437088
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.6125793515807805,
+      "bootstrap_95": [
+        0.5750948022133691,
+        0.6509028049931531
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.41185210610538797,
+      "bootstrap_95": [
+        0.3619245489521775,
+        0.4706077196968429
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.23583542152777143,
+      "bootstrap_95": [
+        0.18022469085643208,
+        0.2948554606284557
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.22200355447009795,
+      "bootstrap_95": [
+        0.16749677124283885,
+        0.2816837571384473
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.16947868339340677,
+      "bootstrap_95": [
+        0.11838598032784653,
+        0.22727905782142294
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.43834634691311586,
+      "bootstrap_95": [
+        0.38247725464004767,
+        0.5038138077876466
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.22608328967729668,
+        "bootstrap_95": [
+          -0.2749350069169515,
+          -0.17105096962743363
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.4262062040342589,
+      "bootstrap_95": [
+        0.3635385340741726,
+        0.49680457170580666
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.1863731475465215,
+        "bootstrap_95": [
+          -0.21747552950610877,
+          -0.14774727942888358
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.22115648172600033,
+      "bootstrap_95": [
+        0.1742648044456255,
+        0.27528182847851
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.19069562437938764,
+        "bootstrap_95": [
+          -0.2233901506985942,
+          -0.1513350151263306
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.23386389360498022,
+      "bootstrap_95": [
+        0.1554607835571333,
+        0.31400502263723823
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.0019715279227912803,
+        "bootstrap_95": [
+          -0.046808694152147653,
+          0.04480629726809693
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.2306380871533673,
+      "bootstrap_95": [
+        0.150241887251119,
+        0.31344832021402474
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.008634532683269325,
+        "bootstrap_95": [
+          -0.03433097579207636,
+          0.05246383111046545
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.15898656557081853,
+      "bootstrap_95": [
+        0.10106821879662499,
+        0.22126462658203425
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.010492117822588215,
+        "bootstrap_95": [
+          -0.031315048013340244,
+          0.011323763955342903
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.3292538512801413,
+      "bootstrap_95": [
+        0.29081153592150577,
+        0.36806622806548334
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.33517578531027126,
+        "bootstrap_95": [
+          -0.36325752878151313,
+          -0.30454889914546374
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.3269282698847925,
+      "bootstrap_95": [
+        0.28899329632949144,
+        0.36535165113117357
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.2856510816959879,
+        "bootstrap_95": [
+          -0.3233305275943271,
+          -0.24606782043104358
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.05602180179626011,
+      "bootstrap_95": [
+        0.018635741823156325,
+        0.10148119020619682
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.3558303043091279,
+        "bootstrap_95": [
+          -0.3806635658200001,
+          -0.32386515081809975
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.23999641375303016,
+      "bootstrap_95": [
+        0.1818103510890388,
+        0.300876338033284
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.004160992225258675,
+        "bootstrap_95": [
+          -0.047021807256627,
+          0.06598081868570856
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.23677060730141725,
+      "bootstrap_95": [
+        0.17864186217008798,
+        0.29810723332395156
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.014767052831319277,
+        "bootstrap_95": [
+          -0.04002970286355012,
+          0.07636220640440154
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.04846941400421876,
+      "bootstrap_95": [
+        0.010606060606060607,
+        0.09781730719761256
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.12100926938918799,
+        "bootstrap_95": [
+          -0.14456683773216034,
+          -0.09486269766916645
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.5995642261416667,
+      "bootstrap_95": [
+        0.5495066807992182,
+        0.6500242627424944
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.06486541044874593,
+        "bootstrap_95": [
+          -0.11569378786895078,
+          -0.019566439989968577
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.5671312092421655,
+      "bootstrap_95": [
+        0.5134251852539938,
+        0.6200206760480612
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.04544814233861493,
+        "bootstrap_95": [
+          -0.10982874311492308,
+          0.005425700286479853
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.4106035074138257,
+      "bootstrap_95": [
+        0.3626289479778206,
+        0.46077172725322213
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.0012485986915623693,
+        "bootstrap_95": [
+          -0.07219492807693902,
+          0.06052944608701194
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.4761249107221219,
+      "bootstrap_95": [
+        0.40628226794750155,
+        0.542399221684159
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.2402894891943504,
+        "bootstrap_95": [
+          0.178957582415587,
+          0.30230742648193715
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.4619020368218286,
+      "bootstrap_95": [
+        0.3895553375309068,
+        0.5319437711562089
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.23989848235173064,
+        "bootstrap_95": [
+          0.16631613064947387,
+          0.3083586361404416
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.3780966183355577,
+      "bootstrap_95": [
+        0.3136613992718556,
+        0.44308206812204737
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.20861793494215095,
+        "bootstrap_95": [
+          0.13215959404289576,
+          0.27859645150698026
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "calibrated_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.6025054026122549,
+      "bootstrap_95": [
+        0.5496271126605181,
+        0.6567460012937958
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.0619242339781577,
+        "bootstrap_95": [
+          -0.11439397835813372,
+          -0.013405319640039675
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "calibrated_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.5700723857127539,
+      "bootstrap_95": [
+        0.5141483249369722,
+        0.6256602262292632
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.0425069658680267,
+        "bootstrap_95": [
+          -0.10757679393110306,
+          0.008694722700282941
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "calibrated_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.4129290888091745,
+      "bootstrap_95": [
+        0.366284809781184,
+        0.4615904054152944
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.0010769827037864666,
+        "bootstrap_95": [
+          -0.06982010425734776,
+          0.062431354440660065
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "calibrated_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.4761249107221219,
+      "bootstrap_95": [
+        0.40628226794750155,
+        0.542399221684159
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.2402894891943504,
+        "bootstrap_95": [
+          0.178957582415587,
+          0.30230742648193715
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "calibrated_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.4619020368218286,
+      "bootstrap_95": [
+        0.3895553375309068,
+        0.5319437711562089
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.23989848235173064,
+        "bootstrap_95": [
+          0.16631613064947387,
+          0.3083586361404416
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "calibrated_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.3780966183355577,
+      "bootstrap_95": [
+        0.3136613992718556,
+        0.44308206812204737
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.20861793494215095,
+        "bootstrap_95": [
+          0.13215959404289576,
+          0.27859645150698026
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.12220522276675261,
+      "bootstrap_95": [
+        0.07761809695693331,
+        0.17315361906814522
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.7136233734197271,
+        "bootstrap_95": [
+          -0.767529843652443,
+          -0.6527903445604472
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.11926404629616436,
+      "bootstrap_95": [
+        0.07542299278028061,
+        0.17092669906289648
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.6887854832200275,
+        "bootstrap_95": [
+          -0.7399942174945359,
+          -0.6310652007998618
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.07651438829342838,
+      "bootstrap_95": [
+        0.056131679978818225,
+        0.10231095634640727
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.4025551081666784,
+        "bootstrap_95": [
+          -0.46993009616040365,
+          -0.3357366897966424
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.04267149675119315,
+      "bootstrap_95": [
+        0.012121212121212121,
+        0.08158602150537629
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.6763290582091765,
+        "bootstrap_95": [
+          -0.7304034986525092,
+          -0.6203214980090277
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.04267149675119315,
+      "bootstrap_95": [
+        0.012121212121212121,
+        0.08158602150537629
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.6499677218857909,
+        "bootstrap_95": [
+          -0.698203882301493,
+          -0.5966115262280248
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.02712897475705825,
+      "bootstrap_95": [
+        0.0032258064516129032,
+        0.06261859582542695
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.4262686632377909,
+        "bootstrap_95": [
+          -0.5052243844365961,
+          -0.34402003460841823
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.8358285961864798,
+      "bootstrap_95": [
+        0.7825944153150587,
+        0.8902320295983086
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.8080495295161919,
+      "bootstrap_95": [
+        0.7554503503096255,
+        0.8631266480528487
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.47906949646010677,
+      "bootstrap_95": [
+        0.42733603287569694,
+        0.5373997810373671
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.7190005549603697,
+      "bootstrap_95": [
+        0.6619314323198023,
+        0.7768790508418602
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.6926392186369841,
+      "bootstrap_95": [
+        0.6408563427203726,
+        0.74219358583841
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.4533976379948491,
+      "bootstrap_95": [
+        0.3948940768572825,
+        0.5164042804959612
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.49779417593964526,
+      "bootstrap_95": [
+        0.44713374993434873,
+        0.5458973606538582
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.33803442024683444,
+        "bootstrap_95": [
+          -0.3923235926651772,
+          -0.28433758283599425
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.47721432286585996,
+      "bootstrap_95": [
+        0.42319889798652865,
+        0.5302197743485905
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.33083520665033184,
+        "bootstrap_95": [
+          -0.38068616883767936,
+          -0.2802971576227391
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.29974800625904835,
+      "bootstrap_95": [
+        0.26580754899678266,
+        0.33278711073213624
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.17932149020105845,
+        "bootstrap_95": [
+          -0.227584837385817,
+          -0.12896241808930933
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.3784572385444377,
+      "bootstrap_95": [
+        0.31980415020132913,
+        0.44193644852600705
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.34054331641593205,
+        "bootstrap_95": [
+          -0.4121963407797137,
+          -0.2737759009878068
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.36765567451706727,
+      "bootstrap_95": [
+        0.30852972173106785,
+        0.4310259789640891
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.3249835441199168,
+        "bootstrap_95": [
+          -0.38788410861334804,
+          -0.264747646241704
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.2734528351779051,
+      "bootstrap_95": [
+        0.22230841383474212,
+        0.32780840021608265
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.17994480281694403,
+        "bootstrap_95": [
+          -0.22917594768845956,
+          -0.12818914057558506
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.3292538512801413,
+      "bootstrap_95": [
+        0.29081153592150577,
+        0.36806622806548334
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.5065747449063385,
+        "bootstrap_95": [
+          -0.5781273260067736,
+          -0.44090554378790775
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.3292538512801413,
+      "bootstrap_95": [
+        0.29081153592150577,
+        0.36806622806548334
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.47879567823605046,
+        "bootstrap_95": [
+          -0.5480307962962527,
+          -0.4182744512999908
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.05530284754789409,
+      "bootstrap_95": [
+        0.018551415928848524,
+        0.10116310333153698
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.42376664891221266,
+        "bootstrap_95": [
+          -0.46046079100757425,
+          -0.39282039354343473
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.2500952265842284,
+      "bootstrap_95": [
+        0.18845023557443505,
+        0.31598503124914873
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.4689053283761413,
+        "bootstrap_95": [
+          -0.5668042936228356,
+          -0.3799754977620003
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.2500952265842284,
+      "bootstrap_95": [
+        0.18845023557443505,
+        0.31598503124914873
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.44254399205275563,
+        "bootstrap_95": [
+          -0.5287011960209304,
+          -0.3645452214204868
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.05221742038380408,
+      "bootstrap_95": [
+        0.016586921850079744,
+        0.09326227041210053
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.401180217611045,
+        "bootstrap_95": [
+          -0.44289107115295573,
+          -0.3639002707938014
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.5899313937372412,
+      "bootstrap_95": [
+        0.5318782789061178,
+        0.6453556947922211
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.24589720244923852,
+        "bootstrap_95": [
+          -0.30810338683808886,
+          -0.18395086221421664
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.5616558422290433,
+      "bootstrap_95": [
+        0.5007542684467908,
+        0.6202562194116665
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.24639368728714847,
+        "bootstrap_95": [
+          -0.3068898285177355,
+          -0.18719068239000253
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.4043985715987667,
+      "bootstrap_95": [
+        0.35374320591642167,
+        0.4561957721493652
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.07467092486134011,
+        "bootstrap_95": [
+          -0.12409030906345125,
+          -0.03499924223480113
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.4665982329032863,
+      "bootstrap_95": [
+        0.3907894736842106,
+        0.5349636003498484
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.25240232205708335,
+        "bootstrap_95": [
+          -0.3445205997827824,
+          -0.16101230899830224
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.44914955255138017,
+      "bootstrap_95": [
+        0.3659371226496464,
+        0.5225953079178887
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.2434896660856038,
+        "bootstrap_95": [
+          -0.33533041515726525,
+          -0.15507795523962795
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.37770561149293796,
+      "bootstrap_95": [
+        0.3056866301081321,
+        0.44985543036476816
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": -0.07569202650191116,
+        "bootstrap_95": [
+          -0.12968183974469555,
+          -0.031099996141379836
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "calibrated_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.8358285961864798,
+      "bootstrap_95": [
+        0.7825944153150587,
+        0.8902320295983086
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "calibrated_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.8080495295161919,
+      "bootstrap_95": [
+        0.7554503503096255,
+        0.8631266480528487
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "calibrated_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.47906949646010677,
+      "bootstrap_95": [
+        0.42733603287569694,
+        0.5373997810373671
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "calibrated_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.7190005549603697,
+      "bootstrap_95": [
+        0.6619314323198023,
+        0.7768790508418602
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "calibrated_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.6926392186369841,
+      "bootstrap_95": [
+        0.6408563427203726,
+        0.74219358583841
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "calibrated_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.4533976379948491,
+      "bootstrap_95": [
+        0.3948940768572825,
+        0.5164042804959612
+      ],
+      "paired_difference_to_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ]
+}

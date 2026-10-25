@@ -1,0 +1,20 @@
+{
+  "issue": "ch-6w4.10.2",
+  "date": "2026-10-25",
+  "status": "Local prospective plan before evaluation; not externally preregistered",
+  "development_seeds": [800, 801, 802],
+  "evaluation_seeds": [900, 901, 902, 903, 904, 905, 906, 907, 908, 909],
+  "rounds": 120,
+  "snr_db_before_channel_for_foreground": -6,
+  "factors": {
+    "spectrum": ["reference coloured noise plus 100/200 Hz hum", "varied AR pole and hum"],
+    "channel": ["reference", "varied room and microphone"],
+    "modulation": ["stationary depth=0", "slow depth=0.45 rate=0.17 Hz", "fast depth=0.45 rate=1.3 Hz"],
+    "sources": ["pure ambience", "six recurring foreground classes"]
+  },
+  "exclusions": "No nuisance events, halfway background transitions, or source pitch/duration transforms",
+  "methods": ["original", "quiet_band", "binwise (existing noise_mode=0, 30th percentile corrected for exponential power)"],
+  "decision": "Develop fixtures on seeds 800-802; freeze all three existing methods before 900-909; report rejection versus foreground recall tradeoff rather than selecting solely by false admissions",
+  "outcomes": ["affected pure-ambience streams", "false prototype totals", "foreground detection", "repeat recognition", "diagnostic partitions"],
+  "uncertainty": "10000 paired seed bootstrap draws within each factorial cell; descriptive, no multiplicity adjustment; cells share seeds and are not independent replications"
+}

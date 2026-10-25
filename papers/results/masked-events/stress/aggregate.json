@@ -1,0 +1,1408 @@
+[
+  {
+    "suite": "background",
+    "snr_db": -12.0,
+    "n_seeds": 10,
+    "modes": {
+      "original": {
+        "event_detection_rate": null,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "false_admissions": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "band_gate_raw": {
+        "event_detection_rate": null,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": {
+          "mean": 0.03166666666666667,
+          "range": [
+            0.008333333333333333,
+            0.041666666666666664
+          ],
+          "bootstrap_95": [
+            0.025,
+            0.0375
+          ],
+          "paired_difference": {
+            "mean": 0.03166666666666667,
+            "bootstrap_95": [
+              0.025,
+              0.0375
+            ]
+          }
+        },
+        "false_admissions": {
+          "mean": 0.2,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.5
+          ],
+          "paired_difference": {
+            "mean": 0.2,
+            "bootstrap_95": [
+              0.0,
+              0.5
+            ]
+          }
+        }
+      },
+      "band_relative": {
+        "event_detection_rate": null,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": {
+          "mean": 0.03166666666666667,
+          "range": [
+            0.008333333333333333,
+            0.041666666666666664
+          ],
+          "bootstrap_95": [
+            0.025,
+            0.0375
+          ],
+          "paired_difference": {
+            "mean": 0.03166666666666667,
+            "bootstrap_95": [
+              0.025,
+              0.0375
+            ]
+          }
+        },
+        "false_admissions": {
+          "mean": 0.2,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.5
+          ],
+          "paired_difference": {
+            "mean": 0.2,
+            "bootstrap_95": [
+              0.0,
+              0.5
+            ]
+          }
+        }
+      },
+      "quiet_band": {
+        "event_detection_rate": null,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": {
+          "mean": 0.03666666666666667,
+          "range": [
+            0.008333333333333333,
+            0.058333333333333334
+          ],
+          "bootstrap_95": [
+            0.027500000000000004,
+            0.045
+          ],
+          "paired_difference": {
+            "mean": 0.03666666666666667,
+            "bootstrap_95": [
+              0.027500000000000004,
+              0.045
+            ]
+          }
+        },
+        "false_admissions": {
+          "mean": 0.2,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.5
+          ],
+          "paired_difference": {
+            "mean": 0.2,
+            "bootstrap_95": [
+              0.0,
+              0.5
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "suite": "background",
+    "snr_db": -9.0,
+    "n_seeds": 10,
+    "modes": {
+      "original": {
+        "event_detection_rate": null,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "false_admissions": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "band_gate_raw": {
+        "event_detection_rate": null,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": {
+          "mean": 0.0475,
+          "range": [
+            0.016666666666666666,
+            0.06666666666666667
+          ],
+          "bootstrap_95": [
+            0.03833333333333334,
+            0.05500000000000001
+          ],
+          "paired_difference": {
+            "mean": 0.0475,
+            "bootstrap_95": [
+              0.03833333333333334,
+              0.05500000000000001
+            ]
+          }
+        },
+        "false_admissions": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "paired_difference": {
+            "mean": 0.0,
+            "bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "band_relative": {
+        "event_detection_rate": null,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": {
+          "mean": 0.0475,
+          "range": [
+            0.016666666666666666,
+            0.06666666666666667
+          ],
+          "bootstrap_95": [
+            0.03833333333333334,
+            0.05500000000000001
+          ],
+          "paired_difference": {
+            "mean": 0.0475,
+            "bootstrap_95": [
+              0.03833333333333334,
+              0.05500000000000001
+            ]
+          }
+        },
+        "false_admissions": {
+          "mean": 0.2,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.5
+          ],
+          "paired_difference": {
+            "mean": 0.2,
+            "bootstrap_95": [
+              0.0,
+              0.5
+            ]
+          }
+        }
+      },
+      "quiet_band": {
+        "event_detection_rate": null,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": {
+          "mean": 0.05,
+          "range": [
+            0.016666666666666666,
+            0.06666666666666667
+          ],
+          "bootstrap_95": [
+            0.04,
+            0.058333333333333334
+          ],
+          "paired_difference": {
+            "mean": 0.05,
+            "bootstrap_95": [
+              0.04,
+              0.058333333333333334
+            ]
+          }
+        },
+        "false_admissions": {
+          "mean": 0.1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.3
+          ],
+          "paired_difference": {
+            "mean": 0.1,
+            "bootstrap_95": [
+              0.0,
+              0.3
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "suite": "extended",
+    "snr_db": -12.0,
+    "n_seeds": 10,
+    "modes": {
+      "original": {
+        "event_detection_rate": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "repeat_recognition_rate": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "background_attention_rate": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "false_admissions": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "band_gate_raw": {
+        "event_detection_rate": {
+          "mean": 0.3174510145915795,
+          "range": [
+            0.225,
+            0.40476190476190477
+          ],
+          "bootstrap_95": [
+            0.2762266520873946,
+            0.35670311637788327
+          ],
+          "paired_difference": {
+            "mean": 0.3174510145915795,
+            "bootstrap_95": [
+              0.2762266520873946,
+              0.35670311637788327
+            ]
+          }
+        },
+        "repeat_recognition_rate": {
+          "mean": 0.14788778615465273,
+          "range": [
+            0.0,
+            0.28
+          ],
+          "bootstrap_95": [
+            0.09684118078046114,
+            0.19951304427151498
+          ],
+          "paired_difference": {
+            "mean": 0.14788778615465273,
+            "bootstrap_95": [
+              0.09684118078046114,
+              0.19951304427151498
+            ]
+          }
+        },
+        "background_attention_rate": {
+          "mean": 0.035200943045259836,
+          "range": [
+            0.012345679012345678,
+            0.06329113924050633
+          ],
+          "bootstrap_95": [
+            0.02486940558760895,
+            0.045682468884885155
+          ],
+          "paired_difference": {
+            "mean": 0.035200943045259836,
+            "bootstrap_95": [
+              0.02486940558760895,
+              0.045682468884885155
+            ]
+          }
+        },
+        "false_admissions": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "paired_difference": {
+            "mean": 0.0,
+            "bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "band_relative": {
+        "event_detection_rate": {
+          "mean": 0.3174510145915795,
+          "range": [
+            0.225,
+            0.40476190476190477
+          ],
+          "bootstrap_95": [
+            0.2762266520873946,
+            0.35670311637788327
+          ],
+          "paired_difference": {
+            "mean": 0.3174510145915795,
+            "bootstrap_95": [
+              0.2762266520873946,
+              0.35670311637788327
+            ]
+          }
+        },
+        "repeat_recognition_rate": {
+          "mean": 0.21196023222709875,
+          "range": [
+            0.047619047619047616,
+            0.36
+          ],
+          "bootstrap_95": [
+            0.15038114726907834,
+            0.26952221111666386
+          ],
+          "paired_difference": {
+            "mean": 0.21196023222709875,
+            "bootstrap_95": [
+              0.15038114726907834,
+              0.26952221111666386
+            ]
+          }
+        },
+        "background_attention_rate": {
+          "mean": 0.035200943045259836,
+          "range": [
+            0.012345679012345678,
+            0.06329113924050633
+          ],
+          "bootstrap_95": [
+            0.02486940558760895,
+            0.045682468884885155
+          ],
+          "paired_difference": {
+            "mean": 0.035200943045259836,
+            "bootstrap_95": [
+              0.02486940558760895,
+              0.045682468884885155
+            ]
+          }
+        },
+        "false_admissions": {
+          "mean": 0.1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.3
+          ],
+          "paired_difference": {
+            "mean": 0.1,
+            "bootstrap_95": [
+              0.0,
+              0.3
+            ]
+          }
+        }
+      },
+      "quiet_band": {
+        "event_detection_rate": {
+          "mean": 0.32579759646757306,
+          "range": [
+            0.225,
+            0.40540540540540543
+          ],
+          "bootstrap_95": [
+            0.28306195362378817,
+            0.3654028493855194
+          ],
+          "paired_difference": {
+            "mean": 0.32579759646757306,
+            "bootstrap_95": [
+              0.28306195362378817,
+              0.3654028493855194
+            ]
+          }
+        },
+        "repeat_recognition_rate": {
+          "mean": 0.16101199738681,
+          "range": [
+            0.047619047619047616,
+            0.2413793103448276
+          ],
+          "bootstrap_95": [
+            0.11839624372517925,
+            0.20197163953543262
+          ],
+          "paired_difference": {
+            "mean": 0.16101199738681,
+            "bootstrap_95": [
+              0.11839624372517925,
+              0.20197163953543262
+            ]
+          }
+        },
+        "background_attention_rate": {
+          "mean": 0.04114754290492616,
+          "range": [
+            0.01282051282051282,
+            0.0759493670886076
+          ],
+          "bootstrap_95": [
+            0.030571548523748705,
+            0.052399312660670126
+          ],
+          "paired_difference": {
+            "mean": 0.04114754290492616,
+            "bootstrap_95": [
+              0.030571548523748705,
+              0.052399312660670126
+            ]
+          }
+        },
+        "false_admissions": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "paired_difference": {
+            "mean": 0.0,
+            "bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "suite": "extended",
+    "snr_db": -9.0,
+    "n_seeds": 10,
+    "modes": {
+      "original": {
+        "event_detection_rate": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "repeat_recognition_rate": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "background_attention_rate": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "false_admissions": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "band_gate_raw": {
+        "event_detection_rate": {
+          "mean": 0.3635707504411726,
+          "range": [
+            0.25,
+            0.43243243243243246
+          ],
+          "bootstrap_95": [
+            0.3201970027086126,
+            0.4007493257725456
+          ],
+          "paired_difference": {
+            "mean": 0.3635707504411726,
+            "bootstrap_95": [
+              0.3201970027086126,
+              0.4007493257725456
+            ]
+          }
+        },
+        "repeat_recognition_rate": {
+          "mean": 0.2674887643868154,
+          "range": [
+            0.09523809523809523,
+            0.38461538461538464
+          ],
+          "bootstrap_95": [
+            0.20643915127573298,
+            0.3188378208137579
+          ],
+          "paired_difference": {
+            "mean": 0.2674887643868154,
+            "bootstrap_95": [
+              0.20643915127573298,
+              0.3188378208137579
+            ]
+          }
+        },
+        "background_attention_rate": {
+          "mean": 0.05219341786748634,
+          "range": [
+            0.01282051282051282,
+            0.10126582278481013
+          ],
+          "bootstrap_95": [
+            0.038941654863588276,
+            0.06613741367958982
+          ],
+          "paired_difference": {
+            "mean": 0.05219341786748634,
+            "bootstrap_95": [
+              0.038941654863588276,
+              0.06613741367958982
+            ]
+          }
+        },
+        "false_admissions": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "paired_difference": {
+            "mean": 0.0,
+            "bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "band_relative": {
+        "event_detection_rate": {
+          "mean": 0.3635707504411726,
+          "range": [
+            0.25,
+            0.43243243243243246
+          ],
+          "bootstrap_95": [
+            0.3201970027086126,
+            0.4007493257725456
+          ],
+          "paired_difference": {
+            "mean": 0.3635707504411726,
+            "bootstrap_95": [
+              0.3201970027086126,
+              0.4007493257725456
+            ]
+          }
+        },
+        "repeat_recognition_rate": {
+          "mean": 0.2825258014238524,
+          "range": [
+            0.09523809523809523,
+            0.4
+          ],
+          "bootstrap_95": [
+            0.21509959767868317,
+            0.34037903328832864
+          ],
+          "paired_difference": {
+            "mean": 0.2825258014238524,
+            "bootstrap_95": [
+              0.21509959767868317,
+              0.34037903328832864
+            ]
+          }
+        },
+        "background_attention_rate": {
+          "mean": 0.05219341786748634,
+          "range": [
+            0.01282051282051282,
+            0.10126582278481013
+          ],
+          "bootstrap_95": [
+            0.038941654863588276,
+            0.06613741367958982
+          ],
+          "paired_difference": {
+            "mean": 0.05219341786748634,
+            "bootstrap_95": [
+              0.038941654863588276,
+              0.06613741367958982
+            ]
+          }
+        },
+        "false_admissions": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "paired_difference": {
+            "mean": 0.0,
+            "bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "quiet_band": {
+        "event_detection_rate": {
+          "mean": 0.48607010217955615,
+          "range": [
+            0.375,
+            0.6216216216216216
+          ],
+          "bootstrap_95": [
+            0.44022909495045714,
+            0.5349575936311618
+          ],
+          "paired_difference": {
+            "mean": 0.48607010217955615,
+            "bootstrap_95": [
+              0.44022909495045714,
+              0.5349575936311618
+            ]
+          }
+        },
+        "repeat_recognition_rate": {
+          "mean": 0.3119561843564842,
+          "range": [
+            0.14285714285714285,
+            0.52
+          ],
+          "bootstrap_95": [
+            0.2416940152037978,
+            0.3841294986220398
+          ],
+          "paired_difference": {
+            "mean": 0.3119561843564842,
+            "bootstrap_95": [
+              0.2416940152037978,
+              0.3841294986220398
+            ]
+          }
+        },
+        "background_attention_rate": {
+          "mean": 0.05347546914953762,
+          "range": [
+            0.02564102564102564,
+            0.10126582278481013
+          ],
+          "bootstrap_95": [
+            0.0423061703751386,
+            0.06645514313962589
+          ],
+          "paired_difference": {
+            "mean": 0.05347546914953762,
+            "bootstrap_95": [
+              0.0423061703751386,
+              0.06645514313962589
+            ]
+          }
+        },
+        "false_admissions": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "paired_difference": {
+            "mean": 0.0,
+            "bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "suite": "tonal",
+    "snr_db": -12.0,
+    "n_seeds": 10,
+    "modes": {
+      "original": {
+        "event_detection_rate": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "repeat_recognition_rate": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "background_attention_rate": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "false_admissions": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "band_gate_raw": {
+        "event_detection_rate": {
+          "mean": 0.6086540253996645,
+          "range": [
+            0.5384615384615384,
+            0.7941176470588235
+          ],
+          "bootstrap_95": [
+            0.5742906729870598,
+            0.6579520205514361
+          ],
+          "paired_difference": {
+            "mean": 0.6086540253996645,
+            "bootstrap_95": [
+              0.5742906729870598,
+              0.6579520205514361
+            ]
+          }
+        },
+        "repeat_recognition_rate": {
+          "mean": 0.3668884014994072,
+          "range": [
+            0.24242424242424243,
+            0.6428571428571429
+          ],
+          "bootstrap_95": [
+            0.3029219872210859,
+            0.44925804740273423
+          ],
+          "paired_difference": {
+            "mean": 0.3668884014994072,
+            "bootstrap_95": [
+              0.3029219872210859,
+              0.44925804740273423
+            ]
+          }
+        },
+        "background_attention_rate": {
+          "mean": 0.04041357198319056,
+          "range": [
+            0.011627906976744186,
+            0.0759493670886076
+          ],
+          "bootstrap_95": [
+            0.028050631714269105,
+            0.05259806605206265
+          ],
+          "paired_difference": {
+            "mean": 0.04041357198319056,
+            "bootstrap_95": [
+              0.028050631714269105,
+              0.05259806605206265
+            ]
+          }
+        },
+        "false_admissions": {
+          "mean": 0.1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.3
+          ],
+          "paired_difference": {
+            "mean": 0.1,
+            "bootstrap_95": [
+              0.0,
+              0.3
+            ]
+          }
+        }
+      },
+      "band_relative": {
+        "event_detection_rate": {
+          "mean": 0.6086540253996645,
+          "range": [
+            0.5384615384615384,
+            0.7941176470588235
+          ],
+          "bootstrap_95": [
+            0.5742906729870598,
+            0.6579520205514361
+          ],
+          "paired_difference": {
+            "mean": 0.6086540253996645,
+            "bootstrap_95": [
+              0.5742906729870598,
+              0.6579520205514361
+            ]
+          }
+        },
+        "repeat_recognition_rate": {
+          "mean": 0.48280376903123584,
+          "range": [
+            0.39285714285714285,
+            0.7142857142857143
+          ],
+          "bootstrap_95": [
+            0.434286571852185,
+            0.5473528187158702
+          ],
+          "paired_difference": {
+            "mean": 0.48280376903123584,
+            "bootstrap_95": [
+              0.434286571852185,
+              0.5473528187158702
+            ]
+          }
+        },
+        "background_attention_rate": {
+          "mean": 0.04041357198319056,
+          "range": [
+            0.011627906976744186,
+            0.0759493670886076
+          ],
+          "bootstrap_95": [
+            0.028050631714269105,
+            0.05259806605206265
+          ],
+          "paired_difference": {
+            "mean": 0.04041357198319056,
+            "bootstrap_95": [
+              0.028050631714269105,
+              0.05259806605206265
+            ]
+          }
+        },
+        "false_admissions": {
+          "mean": 0.2,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.5
+          ],
+          "paired_difference": {
+            "mean": 0.2,
+            "bootstrap_95": [
+              0.0,
+              0.5
+            ]
+          }
+        }
+      },
+      "quiet_band": {
+        "event_detection_rate": {
+          "mean": 0.6492514058817012,
+          "range": [
+            0.5675675675675675,
+            0.8235294117647058
+          ],
+          "bootstrap_95": [
+            0.6114431518899918,
+            0.6977942837008946
+          ],
+          "paired_difference": {
+            "mean": 0.6492514058817012,
+            "bootstrap_95": [
+              0.6114431518899918,
+              0.6977942837008946
+            ]
+          }
+        },
+        "repeat_recognition_rate": {
+          "mean": 0.3526353486979673,
+          "range": [
+            0.18181818181818182,
+            0.5
+          ],
+          "bootstrap_95": [
+            0.2919173881673881,
+            0.4127846710531719
+          ],
+          "paired_difference": {
+            "mean": 0.3526353486979673,
+            "bootstrap_95": [
+              0.2919173881673881,
+              0.4127846710531719
+            ]
+          }
+        },
+        "background_attention_rate": {
+          "mean": 0.042725787968221296,
+          "range": [
+            0.0125,
+            0.0759493670886076
+          ],
+          "bootstrap_95": [
+            0.031124523822800548,
+            0.05438797702766913
+          ],
+          "paired_difference": {
+            "mean": 0.042725787968221296,
+            "bootstrap_95": [
+              0.031124523822800548,
+              0.05438797702766913
+            ]
+          }
+        },
+        "false_admissions": {
+          "mean": 0.1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.3
+          ],
+          "paired_difference": {
+            "mean": 0.1,
+            "bootstrap_95": [
+              0.0,
+              0.3
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "suite": "tonal",
+    "snr_db": -9.0,
+    "n_seeds": 10,
+    "modes": {
+      "original": {
+        "event_detection_rate": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "repeat_recognition_rate": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "background_attention_rate": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "false_admissions": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "band_gate_raw": {
+        "event_detection_rate": {
+          "mean": 0.7481223874399514,
+          "range": [
+            0.6486486486486487,
+            0.8823529411764706
+          ],
+          "bootstrap_95": [
+            0.7093392163786901,
+            0.7917128644295497
+          ],
+          "paired_difference": {
+            "mean": 0.7481223874399514,
+            "bootstrap_95": [
+              0.7093392163786901,
+              0.7917128644295497
+            ]
+          }
+        },
+        "repeat_recognition_rate": {
+          "mean": 0.648331869567638,
+          "range": [
+            0.5483870967741935,
+            0.8571428571428571
+          ],
+          "bootstrap_95": [
+            0.6014636688619729,
+            0.7070089980803335
+          ],
+          "paired_difference": {
+            "mean": 0.648331869567638,
+            "bootstrap_95": [
+              0.6014636688619729,
+              0.7070089980803335
+            ]
+          }
+        },
+        "background_attention_rate": {
+          "mean": 0.0500633008241708,
+          "range": [
+            0.023255813953488372,
+            0.08860759493670886
+          ],
+          "bootstrap_95": [
+            0.037966680413350246,
+            0.06292894098048232
+          ],
+          "paired_difference": {
+            "mean": 0.0500633008241708,
+            "bootstrap_95": [
+              0.037966680413350246,
+              0.06292894098048232
+            ]
+          }
+        },
+        "false_admissions": {
+          "mean": 0.0,
+          "range": [
+            0.0,
+            0.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "paired_difference": {
+            "mean": 0.0,
+            "bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "band_relative": {
+        "event_detection_rate": {
+          "mean": 0.7481223874399514,
+          "range": [
+            0.6486486486486487,
+            0.8823529411764706
+          ],
+          "bootstrap_95": [
+            0.7093392163786901,
+            0.7917128644295497
+          ],
+          "paired_difference": {
+            "mean": 0.7481223874399514,
+            "bootstrap_95": [
+              0.7093392163786901,
+              0.7917128644295497
+            ]
+          }
+        },
+        "repeat_recognition_rate": {
+          "mean": 0.6578053856765906,
+          "range": [
+            0.53125,
+            0.8571428571428571
+          ],
+          "bootstrap_95": [
+            0.6093991634858569,
+            0.716077299492622
+          ],
+          "paired_difference": {
+            "mean": 0.6578053856765906,
+            "bootstrap_95": [
+              0.6093991634858569,
+              0.716077299492622
+            ]
+          }
+        },
+        "background_attention_rate": {
+          "mean": 0.0500633008241708,
+          "range": [
+            0.023255813953488372,
+            0.08860759493670886
+          ],
+          "bootstrap_95": [
+            0.037966680413350246,
+            0.06292894098048232
+          ],
+          "paired_difference": {
+            "mean": 0.0500633008241708,
+            "bootstrap_95": [
+              0.037966680413350246,
+              0.06292894098048232
+            ]
+          }
+        },
+        "false_admissions": {
+          "mean": 0.1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.3
+          ],
+          "paired_difference": {
+            "mean": 0.1,
+            "bootstrap_95": [
+              0.0,
+              0.3
+            ]
+          }
+        }
+      },
+      "quiet_band": {
+        "event_detection_rate": {
+          "mean": 0.7870817327335866,
+          "range": [
+            0.6486486486486487,
+            0.9117647058823529
+          ],
+          "bootstrap_95": [
+            0.7425566133409287,
+            0.8311190757771639
+          ],
+          "paired_difference": {
+            "mean": 0.7870817327335866,
+            "bootstrap_95": [
+              0.7425566133409287,
+              0.8311190757771639
+            ]
+          }
+        },
+        "repeat_recognition_rate": {
+          "mean": 0.6694709120207223,
+          "range": [
+            0.4375,
+            0.7857142857142857
+          ],
+          "bootstrap_95": [
+            0.5997243067192665,
+            0.7316227677287923
+          ],
+          "paired_difference": {
+            "mean": 0.6694709120207223,
+            "bootstrap_95": [
+              0.5997243067192665,
+              0.7316227677287923
+            ]
+          }
+        },
+        "background_attention_rate": {
+          "mean": 0.0500633008241708,
+          "range": [
+            0.023255813953488372,
+            0.08860759493670886
+          ],
+          "bootstrap_95": [
+            0.037966680413350246,
+            0.06292894098048232
+          ],
+          "paired_difference": {
+            "mean": 0.0500633008241708,
+            "bootstrap_95": [
+              0.037966680413350246,
+              0.06292894098048232
+            ]
+          }
+        },
+        "false_admissions": {
+          "mean": 0.1,
+          "range": [
+            0.0,
+            1.0
+          ],
+          "bootstrap_95": [
+            0.0,
+            0.3
+          ],
+          "paired_difference": {
+            "mean": 0.1,
+            "bootstrap_95": [
+              0.0,
+              0.3
+            ]
+          }
+        }
+      }
+    }
+  }
+]

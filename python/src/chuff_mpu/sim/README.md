@@ -204,19 +204,30 @@ a flag nobody's tested, no matter how simple the code behind it looks.
 Every other demo presents a sound every tick, so idle time never really
 accumulates. `chuff-sim-mood` has real gaps — most ticks nothing
 happens — so `config.IDLE_TIMEOUT_S` actually gets crossed, the dream
-loop (`dream.predict_next()`) gets a chance to fire, and the next real
-sound that arrives gets compared against the prediction
-(`dream.surprise_score()`), driving `mood.update_mood()`'s full 9-state
-machine from real data rather than hand-picked test inputs:
+loop (`dream.predict_next()`) gets a chance to fire. The demo immediately
+synthesizes a wake observation for comparison (`dream.surprise_score()`);
+this is not necessarily the next independently scheduled sound. Predictions
+and mood transitions use the real waveform/MFCC path:
 
 ```
 uv run chuff-sim-mood --ticks 300 --seed 5 --sound-probability 0.03
 ```
 
-Across 5 seeds, every mood state fires from a real triggering
-condition — one seed alone hit `contentment`, `new_sound_learned`,
-`song_recognised`, `dreaming`, *and* `surprise` in a single run. Whether
-waking from a dream lands on `surprise` or `contentment` varies run to
-run, as it should (it depends on whether the interpolated prediction
-happened to resemble whatever sound came next) — see
-`../../../../shared/research_backlog.md` Theme 2.1.
+The demo uses a separate seeded dream-sampling stream, so repeated runs with
+the same parameters reproduce their predictions and transitions. Export raw
+trajectories, dependency versions and exact source snapshots with a new path:
+
+```powershell
+uv run chuff-sim-mood --ticks 45 --seed 13 --tick-duration 180 --sound-probability 0.2 --ack-ticks 5 9 --output ../eval/results/my-mood-run
+```
+
+`--ack-ticks` are explicit one-based synthetic protocol inputs, not detected
+acoustic acknowledgements. Without them this demo does not emit the ACK mood.
+The mood API distinguishes high novelty without admission (`learned=False`)
+from a stored new sound (`learned=True`); omission preserves legacy inference.
+The default agent always admits high-novelty inputs, so strong novelty need
+not occur in its trajectory. All nine supported states and precedence are
+covered by explicit unit fixtures; no claim is made that every natural run
+visits all nine states. Same-seed integration replay is tested with actual
+procedural waveforms, including dream events. Cross-platform bitwise identity
+is not established. See the correction in paper 00, section 5.8.

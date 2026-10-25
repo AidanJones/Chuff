@@ -1,0 +1,19 @@
+{
+  "iteration": 2,
+  "source": "quiet_band variant in development-2 snapshot; feature_mode=0,noise_mode=1",
+  "fixture_seed": 44,
+  "scene": {
+    "rounds": 120,
+    "event_probability": 0,
+    "nuisance_probability": 0.4,
+    "snr_db": 6
+  },
+  "observed_final_memory_size": 3,
+  "admission_steps": [
+    12,
+    33,
+    66
+  ],
+  "all_admissions_were_on_impacts": true,
+  "response": "Require >=80 ms of instantaneous evidence, not duration created by temporal smoothing."
+}

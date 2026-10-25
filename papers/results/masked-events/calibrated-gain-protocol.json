@@ -1,0 +1,13 @@
+{
+  "issue": "ch-6w4.10.4.1",
+  "date": "2026-10-25",
+  "development_seeds": [1100,1101,1102],
+  "fresh_evaluation_seeds": [1400,1401,1402,1403,1404,1405,1406,1407,1408,1409],
+  "reason": "Observed stationary foregrounds themselves raise per-window gain CV, so event-time thresholding is confounded. Development background calibration means separate stationary (0.061-0.068), slow (0.167-0.195) and fast (0.545-0.572).",
+  "frozen_rule": "Mean coefficient of variation of smoothed common band level over first three unlabelled warmup clips, dropping first three gain time constants of each clip. Enable compensation if mean >=0.12; otherwise preserve raw power. Choice freezes after calibration. No simulation condition labels or event truth enter learner.",
+  "warmup": "Raw power feeds the original background estimator in both modes during initial calibration; profile and CV are collected in parallel.",
+  "methods": ["original","quiet_band","binwise","gain_0.02s","spectral_gain","calibrated_gain"],
+  "matrix": "Same six controlled modulation cells, -6 dB before channel, 120 windows",
+  "metrics": "Affected streams, false prototypes, false attention, localized detection/identity with three IoU thresholds, overlap controls and paired uncertainty. Report compensation decisions, not just outcomes.",
+  "limits": "Assumes calibration represents subsequent environment. Mid-run changes, silence, contaminated startup, and recordings remain separate requirements. Not an oracle condition switch or proof of field robustness."
+}

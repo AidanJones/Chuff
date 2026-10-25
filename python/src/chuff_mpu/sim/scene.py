@@ -28,6 +28,8 @@ class SceneConfig:
     room_decay_s: float = 0.12
     background_change: bool = True
     structured_distractors: bool = False
+    collect_stems: bool = False
+    snr_reference: str = "input"  # input active interval, or post-channel current/residual
 
     def __post_init__(self) -> None:
         if self.sample_rate < 8000 or self.duration_s < 0.8:
@@ -40,6 +42,10 @@ class SceneConfig:
             raise ValueError("invalid background level or room decay")
         if not np.isfinite(self.snr_db) or not -30 <= self.snr_db <= 30:
             raise ValueError("SNR must be finite and between -30 and 30 dB")
+        if type(self.collect_stems) is not bool or self.snr_reference not in ("input", "post_residual"):
+            raise ValueError("invalid stem collection or SNR reference")
+        if self.snr_reference == "post_residual" and not self.collect_stems:
+            raise ValueError("post-channel calibration requires evaluator stems")
 
 
 @dataclass(frozen=True)
@@ -49,6 +55,16 @@ class SceneFrame:
     nuisance: bool
     background_changed: bool
     active_snr_db: float | None
+    event_start_s: float | None = None
+    event_stop_s: float | None = None
+    previous_source_tail_s: float = 0.0
+    background_audio: np.ndarray | None = None
+    source_audio: np.ndarray | None = None
+    current_source_audio: np.ndarray | None = None
+    without_current_source_audio: np.ndarray | None = None
+    post_channel_background_snr_db: float | None = None
+    post_channel_residual_snr_db: float | None = None
+    source_parameters: dict | None = None
 
 
 def _rms(signal: np.ndarray) -> float:
@@ -64,12 +80,15 @@ class AcousticScene:
 
     def __init__(self, seed: int = 0, settings: SceneConfig | None = None) -> None:
         self.settings = settings or SceneConfig()
+        self.event_labels = EVENTS
         children = np.random.SeedSequence(seed).spawn(4)
         self.schedule_rng, self.source_rng, self.background_rng, channel_rng = [
             np.random.default_rng(child) for child in children
         ]
         c = self.settings
         self._step = 0
+        self._source_tail_until_s = 0.0
+        self._stem_history = None
         self._noise_state = np.zeros(1)
         self._mic_b, self._mic_a = butter(2, [100, 0.40 * c.sample_rate],
                                          btype="bandpass", fs=c.sample_rate)
@@ -122,6 +141,15 @@ class AcousticScene:
         event[-ramp:] *= np.linspace(1, 0, ramp)
         return event
 
+    def _render_component(self, waveform, tail, mic_state):
+        """Linear channel on explicit private state; does not update mixture state."""
+        n = len(waveform)
+        convolved = fftconvolve(waveform, self._ir)
+        if len(tail):
+            convolved[:len(tail)] += tail
+        filtered, state = lfilter(self._mic_b, self._mic_a, convolved[:n], zi=mic_state)
+        return filtered, convolved[n:].copy(), state
+
     def next_frame(self) -> SceneFrame:
         c = self.settings
         if self._step >= c.rounds:
@@ -132,9 +160,11 @@ class AcousticScene:
         label = None
         nuisance = False
         active_snr = None
+        event_start = event_stop = None
+        previous_tail_s = max(0., self._source_tail_until_s-self._step*c.duration_s)
         if self._step >= c.warmup:
             if self.schedule_rng.random() < c.event_probability:
-                label = str(self.schedule_rng.choice(EVENTS))
+                label = str(self.schedule_rng.choice(self.event_labels))
             else:
                 nuisance = self.schedule_rng.random() < c.nuisance_probability
             if label is not None or nuisance:
@@ -154,21 +184,61 @@ class AcousticScene:
                         # Random broadband impacts, not a reusable foreground class.
                         event = self.source_rng.normal(size=int(c.sample_rate * 0.035))
                         event *= np.exp(-np.linspace(0, 5, len(event)))
-                start = int(self.source_rng.uniform(0.12, c.duration_s - len(event) / c.sample_rate - 0.12)
-                            * c.sample_rate)
+                available_s = c.duration_s - len(event) / c.sample_rate
+                margin_s = min(0.12, available_s / 3)
+                start = int(self.source_rng.uniform(margin_s, available_s - margin_s) * c.sample_rate)
                 section = slice(start, start + len(event))
                 target_rms = _rms(background[section]) * 10 ** (c.snr_db / 20)
                 signal[section] = event * target_rms / max(_rms(event), 1e-12)
                 active_snr = float(20 * np.log10(_rms(signal[section]) / _rms(background[section])))
+                if label is not None:
+                    event_start, event_stop = start/c.sample_rate, (start+len(event))/c.sample_rate
+                self._source_tail_until_s = (self._step*c.duration_s
+                    + (start+len(event)+len(self._ir)-1)/c.sample_rate)
+        current_source = None
+        if c.collect_stems:
+            current_source, _, _ = self._render_component(signal, np.zeros(len(self._ir)-1),
+                                                         np.zeros_like(self._mic_state))
+            if active_snr is not None and c.snr_reference == "post_residual":
+                residual, _, _ = self._render_component(background, self._tail, self._mic_state)
+                source_rms, residual_rms = _rms(current_source[section]), _rms(residual[section])
+                if min(source_rms, residual_rms) <= 1e-15:
+                    raise ValueError("cannot calibrate finite post-channel SNR with zero-energy components")
+                factor = residual_rms*10**(c.snr_db/20)/source_rms
+                signal *= factor
+                current_source, _, _ = self._render_component(signal, np.zeros(len(self._ir)-1),
+                                                             np.zeros_like(self._mic_state))
+                active_snr = float(20*np.log10(_rms(signal[section])/_rms(background[section])))
         # Continuous overlap-add room response and persistent microphone filter.
         convolved = fftconvolve(background + signal, self._ir)
         if len(self._tail):
             convolved[:len(self._tail)] += self._tail
         self._tail = convolved[n:].copy()
         mixture, self._mic_state = lfilter(self._mic_b, self._mic_a, convolved[:n], zi=self._mic_state)
+        bg_audio = source_audio = counterfactual = None
+        post_background = post_residual = None
+        if c.collect_stems:
+            if self._stem_history is None:
+                self._stem_history = {kind: (np.zeros(len(self._ir)-1), np.zeros_like(self._mic_state))
+                                      for kind in ("background", "source")}
+            bg_audio, bg_tail, bg_state = self._render_component(background, *self._stem_history["background"])
+            source_audio, source_tail, source_state = self._render_component(signal, *self._stem_history["source"])
+            self._stem_history = dict(background=(bg_tail, bg_state), source=(source_tail, source_state))
+            counterfactual = mixture-current_source
+            if active_snr is not None:
+                numerator = _rms(current_source[section])
+                for value in (numerator, _rms(bg_audio[section]), _rms(counterfactual[section])):
+                    if value <= 1e-15:
+                        raise ValueError("undefined post-channel SNR for a zero-energy component")
+                post_background = float(20*np.log10(numerator/_rms(bg_audio[section])))
+                post_residual = float(20*np.log10(numerator/_rms(counterfactual[section])))
+            bg_audio, source_audio, current_source, counterfactual = [a.astype(np.float32) for a in
+                (bg_audio, source_audio, current_source, counterfactual)]
         changed = c.background_change and self._step == c.rounds // 2
         self._step += 1
-        return SceneFrame(mixture.astype(np.float32), label, nuisance, changed, active_snr)
+        return SceneFrame(mixture.astype(np.float32), label, nuisance, changed, active_snr,
+                          event_start, event_stop, previous_tail_s,
+                          bg_audio, source_audio, current_source, counterfactual, post_background, post_residual)
 
     def __iter__(self):
         while self._step < self.settings.rounds:

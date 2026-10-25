@@ -1,0 +1,18 @@
+{
+  "source_sha256": {
+    "reference/attention.py": "09ecb9af3c1f9371ad573a0e151dc7dc30b6e4ac45484a78a84c6725056827c9",
+    "reference/band_attention.py": "6a66ff06bfe594053e0c4562e6765f162258404300483f503e4d79dd455bc445",
+    "reference/gain_attention.py": "c259678d765713fbf65337c1de15850d43669110c04da9008de997fc1e147f76",
+    "current/attention.py": "09ecb9af3c1f9371ad573a0e151dc7dc30b6e4ac45484a78a84c6725056827c9",
+    "current/band_attention.py": "9dac96df1c512bd1b67e71ea0f077fd769c13241b052488d3d749e30f04a9821",
+    "current/gain_attention.py": "8c8635c96f7a8cc1eb823290deef376e2e5e87008f39d1e7ea546d2e8d919113",
+    "current/sim/scene.py": "5f70ef86263506cd1ba73c8c6216ddf73702936dd2f11cc1d6fd3b4ae6d340dc",
+    "current/sim/challenge_scene.py": "7ddefb65fff6cb1bdc99fdd70e7600dfa1fd873f37fe0af765ca867664ec7f7a",
+    "current/sim/startup_recovery.py": "2ef6f5ac239a5dc3df3d9255029a7bd7472d3ad5a4f136e3535631b9e9077b84"
+  },
+  "seed_start": 1800,
+  "seeds": 10,
+  "scenario": "3 exact-zero prefix windows, followed by identical120-window ChallengeScene at input SNR-6dB",
+  "invariant": "New silent-prefix trajectory equals new clean trajectory; new clean equals archived clean, including features",
+  "scope": "Numerical regression/compatibility fixtures, not startup/field generalization or a new detector benchmark"
+}

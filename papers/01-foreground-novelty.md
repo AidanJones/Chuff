@@ -143,3 +143,12 @@ An adaptive importance or learning-progress signal should be compared with
 recurrence, so a new but important one-off can draw a response without every
 random noise becoming a permanent memory. These are recorded as a separate
 Beads follow-up rather than counted as solved here.
+
+## Follow-up, 17 October 2026
+
+The [masked-event study](02-masked-foreground-events.md) now reports three
+development iterations and a new, paired evaluation of band-local evidence
+and quiet-frame noise estimation. It substantially improves the procedural
+−6 dB case while retaining the original frontend as a comparison. Long alarms
+and more severe masking remain difficult; the follow-up archives those
+failures rather than superseding this paper's original measurements.

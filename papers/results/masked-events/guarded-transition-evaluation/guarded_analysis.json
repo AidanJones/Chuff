@@ -1,0 +1,2628 @@
+[
+  {
+    "suite": "fast/control",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": null,
+      "localized_detection": null,
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "admitted_classes": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": null
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "fast/positive",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_detection": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "admitted_classes": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "fast_stationary/control",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": null,
+      "localized_detection": null,
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "admitted_classes": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": null
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "fast_stationary/positive",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_detection": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "admitted_classes": {
+        "mean": -0.1,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          -0.3,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [
+          "high_rustle"
+        ],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [
+          "double_chime",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "shallow/control",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": null,
+      "localized_detection": null,
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "admitted_classes": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": null
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "shallow/positive",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": {
+        "mean": -0.005555555555555558,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          -0.016666666666666673,
+          0.0
+        ]
+      },
+      "localized_detection": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "admitted_classes": {
+        "mean": -0.1,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          -0.3,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": {
+        "mean": 0.075,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.2
+        ]
+      }
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "lost_classes": [
+          "high_rustle"
+        ],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "silent_fast/control",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": null,
+      "localized_detection": null,
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "admitted_classes": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": null
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "silent_fast/positive",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_detection": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "admitted_classes": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "slow/control",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": null,
+      "localized_detection": null,
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "admitted_classes": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": null
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "slow/positive",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_detection": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "admitted_classes": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [
+          "falling_call",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [
+          "falling_call",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "slow_stationary/control",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": null,
+      "localized_detection": null,
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "admitted_classes": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": null
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "slow_stationary/positive",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_detection": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "admitted_classes": {
+        "mean": -0.1,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          -0.3,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [
+          "high_rustle"
+        ],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [
+          "double_chime",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "spectral_fast/control",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": null,
+      "localized_detection": null,
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "admitted_classes": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": null
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "spectral_fast/positive",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_detection": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "admitted_classes": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "stationary/control",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": null,
+      "localized_detection": null,
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "admitted_classes": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": null
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "stationary/positive",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": {
+        "mean": -0.016081871345029235,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          -0.03771929824561403,
+          0.0
+        ]
+      },
+      "localized_detection": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "admitted_classes": {
+        "mean": -0.2,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          -0.5,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": {
+        "mean": 0.06999999999999999,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.16999999999999998
+        ]
+      }
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [
+          "high_rustle"
+        ],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [
+          "high_rustle"
+        ],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "stationary_fast/control",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": null,
+      "localized_detection": null,
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "admitted_classes": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": null
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "stationary_fast/positive",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": {
+        "mean": -0.010526315789473684,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          -0.031578947368421054,
+          0.0
+        ]
+      },
+      "localized_detection": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": -0.2,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          -0.6,
+          0.2
+        ]
+      },
+      "admitted_classes": {
+        "mean": -0.3,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          -0.6,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": {
+        "mean": 0.075,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.225
+        ]
+      }
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [
+          "low_rustle"
+        ],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [
+          "high_rustle"
+        ],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [
+          "double_chime",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [
+          "high_rustle"
+        ],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "stationary_slow/control",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": null,
+      "localized_detection": null,
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": -1.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          -1.0,
+          -1.0
+        ]
+      },
+      "admitted_classes": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "matched_class_first_admission_occurrences": null
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [],
+        "lost_classes": [],
+        "gained_classes": []
+      }
+    ]
+  },
+  {
+    "suite": "stationary_slow/positive",
+    "direction": "guarded minus adaptive; after-phase primary, full-run class admission",
+    "paired_differences": {
+      "localized_repeat": {
+        "mean": -0.005263157894736842,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          -0.015789473684210527,
+          0.0
+        ]
+      },
+      "localized_detection": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_admissions": {
+        "mean": -0.5,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          -0.8,
+          -0.2
+        ]
+      },
+      "admitted_classes": {
+        "mean": -0.4,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          -0.7,
+          -0.1
+        ]
+      },
+      "matched_class_first_admission_occurrences": {
+        "mean": 0.03333333333333333,
+        "paired_seeds": 10,
+        "bootstrap_95": [
+          0.0,
+          0.1
+        ]
+      }
+    },
+    "cohorts": [
+      {
+        "seed": 2400,
+        "shared_classes": [
+          "falling_call",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2401,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [
+          "low_rustle"
+        ],
+        "gained_classes": []
+      },
+      {
+        "seed": 2402,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2403,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2404,
+        "shared_classes": [
+          "double_chime",
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [
+          "high_rustle"
+        ],
+        "gained_classes": []
+      },
+      {
+        "seed": 2405,
+        "shared_classes": [
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2406,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2407,
+        "shared_classes": [
+          "falling_call",
+          "high_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [],
+        "gained_classes": []
+      },
+      {
+        "seed": 2408,
+        "shared_classes": [
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "lost_classes": [
+          "long_alarm"
+        ],
+        "gained_classes": []
+      },
+      {
+        "seed": 2409,
+        "shared_classes": [
+          "falling_call",
+          "long_alarm",
+          "rising_call"
+        ],
+        "lost_classes": [
+          "high_rustle"
+        ],
+        "gained_classes": []
+      }
+    ]
+  }
+]

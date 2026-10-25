@@ -1,0 +1,11 @@
+{
+  "issue": "ch-6w4.10.4",
+  "date": "2026-10-25",
+  "stage": "Third development stage, before untouched evaluation",
+  "development_seeds": [1100, 1101, 1102],
+  "rms_selection": "The original rule selects 0.02 seconds among RMS candidates, but development detection is only 28-33% and average localized repeat recognition 19.9%; zero false attention is insufficient evidence of retained foreground sensitivity.",
+  "new_candidate": "Normalize STFT power by a smoothed median of mel-band energies relative to a spectral template fitted only during the existing three unlabelled warmup clips. Fixed 0.02 s gain time; unchanged gate, features after power normalization, matching and confirmation rules.",
+  "reason": "An all-power RMS tracker can follow the foreground's own energy. A median across bands should reduce influence of localized events; this is a hypothesis tested with broad and long positives too, not an oracle assumption.",
+  "evaluation": "Compare all six earlier RMS times, the fixed spectral-gain candidate and three unchanged baselines on seeds 1200-1209. No retuning afterward. Candidate is not accepted merely for rejecting backgrounds; report stationary foreground losses and correct localized identity in all modulation cells.",
+  "limitations": "Warmup profile freezes afterward; spectral background shifts and foreground contamination during calibration are separate generalization tests. This is not PCEN or a recorded-audio result."
+}

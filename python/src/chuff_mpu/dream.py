@@ -14,17 +14,21 @@ import numpy as np
 from chuff_mpu.memory import EmbeddingStore
 
 
-def predict_next(store: EmbeddingStore, weight: float = 0.5) -> np.ndarray:
+def predict_next(store: EmbeddingStore, weight: float = 0.5,
+                 *, rng: np.random.Generator | None = None) -> np.ndarray:
     """Interpolate between two randomly sampled stored embeddings.
 
     Args:
         store: The embedding store to sample from.
         weight: Interpolation weight in [0, 1] applied to the first sample.
+        rng: Caller-owned sampling stream. Supply this for reproducible dreams.
 
     Returns:
         Predicted embedding vector.
     """
-    a, b = store.sample_pair()
+    if not np.isfinite(weight) or not 0 <= weight <= 1:
+        raise ValueError("interpolation weight must be finite and in [0, 1]")
+    a, b = store.sample_pair(rng=rng)
     a = np.asarray(a, dtype=np.float32)
     b = np.asarray(b, dtype=np.float32)
     return (weight * a + (1.0 - weight) * b).astype(np.float32)

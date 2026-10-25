@@ -42,6 +42,8 @@ def update_mood(
     surprise: float | None,
     idle_s: float,
     ack_received: bool = False,
+    *,
+    learned: bool | None = None,
 ) -> MoodState:
     """Advance the mood state machine given the latest scores.
 
@@ -53,14 +55,10 @@ def update_mood(
     finally the novelty score from the latest capture. If none of these
     fired this tick (nothing new happened), the mood holds.
 
-    One simplification worth stating plainly: this codebase's
-    convention (see sim/agent.py) is that a sound only gets committed to
-    memory when its novelty score is already >= NOVELTY_THRESHOLD_HIGH —
-    the same condition the mood grammar calls "strong novelty". So
-    "strong novelty" and "new sound learned" are, in practice, the same
-    event here; NEW_SOUND_LEARNED is emitted (the bigger of the two
-    reactions — a small celebration, not just a flash) rather than
-    returning both.
+    An explicit learned=True reports a memory admission; learned=False
+    distinguishes high novelty without admission as STRONG_NOVELTY. When
+    learned is omitted, retain the legacy convention that high novelty
+    implies admission. New callers should pass the actual learning event.
 
     `ack_received` isn't derivable from novelty/surprise/idle_s alone —
     it's an optional 5th parameter (default False, so existing 4-arg
@@ -76,6 +74,7 @@ def update_mood(
         idle_s: Seconds since the last new sound was heard.
         ack_received: Whether an acknowledgement tone was just heard over
             the comms channel this tick (shared/comms_protocol.md).
+        learned: Actual memory-admission event, or None for legacy inference.
 
     Returns:
         The updated MoodState.
@@ -93,11 +92,15 @@ def update_mood(
     if idle_s >= config.IDLE_TIMEOUT_S:
         return MoodState(Mood.DREAMING, energy=0.2)
 
+    if learned is True:
+        return MoodState(Mood.NEW_SOUND_LEARNED, energy=1.0)
+
     if novelty is not None:
         if novelty < config.RECOGNITION_THRESHOLD:
             return MoodState(Mood.SONG_RECOGNISED, energy=0.5)
         if novelty >= config.NOVELTY_THRESHOLD_HIGH:
-            return MoodState(Mood.NEW_SOUND_LEARNED, energy=1.0)
+            mood = Mood.STRONG_NOVELTY if learned is False else Mood.NEW_SOUND_LEARNED
+            return MoodState(mood, energy=1.0)
         if novelty >= config.NOVELTY_THRESHOLD_LOW:
             span = config.NOVELTY_THRESHOLD_HIGH - config.NOVELTY_THRESHOLD_LOW
             frac = (novelty - config.NOVELTY_THRESHOLD_LOW) / span if span else 0.0

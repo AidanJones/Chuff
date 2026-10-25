@@ -1,0 +1,17 @@
+{
+  "issue": "ch-6w4.9",
+  "date": "2026-10-25",
+  "status": "Prospective fixed-method measurement plan, not external preregistration",
+  "development_seeds": [1500,1501],
+  "evaluation_seeds": [1600,1601,1602,1603,1604,1605,1606,1607,1608,1609],
+  "rounds": 120,
+  "snr_db": -6,
+  "conditions": "Reference, pitch-only, duration-only, independent pitch+duration, each with input or post-residual SNR target; one pure-background input control",
+  "physical_channel": "Fixed varied room/microphone per run, continuously filtered source/background components, slowly modulated background and halfway fan/level change",
+  "source_transform": "librosa 0.11 pitch_shift (n_steps=12log2 ratio) and time_stretch (rate=1/duration factor), n_fft1024 hop256; independent RNGs; ratio log-uniform0.85-1.15 and duration uniform0.8-1.2 capped at0.94 seconds",
+  "target_definition": "Active pre-channel interval. Input uses source/background before channel; post_residual uses current-source response/residual after channel, including all prior source tails in residual. Background-only post SNR is also reported. Same ratio interval, not whole-IR-tail energy.",
+  "methods": ["original","quiet_band","calibrated_gain"],
+  "probes": "Before each real foreground observation, copy learner state, observe current-source-removed waveform with all earlier physical tails retained, discard branch. Real trajectory always receives original mixture. No event truth or component arrays are passed to observe().",
+  "metrics": "Pre/post SNR per class, component recombination, independent transform factors, localized repeat identity, attention/overlap/identity without new source and paired seed intervals",
+  "limits": "Procedural classes remain evaluator proxies; phase-vocoder artifacts differ from natural source variation. Source removal is a local intervention in this linear simulator, not field or semantic importance evidence. No method tuning on evaluation."
+}

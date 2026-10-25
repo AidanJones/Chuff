@@ -1,0 +1,1214 @@
+[
+  {
+    "suite": "background/input",
+    "mode": "original",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "attention_without_current": null,
+      "overlap_without_current": null,
+      "repeat_identity_without_current": null
+    }
+  },
+  {
+    "suite": "background/input",
+    "mode": "quiet_band",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "attention_without_current": null,
+      "overlap_without_current": null,
+      "repeat_identity_without_current": null
+    }
+  },
+  {
+    "suite": "background/input",
+    "mode": "calibrated_gain",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "attention_without_current": null,
+      "overlap_without_current": null,
+      "repeat_identity_without_current": null
+    }
+  },
+  {
+    "suite": "duration/input",
+    "mode": "original",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.20894607843137253,
+        "bootstrap_95": [
+          0.14705882352941177,
+          0.2708333333333333
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.027777777777777776,
+        "bootstrap_95": [
+          0.0,
+          0.05555555555555555
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.027777777777777776,
+        "bootstrap_95": [
+          0.0,
+          0.05555555555555555
+        ]
+      }
+    }
+  },
+  {
+    "suite": "duration/input",
+    "mode": "quiet_band",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.7236519607843137,
+        "bootstrap_95": [
+          0.6764705882352942,
+          0.7708333333333334
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.37752525252525254,
+        "bootstrap_95": [
+          0.22727272727272727,
+          0.5277777777777778
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.22426470588235295,
+        "bootstrap_95": [
+          0.125,
+          0.3235294117647059
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.058823529411764705,
+        "bootstrap_95": [
+          0.0,
+          0.11764705882352941
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.37752525252525254,
+        "bootstrap_95": [
+          0.22727272727272727,
+          0.5277777777777778
+        ]
+      }
+    }
+  },
+  {
+    "suite": "duration/input",
+    "mode": "calibrated_gain",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6084558823529411,
+        "bootstrap_95": [
+          0.5294117647058824,
+          0.6875
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5050505050505051,
+        "bootstrap_95": [
+          0.45454545454545453,
+          0.5555555555555556
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.5050505050505051,
+        "bootstrap_95": [
+          0.45454545454545453,
+          0.5555555555555556
+        ]
+      }
+    }
+  },
+  {
+    "suite": "duration/post_residual",
+    "mode": "original",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "duration/post_residual",
+    "mode": "quiet_band",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.539828431372549,
+        "bootstrap_95": [
+          0.5208333333333334,
+          0.5588235294117647
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.18434343434343436,
+        "bootstrap_95": [
+          0.09090909090909091,
+          0.2777777777777778
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.22426470588235295,
+        "bootstrap_95": [
+          0.125,
+          0.3235294117647059
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.058823529411764705,
+        "bootstrap_95": [
+          0.0,
+          0.11764705882352941
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.18434343434343436,
+        "bootstrap_95": [
+          0.09090909090909091,
+          0.2777777777777778
+        ]
+      }
+    }
+  },
+  {
+    "suite": "duration/post_residual",
+    "mode": "calibrated_gain",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.3890931372549019,
+        "bootstrap_95": [
+          0.38235294117647056,
+          0.3958333333333333
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.27525252525252525,
+        "bootstrap_95": [
+          0.2727272727272727,
+          0.2777777777777778
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.27525252525252525,
+        "bootstrap_95": [
+          0.2727272727272727,
+          0.2777777777777778
+        ]
+      }
+    }
+  },
+  {
+    "suite": "pitch/input",
+    "mode": "original",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.2236519607843137,
+        "bootstrap_95": [
+          0.17647058823529413,
+          0.2708333333333333
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.013888888888888888,
+        "bootstrap_95": [
+          0.0,
+          0.027777777777777776
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.013888888888888888,
+        "bootstrap_95": [
+          0.0,
+          0.027777777777777776
+        ]
+      }
+    }
+  },
+  {
+    "suite": "pitch/input",
+    "mode": "quiet_band",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.7028186274509804,
+        "bootstrap_95": [
+          0.6764705882352942,
+          0.7291666666666666
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.31313131313131315,
+        "bootstrap_95": [
+          0.18181818181818182,
+          0.4444444444444444
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.22426470588235295,
+        "bootstrap_95": [
+          0.125,
+          0.3235294117647059
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.058823529411764705,
+        "bootstrap_95": [
+          0.0,
+          0.11764705882352941
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.31313131313131315,
+        "bootstrap_95": [
+          0.18181818181818182,
+          0.4444444444444444
+        ]
+      }
+    }
+  },
+  {
+    "suite": "pitch/input",
+    "mode": "calibrated_gain",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6084558823529411,
+        "bootstrap_95": [
+          0.5294117647058824,
+          0.6875
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.31313131313131315,
+        "bootstrap_95": [
+          0.18181818181818182,
+          0.4444444444444444
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.31313131313131315,
+        "bootstrap_95": [
+          0.18181818181818182,
+          0.4444444444444444
+        ]
+      }
+    }
+  },
+  {
+    "suite": "pitch/post_residual",
+    "mode": "original",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "pitch/post_residual",
+    "mode": "quiet_band",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.539828431372549,
+        "bootstrap_95": [
+          0.5208333333333334,
+          0.5588235294117647
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.16035353535353536,
+        "bootstrap_95": [
+          0.1388888888888889,
+          0.18181818181818182
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.22426470588235295,
+        "bootstrap_95": [
+          0.125,
+          0.3235294117647059
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.058823529411764705,
+        "bootstrap_95": [
+          0.0,
+          0.11764705882352941
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.16035353535353536,
+        "bootstrap_95": [
+          0.1388888888888889,
+          0.18181818181818182
+        ]
+      }
+    }
+  },
+  {
+    "suite": "pitch/post_residual",
+    "mode": "calibrated_gain",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.39950980392156865,
+        "bootstrap_95": [
+          0.38235294117647056,
+          0.4166666666666667
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.11994949494949494,
+        "bootstrap_95": [
+          0.045454545454545456,
+          0.19444444444444445
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.11994949494949494,
+        "bootstrap_95": [
+          0.045454545454545456,
+          0.19444444444444445
+        ]
+      }
+    }
+  },
+  {
+    "suite": "pitch_duration/input",
+    "mode": "original",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.2297794117647059,
+        "bootstrap_95": [
+          0.14705882352941177,
+          0.3125
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.041666666666666664,
+        "bootstrap_95": [
+          0.0,
+          0.08333333333333333
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.041666666666666664,
+        "bootstrap_95": [
+          0.0,
+          0.08333333333333333
+        ]
+      }
+    }
+  },
+  {
+    "suite": "pitch_duration/input",
+    "mode": "quiet_band",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.7150735294117647,
+        "bootstrap_95": [
+          0.6176470588235294,
+          0.8125
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.327020202020202,
+        "bootstrap_95": [
+          0.18181818181818182,
+          0.4722222222222222
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.22426470588235295,
+        "bootstrap_95": [
+          0.125,
+          0.3235294117647059
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.058823529411764705,
+        "bootstrap_95": [
+          0.0,
+          0.11764705882352941
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.327020202020202,
+        "bootstrap_95": [
+          0.18181818181818182,
+          0.4722222222222222
+        ]
+      }
+    }
+  },
+  {
+    "suite": "pitch_duration/input",
+    "mode": "calibrated_gain",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5625,
+        "bootstrap_95": [
+          0.5,
+          0.625
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.24873737373737373,
+        "bootstrap_95": [
+          0.13636363636363635,
+          0.3611111111111111
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.24873737373737373,
+        "bootstrap_95": [
+          0.13636363636363635,
+          0.3611111111111111
+        ]
+      }
+    }
+  },
+  {
+    "suite": "pitch_duration/post_residual",
+    "mode": "original",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "pitch_duration/post_residual",
+    "mode": "quiet_band",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5545343137254902,
+        "bootstrap_95": [
+          0.5208333333333334,
+          0.5882352941176471
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.16919191919191917,
+        "bootstrap_95": [
+          0.1111111111111111,
+          0.22727272727272727
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.22426470588235295,
+        "bootstrap_95": [
+          0.125,
+          0.3235294117647059
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.058823529411764705,
+        "bootstrap_95": [
+          0.0,
+          0.11764705882352941
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.16919191919191917,
+        "bootstrap_95": [
+          0.1111111111111111,
+          0.22727272727272727
+        ]
+      }
+    }
+  },
+  {
+    "suite": "pitch_duration/post_residual",
+    "mode": "calibrated_gain",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.40379901960784315,
+        "bootstrap_95": [
+          0.3958333333333333,
+          0.4117647058823529
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.13383838383838384,
+        "bootstrap_95": [
+          0.045454545454545456,
+          0.2222222222222222
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.13383838383838384,
+        "bootstrap_95": [
+          0.045454545454545456,
+          0.2222222222222222
+        ]
+      }
+    }
+  },
+  {
+    "suite": "reference/input",
+    "mode": "original",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.2340686274509804,
+        "bootstrap_95": [
+          0.17647058823529413,
+          0.2916666666666667
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.05555555555555555,
+        "bootstrap_95": [
+          0.0,
+          0.1111111111111111
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.05555555555555555,
+        "bootstrap_95": [
+          0.0,
+          0.1111111111111111
+        ]
+      }
+    }
+  },
+  {
+    "suite": "reference/input",
+    "mode": "quiet_band",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.7236519607843137,
+        "bootstrap_95": [
+          0.6764705882352942,
+          0.7708333333333334
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.37752525252525254,
+        "bootstrap_95": [
+          0.22727272727272727,
+          0.5277777777777778
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.22426470588235295,
+        "bootstrap_95": [
+          0.125,
+          0.3235294117647059
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.058823529411764705,
+        "bootstrap_95": [
+          0.0,
+          0.11764705882352941
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.37752525252525254,
+        "bootstrap_95": [
+          0.22727272727272727,
+          0.5277777777777778
+        ]
+      }
+    }
+  },
+  {
+    "suite": "reference/input",
+    "mode": "calibrated_gain",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6856617647058824,
+        "bootstrap_95": [
+          0.5588235294117647,
+          0.8125
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5606060606060606,
+        "bootstrap_95": [
+          0.45454545454545453,
+          0.6666666666666666
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.5606060606060606,
+        "bootstrap_95": [
+          0.45454545454545453,
+          0.6666666666666666
+        ]
+      }
+    }
+  },
+  {
+    "suite": "reference/post_residual",
+    "mode": "original",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "reference/post_residual",
+    "mode": "quiet_band",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5857843137254902,
+        "bootstrap_95": [
+          0.5833333333333334,
+          0.5882352941176471
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.2297979797979798,
+        "bootstrap_95": [
+          0.18181818181818182,
+          0.2777777777777778
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.22426470588235295,
+        "bootstrap_95": [
+          0.125,
+          0.3235294117647059
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.058823529411764705,
+        "bootstrap_95": [
+          0.0,
+          0.11764705882352941
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.2297979797979798,
+        "bootstrap_95": [
+          0.18181818181818182,
+          0.2777777777777778
+        ]
+      }
+    }
+  },
+  {
+    "suite": "reference/post_residual",
+    "mode": "calibrated_gain",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.4142156862745098,
+        "bootstrap_95": [
+          0.4117647058823529,
+          0.4166666666666667
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.31691919191919193,
+        "bootstrap_95": [
+          0.2727272727272727,
+          0.3611111111111111
+        ]
+      },
+      "attention_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "overlap_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "repeat_identity_without_current": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_identity_without_current": {
+        "mean": 0.31691919191919193,
+        "bootstrap_95": [
+          0.2727272727272727,
+          0.3611111111111111
+        ]
+      }
+    }
+  }
+]

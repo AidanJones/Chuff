@@ -1,0 +1,101 @@
+{
+  "phase": "stress",
+  "created_utc": "2026-10-17T11:02:32.077740+00:00",
+  "base_revision": "d4fc46d02a25a76b028b0596e7447c2d4f6c7328",
+  "source_sha256": {
+    "python/src/chuff_mpu/attention.py": "4798f9f4553131d0959eb21934f37849b71c233f6d42c13c4a161ee939eff3ea",
+    "python/src/chuff_mpu/band_attention.py": "cf294849b09ace2c4b45a9e63c23b8d51d4a7b1950789d632a15134ec60acecc",
+    "python/src/chuff_mpu/sim/scene.py": "d31afbfb07de1d28488c40e5588b0a15914212f439e10ad388f4aa39850fbbc9",
+    "python/src/chuff_mpu/sim/challenge_scene.py": "7ddefb65fff6cb1bdc99fdd70e7600dfa1fd873f37fe0af765ca867664ec7f7a",
+    "python/src/chuff_mpu/sim/attention_experiment.py": "5e350425a10b10fb45521cfd4ef5dc2e121e92ebae976887678d8b76e6522fff",
+    "python/src/chuff_mpu/sim/masked_experiment.py": "90e6810cb05315e2f8ae6e24e6f003fdff7361c12a546e754927cc979b8b7045",
+    "python/pyproject.toml": "bc802161d478700225a0fe1202fc6798bd8944662f2ced8c06b70b8bca4cf0b9",
+    "python/uv.lock": "b57614d7855a68bc26ebfd8a8c2fa20c6050bbedeeb5789af7ebe6d59d4cc3af"
+  },
+  "source_snapshot": "source/",
+  "python": "3.11.15",
+  "dependencies": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "librosa": "0.11.0"
+  },
+  "original": {
+    "sample_rate": 16000,
+    "n_fft": 512,
+    "hop": 160,
+    "bands": 32,
+    "warmup_clips": 3,
+    "background_rate": 0.15,
+    "subtraction": 2.0,
+    "min_excess_ratio": 0.8,
+    "min_duration_s": 0.06,
+    "max_duration_s": 0.75,
+    "max_flatness": 0.35,
+    "match_distance": 0.18,
+    "confirmations": 2,
+    "candidate_ttl": 40,
+    "capacity": 32
+  },
+  "selected_band": {
+    "sample_rate": 16000,
+    "n_fft": 512,
+    "hop": 160,
+    "bands": 32,
+    "warmup_clips": 3,
+    "background_rate": 0.15,
+    "subtraction": 2.0,
+    "min_excess_ratio": 0.8,
+    "min_duration_s": 0.08,
+    "max_duration_s": 0.95,
+    "max_flatness": 0.35,
+    "match_distance": 0.18,
+    "confirmations": 2,
+    "candidate_ttl": 40,
+    "capacity": 32,
+    "local_threshold": 3.5,
+    "broad_threshold": 1.5,
+    "smoothing_frames": 5,
+    "feature_mode": 0,
+    "noise_mode": 1
+  },
+  "variants": {
+    "band_gate_raw": {
+      "feature_mode": 0,
+      "noise_mode": 0
+    },
+    "band_relative": {
+      "feature_mode": 1,
+      "noise_mode": 0
+    },
+    "quiet_band": {
+      "feature_mode": 0,
+      "noise_mode": 1
+    }
+  },
+  "seed_start": 400,
+  "seeds": 10,
+  "rounds": 120,
+  "snr_db": [
+    -12.0,
+    -9.0
+  ],
+  "suites": [
+    "tonal",
+    "extended",
+    "background"
+  ],
+  "scene": {
+    "sample_rate": 16000,
+    "duration_s": 1.0,
+    "rounds": 120,
+    "warmup": 6,
+    "event_probability": 0.35,
+    "nuisance_probability": 0.12,
+    "snr_db": 6.0,
+    "background_rms": 0.025,
+    "room_decay_s": 0.12,
+    "background_change": true,
+    "structured_distractors": true
+  },
+  "uncertainty": "10000 paired seed bootstrap draws per suite/SNR; descriptive percentile intervals"
+}

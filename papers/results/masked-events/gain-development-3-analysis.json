@@ -1,0 +1,1472 @@
+{
+  "controls": [
+    {
+      "suite": "varied/varied/stationary/ambience",
+      "n_seeds": 3,
+      "modes": {
+        "original": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "quiet_band": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "binwise": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "gain_0.02s": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "spectral_gain": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/slow/ambience",
+      "n_seeds": 3,
+      "modes": {
+        "original": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "quiet_band": {
+          "false_admissions": 3,
+          "affected_streams": 3
+        },
+        "binwise": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "gain_0.02s": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "spectral_gain": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/fast/ambience",
+      "n_seeds": 3,
+      "modes": {
+        "original": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "quiet_band": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "binwise": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "gain_0.02s": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        },
+        "spectral_gain": {
+          "false_admissions": 0,
+          "affected_streams": 0
+        }
+      }
+    }
+  ],
+  "paired_noise_estimator_contrasts": [
+    {
+      "suite": "varied/varied/fast/ambience",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/ambience",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/ambience",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "repeat_recognition_rate",
+      "mean": 0.012345679012345678,
+      "bootstrap_95": [
+        0.0,
+        0.037037037037037035
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "event_detection_rate",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "false_admissions",
+      "mean": 0.3333333333333333,
+      "bootstrap_95": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "repeat_recognition_rate",
+      "mean": 0.24651533253683788,
+      "bootstrap_95": [
+        0.2222222222222222,
+        0.25925925925925924
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "event_detection_rate",
+      "mean": -0.652156628900815,
+      "bootstrap_95": [
+        -0.6744186046511628,
+        -0.6153846153846154
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "false_admissions",
+      "mean": -0.3333333333333333,
+      "bootstrap_95": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "repeat_recognition_rate",
+      "mean": 0.5380326563122262,
+      "bootstrap_95": [
+        0.3548387096774193,
+        0.7777777777777778
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "event_detection_rate",
+      "mean": -0.3080898429735639,
+      "bootstrap_95": [
+        -0.4883720930232558,
+        -0.05128205128205132
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "false_admissions",
+      "mean": -0.3333333333333333,
+      "bootstrap_95": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/ambience",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "false_admissions",
+      "mean": -1.0,
+      "bootstrap_95": [
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/ambience",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "false_admissions",
+      "mean": -1.0,
+      "bootstrap_95": [
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/ambience",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "false_admissions",
+      "mean": -1.0,
+      "bootstrap_95": [
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.0031859816806053356,
+      "bootstrap_95": [
+        -0.07407407407407407,
+        0.06451612903225806
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "event_detection_rate",
+      "mean": -0.31365533691115083,
+      "bootstrap_95": [
+        -0.3846153846153846,
+        -0.23076923076923084
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "false_admissions",
+      "mean": -1.0,
+      "bootstrap_95": [
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.006371963361210671,
+      "bootstrap_95": [
+        -0.2222222222222222,
+        0.12903225806451613
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "event_detection_rate",
+      "mean": -0.40071556350626114,
+      "bootstrap_95": [
+        -0.5128205128205128,
+        -0.2790697674418604
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "false_admissions",
+      "mean": -1.0,
+      "bootstrap_95": [
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "repeat_recognition_rate",
+      "mean": 0.31899641577060933,
+      "bootstrap_95": [
+        0.2903225806451613,
+        0.3703703703703704
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "event_detection_rate",
+      "mean": -0.06201550387596897,
+      "bootstrap_95": [
+        -0.18604651162790695,
+        0.17948717948717952
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "false_admissions",
+      "mean": -1.0,
+      "bootstrap_95": [
+        -1.0,
+        -1.0
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/ambience",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/ambience",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/ambience",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.31142970927917163,
+      "bootstrap_95": [
+        -0.3703703703703704,
+        -0.19354838709677413
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "event_detection_rate",
+      "mean": -0.3385012919896641,
+      "bootstrap_95": [
+        -0.38461538461538464,
+        -0.28205128205128205
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "binwise",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.5025886101154918,
+      "bootstrap_95": [
+        -0.7407407407407408,
+        -0.32258064516129026
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "event_detection_rate",
+      "mean": -0.5257404094613397,
+      "bootstrap_95": [
+        -0.7435897435897436,
+        -0.37209302325581395
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "gain_0.02s",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.18797291915571482,
+      "bootstrap_95": [
+        -0.2592592592592593,
+        -0.11111111111111105
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "event_detection_rate",
+      "mean": -0.21109123434704827,
+      "bootstrap_95": [
+        -0.32558139534883723,
+        -0.05128205128205121
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "snr_db": -6,
+      "mode": "spectral_gain",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "localization_estimates": [
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.07692307692307691,
+      "bootstrap_95": [
+        0.0,
+        0.20512820512820515
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.07692307692307691,
+      "bootstrap_95": [
+        0.0,
+        0.20512820512820515
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.07692307692307691,
+      "bootstrap_95": [
+        0.0,
+        0.20512820512820515
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.012345679012345678,
+      "bootstrap_95": [
+        0.0,
+        0.037037037037037035
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.012345679012345678,
+      "bootstrap_95": [
+        0.0,
+        0.037037037037037035
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.012345679012345678,
+      "bootstrap_95": [
+        0.0,
+        0.037037037037037035
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.8509242695289206,
+      "bootstrap_95": [
+        0.8205128205128206,
+        0.8717948717948718
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.8175313059033988,
+      "bootstrap_95": [
+        0.7948717948717948,
+        0.8372093023255814
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.5038759689922481,
+      "bootstrap_95": [
+        0.4615384615384615,
+        0.5384615384615384
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.7694295368713973,
+      "bootstrap_95": [
+        0.7441860465116279,
+        0.7948717948717948
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.6871397336513616,
+      "bootstrap_95": [
+        0.6511627906976745,
+        0.717948717948718
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.4317233154442457,
+      "bootstrap_95": [
+        0.37209302325581395,
+        0.48717948717948717
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.012345679012345678,
+      "bootstrap_95": [
+        0.0,
+        0.037037037037037035
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.012345679012345678,
+      "bootstrap_95": [
+        0.0,
+        0.037037037037037035
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.012345679012345678,
+      "bootstrap_95": [
+        0.0,
+        0.037037037037037035
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.34784337109918506,
+      "bootstrap_95": [
+        0.32558139534883723,
+        0.38461538461538464
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.330749354005168,
+      "bootstrap_95": [
+        0.3076923076923077,
+        0.358974358974359
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.2073146491751143,
+      "bootstrap_95": [
+        0.1794871794871795,
+        0.2564102564102564
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.24651533253683788,
+      "bootstrap_95": [
+        0.2222222222222222,
+        0.25925925925925924
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.23416965352449223,
+      "bootstrap_95": [
+        0.2222222222222222,
+        0.25806451612903225
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.17722023098367182,
+      "bootstrap_95": [
+        0.16129032258064516,
+        0.1851851851851852
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.691910157026436,
+      "bootstrap_95": [
+        0.5116279069767442,
+        0.9487179487179486
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.6841582190419399,
+      "bootstrap_95": [
+        0.4883720930232558,
+        0.9487179487179486
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.4333134565692705,
+      "bootstrap_95": [
+        0.32558139534883723,
+        0.5897435897435898
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.5380326563122262,
+      "bootstrap_95": [
+        0.3548387096774193,
+        0.7777777777777778
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.5272799681401832,
+      "bootstrap_95": [
+        0.3225806451612903,
+        0.7777777777777778
+      ]
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.3452807646356033,
+      "bootstrap_95": [
+        0.25806451612903225,
+        0.4444444444444444
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.1452991452991453,
+      "bootstrap_95": [
+        0.0,
+        0.358974358974359
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.1452991452991453,
+      "bootstrap_95": [
+        0.0,
+        0.358974358974359
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.04273504273504273,
+      "bootstrap_95": [
+        0.0,
+        0.10256410256410257
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.07407407407407407,
+      "bootstrap_95": [
+        0.0,
+        0.2222222222222222
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.07407407407407407,
+      "bootstrap_95": [
+        0.0,
+        0.2222222222222222
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.024691358024691357,
+      "bootstrap_95": [
+        0.0,
+        0.07407407407407407
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.6312860266348639,
+      "bootstrap_95": [
+        0.5348837209302325,
+        0.7435897435897436
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.5645000993838202,
+      "bootstrap_95": [
+        0.4883720930232558,
+        0.6666666666666666
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.36493738819320215,
+      "bootstrap_95": [
+        0.3076923076923077,
+        0.4615384615384615
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.18199920350457985,
+      "bootstrap_95": [
+        0.06451612903225806,
+        0.3703703703703704
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.1573078454798885,
+      "bootstrap_95": [
+        0.06451612903225806,
+        0.3333333333333333
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.1449621664675428,
+      "bootstrap_95": [
+        0.06451612903225806,
+        0.2962962962962963
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.366527529318227,
+      "bootstrap_95": [
+        0.27906976744186046,
+        0.5128205128205128
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.366527529318227,
+      "bootstrap_95": [
+        0.27906976744186046,
+        0.5128205128205128
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.2003577817531306,
+      "bootstrap_95": [
+        0.13953488372093023,
+        0.3076923076923077
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.1788132218239745,
+      "bootstrap_95": [
+        0.1111111111111111,
+        0.2962962962962963
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.1788132218239745,
+      "bootstrap_95": [
+        0.1111111111111111,
+        0.2962962962962963
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.10792512943050576,
+      "bootstrap_95": [
+        0.037037037037037035,
+        0.2222222222222222
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.27946730272311665,
+      "bootstrap_95": [
+        0.23076923076923075,
+        0.32558139534883723
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.27946730272311665,
+      "bootstrap_95": [
+        0.23076923076923075,
+        0.32558139534883723
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.05982905982905983,
+      "bootstrap_95": [
+        0.0,
+        0.1794871794871795
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.17562724014336917,
+      "bootstrap_95": [
+        0.14814814814814814,
+        0.19354838709677416
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.17562724014336917,
+      "bootstrap_95": [
+        0.14814814814814814,
+        0.19354838709677416
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.024691358024691357,
+      "bootstrap_95": [
+        0.0,
+        0.07407407407407407
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.6181673623534089,
+      "bootstrap_95": [
+        0.4186046511627907,
+        0.923076923076923
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.5933214072748957,
+      "bootstrap_95": [
+        0.3953488372093023,
+        0.8974358974358975
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.3579805207712184,
+      "bootstrap_95": [
+        0.27906976744186046,
+        0.4615384615384615
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.5009956192751891,
+      "bootstrap_95": [
+        0.3548387096774193,
+        0.7407407407407408
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.4886499402628434,
+      "bootstrap_95": [
+        0.3548387096774193,
+        0.7407407407407408
+      ]
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.33293508562325763,
+      "bootstrap_95": [
+        0.25806451612903225,
+        0.4074074074074074
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.22222222222222224,
+      "bootstrap_95": [
+        0.0,
+        0.6153846153846154
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.22222222222222224,
+      "bootstrap_95": [
+        0.0,
+        0.6153846153846154
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.08547008547008546,
+      "bootstrap_95": [
+        0.0,
+        0.20512820512820515
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.14814814814814814,
+      "bootstrap_95": [
+        0.0,
+        0.4444444444444444
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.14814814814814814,
+      "bootstrap_95": [
+        0.0,
+        0.4444444444444444
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.06172839506172839,
+      "bootstrap_95": [
+        0.0,
+        0.1851851851851852
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.8052077121844564,
+      "bootstrap_95": [
+        0.6976744186046512,
+        0.9743589743589743
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.763267740011926,
+      "bootstrap_95": [
+        0.6666666666666666,
+        0.9487179487179486
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.46909163188232955,
+      "bootstrap_95": [
+        0.27906976744186046,
+        0.7692307692307693
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.688968538430904,
+      "bootstrap_95": [
+        0.5483870967741935,
+        0.8888888888888888
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.6642771804062126,
+      "bootstrap_95": [
+        0.5483870967741935,
+        0.8518518518518517
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.43010752688172044,
+      "bootstrap_95": [
+        0.2903225806451613,
+        0.7037037037037037
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.4667064201947923,
+      "bootstrap_95": [
+        0.3488372093023256,
+        0.6923076923076922
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.4581594116477838,
+      "bootstrap_95": [
+        0.3488372093023256,
+        0.6666666666666666
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.2903995229576625,
+      "bootstrap_95": [
+        0.23076923076923075,
+        0.38461538461538464
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.37753882915173237,
+      "bootstrap_95": [
+        0.25925925925925924,
+        0.5185185185185185
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.37753882915173237,
+      "bootstrap_95": [
+        0.25925925925925924,
+        0.5185185185185185
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.25886101154918356,
+      "bootstrap_95": [
+        0.2222222222222222,
+        0.2962962962962963
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.27946730272311665,
+      "bootstrap_95": [
+        0.23076923076923075,
+        0.32558139534883723
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.27946730272311665,
+      "bootstrap_95": [
+        0.23076923076923075,
+        0.32558139534883723
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.05982905982905983,
+      "bootstrap_95": [
+        0.0,
+        0.1794871794871795
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.18637992831541217,
+      "bootstrap_95": [
+        0.14814814814814814,
+        0.22580645161290322
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.18637992831541217,
+      "bootstrap_95": [
+        0.14814814814814814,
+        0.22580645161290322
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "gain_0.02s",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.024691358024691357,
+      "bootstrap_95": [
+        0.0,
+        0.07407407407407407
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.5941164778374081,
+      "bootstrap_95": [
+        0.37209302325581395,
+        0.923076923076923
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.5684754521963825,
+      "bootstrap_95": [
+        0.37209302325581395,
+        0.8974358974358975
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_detection_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.35022858278672236,
+      "bootstrap_95": [
+        0.2558139534883721,
+        0.4615384615384615
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.1,
+      "mean": 0.5009956192751891,
+      "bootstrap_95": [
+        0.3548387096774193,
+        0.7777777777777778
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.25,
+      "mean": 0.47630426125049774,
+      "bootstrap_95": [
+        0.3333333333333333,
+        0.7407407407407408
+      ]
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "spectral_gain",
+      "metric": "localized_repeat_recognition_rate",
+      "iou_threshold": 0.5,
+      "mean": 0.320589406610912,
+      "bootstrap_95": [
+        0.25806451612903225,
+        0.4074074074074074
+      ]
+    }
+  ]
+}

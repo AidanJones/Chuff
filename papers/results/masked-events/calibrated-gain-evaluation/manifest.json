@@ -1,0 +1,201 @@
+{
+  "phase": "evaluation",
+  "created_utc": "2026-10-24T23:58:33.399596+00:00",
+  "base_revision": "d4fc46d02a25a76b028b0596e7447c2d4f6c7328",
+  "source_sha256": {
+    "python/src/chuff_mpu/attention.py": "09ecb9af3c1f9371ad573a0e151dc7dc30b6e4ac45484a78a84c6725056827c9",
+    "python/src/chuff_mpu/band_attention.py": "6a66ff06bfe594053e0c4562e6765f162258404300483f503e4d79dd455bc445",
+    "python/src/chuff_mpu/sim/scene.py": "157f15a6bb739a77c9674f889ecc1cd9b0e8272daacc3687a89e8b16a37c40ca",
+    "python/src/chuff_mpu/sim/challenge_scene.py": "7ddefb65fff6cb1bdc99fdd70e7600dfa1fd873f37fe0af765ca867664ec7f7a",
+    "python/src/chuff_mpu/sim/attention_experiment.py": "a7cd1ec47e0e79bbd66d2e34531b738e04c836453fe908bff5e9a5a8e4d40c4d",
+    "python/src/chuff_mpu/sim/masked_experiment.py": "90e6810cb05315e2f8ae6e24e6f003fdff7361c12a546e754927cc979b8b7045",
+    "python/pyproject.toml": "bc802161d478700225a0fe1202fc6798bd8944662f2ced8c06b70b8bca4cf0b9",
+    "python/uv.lock": "b57614d7855a68bc26ebfd8a8c2fa20c6050bbedeeb5789af7ebe6d59d4cc3af",
+    "python/src/chuff_mpu/sim/varied_scene.py": "e8a1c859acaed2b9fd48c497a849d5d2269dd318c3f464f7860347c50844f0f1",
+    "python/src/chuff_mpu/sim/modulation_scene.py": "3048d91eb3a15363fbbfa0869559e6cf7a69960475586ff93e6133adbae52b00",
+    "python/src/chuff_mpu/sim/modulation_experiment.py": "3bf8de24b324415e509a33f3959154bef1dca5c4e2a7903d4c654047ad8d2771",
+    "python/src/chuff_mpu/sim/memory_diagnostics.py": "23d5594c2b912ac6ea853dda04beaa42901e2a0dda0f43d75f313487ef5cdacf",
+    "python/src/chuff_mpu/sim/localization.py": "a336543d42212174a8ba52f3f54b8faf09c1b31dea00227e1898feed24a6da2e",
+    "python/src/chuff_mpu/gain_attention.py": "ad74b0d72199bebefaff1d40d2c7de6969eff6ddf4f0cde39b75fe0d6c1e6935"
+  },
+  "source_snapshot": "source/",
+  "python": "3.11.15",
+  "dependencies": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "librosa": "0.11.0"
+  },
+  "original": {
+    "sample_rate": 16000,
+    "n_fft": 512,
+    "hop": 160,
+    "bands": 32,
+    "warmup_clips": 3,
+    "background_rate": 0.15,
+    "subtraction": 2.0,
+    "min_excess_ratio": 0.8,
+    "min_duration_s": 0.06,
+    "max_duration_s": 0.75,
+    "max_flatness": 0.35,
+    "match_distance": 0.18,
+    "confirmations": 2,
+    "candidate_ttl": 40,
+    "capacity": 32
+  },
+  "selected_band": {
+    "sample_rate": 16000,
+    "n_fft": 512,
+    "hop": 160,
+    "bands": 32,
+    "warmup_clips": 3,
+    "background_rate": 0.15,
+    "subtraction": 2.0,
+    "min_excess_ratio": 0.8,
+    "min_duration_s": 0.08,
+    "max_duration_s": 0.95,
+    "max_flatness": 0.35,
+    "match_distance": 0.18,
+    "confirmations": 2,
+    "candidate_ttl": 40,
+    "capacity": 32,
+    "local_threshold": 3.5,
+    "broad_threshold": 1.5,
+    "smoothing_frames": 5,
+    "feature_mode": 0,
+    "noise_mode": 1
+  },
+  "variants": {
+    "quiet_band": {
+      "noise_mode": 1
+    },
+    "binwise": {
+      "noise_mode": 0
+    },
+    "gain_0.02s": {
+      "sample_rate": 16000,
+      "n_fft": 512,
+      "hop": 160,
+      "bands": 32,
+      "warmup_clips": 3,
+      "background_rate": 0.15,
+      "subtraction": 2.0,
+      "min_excess_ratio": 0.8,
+      "min_duration_s": 0.08,
+      "max_duration_s": 0.95,
+      "max_flatness": 0.35,
+      "match_distance": 0.18,
+      "confirmations": 2,
+      "candidate_ttl": 40,
+      "capacity": 32,
+      "local_threshold": 3.5,
+      "broad_threshold": 1.5,
+      "smoothing_frames": 5,
+      "feature_mode": 0,
+      "noise_mode": 1,
+      "gain_time_s": 0.02,
+      "gain_floor_power": 1e-08
+    },
+    "spectral_gain": {
+      "sample_rate": 16000,
+      "n_fft": 512,
+      "hop": 160,
+      "bands": 32,
+      "warmup_clips": 3,
+      "background_rate": 0.15,
+      "subtraction": 2.0,
+      "min_excess_ratio": 0.8,
+      "min_duration_s": 0.08,
+      "max_duration_s": 0.95,
+      "max_flatness": 0.35,
+      "match_distance": 0.18,
+      "confirmations": 2,
+      "candidate_ttl": 40,
+      "capacity": 32,
+      "local_threshold": 3.5,
+      "broad_threshold": 1.5,
+      "smoothing_frames": 5,
+      "feature_mode": 0,
+      "noise_mode": 1,
+      "gain_time_s": 0.02
+    },
+    "calibrated_gain": {
+      "sample_rate": 16000,
+      "n_fft": 512,
+      "hop": 160,
+      "bands": 32,
+      "warmup_clips": 3,
+      "background_rate": 0.15,
+      "subtraction": 2.0,
+      "min_excess_ratio": 0.8,
+      "min_duration_s": 0.08,
+      "max_duration_s": 0.95,
+      "max_flatness": 0.35,
+      "match_distance": 0.18,
+      "confirmations": 2,
+      "candidate_ttl": 40,
+      "capacity": 32,
+      "local_threshold": 3.5,
+      "broad_threshold": 1.5,
+      "smoothing_frames": 5,
+      "feature_mode": 0,
+      "noise_mode": 1,
+      "gain_time_s": 0.02,
+      "gain_cv_threshold": 0.12
+    }
+  },
+  "seed_start": 1400,
+  "seeds": 10,
+  "rounds": 120,
+  "snr_db": [
+    -6
+  ],
+  "suites": [
+    "varied/varied/stationary/ambience",
+    "varied/varied/stationary/foreground",
+    "varied/varied/slow/ambience",
+    "varied/varied/slow/foreground",
+    "varied/varied/fast/ambience",
+    "varied/varied/fast/foreground"
+  ],
+  "scene": {
+    "sample_rate": 16000,
+    "duration_s": 1.0,
+    "rounds": 120,
+    "warmup": 6,
+    "event_probability": 0.35,
+    "nuisance_probability": 0.12,
+    "snr_db": 6.0,
+    "background_rms": 0.025,
+    "room_decay_s": 0.12,
+    "background_change": true,
+    "structured_distractors": true
+  },
+  "uncertainty": "10000 paired seed bootstrap draws per suite/SNR; descriptive percentile intervals",
+  "environment_seed_rule": "100000 + event seed",
+  "modulation": {
+    "stationary": [
+      0.0,
+      0.17
+    ],
+    "slow": [
+      0.45,
+      0.17
+    ],
+    "fast": [
+      0.45,
+      1.3
+    ]
+  },
+  "scope": "Existing baselines and declared causal full-band gain normalizers; fixed memory matching; plus fixed median-band spectral gain with warmup-only profile; plus warmup-derived compensation choice without condition labels",
+  "localization": {
+    "iou_thresholds": [
+      0.1,
+      0.25,
+      0.5
+    ],
+    "primary_threshold": 0.25,
+    "region": "full FFT-frame sample support",
+    "event": "pre-channel active source interval; no room-tail extension",
+    "tail_flag": "previous source finite room-IR support; IIR mic tail not bounded"
+  }
+}

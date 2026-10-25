@@ -1,0 +1,178 @@
+[
+  {
+    "case": "stationary",
+    "mode": "adaptive_gain",
+    "seeds": 2,
+    "class_episodes_per_seed": 6,
+    "metrics": {
+      "localized_attention": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.5,
+          0.5
+        ],
+        "paired_difference_vs_adaptive": 0.0,
+        "paired_difference_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_novel_attention": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.5,
+          0.5
+        ],
+        "paired_difference_vs_adaptive": 0.0,
+        "paired_difference_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "background_admissions": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "paired_difference_vs_adaptive": 0.0,
+        "paired_difference_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "case": "stationary",
+    "mode": "guarded_gain",
+    "seeds": 2,
+    "class_episodes_per_seed": 6,
+    "metrics": {
+      "localized_attention": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.5,
+          0.5
+        ],
+        "paired_difference_vs_adaptive": 0.0,
+        "paired_difference_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_novel_attention": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.5,
+          0.5
+        ],
+        "paired_difference_vs_adaptive": 0.0,
+        "paired_difference_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "background_admissions": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "paired_difference_vs_adaptive": 0.0,
+        "paired_difference_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "case": "stationary_slow",
+    "mode": "adaptive_gain",
+    "seeds": 2,
+    "class_episodes_per_seed": 6,
+    "metrics": {
+      "localized_attention": {
+        "mean": 0.3333333333333333,
+        "bootstrap_95": [
+          0.0,
+          0.6666666666666666
+        ],
+        "paired_difference_vs_adaptive": 0.0,
+        "paired_difference_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_novel_attention": {
+        "mean": 0.3333333333333333,
+        "bootstrap_95": [
+          0.0,
+          0.6666666666666666
+        ],
+        "paired_difference_vs_adaptive": 0.0,
+        "paired_difference_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "background_admissions": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ],
+        "paired_difference_vs_adaptive": 0.0,
+        "paired_difference_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "case": "stationary_slow",
+    "mode": "guarded_gain",
+    "seeds": 2,
+    "class_episodes_per_seed": 6,
+    "metrics": {
+      "localized_attention": {
+        "mean": 0.3333333333333333,
+        "bootstrap_95": [
+          0.0,
+          0.6666666666666666
+        ],
+        "paired_difference_vs_adaptive": 0.0,
+        "paired_difference_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_novel_attention": {
+        "mean": 0.3333333333333333,
+        "bootstrap_95": [
+          0.0,
+          0.6666666666666666
+        ],
+        "paired_difference_vs_adaptive": 0.0,
+        "paired_difference_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "background_admissions": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "paired_difference_vs_adaptive": -1.0,
+        "paired_difference_95": [
+          -1.0,
+          -1.0
+        ]
+      }
+    }
+  }
+]

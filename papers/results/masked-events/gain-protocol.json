@@ -1,0 +1,15 @@
+{
+  "issue": "ch-6w4.10.4",
+  "date": "2026-10-25",
+  "status": "Prospective development/evaluation plan; local, not externally preregistered",
+  "development_seeds": [1100, 1101, 1102],
+  "evaluation_seeds": [1200, 1201, 1202, 1203, 1204, 1205, 1206, 1207, 1208, 1209],
+  "rounds": 120,
+  "matrix": "varied spectrum/channel; stationary/slow/fast modulation; pure ambience and six-class foreground positives",
+  "snr_db_before_channel": -6,
+  "baselines": ["original", "quiet_band", "binwise"],
+  "candidates": "Full-band causal RMS EMA before unchanged quiet-band frontend, time constants 0.05, 0.2, 0.5 seconds; power floor 1e-8",
+  "selection": "All three fixed candidates evaluated regardless of development ranking. No retuning after evaluation. Prefer options with no ambience admissions and <=10% false attention in every development cell, then greatest equally weighted primary localized repeat recognition across the three positive cells; if none qualify, report no feasible candidate rather than relaxing criterion.",
+  "metrics": ["affected streams", "false prototypes", "background attention", "IoU localization at 0.1/0.25/0.5", "correct localized repeat identity", "matched-background and alternative-position overlap controls"],
+  "limits": "Common gain compensation is not PCEN or source separation and may discard useful broadband amplitude cues. No recordings are currently available in the repository. No deployment-default change follows from this simulation alone."
+}

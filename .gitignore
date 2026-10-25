@@ -4,6 +4,7 @@ __pycache__/
 *.pyc
 *.pyo
 .pytest_cache/
+data/cache/
 
 # ── Eval harness output ─────────────────────────────────────────────────────
 eval/results/*

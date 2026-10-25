@@ -1,0 +1,292 @@
+[
+  {
+    "seed": 1800,
+    "modes": {
+      "old_clean": {
+        "events": 36,
+        "detected_events": 17,
+        "false_admissions": 0,
+        "final_memory_size": 4
+      },
+      "old_silent": {
+        "events": 36,
+        "detected_events": 7,
+        "false_admissions": 0,
+        "final_memory_size": 2
+      },
+      "new_clean": {
+        "events": 36,
+        "detected_events": 17,
+        "false_admissions": 0,
+        "final_memory_size": 4
+      },
+      "new_silent": {
+        "events": 36,
+        "detected_events": 17,
+        "false_admissions": 0,
+        "final_memory_size": 4
+      }
+    }
+  },
+  {
+    "seed": 1801,
+    "modes": {
+      "old_clean": {
+        "events": 42,
+        "detected_events": 21,
+        "false_admissions": 0,
+        "final_memory_size": 4
+      },
+      "old_silent": {
+        "events": 42,
+        "detected_events": 12,
+        "false_admissions": 0,
+        "final_memory_size": 2
+      },
+      "new_clean": {
+        "events": 42,
+        "detected_events": 21,
+        "false_admissions": 0,
+        "final_memory_size": 4
+      },
+      "new_silent": {
+        "events": 42,
+        "detected_events": 21,
+        "false_admissions": 0,
+        "final_memory_size": 4
+      }
+    }
+  },
+  {
+    "seed": 1802,
+    "modes": {
+      "old_clean": {
+        "events": 30,
+        "detected_events": 15,
+        "false_admissions": 0,
+        "final_memory_size": 3
+      },
+      "old_silent": {
+        "events": 30,
+        "detected_events": 4,
+        "false_admissions": 0,
+        "final_memory_size": 2
+      },
+      "new_clean": {
+        "events": 30,
+        "detected_events": 15,
+        "false_admissions": 0,
+        "final_memory_size": 3
+      },
+      "new_silent": {
+        "events": 30,
+        "detected_events": 15,
+        "false_admissions": 0,
+        "final_memory_size": 3
+      }
+    }
+  },
+  {
+    "seed": 1803,
+    "modes": {
+      "old_clean": {
+        "events": 32,
+        "detected_events": 18,
+        "false_admissions": 0,
+        "final_memory_size": 3
+      },
+      "old_silent": {
+        "events": 32,
+        "detected_events": 12,
+        "false_admissions": 0,
+        "final_memory_size": 2
+      },
+      "new_clean": {
+        "events": 32,
+        "detected_events": 18,
+        "false_admissions": 0,
+        "final_memory_size": 3
+      },
+      "new_silent": {
+        "events": 32,
+        "detected_events": 18,
+        "false_admissions": 0,
+        "final_memory_size": 3
+      }
+    }
+  },
+  {
+    "seed": 1804,
+    "modes": {
+      "old_clean": {
+        "events": 50,
+        "detected_events": 26,
+        "false_admissions": 0,
+        "final_memory_size": 6
+      },
+      "old_silent": {
+        "events": 50,
+        "detected_events": 11,
+        "false_admissions": 0,
+        "final_memory_size": 2
+      },
+      "new_clean": {
+        "events": 50,
+        "detected_events": 26,
+        "false_admissions": 0,
+        "final_memory_size": 6
+      },
+      "new_silent": {
+        "events": 50,
+        "detected_events": 26,
+        "false_admissions": 0,
+        "final_memory_size": 6
+      }
+    }
+  },
+  {
+    "seed": 1805,
+    "modes": {
+      "old_clean": {
+        "events": 50,
+        "detected_events": 29,
+        "false_admissions": 0,
+        "final_memory_size": 3
+      },
+      "old_silent": {
+        "events": 50,
+        "detected_events": 12,
+        "false_admissions": 0,
+        "final_memory_size": 2
+      },
+      "new_clean": {
+        "events": 50,
+        "detected_events": 29,
+        "false_admissions": 0,
+        "final_memory_size": 3
+      },
+      "new_silent": {
+        "events": 50,
+        "detected_events": 29,
+        "false_admissions": 0,
+        "final_memory_size": 3
+      }
+    }
+  },
+  {
+    "seed": 1806,
+    "modes": {
+      "old_clean": {
+        "events": 31,
+        "detected_events": 17,
+        "false_admissions": 0,
+        "final_memory_size": 3
+      },
+      "old_silent": {
+        "events": 31,
+        "detected_events": 5,
+        "false_admissions": 0,
+        "final_memory_size": 0
+      },
+      "new_clean": {
+        "events": 31,
+        "detected_events": 17,
+        "false_admissions": 0,
+        "final_memory_size": 3
+      },
+      "new_silent": {
+        "events": 31,
+        "detected_events": 17,
+        "false_admissions": 0,
+        "final_memory_size": 3
+      }
+    }
+  },
+  {
+    "seed": 1807,
+    "modes": {
+      "old_clean": {
+        "events": 39,
+        "detected_events": 21,
+        "false_admissions": 0,
+        "final_memory_size": 4
+      },
+      "old_silent": {
+        "events": 39,
+        "detected_events": 8,
+        "false_admissions": 0,
+        "final_memory_size": 2
+      },
+      "new_clean": {
+        "events": 39,
+        "detected_events": 21,
+        "false_admissions": 0,
+        "final_memory_size": 4
+      },
+      "new_silent": {
+        "events": 39,
+        "detected_events": 21,
+        "false_admissions": 0,
+        "final_memory_size": 4
+      }
+    }
+  },
+  {
+    "seed": 1808,
+    "modes": {
+      "old_clean": {
+        "events": 34,
+        "detected_events": 20,
+        "false_admissions": 0,
+        "final_memory_size": 4
+      },
+      "old_silent": {
+        "events": 34,
+        "detected_events": 8,
+        "false_admissions": 0,
+        "final_memory_size": 2
+      },
+      "new_clean": {
+        "events": 34,
+        "detected_events": 20,
+        "false_admissions": 0,
+        "final_memory_size": 4
+      },
+      "new_silent": {
+        "events": 34,
+        "detected_events": 20,
+        "false_admissions": 0,
+        "final_memory_size": 4
+      }
+    }
+  },
+  {
+    "seed": 1809,
+    "modes": {
+      "old_clean": {
+        "events": 28,
+        "detected_events": 13,
+        "false_admissions": 0,
+        "final_memory_size": 3
+      },
+      "old_silent": {
+        "events": 28,
+        "detected_events": 2,
+        "false_admissions": 0,
+        "final_memory_size": 0
+      },
+      "new_clean": {
+        "events": 28,
+        "detected_events": 13,
+        "false_admissions": 0,
+        "final_memory_size": 3
+      },
+      "new_silent": {
+        "events": 28,
+        "detected_events": 13,
+        "false_admissions": 0,
+        "final_memory_size": 3
+      }
+    }
+  }
+]

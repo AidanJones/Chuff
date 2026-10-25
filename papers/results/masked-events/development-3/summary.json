@@ -1,0 +1,1904 @@
+[
+  {
+    "seed": 0,
+    "snr_db": -6.0,
+    "structured_distractors": true,
+    "metrics": {
+      "original": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 39,
+          "background_windows": 81,
+          "repeat_windows": 33,
+          "calibrating": 3,
+          "correct_repeat_recognition": 2,
+          "background": 110,
+          "candidate": 4,
+          "detected_events": 7,
+          "learned": 1,
+          "event_admissions": 1,
+          "recognised": 2
+        },
+        "learned_labels": [
+          "double_chime"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.1794871794871795,
+        "repeat_recognition_rate": 0.06060606060606061,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 1,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": 0.1159127950668335
+        }
+      },
+      "band_gate_raw": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 39,
+          "background_windows": 81,
+          "repeat_windows": 33,
+          "calibrating": 3,
+          "correct_repeat_recognition": 28,
+          "background": 80,
+          "candidate": 6,
+          "detected_events": 34,
+          "learned": 3,
+          "event_admissions": 3,
+          "recognised": 28,
+          "background_attention": 3
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.8717948717948718,
+        "repeat_recognition_rate": 0.8484848484848485,
+        "background_attention_rate": 0.037037037037037035,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.8379499415556589,
+          "repeat": 0.07398294338158198
+        }
+      },
+      "band_relative": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 39,
+          "background_windows": 81,
+          "repeat_windows": 33,
+          "calibrating": 3,
+          "correct_repeat_recognition": 26,
+          "background": 80,
+          "candidate": 7,
+          "detected_events": 34,
+          "learned": 4,
+          "event_admissions": 4,
+          "recognised": 26,
+          "background_attention": 3
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.8717948717948718,
+        "repeat_recognition_rate": 0.7878787878787878,
+        "background_attention_rate": 0.037037037037037035,
+        "false_admissions": 0,
+        "final_memory_size": 4,
+        "novelty_mean": {
+          "first": 0.899576852718989,
+          "repeat": 0.05410518603665488
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 39,
+          "background_windows": 81,
+          "repeat_windows": 33,
+          "calibrating": 3,
+          "correct_repeat_recognition": 30,
+          "background": 78,
+          "candidate": 6,
+          "detected_events": 36,
+          "learned": 3,
+          "event_admissions": 3,
+          "recognised": 30,
+          "background_attention": 3
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.9230769230769231,
+        "repeat_recognition_rate": 0.9090909090909091,
+        "background_attention_rate": 0.037037037037037035,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.8133995831012726,
+          "repeat": 0.0801486889521281
+        }
+      }
+    },
+    "suite": "tonal"
+  },
+  {
+    "seed": 1,
+    "snr_db": -6.0,
+    "structured_distractors": true,
+    "metrics": {
+      "original": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 40,
+          "background_windows": 80,
+          "repeat_windows": 34,
+          "calibrating": 3,
+          "correct_repeat_recognition": 3,
+          "background": 108,
+          "detected_events": 9,
+          "candidate": 4,
+          "learned": 2,
+          "event_admissions": 2,
+          "recognised": 3
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.225,
+        "repeat_recognition_rate": 0.08823529411764706,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 2,
+        "novelty_mean": {
+          "first": 0.8913627564907074,
+          "repeat": 0.3150267243385315
+        }
+      },
+      "band_gate_raw": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 40,
+          "background_windows": 80,
+          "repeat_windows": 34,
+          "calibrating": 3,
+          "correct_repeat_recognition": 31,
+          "background": 77,
+          "candidate": 6,
+          "detected_events": 37,
+          "learned": 3,
+          "event_admissions": 3,
+          "background_attention": 3,
+          "recognised": 31
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.925,
+        "repeat_recognition_rate": 0.9117647058823529,
+        "background_attention_rate": 0.0375,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.7568216025829315,
+          "repeat": 0.06856274027978221
+        }
+      },
+      "band_relative": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 40,
+          "background_windows": 80,
+          "repeat_windows": 34,
+          "calibrating": 3,
+          "correct_repeat_recognition": 31,
+          "background": 77,
+          "candidate": 6,
+          "detected_events": 37,
+          "learned": 3,
+          "event_admissions": 3,
+          "background_attention": 3,
+          "recognised": 31
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.925,
+        "repeat_recognition_rate": 0.9117647058823529,
+        "background_attention_rate": 0.0375,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.8516532778739929,
+          "repeat": 0.04803301826600106
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 40,
+          "background_windows": 80,
+          "repeat_windows": 34,
+          "calibrating": 3,
+          "correct_repeat_recognition": 31,
+          "background": 77,
+          "candidate": 6,
+          "detected_events": 37,
+          "learned": 3,
+          "event_admissions": 3,
+          "background_attention": 3,
+          "recognised": 31
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.925,
+        "repeat_recognition_rate": 0.9117647058823529,
+        "background_attention_rate": 0.0375,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.7144688864549001,
+          "repeat": 0.08219977155808479
+        }
+      }
+    },
+    "suite": "tonal"
+  },
+  {
+    "seed": 2,
+    "snr_db": -6.0,
+    "structured_distractors": true,
+    "metrics": {
+      "original": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 47,
+          "background_windows": 73,
+          "repeat_windows": 41,
+          "calibrating": 3,
+          "correct_repeat_recognition": 1,
+          "background": 114,
+          "detected_events": 3,
+          "candidate": 1,
+          "learned": 1,
+          "event_admissions": 1,
+          "recognised": 1
+        },
+        "learned_labels": [
+          "falling_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.06382978723404255,
+        "repeat_recognition_rate": 0.024390243902439025,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 1,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": 0.5483981966972351
+        }
+      },
+      "band_gate_raw": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 47,
+          "background_windows": 73,
+          "repeat_windows": 41,
+          "calibrating": 3,
+          "correct_repeat_recognition": 36,
+          "background": 74,
+          "candidate": 4,
+          "detected_events": 42,
+          "learned": 3,
+          "event_admissions": 3,
+          "recognised": 36,
+          "background_attention": 1
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.8936170212765957,
+        "repeat_recognition_rate": 0.8780487804878049,
+        "background_attention_rate": 0.0136986301369863,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.8907301306724549,
+          "repeat": 0.09452516645998568
+        }
+      },
+      "band_relative": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 47,
+          "background_windows": 73,
+          "repeat_windows": 41,
+          "calibrating": 3,
+          "correct_repeat_recognition": 34,
+          "background": 74,
+          "candidate": 6,
+          "detected_events": 42,
+          "learned": 3,
+          "event_admissions": 3,
+          "recognised": 34,
+          "background_attention": 1
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.8936170212765957,
+        "repeat_recognition_rate": 0.8292682926829268,
+        "background_attention_rate": 0.0136986301369863,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.9261417865753174,
+          "repeat": 0.10103376330556096
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 47,
+          "background_windows": 73,
+          "repeat_windows": 41,
+          "calibrating": 3,
+          "correct_repeat_recognition": 35,
+          "background": 74,
+          "candidate": 5,
+          "detected_events": 42,
+          "learned": 3,
+          "event_admissions": 3,
+          "recognised": 35,
+          "background_attention": 1
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.8936170212765957,
+        "repeat_recognition_rate": 0.8536585365853658,
+        "background_attention_rate": 0.0136986301369863,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.8800637483596802,
+          "repeat": 0.10770543040455999
+        }
+      }
+    },
+    "suite": "tonal"
+  },
+  {
+    "seed": 0,
+    "snr_db": 0.0,
+    "structured_distractors": true,
+    "metrics": {
+      "original": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 39,
+          "background_windows": 81,
+          "repeat_windows": 33,
+          "calibrating": 3,
+          "correct_repeat_recognition": 32,
+          "background": 76,
+          "candidate": 5,
+          "detected_events": 38,
+          "learned": 4,
+          "event_admissions": 3,
+          "recognised": 32,
+          "background_attention": 3,
+          "false_admissions": 1
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.9743589743589743,
+        "repeat_recognition_rate": 0.9696969696969697,
+        "background_attention_rate": 0.037037037037037035,
+        "false_admissions": 1,
+        "final_memory_size": 4,
+        "novelty_mean": {
+          "first": 0.8575704296429952,
+          "repeat": 0.06997690908610821
+        }
+      },
+      "band_gate_raw": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 39,
+          "background_windows": 81,
+          "repeat_windows": 33,
+          "calibrating": 3,
+          "correct_repeat_recognition": 31,
+          "background": 77,
+          "candidate": 6,
+          "detected_events": 37,
+          "learned": 3,
+          "event_admissions": 3,
+          "recognised": 31,
+          "background_attention": 3
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.9487179487179487,
+        "repeat_recognition_rate": 0.9393939393939394,
+        "background_attention_rate": 0.037037037037037035,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.853784183661143,
+          "repeat": 0.04534894420254615
+        }
+      },
+      "band_relative": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 39,
+          "background_windows": 81,
+          "repeat_windows": 33,
+          "calibrating": 3,
+          "correct_repeat_recognition": 31,
+          "background": 77,
+          "candidate": 6,
+          "detected_events": 37,
+          "learned": 3,
+          "event_admissions": 3,
+          "recognised": 31,
+          "background_attention": 3
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.9487179487179487,
+        "repeat_recognition_rate": 0.9393939393939394,
+        "background_attention_rate": 0.037037037037037035,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.8894880811373392,
+          "repeat": 0.03316253423690796
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 39,
+          "background_windows": 81,
+          "repeat_windows": 33,
+          "calibrating": 3,
+          "correct_repeat_recognition": 32,
+          "background": 76,
+          "candidate": 6,
+          "detected_events": 38,
+          "learned": 3,
+          "event_admissions": 3,
+          "recognised": 32,
+          "background_attention": 3
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.9743589743589743,
+        "repeat_recognition_rate": 0.9696969696969697,
+        "background_attention_rate": 0.037037037037037035,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.8371165692806244,
+          "repeat": 0.04446878097951412
+        }
+      }
+    },
+    "suite": "tonal"
+  },
+  {
+    "seed": 1,
+    "snr_db": 0.0,
+    "structured_distractors": true,
+    "metrics": {
+      "original": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 40,
+          "background_windows": 80,
+          "repeat_windows": 34,
+          "calibrating": 3,
+          "correct_repeat_recognition": 33,
+          "background": 74,
+          "candidate": 7,
+          "detected_events": 40,
+          "learned": 3,
+          "event_admissions": 3,
+          "background_attention": 3,
+          "recognised": 33
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": 0.9705882352941176,
+        "background_attention_rate": 0.0375,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.7979991436004639,
+          "repeat": 0.07624046066228081
+        }
+      },
+      "band_gate_raw": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 40,
+          "background_windows": 80,
+          "repeat_windows": 34,
+          "calibrating": 3,
+          "correct_repeat_recognition": 34,
+          "background": 74,
+          "candidate": 6,
+          "detected_events": 40,
+          "learned": 3,
+          "event_admissions": 3,
+          "background_attention": 3,
+          "recognised": 34
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": 1.0,
+        "background_attention_rate": 0.0375,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.7906307180722555,
+          "repeat": 0.04019255147260778
+        }
+      },
+      "band_relative": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 40,
+          "background_windows": 80,
+          "repeat_windows": 34,
+          "calibrating": 3,
+          "correct_repeat_recognition": 34,
+          "background": 74,
+          "candidate": 6,
+          "detected_events": 40,
+          "learned": 3,
+          "event_admissions": 3,
+          "background_attention": 3,
+          "recognised": 34
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": 1.0,
+        "background_attention_rate": 0.0375,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.8417162895202637,
+          "repeat": 0.03038081877371844
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 40,
+          "background_windows": 80,
+          "repeat_windows": 34,
+          "calibrating": 3,
+          "correct_repeat_recognition": 34,
+          "background": 74,
+          "candidate": 6,
+          "detected_events": 40,
+          "learned": 3,
+          "event_admissions": 3,
+          "background_attention": 3,
+          "recognised": 34
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": 1.0,
+        "background_attention_rate": 0.0375,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.768817812204361,
+          "repeat": 0.03479405010447783
+        }
+      }
+    },
+    "suite": "tonal"
+  },
+  {
+    "seed": 2,
+    "snr_db": 0.0,
+    "structured_distractors": true,
+    "metrics": {
+      "original": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 47,
+          "background_windows": 73,
+          "repeat_windows": 41,
+          "calibrating": 3,
+          "correct_repeat_recognition": 38,
+          "background": 70,
+          "candidate": 6,
+          "detected_events": 46,
+          "learned": 3,
+          "event_admissions": 3,
+          "recognised": 38,
+          "background_attention": 1
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.9787234042553191,
+        "repeat_recognition_rate": 0.926829268292683,
+        "background_attention_rate": 0.0136986301369863,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.8783639371395111,
+          "repeat": 0.08796585351228714
+        }
+      },
+      "band_gate_raw": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 47,
+          "background_windows": 73,
+          "repeat_windows": 41,
+          "calibrating": 3,
+          "correct_repeat_recognition": 41,
+          "background": 69,
+          "candidate": 4,
+          "detected_events": 47,
+          "learned": 3,
+          "event_admissions": 3,
+          "recognised": 41,
+          "background_attention": 1
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": 1.0,
+        "background_attention_rate": 0.0136986301369863,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.8666824301083883,
+          "repeat": 0.0618773044609442
+        }
+      },
+      "band_relative": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 47,
+          "background_windows": 73,
+          "repeat_windows": 41,
+          "calibrating": 3,
+          "correct_repeat_recognition": 41,
+          "background": 69,
+          "candidate": 4,
+          "detected_events": 47,
+          "learned": 3,
+          "event_admissions": 3,
+          "recognised": 41,
+          "background_attention": 1
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": 1.0,
+        "background_attention_rate": 0.0136986301369863,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.8969861070315043,
+          "repeat": 0.055924399596888844
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 47,
+          "background_windows": 73,
+          "repeat_windows": 41,
+          "calibrating": 3,
+          "correct_repeat_recognition": 40,
+          "background": 69,
+          "candidate": 5,
+          "detected_events": 47,
+          "learned": 3,
+          "event_admissions": 3,
+          "recognised": 40,
+          "background_attention": 1
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "rising_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": 0.975609756097561,
+        "background_attention_rate": 0.0136986301369863,
+        "false_admissions": 0,
+        "final_memory_size": 3,
+        "novelty_mean": {
+          "first": 0.8556652267773946,
+          "repeat": 0.05930630608302791
+        }
+      }
+    },
+    "suite": "tonal"
+  },
+  {
+    "seed": 0,
+    "snr_db": -6.0,
+    "structured_distractors": true,
+    "metrics": {
+      "original": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 39,
+          "background_windows": 81,
+          "repeat_windows": 27,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 115,
+          "detected_events": 1,
+          "candidate": 2,
+          "background_attention": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.02564102564102564,
+        "repeat_recognition_rate": 0.0,
+        "background_attention_rate": 0.012345679012345678,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      },
+      "band_gate_raw": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 39,
+          "background_windows": 81,
+          "repeat_windows": 27,
+          "calibrating": 3,
+          "correct_repeat_recognition": 9,
+          "background": 88,
+          "candidate": 16,
+          "detected_events": 24,
+          "background_attention": 5,
+          "learned": 4,
+          "event_admissions": 4,
+          "recognised": 9
+        },
+        "learned_labels": [
+          "double_chime",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.6153846153846154,
+        "repeat_recognition_rate": 0.3333333333333333,
+        "background_attention_rate": 0.06172839506172839,
+        "false_admissions": 0,
+        "final_memory_size": 4,
+        "novelty_mean": {
+          "first": 0.8565366779054914,
+          "repeat": 0.33169596686082725
+        }
+      },
+      "band_relative": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 39,
+          "background_windows": 81,
+          "repeat_windows": 27,
+          "calibrating": 3,
+          "correct_repeat_recognition": 8,
+          "background": 88,
+          "candidate": 16,
+          "detected_events": 24,
+          "background_attention": 5,
+          "learned": 5,
+          "event_admissions": 5,
+          "recognised": 8
+        },
+        "learned_labels": [
+          "double_chime",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.6153846153846154,
+        "repeat_recognition_rate": 0.2962962962962963,
+        "background_attention_rate": 0.06172839506172839,
+        "false_admissions": 0,
+        "final_memory_size": 5,
+        "novelty_mean": {
+          "first": 0.9269347957202366,
+          "repeat": 0.385310874265783
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 39,
+          "background_windows": 81,
+          "repeat_windows": 27,
+          "calibrating": 3,
+          "correct_repeat_recognition": 13,
+          "background": 83,
+          "candidate": 16,
+          "detected_events": 29,
+          "background_attention": 5,
+          "learned": 5,
+          "event_admissions": 5,
+          "recognised": 13
+        },
+        "learned_labels": [
+          "double_chime",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.7435897435897436,
+        "repeat_recognition_rate": 0.48148148148148145,
+        "background_attention_rate": 0.06172839506172839,
+        "false_admissions": 0,
+        "final_memory_size": 5,
+        "novelty_mean": {
+          "first": 0.8181802696651883,
+          "repeat": 0.21033903062343598
+        }
+      }
+    },
+    "suite": "extended"
+  },
+  {
+    "seed": 1,
+    "snr_db": -6.0,
+    "structured_distractors": true,
+    "metrics": {
+      "original": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 40,
+          "background_windows": 80,
+          "repeat_windows": 28,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 115,
+          "detected_events": 2,
+          "candidate": 2
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.05,
+        "repeat_recognition_rate": 0.0,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      },
+      "band_gate_raw": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 40,
+          "background_windows": 80,
+          "repeat_windows": 28,
+          "calibrating": 3,
+          "correct_repeat_recognition": 19,
+          "background": 86,
+          "candidate": 7,
+          "detected_events": 29,
+          "learned": 5,
+          "event_admissions": 5,
+          "recognised": 19,
+          "background_attention": 2
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.725,
+        "repeat_recognition_rate": 0.6785714285714286,
+        "background_attention_rate": 0.025,
+        "false_admissions": 0,
+        "final_memory_size": 5,
+        "novelty_mean": {
+          "first": 0.7643029391765594,
+          "repeat": 0.11433597689583189
+        }
+      },
+      "band_relative": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 40,
+          "background_windows": 80,
+          "repeat_windows": 28,
+          "calibrating": 3,
+          "correct_repeat_recognition": 19,
+          "background": 86,
+          "candidate": 7,
+          "detected_events": 29,
+          "learned": 5,
+          "event_admissions": 5,
+          "recognised": 19,
+          "background_attention": 2
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.725,
+        "repeat_recognition_rate": 0.6785714285714286,
+        "background_attention_rate": 0.025,
+        "false_admissions": 0,
+        "final_memory_size": 5,
+        "novelty_mean": {
+          "first": 0.8776984736323357,
+          "repeat": 0.08852015506653559
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 40,
+          "background_windows": 80,
+          "repeat_windows": 28,
+          "calibrating": 3,
+          "correct_repeat_recognition": 20,
+          "background": 81,
+          "candidate": 10,
+          "detected_events": 34,
+          "learned": 6,
+          "event_admissions": 6,
+          "recognised": 20,
+          "background_attention": 2
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.85,
+        "repeat_recognition_rate": 0.7142857142857143,
+        "background_attention_rate": 0.025,
+        "false_admissions": 0,
+        "final_memory_size": 6,
+        "novelty_mean": {
+          "first": 0.6804271231998097,
+          "repeat": 0.10778760132582291
+        }
+      }
+    },
+    "suite": "extended"
+  },
+  {
+    "seed": 2,
+    "snr_db": -6.0,
+    "structured_distractors": true,
+    "metrics": {
+      "original": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 47,
+          "background_windows": 73,
+          "repeat_windows": 35,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 116,
+          "detected_events": 1,
+          "candidate": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.02127659574468085,
+        "repeat_recognition_rate": 0.0,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      },
+      "band_gate_raw": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 47,
+          "background_windows": 73,
+          "repeat_windows": 35,
+          "calibrating": 3,
+          "correct_repeat_recognition": 26,
+          "background": 80,
+          "detected_events": 35,
+          "candidate": 7,
+          "learned": 4,
+          "event_admissions": 4,
+          "recognised": 26,
+          "background_attention": 2
+        },
+        "learned_labels": [
+          "falling_call",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.7446808510638298,
+        "repeat_recognition_rate": 0.7428571428571429,
+        "background_attention_rate": 0.0273972602739726,
+        "false_admissions": 0,
+        "final_memory_size": 4,
+        "novelty_mean": {
+          "first": 0.6615292231241862,
+          "repeat": 0.12182007781390486
+        }
+      },
+      "band_relative": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 47,
+          "background_windows": 73,
+          "repeat_windows": 35,
+          "calibrating": 3,
+          "correct_repeat_recognition": 26,
+          "background": 80,
+          "detected_events": 35,
+          "candidate": 7,
+          "learned": 4,
+          "event_admissions": 4,
+          "recognised": 26,
+          "background_attention": 2
+        },
+        "learned_labels": [
+          "falling_call",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.7446808510638298,
+        "repeat_recognition_rate": 0.7428571428571429,
+        "background_attention_rate": 0.0273972602739726,
+        "false_admissions": 0,
+        "final_memory_size": 4,
+        "novelty_mean": {
+          "first": 0.8510505159695944,
+          "repeat": 0.11792007396961081
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 47,
+          "background_windows": 73,
+          "repeat_windows": 35,
+          "calibrating": 3,
+          "correct_repeat_recognition": 32,
+          "background": 70,
+          "candidate": 10,
+          "detected_events": 45,
+          "learned": 5,
+          "event_admissions": 5,
+          "recognised": 32,
+          "background_attention": 2
+        },
+        "learned_labels": [
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.9574468085106383,
+        "repeat_recognition_rate": 0.9142857142857143,
+        "background_attention_rate": 0.0273972602739726,
+        "false_admissions": 0,
+        "final_memory_size": 5,
+        "novelty_mean": {
+          "first": 0.7076365351676941,
+          "repeat": 0.09143989937646048
+        }
+      }
+    },
+    "suite": "extended"
+  },
+  {
+    "seed": 0,
+    "snr_db": 0.0,
+    "structured_distractors": true,
+    "metrics": {
+      "original": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 39,
+          "background_windows": 81,
+          "repeat_windows": 27,
+          "calibrating": 3,
+          "correct_repeat_recognition": 18,
+          "background": 85,
+          "candidate": 10,
+          "detected_events": 29,
+          "background_attention": 3,
+          "learned": 4,
+          "event_admissions": 4,
+          "recognised": 18
+        },
+        "learned_labels": [
+          "double_chime",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.7435897435897436,
+        "repeat_recognition_rate": 0.6666666666666666,
+        "background_attention_rate": 0.037037037037037035,
+        "false_admissions": 0,
+        "final_memory_size": 4,
+        "novelty_mean": {
+          "first": 0.825951087474823,
+          "repeat": 0.10850593918248226
+        }
+      },
+      "band_gate_raw": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 39,
+          "background_windows": 81,
+          "repeat_windows": 27,
+          "calibrating": 3,
+          "correct_repeat_recognition": 19,
+          "background": 82,
+          "candidate": 12,
+          "detected_events": 30,
+          "background_attention": 5,
+          "learned": 4,
+          "event_admissions": 4,
+          "recognised": 19
+        },
+        "learned_labels": [
+          "double_chime",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.7692307692307693,
+        "repeat_recognition_rate": 0.7037037037037037,
+        "background_attention_rate": 0.06172839506172839,
+        "false_admissions": 0,
+        "final_memory_size": 4,
+        "novelty_mean": {
+          "first": 0.8256591439247132,
+          "repeat": 0.08572506904602051
+        }
+      },
+      "band_relative": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 39,
+          "background_windows": 81,
+          "repeat_windows": 27,
+          "calibrating": 3,
+          "correct_repeat_recognition": 18,
+          "background": 82,
+          "candidate": 13,
+          "detected_events": 30,
+          "background_attention": 5,
+          "learned": 4,
+          "event_admissions": 4,
+          "recognised": 18
+        },
+        "learned_labels": [
+          "double_chime",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.7692307692307693,
+        "repeat_recognition_rate": 0.6666666666666666,
+        "background_attention_rate": 0.06172839506172839,
+        "false_admissions": 0,
+        "final_memory_size": 4,
+        "novelty_mean": {
+          "first": 0.8499877691268921,
+          "repeat": 0.1329951137304306
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 39,
+          "background_windows": 81,
+          "repeat_windows": 27,
+          "calibrating": 3,
+          "correct_repeat_recognition": 24,
+          "background": 73,
+          "candidate": 15,
+          "detected_events": 39,
+          "background_attention": 5,
+          "learned": 5,
+          "event_admissions": 5,
+          "recognised": 24
+        },
+        "learned_labels": [
+          "double_chime",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": 0.8888888888888888,
+        "background_attention_rate": 0.06172839506172839,
+        "false_admissions": 0,
+        "final_memory_size": 5,
+        "novelty_mean": {
+          "first": 0.7937280635039011,
+          "repeat": 0.10908916923734877
+        }
+      }
+    },
+    "suite": "extended"
+  },
+  {
+    "seed": 1,
+    "snr_db": 0.0,
+    "structured_distractors": true,
+    "metrics": {
+      "original": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 40,
+          "background_windows": 80,
+          "repeat_windows": 28,
+          "calibrating": 3,
+          "correct_repeat_recognition": 23,
+          "background": 83,
+          "candidate": 6,
+          "detected_events": 33,
+          "learned": 5,
+          "event_admissions": 5,
+          "recognised": 23,
+          "background_attention": 1
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.825,
+        "repeat_recognition_rate": 0.8214285714285714,
+        "background_attention_rate": 0.0125,
+        "false_admissions": 0,
+        "final_memory_size": 5,
+        "novelty_mean": {
+          "first": 0.790320873260498,
+          "repeat": 0.07637581617935844
+        }
+      },
+      "band_gate_raw": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 40,
+          "background_windows": 80,
+          "repeat_windows": 28,
+          "calibrating": 3,
+          "correct_repeat_recognition": 24,
+          "background": 81,
+          "candidate": 7,
+          "detected_events": 34,
+          "learned": 5,
+          "event_admissions": 5,
+          "recognised": 24,
+          "background_attention": 2
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.85,
+        "repeat_recognition_rate": 0.8571428571428571,
+        "background_attention_rate": 0.025,
+        "false_admissions": 0,
+        "final_memory_size": 5,
+        "novelty_mean": {
+          "first": 0.7677986681461334,
+          "repeat": 0.05038656791051229
+        }
+      },
+      "band_relative": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 40,
+          "background_windows": 80,
+          "repeat_windows": 28,
+          "calibrating": 3,
+          "correct_repeat_recognition": 23,
+          "background": 81,
+          "candidate": 8,
+          "detected_events": 34,
+          "learned": 5,
+          "event_admissions": 5,
+          "recognised": 23,
+          "background_attention": 2
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.85,
+        "repeat_recognition_rate": 0.8214285714285714,
+        "background_attention_rate": 0.025,
+        "false_admissions": 0,
+        "final_memory_size": 5,
+        "novelty_mean": {
+          "first": 0.8122723221778869,
+          "repeat": 0.05000839879115423
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 40,
+          "background_windows": 80,
+          "repeat_windows": 28,
+          "calibrating": 3,
+          "correct_repeat_recognition": 27,
+          "background": 75,
+          "candidate": 9,
+          "detected_events": 40,
+          "learned": 6,
+          "event_admissions": 6,
+          "recognised": 27,
+          "background_attention": 2
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": 0.9642857142857143,
+        "background_attention_rate": 0.025,
+        "false_admissions": 0,
+        "final_memory_size": 6,
+        "novelty_mean": {
+          "first": 0.7059642523527145,
+          "repeat": 0.07422951715333122
+        }
+      }
+    },
+    "suite": "extended"
+  },
+  {
+    "seed": 2,
+    "snr_db": 0.0,
+    "structured_distractors": true,
+    "metrics": {
+      "original": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 47,
+          "background_windows": 73,
+          "repeat_windows": 35,
+          "calibrating": 3,
+          "correct_repeat_recognition": 32,
+          "background": 73,
+          "candidate": 7,
+          "detected_events": 42,
+          "learned": 5,
+          "event_admissions": 5,
+          "recognised": 32,
+          "background_attention": 2
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.8936170212765957,
+        "repeat_recognition_rate": 0.9142857142857143,
+        "background_attention_rate": 0.0273972602739726,
+        "false_admissions": 0,
+        "final_memory_size": 5,
+        "novelty_mean": {
+          "first": 0.6832247257232666,
+          "repeat": 0.044836513698101044
+        }
+      },
+      "band_gate_raw": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 47,
+          "background_windows": 73,
+          "repeat_windows": 35,
+          "calibrating": 3,
+          "correct_repeat_recognition": 32,
+          "background": 73,
+          "candidate": 7,
+          "detected_events": 42,
+          "learned": 5,
+          "event_admissions": 5,
+          "recognised": 32,
+          "background_attention": 2
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.8936170212765957,
+        "repeat_recognition_rate": 0.9142857142857143,
+        "background_attention_rate": 0.0273972602739726,
+        "false_admissions": 0,
+        "final_memory_size": 5,
+        "novelty_mean": {
+          "first": 0.6675362527370453,
+          "repeat": 0.03603786788880825
+        }
+      },
+      "band_relative": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 47,
+          "background_windows": 73,
+          "repeat_windows": 35,
+          "calibrating": 3,
+          "correct_repeat_recognition": 32,
+          "background": 73,
+          "candidate": 7,
+          "detected_events": 42,
+          "learned": 5,
+          "event_admissions": 5,
+          "recognised": 32,
+          "background_attention": 2
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 0.8936170212765957,
+        "repeat_recognition_rate": 0.9142857142857143,
+        "background_attention_rate": 0.0273972602739726,
+        "false_admissions": 0,
+        "final_memory_size": 5,
+        "novelty_mean": {
+          "first": 0.7527814149856568,
+          "repeat": 0.041905080899596214
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 47,
+          "background_windows": 73,
+          "repeat_windows": 35,
+          "calibrating": 3,
+          "correct_repeat_recognition": 35,
+          "background": 68,
+          "candidate": 8,
+          "detected_events": 47,
+          "learned": 6,
+          "event_admissions": 6,
+          "recognised": 35,
+          "background_attention": 2
+        },
+        "learned_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "observed_labels": [
+          "double_chime",
+          "falling_call",
+          "high_rustle",
+          "long_alarm",
+          "low_rustle",
+          "rising_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": 1.0,
+        "background_attention_rate": 0.0273972602739726,
+        "false_admissions": 0,
+        "final_memory_size": 6,
+        "novelty_mean": {
+          "first": 0.6345254878203074,
+          "repeat": 0.04249924080712455
+        }
+      }
+    },
+    "suite": "extended"
+  }
+]

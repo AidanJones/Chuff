@@ -1,0 +1,7146 @@
+[
+  {
+    "suite": "fast/control",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast/control",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast/control",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast/control",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast/control",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast/control",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast/control",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.95,
+        "bootstrap_95": [
+          0.95,
+          0.95
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast/control",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast/control",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast/control",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast/positive",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5488721804511278,
+        "bootstrap_95": [
+          0.5263157894736842,
+          0.5714285714285714
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.1111111111111111,
+        "bootstrap_95": [
+          0.0,
+          0.2222222222222222
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.1111111111111111,
+        "bootstrap_95": [
+          0.0,
+          0.2222222222222222
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast/positive",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.7083333333333333,
+        "bootstrap_95": [
+          0.6666666666666666,
+          0.75
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5707236842105263,
+        "bootstrap_95": [
+          0.5625,
+          0.5789473684210527
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.5707236842105263,
+        "bootstrap_95": [
+          0.5625,
+          0.5789473684210527
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast/positive",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5488721804511278,
+        "bootstrap_95": [
+          0.5263157894736842,
+          0.5714285714285714
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.1111111111111111,
+        "bootstrap_95": [
+          0.0,
+          0.2222222222222222
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.1111111111111111,
+        "bootstrap_95": [
+          0.0,
+          0.2222222222222222
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast/positive",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.7083333333333333,
+        "bootstrap_95": [
+          0.6666666666666666,
+          0.75
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5707236842105263,
+        "bootstrap_95": [
+          0.5625,
+          0.5789473684210527
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.5707236842105263,
+        "bootstrap_95": [
+          0.5625,
+          0.5789473684210527
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast/positive",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5488721804511278,
+        "bootstrap_95": [
+          0.5263157894736842,
+          0.5714285714285714
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.1111111111111111,
+        "bootstrap_95": [
+          0.0,
+          0.2222222222222222
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.1111111111111111,
+        "bootstrap_95": [
+          0.0,
+          0.2222222222222222
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast/positive",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.7083333333333333,
+        "bootstrap_95": [
+          0.6666666666666666,
+          0.75
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5707236842105263,
+        "bootstrap_95": [
+          0.5625,
+          0.5789473684210527
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.5707236842105263,
+        "bootstrap_95": [
+          0.5625,
+          0.5789473684210527
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast/positive",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.8063909774436091,
+        "bootstrap_95": [
+          0.6842105263157895,
+          0.9285714285714286
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 0.9308059384941676,
+        "bootstrap_95": [
+          0.926829268292683,
+          0.9347826086956522
+        ]
+      },
+      "deletion_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.1111111111111111,
+        "bootstrap_95": [
+          -0.2222222222222222,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast/positive",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.8944444444444444,
+        "bootstrap_95": [
+          0.8888888888888888,
+          0.9
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.5707236842105263,
+        "bootstrap_95": [
+          -0.5789473684210527,
+          -0.5625
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast/positive",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5488721804511278,
+        "bootstrap_95": [
+          0.5263157894736842,
+          0.5714285714285714
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.2361111111111111,
+        "bootstrap_95": [
+          0.2222222222222222,
+          0.25
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.2361111111111111,
+        "bootstrap_95": [
+          0.2222222222222222,
+          0.25
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.125,
+        "bootstrap_95": [
+          0.0,
+          0.25
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast/positive",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.7083333333333333,
+        "bootstrap_95": [
+          0.6666666666666666,
+          0.75
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5707236842105263,
+        "bootstrap_95": [
+          0.5625,
+          0.5789473684210527
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.5707236842105263,
+        "bootstrap_95": [
+          0.5625,
+          0.5789473684210527
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast_stationary/control",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast_stationary/control",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast_stationary/control",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast_stationary/control",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast_stationary/control",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast_stationary/control",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast_stationary/control",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.95,
+        "bootstrap_95": [
+          0.95,
+          0.95
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast_stationary/control",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast_stationary/control",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast_stationary/control",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "fast_stationary/positive",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5488721804511278,
+        "bootstrap_95": [
+          0.5263157894736842,
+          0.5714285714285714
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.1111111111111111,
+        "bootstrap_95": [
+          0.0,
+          0.2222222222222222
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.1111111111111111,
+        "bootstrap_95": [
+          0.0,
+          0.2222222222222222
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast_stationary/positive",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6055555555555556,
+        "bootstrap_95": [
+          0.6,
+          0.6111111111111112
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.45559210526315785,
+        "bootstrap_95": [
+          0.4375,
+          0.47368421052631576
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.20394736842105263,
+        "bootstrap_95": [
+          0.15789473684210525,
+          0.25
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast_stationary/positive",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5488721804511278,
+        "bootstrap_95": [
+          0.5263157894736842,
+          0.5714285714285714
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.1111111111111111,
+        "bootstrap_95": [
+          0.0,
+          0.2222222222222222
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.1111111111111111,
+        "bootstrap_95": [
+          0.0,
+          0.2222222222222222
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast_stationary/positive",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.5,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.45559210526315785,
+        "bootstrap_95": [
+          0.4375,
+          0.47368421052631576
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.20394736842105263,
+        "bootstrap_95": [
+          0.15789473684210525,
+          0.25
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast_stationary/positive",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5488721804511278,
+        "bootstrap_95": [
+          0.5263157894736842,
+          0.5714285714285714
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.1111111111111111,
+        "bootstrap_95": [
+          0.0,
+          0.2222222222222222
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.1111111111111111,
+        "bootstrap_95": [
+          0.0,
+          0.2222222222222222
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast_stationary/positive",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6055555555555556,
+        "bootstrap_95": [
+          0.6,
+          0.6111111111111112
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.45559210526315785,
+        "bootstrap_95": [
+          0.4375,
+          0.47368421052631576
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.20394736842105263,
+        "bootstrap_95": [
+          0.15789473684210525,
+          0.25
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast_stationary/positive",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.8063909774436091,
+        "bootstrap_95": [
+          0.6842105263157895,
+          0.9285714285714286
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 0.9308059384941676,
+        "bootstrap_95": [
+          0.926829268292683,
+          0.9347826086956522
+        ]
+      },
+      "deletion_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.1111111111111111,
+        "bootstrap_95": [
+          -0.2222222222222222,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast_stationary/positive",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6861111111111111,
+        "bootstrap_95": [
+          0.65,
+          0.7222222222222222
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.25164473684210525,
+        "bootstrap_95": [
+          0.1875,
+          0.3157894736842105
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.20394736842105263,
+        "bootstrap_95": [
+          -0.25,
+          -0.15789473684210525
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast_stationary/positive",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5488721804511278,
+        "bootstrap_95": [
+          0.5263157894736842,
+          0.5714285714285714
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.2361111111111111,
+        "bootstrap_95": [
+          0.2222222222222222,
+          0.25
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.2361111111111111,
+        "bootstrap_95": [
+          0.2222222222222222,
+          0.25
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.125,
+        "bootstrap_95": [
+          0.0,
+          0.25
+        ]
+      }
+    }
+  },
+  {
+    "suite": "fast_stationary/positive",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.5,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.45559210526315785,
+        "bootstrap_95": [
+          0.4375,
+          0.47368421052631576
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.20394736842105263,
+        "bootstrap_95": [
+          0.15789473684210525,
+          0.25
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "shallow/control",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "shallow/control",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "shallow/control",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "shallow/control",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "shallow/control",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "shallow/control",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "shallow/control",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "shallow/control",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "shallow/control",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "shallow/control",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "shallow/positive",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6109022556390977,
+        "bootstrap_95": [
+          0.5789473684210527,
+          0.6428571428571429
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.4027777777777778,
+        "bootstrap_95": [
+          0.25,
+          0.5555555555555556
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "shallow/positive",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6055555555555556,
+        "bootstrap_95": [
+          0.6,
+          0.6111111111111112
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.3980263157894737,
+        "bootstrap_95": [
+          0.375,
+          0.42105263157894735
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "shallow/positive",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6109022556390977,
+        "bootstrap_95": [
+          0.5789473684210527,
+          0.6428571428571429
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.4027777777777778,
+        "bootstrap_95": [
+          0.25,
+          0.5555555555555556
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "shallow/positive",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6055555555555556,
+        "bootstrap_95": [
+          0.6,
+          0.6111111111111112
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.3980263157894737,
+        "bootstrap_95": [
+          0.375,
+          0.42105263157894735
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "shallow/positive",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6109022556390977,
+        "bootstrap_95": [
+          0.5789473684210527,
+          0.6428571428571429
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": -0.11111111111111113,
+        "bootstrap_95": [
+          -0.22222222222222227,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.11111111111111113,
+        "bootstrap_95": [
+          -0.22222222222222227,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "shallow/positive",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6055555555555556,
+        "bootstrap_95": [
+          0.6,
+          0.6111111111111112
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.28289473684210525,
+        "bootstrap_95": [
+          0.25,
+          0.3157894736842105
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": -0.11513157894736842,
+        "bootstrap_95": [
+          -0.125,
+          -0.10526315789473684
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.11513157894736842,
+        "bootstrap_95": [
+          -0.125,
+          -0.10526315789473684
+        ]
+      }
+    }
+  },
+  {
+    "suite": "shallow/positive",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6109022556390977,
+        "bootstrap_95": [
+          0.5789473684210527,
+          0.6428571428571429
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.4027777777777778,
+        "bootstrap_95": [
+          0.25,
+          0.5555555555555556
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "shallow/positive",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6055555555555556,
+        "bootstrap_95": [
+          0.6,
+          0.6111111111111112
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.3980263157894737,
+        "bootstrap_95": [
+          0.375,
+          0.42105263157894735
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "shallow/positive",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.39849624060150374,
+        "bootstrap_95": [
+          0.3684210526315789,
+          0.42857142857142855
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": -0.11111111111111113,
+        "bootstrap_95": [
+          -0.22222222222222227,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.11111111111111113,
+        "bootstrap_95": [
+          -0.22222222222222227,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "shallow/positive",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.5,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.36184210526315785,
+        "bootstrap_95": [
+          0.25,
+          0.47368421052631576
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": -0.03618421052631579,
+        "bootstrap_95": [
+          -0.125,
+          0.05263157894736842
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.03618421052631579,
+        "bootstrap_95": [
+          -0.125,
+          0.05263157894736842
+        ]
+      }
+    }
+  },
+  {
+    "suite": "silent_fast/control",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "silent_fast/control",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.09649122807017543,
+        "bootstrap_95": [
+          0.09649122807017543,
+          0.09649122807017543
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "silent_fast/control",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "silent_fast/control",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "silent_fast/control",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "silent_fast/control",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.09649122807017543,
+        "bootstrap_95": [
+          0.09649122807017543,
+          0.09649122807017543
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "silent_fast/control",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "silent_fast/control",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "silent_fast/control",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "silent_fast/control",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "silent_fast/positive",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "silent_fast/positive",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6220190779014309,
+        "bootstrap_95": [
+          0.5675675675675675,
+          0.6764705882352942
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.29043478260869565,
+        "bootstrap_95": [
+          0.2608695652173913,
+          0.32
+        ]
+      },
+      "false_attention": {
+        "mean": 0.08319805194805195,
+        "bootstrap_95": [
+          0.0625,
+          0.1038961038961039
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.1287758346581876,
+        "bootstrap_95": [
+          0.08108108108108109,
+          0.17647058823529413
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.29043478260869565,
+        "bootstrap_95": [
+          0.2608695652173913,
+          0.32
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.29043478260869565,
+        "bootstrap_95": [
+          0.2608695652173913,
+          0.32
+        ]
+      }
+    }
+  },
+  {
+    "suite": "silent_fast/positive",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "silent_fast/positive",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.8477742448330683,
+        "bootstrap_95": [
+          0.7837837837837838,
+          0.9117647058823529
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "silent_fast/positive",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "silent_fast/positive",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6220190779014309,
+        "bootstrap_95": [
+          0.5675675675675675,
+          0.6764705882352942
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.29043478260869565,
+        "bootstrap_95": [
+          0.2608695652173913,
+          0.32
+        ]
+      },
+      "false_attention": {
+        "mean": 0.08319805194805195,
+        "bootstrap_95": [
+          0.0625,
+          0.1038961038961039
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.1287758346581876,
+        "bootstrap_95": [
+          0.08108108108108109,
+          0.17647058823529413
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.29043478260869565,
+        "bootstrap_95": [
+          0.2608695652173913,
+          0.32
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.29043478260869565,
+        "bootstrap_95": [
+          0.2608695652173913,
+          0.32
+        ]
+      }
+    }
+  },
+  {
+    "suite": "silent_fast/positive",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "silent_fast/positive",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.8477742448330683,
+        "bootstrap_95": [
+          0.7837837837837838,
+          0.9117647058823529
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "silent_fast/positive",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "silent_fast/positive",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5926073131955485,
+        "bootstrap_95": [
+          0.5675675675675675,
+          0.6176470588235294
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.4391304347826087,
+        "bootstrap_95": [
+          0.4,
+          0.4782608695652174
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.4391304347826087,
+        "bootstrap_95": [
+          0.4,
+          0.4782608695652174
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.4391304347826087,
+        "bootstrap_95": [
+          0.4,
+          0.4782608695652174
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow/control",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow/control",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow/control",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow/control",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow/control",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow/control",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow/control",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.275,
+        "bootstrap_95": [
+          0.23333333333333334,
+          0.31666666666666665
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow/control",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.25,
+        "bootstrap_95": [
+          0.23333333333333334,
+          0.26666666666666666
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow/control",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow/control",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow/positive",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.4699248120300752,
+        "bootstrap_95": [
+          0.3684210526315789,
+          0.5714285714285714
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow/positive",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.5,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.39309210526315785,
+        "bootstrap_95": [
+          0.3125,
+          0.47368421052631576
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.14638157894736842,
+        "bootstrap_95": [
+          0.10526315789473684,
+          0.1875
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow/positive",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.4699248120300752,
+        "bootstrap_95": [
+          0.3684210526315789,
+          0.5714285714285714
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow/positive",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.5,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.39309210526315785,
+        "bootstrap_95": [
+          0.3125,
+          0.47368421052631576
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.14638157894736842,
+        "bootstrap_95": [
+          0.10526315789473684,
+          0.1875
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow/positive",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.4699248120300752,
+        "bootstrap_95": [
+          0.3684210526315789,
+          0.5714285714285714
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow/positive",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.5,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.39309210526315785,
+        "bootstrap_95": [
+          0.3125,
+          0.47368421052631576
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.14638157894736842,
+        "bootstrap_95": [
+          0.10526315789473684,
+          0.1875
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow/positive",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.45112781954887216,
+        "bootstrap_95": [
+          0.42857142857142855,
+          0.47368421052631576
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 0.2741251325556734,
+        "bootstrap_95": [
+          0.24390243902439024,
+          0.30434782608695654
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.2744360902255639,
+        "bootstrap_95": [
+          0.2631578947368421,
+          0.2857142857142857
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.29166666666666663,
+        "bootstrap_95": [
+          -0.3333333333333333,
+          -0.25
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow/positive",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5277777777777778,
+        "bootstrap_95": [
+          0.5,
+          0.5555555555555556
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.24671052631578946,
+        "bootstrap_95": [
+          0.125,
+          0.3684210526315789
+        ]
+      },
+      "false_attention": {
+        "mean": 0.21904761904761905,
+        "bootstrap_95": [
+          0.2,
+          0.23809523809523808
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.31666666666666665,
+        "bootstrap_95": [
+          0.3,
+          0.3333333333333333
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.14638157894736842,
+        "bootstrap_95": [
+          -0.1875,
+          -0.10526315789473684
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow/positive",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.4342105263157895,
+        "bootstrap_95": [
+          0.3684210526315789,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow/positive",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.5,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.39309210526315785,
+        "bootstrap_95": [
+          0.3125,
+          0.47368421052631576
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.14638157894736842,
+        "bootstrap_95": [
+          0.10526315789473684,
+          0.1875
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow_stationary/control",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow_stationary/control",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow_stationary/control",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow_stationary/control",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow_stationary/control",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow_stationary/control",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow_stationary/control",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.275,
+        "bootstrap_95": [
+          0.23333333333333334,
+          0.31666666666666665
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow_stationary/control",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow_stationary/control",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow_stationary/control",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "slow_stationary/positive",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.4699248120300752,
+        "bootstrap_95": [
+          0.3684210526315789,
+          0.5714285714285714
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow_stationary/positive",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6055555555555556,
+        "bootstrap_95": [
+          0.6,
+          0.6111111111111112
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.36184210526315785,
+        "bootstrap_95": [
+          0.25,
+          0.47368421052631576
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.03125,
+        "bootstrap_95": [
+          0.0,
+          0.0625
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow_stationary/positive",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.4699248120300752,
+        "bootstrap_95": [
+          0.3684210526315789,
+          0.5714285714285714
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow_stationary/positive",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.5,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.36184210526315785,
+        "bootstrap_95": [
+          0.25,
+          0.47368421052631576
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.03125,
+        "bootstrap_95": [
+          0.0,
+          0.0625
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow_stationary/positive",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.4699248120300752,
+        "bootstrap_95": [
+          0.3684210526315789,
+          0.5714285714285714
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow_stationary/positive",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6055555555555556,
+        "bootstrap_95": [
+          0.6,
+          0.6111111111111112
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.36184210526315785,
+        "bootstrap_95": [
+          0.25,
+          0.47368421052631576
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.03125,
+        "bootstrap_95": [
+          0.0,
+          0.0625
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow_stationary/positive",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.45112781954887216,
+        "bootstrap_95": [
+          0.42857142857142855,
+          0.47368421052631576
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 0.2741251325556734,
+        "bootstrap_95": [
+          0.24390243902439024,
+          0.30434782608695654
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.2744360902255639,
+        "bootstrap_95": [
+          0.2631578947368421,
+          0.2857142857142857
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.29166666666666663,
+        "bootstrap_95": [
+          -0.3333333333333333,
+          -0.25
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow_stationary/positive",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6861111111111111,
+        "bootstrap_95": [
+          0.65,
+          0.7222222222222222
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.33059210526315785,
+        "bootstrap_95": [
+          0.1875,
+          0.47368421052631576
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.03125,
+        "bootstrap_95": [
+          -0.0625,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow_stationary/positive",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.4342105263157895,
+        "bootstrap_95": [
+          0.3684210526315789,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "slow_stationary/positive",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.5,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.36184210526315785,
+        "bootstrap_95": [
+          0.25,
+          0.47368421052631576
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.03125,
+        "bootstrap_95": [
+          0.0,
+          0.0625
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "spectral_fast/control",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "spectral_fast/control",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "spectral_fast/control",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "spectral_fast/control",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "spectral_fast/control",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "spectral_fast/control",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "spectral_fast/control",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.95,
+        "bootstrap_95": [
+          0.95,
+          0.95
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "spectral_fast/control",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "spectral_fast/control",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "spectral_fast/control",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "spectral_fast/positive",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5488721804511278,
+        "bootstrap_95": [
+          0.5263157894736842,
+          0.5714285714285714
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.1111111111111111,
+        "bootstrap_95": [
+          0.0,
+          0.2222222222222222
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.1111111111111111,
+        "bootstrap_95": [
+          0.0,
+          0.2222222222222222
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "spectral_fast/positive",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6833333333333333,
+        "bootstrap_95": [
+          0.6666666666666666,
+          0.7
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5707236842105263,
+        "bootstrap_95": [
+          0.5625,
+          0.5789473684210527
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.5707236842105263,
+        "bootstrap_95": [
+          0.5625,
+          0.5789473684210527
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "spectral_fast/positive",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5488721804511278,
+        "bootstrap_95": [
+          0.5263157894736842,
+          0.5714285714285714
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.1111111111111111,
+        "bootstrap_95": [
+          0.0,
+          0.2222222222222222
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.1111111111111111,
+        "bootstrap_95": [
+          0.0,
+          0.2222222222222222
+        ]
+      }
+    }
+  },
+  {
+    "suite": "spectral_fast/positive",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6833333333333333,
+        "bootstrap_95": [
+          0.6666666666666666,
+          0.7
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5707236842105263,
+        "bootstrap_95": [
+          0.5625,
+          0.5789473684210527
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.5707236842105263,
+        "bootstrap_95": [
+          0.5625,
+          0.5789473684210527
+        ]
+      }
+    }
+  },
+  {
+    "suite": "spectral_fast/positive",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5488721804511278,
+        "bootstrap_95": [
+          0.5263157894736842,
+          0.5714285714285714
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.1111111111111111,
+        "bootstrap_95": [
+          0.0,
+          0.2222222222222222
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.1111111111111111,
+        "bootstrap_95": [
+          0.0,
+          0.2222222222222222
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "spectral_fast/positive",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6833333333333333,
+        "bootstrap_95": [
+          0.6666666666666666,
+          0.7
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5707236842105263,
+        "bootstrap_95": [
+          0.5625,
+          0.5789473684210527
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.5707236842105263,
+        "bootstrap_95": [
+          0.5625,
+          0.5789473684210527
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "spectral_fast/positive",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.8063909774436091,
+        "bootstrap_95": [
+          0.6842105263157895,
+          0.9285714285714286
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 0.9308059384941676,
+        "bootstrap_95": [
+          0.926829268292683,
+          0.9347826086956522
+        ]
+      },
+      "deletion_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.1111111111111111,
+        "bootstrap_95": [
+          -0.2222222222222222,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "spectral_fast/positive",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.8944444444444444,
+        "bootstrap_95": [
+          0.8888888888888888,
+          0.9
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "false_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.5707236842105263,
+        "bootstrap_95": [
+          -0.5789473684210527,
+          -0.5625
+        ]
+      }
+    }
+  },
+  {
+    "suite": "spectral_fast/positive",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5488721804511278,
+        "bootstrap_95": [
+          0.5263157894736842,
+          0.5714285714285714
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.2361111111111111,
+        "bootstrap_95": [
+          0.2222222222222222,
+          0.25
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.2361111111111111,
+        "bootstrap_95": [
+          0.2222222222222222,
+          0.25
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.125,
+        "bootstrap_95": [
+          0.0,
+          0.25
+        ]
+      }
+    }
+  },
+  {
+    "suite": "spectral_fast/positive",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6833333333333333,
+        "bootstrap_95": [
+          0.6666666666666666,
+          0.7
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5180921052631579,
+        "bootstrap_95": [
+          0.47368421052631576,
+          0.5625
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.5180921052631579,
+        "bootstrap_95": [
+          0.47368421052631576,
+          0.5625
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.052631578947368446,
+        "bootstrap_95": [
+          -0.10526315789473689,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary/control",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary/control",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary/control",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary/control",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary/control",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary/control",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary/control",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary/control",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary/control",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary/control",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary/positive",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6992481203007519,
+        "bootstrap_95": [
+          0.6842105263157895,
+          0.7142857142857143
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5277777777777778,
+        "bootstrap_95": [
+          0.5,
+          0.5555555555555556
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary/positive",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6861111111111111,
+        "bootstrap_95": [
+          0.65,
+          0.7222222222222222
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.48684210526315785,
+        "bootstrap_95": [
+          0.47368421052631576,
+          0.5
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary/positive",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6992481203007519,
+        "bootstrap_95": [
+          0.6842105263157895,
+          0.7142857142857143
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5277777777777778,
+        "bootstrap_95": [
+          0.5,
+          0.5555555555555556
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary/positive",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6861111111111111,
+        "bootstrap_95": [
+          0.65,
+          0.7222222222222222
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.48684210526315785,
+        "bootstrap_95": [
+          0.47368421052631576,
+          0.5
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary/positive",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6992481203007519,
+        "bootstrap_95": [
+          0.6842105263157895,
+          0.7142857142857143
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": -0.23611111111111113,
+        "bootstrap_95": [
+          -0.25,
+          -0.22222222222222227
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.23611111111111113,
+        "bootstrap_95": [
+          -0.25,
+          -0.22222222222222227
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary/positive",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6861111111111111,
+        "bootstrap_95": [
+          0.65,
+          0.7222222222222222
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.25164473684210525,
+        "bootstrap_95": [
+          0.1875,
+          0.3157894736842105
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": -0.23519736842105263,
+        "bootstrap_95": [
+          -0.3125,
+          -0.15789473684210525
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.23519736842105263,
+        "bootstrap_95": [
+          -0.3125,
+          -0.15789473684210525
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary/positive",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6992481203007519,
+        "bootstrap_95": [
+          0.6842105263157895,
+          0.7142857142857143
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5277777777777778,
+        "bootstrap_95": [
+          0.5,
+          0.5555555555555556
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary/positive",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6861111111111111,
+        "bootstrap_95": [
+          0.65,
+          0.7222222222222222
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.48684210526315785,
+        "bootstrap_95": [
+          0.47368421052631576,
+          0.5
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary/positive",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.4342105263157895,
+        "bootstrap_95": [
+          0.3684210526315789,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": -0.23611111111111113,
+        "bootstrap_95": [
+          -0.25,
+          -0.22222222222222227
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.23611111111111113,
+        "bootstrap_95": [
+          -0.25,
+          -0.22222222222222227
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary/positive",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.5,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.39309210526315785,
+        "bootstrap_95": [
+          0.3125,
+          0.47368421052631576
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": -0.09375,
+        "bootstrap_95": [
+          -0.1875,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.09375,
+        "bootstrap_95": [
+          -0.1875,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_fast/control",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_fast/control",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.11666666666666667,
+        "bootstrap_95": [
+          0.11666666666666667,
+          0.11666666666666667
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_fast/control",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_fast/control",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_fast/control",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_fast/control",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.11666666666666667,
+        "bootstrap_95": [
+          0.11666666666666667,
+          0.11666666666666667
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_fast/control",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_fast/control",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_fast/control",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_fast/control",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_fast/positive",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6992481203007519,
+        "bootstrap_95": [
+          0.6842105263157895,
+          0.7142857142857143
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5277777777777778,
+        "bootstrap_95": [
+          0.5,
+          0.5555555555555556
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_fast/positive",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.788888888888889,
+        "bootstrap_95": [
+          0.7777777777777778,
+          0.8
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5657894736842105,
+        "bootstrap_95": [
+          0.5,
+          0.631578947368421
+        ]
+      },
+      "false_attention": {
+        "mean": 0.09761904761904762,
+        "bootstrap_95": [
+          0.09523809523809523,
+          0.1
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.15833333333333333,
+        "bootstrap_95": [
+          0.15,
+          0.16666666666666666
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.02631578947368421,
+        "bootstrap_95": [
+          0.0,
+          0.05263157894736842
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.4506578947368421,
+        "bootstrap_95": [
+          0.375,
+          0.5263157894736842
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.4506578947368421,
+        "bootstrap_95": [
+          0.375,
+          0.5263157894736842
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_fast/positive",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6992481203007519,
+        "bootstrap_95": [
+          0.6842105263157895,
+          0.7142857142857143
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5277777777777778,
+        "bootstrap_95": [
+          0.5,
+          0.5555555555555556
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_fast/positive",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.8944444444444444,
+        "bootstrap_95": [
+          0.8888888888888888,
+          0.9
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.11513157894736842,
+        "bootstrap_95": [
+          0.10526315789473684,
+          0.125
+        ]
+      },
+      "false_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.07894736842105263,
+        "bootstrap_95": [
+          0.0,
+          0.15789473684210525
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_fast/positive",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6992481203007519,
+        "bootstrap_95": [
+          0.6842105263157895,
+          0.7142857142857143
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": -0.23611111111111113,
+        "bootstrap_95": [
+          -0.25,
+          -0.22222222222222227
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.23611111111111113,
+        "bootstrap_95": [
+          -0.25,
+          -0.22222222222222227
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_fast/positive",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.788888888888889,
+        "bootstrap_95": [
+          0.7777777777777778,
+          0.8
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.4819078947368421,
+        "bootstrap_95": [
+          0.4375,
+          0.5263157894736842
+        ]
+      },
+      "false_attention": {
+        "mean": 0.09761904761904762,
+        "bootstrap_95": [
+          0.09523809523809523,
+          0.1
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.15833333333333333,
+        "bootstrap_95": [
+          0.15,
+          0.16666666666666666
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.3667763157894737,
+        "bootstrap_95": [
+          0.3125,
+          0.42105263157894735
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.3667763157894737,
+        "bootstrap_95": [
+          0.3125,
+          0.42105263157894735
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_fast/positive",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6992481203007519,
+        "bootstrap_95": [
+          0.6842105263157895,
+          0.7142857142857143
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5277777777777778,
+        "bootstrap_95": [
+          0.5,
+          0.5555555555555556
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_fast/positive",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.8944444444444444,
+        "bootstrap_95": [
+          0.8888888888888888,
+          0.9
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.11513157894736842,
+        "bootstrap_95": [
+          0.10526315789473684,
+          0.125
+        ]
+      },
+      "false_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.07894736842105263,
+        "bootstrap_95": [
+          0.0,
+          0.15789473684210525
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_fast/positive",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.4342105263157895,
+        "bootstrap_95": [
+          0.3684210526315789,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": -0.23611111111111113,
+        "bootstrap_95": [
+          -0.25,
+          -0.22222222222222227
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.23611111111111113,
+        "bootstrap_95": [
+          -0.25,
+          -0.22222222222222227
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_fast/positive",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6833333333333333,
+        "bootstrap_95": [
+          0.6666666666666666,
+          0.7
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5345394736842105,
+        "bootstrap_95": [
+          0.4375,
+          0.631578947368421
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.4194078947368421,
+        "bootstrap_95": [
+          0.3125,
+          0.5263157894736842
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.4194078947368421,
+        "bootstrap_95": [
+          0.3125,
+          0.5263157894736842
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_slow/control",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_slow/control",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.09166666666666667,
+        "bootstrap_95": [
+          0.08333333333333333,
+          0.1
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_slow/control",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_slow/control",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.25,
+        "bootstrap_95": [
+          0.23333333333333334,
+          0.26666666666666666
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_slow/control",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_slow/control",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.09166666666666667,
+        "bootstrap_95": [
+          0.08333333333333333,
+          0.1
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_slow/control",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_slow/control",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.25,
+        "bootstrap_95": [
+          0.23333333333333334,
+          0.26666666666666666
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_slow/control",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_slow/control",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": null,
+      "localized_repeat": null,
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": null,
+      "deletion_repeat_identity": null
+    }
+  },
+  {
+    "suite": "stationary_slow/positive",
+    "mode": "adaptive_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6992481203007519,
+        "bootstrap_95": [
+          0.6842105263157895,
+          0.7142857142857143
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5277777777777778,
+        "bootstrap_95": [
+          0.5,
+          0.5555555555555556
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_slow/positive",
+    "mode": "adaptive_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.475,
+        "bootstrap_95": [
+          0.45,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.23519736842105263,
+        "bootstrap_95": [
+          0.15789473684210525,
+          0.3125
+        ]
+      },
+      "false_attention": {
+        "mean": 0.07261904761904761,
+        "bootstrap_95": [
+          0.05,
+          0.09523809523809523
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.13055555555555554,
+        "bootstrap_95": [
+          0.1111111111111111,
+          0.15
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": -0.10526315789473684,
+        "bootstrap_95": [
+          -0.21052631578947367,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.10526315789473684,
+        "bootstrap_95": [
+          -0.21052631578947367,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_slow/positive",
+    "mode": "calibrated_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6992481203007519,
+        "bootstrap_95": [
+          0.6842105263157895,
+          0.7142857142857143
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5277777777777778,
+        "bootstrap_95": [
+          0.5,
+          0.5555555555555556
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_slow/positive",
+    "mode": "calibrated_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.5,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.3404605263157895,
+        "bootstrap_95": [
+          0.3125,
+          0.3684210526315789
+        ]
+      },
+      "false_attention": {
+        "mean": 0.21904761904761905,
+        "bootstrap_95": [
+          0.2,
+          0.23809523809523808
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.31666666666666665,
+        "bootstrap_95": [
+          0.3,
+          0.3333333333333333
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_slow/positive",
+    "mode": "guarded_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6992481203007519,
+        "bootstrap_95": [
+          0.6842105263157895,
+          0.7142857142857143
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": -0.23611111111111113,
+        "bootstrap_95": [
+          -0.25,
+          -0.22222222222222227
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.23611111111111113,
+        "bootstrap_95": [
+          -0.25,
+          -0.22222222222222227
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_slow/positive",
+    "mode": "guarded_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.475,
+        "bootstrap_95": [
+          0.45,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.17763157894736842,
+        "bootstrap_95": [
+          0.10526315789473684,
+          0.25
+        ]
+      },
+      "false_attention": {
+        "mean": 0.07261904761904761,
+        "bootstrap_95": [
+          0.05,
+          0.09523809523809523
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.13055555555555554,
+        "bootstrap_95": [
+          0.1111111111111111,
+          0.15
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": -0.16282894736842105,
+        "bootstrap_95": [
+          -0.2631578947368421,
+          -0.0625
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.16282894736842105,
+        "bootstrap_95": [
+          -0.2631578947368421,
+          -0.0625
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_slow/positive",
+    "mode": "quiet_band",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.6992481203007519,
+        "bootstrap_95": [
+          0.6842105263157895,
+          0.7142857142857143
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.5277777777777778,
+        "bootstrap_95": [
+          0.5,
+          0.5555555555555556
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_slow/positive",
+    "mode": "quiet_band",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.5,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.3404605263157895,
+        "bootstrap_95": [
+          0.3125,
+          0.3684210526315789
+        ]
+      },
+      "false_attention": {
+        "mean": 0.21904761904761905,
+        "bootstrap_95": [
+          0.2,
+          0.23809523809523808
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.31666666666666665,
+        "bootstrap_95": [
+          0.3,
+          0.3333333333333333
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_slow/positive",
+    "mode": "spectral_gain",
+    "phase": "before",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.4342105263157895,
+        "bootstrap_95": [
+          0.3684210526315789,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.29166666666666663,
+        "bootstrap_95": [
+          0.25,
+          0.3333333333333333
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": -0.23611111111111113,
+        "bootstrap_95": [
+          -0.25,
+          -0.22222222222222227
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": -0.23611111111111113,
+        "bootstrap_95": [
+          -0.25,
+          -0.22222222222222227
+        ]
+      }
+    }
+  },
+  {
+    "suite": "stationary_slow/positive",
+    "mode": "spectral_gain",
+    "phase": "after",
+    "n_seeds": 2,
+    "metrics": {
+      "localized_detection": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.5,
+          0.5
+        ]
+      },
+      "localized_repeat": {
+        "mean": 0.36184210526315785,
+        "bootstrap_95": [
+          0.25,
+          0.47368421052631576
+        ]
+      },
+      "false_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "localized_repeat_minus_quiet_band": {
+        "mean": 0.021381578947368418,
+        "bootstrap_95": [
+          -0.0625,
+          0.10526315789473684
+        ]
+      },
+      "localized_repeat_minus_calibrated_gain": {
+        "mean": 0.021381578947368418,
+        "bootstrap_95": [
+          -0.0625,
+          0.10526315789473684
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "issue": "ch-6w4.10.4",
+  "date": "2026-10-25",
+  "stage": "Frozen after three development stages and before evaluation",
+  "evaluation_seeds": [1200,1201,1202,1203,1204,1205,1206,1207,1208,1209],
+  "rms_candidate_selected_by_original_rule": 0.02,
+  "new_candidate_of_interest": "spectral_gain, fixed 0.02 second common median-band gain and three-clip warmup-only profile",
+  "development_evidence": "Spectral candidate has no ambience admissions or attention in any development cell; equal-cell primary localized repeat mean is 49.7%, versus 19.9% for selected RMS and 27.4% for quiet-band. Stationary recall is lower than quiet-band, so this is a tradeoff rather than uniform improvement.",
+  "all_evaluation_methods": ["original","quiet_band","binwise","gain_0.005s","gain_0.01s","gain_0.02s","gain_0.05s","gain_0.2s","gain_0.5s","spectral_gain"],
+  "evaluation_rule": "No code, parameter or selection changes based on evaluation outcomes. Report all candidates; attention/admission controls, primary and sensitivity localization, correct identity and overlap controls. No live/default frontend replacement based on this procedural study.",
+  "scope": "Same six predeclared cells; foreground SNR -6 dB before common channel. Broader levels, spectral transitions, contaminated warmup and source variation require new splits and follow-up work."
+}

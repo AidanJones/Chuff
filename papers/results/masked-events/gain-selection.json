@@ -1,0 +1,72 @@
+{
+  "stage": "frozen-before-evaluation",
+  "input_summary_sha256": {
+    "gain-development": "3376984e8c5fe20ccaec1e72c58d93325ba977bb1269c836815ed163a871772a",
+    "gain-development-2": "6f2d49a6c5ba9b9bce39aada2127b4718cdccd186985947eb1d6a377169fa470"
+  },
+  "candidates": [
+    {
+      "time_s": 0.05,
+      "source": "gain-development",
+      "mode": "gain_005",
+      "false_admissions": 0,
+      "max_cell_attention": 0.975,
+      "mean_localized_repeat": 0.25421478826496746,
+      "eligible": false
+    },
+    {
+      "time_s": 0.2,
+      "source": "gain-development",
+      "mode": "gain_02",
+      "false_admissions": 0,
+      "max_cell_attention": 0.975,
+      "mean_localized_repeat": 0.27319792911190766,
+      "eligible": false
+    },
+    {
+      "time_s": 0.5,
+      "source": "gain-development",
+      "mode": "gain_05",
+      "false_admissions": 2,
+      "max_cell_attention": 0.975,
+      "mean_localized_repeat": 0.32510288065843623,
+      "eligible": false
+    },
+    {
+      "time_s": 0.005,
+      "source": "gain-development-2",
+      "mode": "gain_0.005s",
+      "false_admissions": 0,
+      "max_cell_attention": 0.0,
+      "mean_localized_repeat": 0.11814682065578122,
+      "eligible": true
+    },
+    {
+      "time_s": 0.01,
+      "source": "gain-development-2",
+      "mode": "gain_0.01s",
+      "false_admissions": 0,
+      "max_cell_attention": 0.0,
+      "mean_localized_repeat": 0.16487455197132617,
+      "eligible": true
+    },
+    {
+      "time_s": 0.02,
+      "source": "gain-development-2",
+      "mode": "gain_0.02s",
+      "false_admissions": 0,
+      "max_cell_attention": 0.0,
+      "mean_localized_repeat": 0.19872560732775785,
+      "eligible": true
+    }
+  ],
+  "selected": {
+    "time_s": 0.02,
+    "source": "gain-development-2",
+    "mode": "gain_0.02s",
+    "false_admissions": 0,
+    "max_cell_attention": 0.0,
+    "mean_localized_repeat": 0.19872560732775785,
+    "eligible": true
+  }
+}

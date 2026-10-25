@@ -1,0 +1,31 @@
+{
+  "study": "Masked acoustic foreground discovery",
+  "date": "2026-10-17",
+  "status": "Local analysis plan fixed after development, before new evaluation; not external preregistration",
+  "development": {
+    "seeds": [0, 1, 2],
+    "snr_db": [-6, 0],
+    "iterations": ["band-local gating and relative-feature ablation", "quiet-frame noise estimate", "unsmoothed temporal support after impulse-negative-control failure"],
+    "regression_fixture_seeds": [42, 43, 44]
+  },
+  "evaluation": {"seed_start": 300, "seeds": 10, "snr_db": [-6, 0, 6]},
+  "stress": {"seed_start": 400, "seeds": 10, "snr_db": [-12, -9]},
+  "suites": ["tonal", "extended", "background"],
+  "rounds": 120,
+  "selected": {
+    "local_threshold": 3.5,
+    "broad_threshold": 1.5,
+    "smoothing_frames": 5,
+    "feature_mode": 0,
+    "noise_mode": 1,
+    "min_duration_s": 0.08,
+    "max_duration_s": 0.95,
+    "match_distance": 0.18,
+    "confirmations": 2
+  },
+  "comparisons": ["original", "band_gate_raw", "band_relative", "quiet_band"],
+  "primary_outcomes": ["correct repeat recognition including missed events", "false long-term admissions per seed"],
+  "secondary_outcomes": ["detection recall", "background attention", "event-class breakdown"],
+  "uncertainty": "10000 paired bootstrap resamples over independent seeds within each suite and SNR; no pooled-window significance test; no multiplicity-adjusted confirmatory claim",
+  "recordings": "Procedural mixtures only. No claim of validation on recorded speech or field audio."
+}

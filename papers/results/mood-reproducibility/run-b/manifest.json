@@ -1,0 +1,24 @@
+{
+  "source_sha256": {
+    "python/src/chuff_mpu/sim/mood_demo.py": "7415c143f28ace4d27ce0a9e7cec89346b90740e77c3d503244d540f941e0af4",
+    "python/src/chuff_mpu/sim/agent.py": "43c62b51f3f768c8021fe0e04cb107dbe7efdc25d5d8bcb79ae231ac6f0accb7",
+    "python/src/chuff_mpu/sim/world.py": "67856ebee3483ed818b02f3d100e1c70c7ba33539671fc58eb4c913fdce37458",
+    "python/src/chuff_mpu/sim/tones.py": "af4be0b692f0398aebf64b1e5385aa2b480dc72639f6285a30205d09a6c40790",
+    "python/src/chuff_mpu/memory.py": "7ebc3d89182c073f04ec3285f04b83662f88ae3d7a52f4f7dc0666c2b62e4e43",
+    "python/src/chuff_mpu/dream.py": "2056951966e7a9b94e5686f7f2c36fd87bd922bc9ea82b0ef5738261ea87d3de",
+    "python/src/chuff_mpu/mood.py": "8aabb9525490f76ca3b499aa8a0fe9a14a8e9a6137a2fb7f0817aa6b6fae2f8f",
+    "python/src/chuff_mpu/audio.py": "9d521941041a3364fdebcbea9548ab0408cd8f7eb716df3b7e7ad32f2dbc0929",
+    "python/src/chuff_mpu/audio_safety.py": "c419f87b29c141782bf1b9ec27e25789ea789b4fdc9940dff4ac4c67e58b7015",
+    "python/src/chuff_mpu/comms.py": "e23630121daf7384ece3e4cb46b8d755b458e83b4f68a87732dc708e3e559a90",
+    "python/src/chuff_mpu/config.py": "2e5324a31350a3b9f16d8bc48d4afdeaf5d183ff122525e0438fa19de754b8fa",
+    "python/pyproject.toml": "bc802161d478700225a0fe1202fc6798bd8944662f2ced8c06b70b8bca4cf0b9",
+    "python/uv.lock": "b57614d7855a68bc26ebfd8a8c2fa20c6050bbedeeb5789af7ebe6d59d4cc3af"
+  },
+  "python": "3.11.15",
+  "dependencies": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "librosa": "0.11.0",
+    "scikit-learn": "1.9.1"
+  }
+}

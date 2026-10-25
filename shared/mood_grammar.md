@@ -35,7 +35,15 @@ child who has spent time with Chuff.
 
 ## Current implementation status (MVP)
 
-Neither track implements the full table yet. What's running today:
+The Python `update_mood` API supports all nine labels with explicit event
+inputs, verified by transition/precedence fixtures (25 October 2026). Pass
+`learned=True` for an actual admission and `learned=False` to permit strong
+novelty without admission; omission retains the legacy high-novelty/immediate
+admission convention. Acknowledgement remains an external protocol event.
+The seeded mood demo can inject explicit synthetic ACK ticks for replay,
+but this does not implement an acoustic ACK detector or physical displays.
+
+Neither hardware track implements the full table yet. What's running today:
 
 - **esp32/**: a "dreaming after idle" behaviour only (slow idle-animation
   cadence after 5 minutes with no touch, wakes on touch) — see

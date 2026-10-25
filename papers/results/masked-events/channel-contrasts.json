@@ -1,0 +1,241 @@
+{
+  "input_summary_sha256": "f04e4eab9895bfc8e610d9b217453843a16ab94393aa853483b33d5cb5516700",
+  "analysis_source_sha256": {
+    "channel_metrics.py": "ff3e966483dd6e24dd7159e588cfc046361aa326f9f73c252c2862769b2c8e02",
+    "audit_channel.py": "3c03426bcef6c373a787070ce8c58a361ab4b7f103a8330d01aa2da7f61f7508"
+  },
+  "source_directory": "channel-contrasts-source",
+  "contrasts": [
+    {
+      "current": "reference/post_residual",
+      "reference": "reference/input",
+      "mode": "original",
+      "n_seeds": 10,
+      "mean": -0.023497845372845372,
+      "bootstrap_95": [
+        -0.040299262174262176,
+        -0.008530405405405405
+      ]
+    },
+    {
+      "current": "reference/post_residual",
+      "reference": "reference/input",
+      "mode": "quiet_band",
+      "n_seeds": 10,
+      "mean": -0.13210786881045503,
+      "bootstrap_95": [
+        -0.19290497640497642,
+        -0.07592229592229592
+      ]
+    },
+    {
+      "current": "reference/post_residual",
+      "reference": "reference/input",
+      "mode": "calibrated_gain",
+      "n_seeds": 10,
+      "mean": -0.12261437593334146,
+      "bootstrap_95": [
+        -0.1751868015230084,
+        -0.06442209236282516
+      ]
+    },
+    {
+      "current": "pitch/post_residual",
+      "reference": "pitch/input",
+      "mode": "original",
+      "n_seeds": 10,
+      "mean": -0.0038461538461538464,
+      "bootstrap_95": [
+        -0.011538461538461539,
+        0.0
+      ]
+    },
+    {
+      "current": "pitch/post_residual",
+      "reference": "pitch/input",
+      "mode": "quiet_band",
+      "n_seeds": 10,
+      "mean": -0.09190448477086408,
+      "bootstrap_95": [
+        -0.13554198841698842,
+        -0.05645969406906907
+      ]
+    },
+    {
+      "current": "pitch/post_residual",
+      "reference": "pitch/input",
+      "mode": "calibrated_gain",
+      "n_seeds": 10,
+      "mean": -0.06056774138670691,
+      "bootstrap_95": [
+        -0.11066922264012781,
+        -0.012847178305152487
+      ]
+    },
+    {
+      "current": "duration/post_residual",
+      "reference": "duration/input",
+      "mode": "original",
+      "n_seeds": 10,
+      "mean": -0.010542582417582418,
+      "bootstrap_95": [
+        -0.02135989010989011,
+        0.0
+      ]
+    },
+    {
+      "current": "duration/post_residual",
+      "reference": "duration/input",
+      "mode": "quiet_band",
+      "n_seeds": 10,
+      "mean": -0.10130343113101732,
+      "bootstrap_95": [
+        -0.15440444323633978,
+        -0.05481981697498939
+      ]
+    },
+    {
+      "current": "duration/post_residual",
+      "reference": "duration/input",
+      "mode": "calibrated_gain",
+      "n_seeds": 10,
+      "mean": -0.1501731264231264,
+      "bootstrap_95": [
+        -0.2165143251080751,
+        -0.08149190055440059
+      ]
+    },
+    {
+      "current": "pitch_duration/post_residual",
+      "reference": "pitch_duration/input",
+      "mode": "original",
+      "n_seeds": 10,
+      "mean": -0.007692307692307693,
+      "bootstrap_95": [
+        -0.023076923076923078,
+        0.0
+      ]
+    },
+    {
+      "current": "pitch_duration/post_residual",
+      "reference": "pitch_duration/input",
+      "mode": "quiet_band",
+      "n_seeds": 10,
+      "mean": -0.05681225110104421,
+      "bootstrap_95": [
+        -0.08272162976850478,
+        -0.03343497978250133
+      ]
+    },
+    {
+      "current": "pitch_duration/post_residual",
+      "reference": "pitch_duration/input",
+      "mode": "calibrated_gain",
+      "n_seeds": 10,
+      "mean": -0.02002511297769919,
+      "bootstrap_95": [
+        -0.04770368089764641,
+        0.010003306878306872
+      ]
+    },
+    {
+      "current": "pitch/post_residual",
+      "reference": "reference/post_residual",
+      "mode": "original",
+      "n_seeds": 10,
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "current": "pitch/post_residual",
+      "reference": "reference/post_residual",
+      "mode": "quiet_band",
+      "n_seeds": 10,
+      "mean": -0.10386106692141175,
+      "bootstrap_95": [
+        -0.16010194095431163,
+        -0.05162034905784907
+      ]
+    },
+    {
+      "current": "pitch/post_residual",
+      "reference": "reference/post_residual",
+      "mode": "calibrated_gain",
+      "n_seeds": 10,
+      "mean": -0.16914535390828495,
+      "bootstrap_95": [
+        -0.25707822970754,
+        -0.08644373087207147
+      ]
+    },
+    {
+      "current": "duration/post_residual",
+      "reference": "reference/post_residual",
+      "mode": "original",
+      "n_seeds": 10,
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "current": "duration/post_residual",
+      "reference": "reference/post_residual",
+      "mode": "quiet_band",
+      "n_seeds": 10,
+      "mean": -0.0415893832919695,
+      "bootstrap_95": [
+        -0.07921820958889925,
+        -0.002351330886352452
+      ]
+    },
+    {
+      "current": "duration/post_residual",
+      "reference": "reference/post_residual",
+      "mode": "calibrated_gain",
+      "n_seeds": 10,
+      "mean": -0.07677972473231094,
+      "bootstrap_95": [
+        -0.14071807071376038,
+        -0.022262373637373642
+      ]
+    },
+    {
+      "current": "pitch_duration/post_residual",
+      "reference": "reference/post_residual",
+      "mode": "original",
+      "n_seeds": 10,
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "current": "pitch_duration/post_residual",
+      "reference": "reference/post_residual",
+      "mode": "quiet_band",
+      "n_seeds": 10,
+      "mean": -0.119974941074079,
+      "bootstrap_95": [
+        -0.18072747539719522,
+        -0.06720544251147702
+      ]
+    },
+    {
+      "current": "pitch_duration/post_residual",
+      "reference": "reference/post_residual",
+      "mode": "calibrated_gain",
+      "n_seeds": 10,
+      "mean": -0.15430378512275061,
+      "bootstrap_95": [
+        -0.21752105707924674,
+        -0.09582513159237296
+      ]
+    }
+  ]
+}

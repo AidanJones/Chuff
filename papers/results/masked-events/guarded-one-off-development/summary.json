@@ -1,0 +1,1934 @@
+[
+  {
+    "seed": 2200,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 117,
+          "detected_events": 0
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "double_chime"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 117,
+          "detected_events": 0
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "double_chime"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary/double_chime",
+    "case": "stationary",
+    "label": "double_chime",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 0
+      },
+      "guarded_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2201,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 117,
+          "detected_events": 0
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "double_chime"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 117,
+          "detected_events": 0
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "double_chime"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary/double_chime",
+    "case": "stationary",
+    "label": "double_chime",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 0
+      },
+      "guarded_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2200,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 116,
+          "candidate": 1,
+          "detected_events": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "rising_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 116,
+          "candidate": 1,
+          "detected_events": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "rising_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary/rising_call",
+    "case": "stationary",
+    "label": "rising_call",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 1.0,
+        "background_admissions": 0
+      },
+      "guarded_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 1.0,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2201,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 116,
+          "candidate": 1,
+          "detected_events": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "rising_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 116,
+          "candidate": 1,
+          "detected_events": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "rising_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary/rising_call",
+    "case": "stationary",
+    "label": "rising_call",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 1.0,
+        "background_admissions": 0
+      },
+      "guarded_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 1.0,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2200,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 116,
+          "candidate": 1,
+          "detected_events": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "falling_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 116,
+          "candidate": 1,
+          "detected_events": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "falling_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary/falling_call",
+    "case": "stationary",
+    "label": "falling_call",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 1.0,
+        "background_admissions": 0
+      },
+      "guarded_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 1.0,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2201,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 116,
+          "candidate": 1,
+          "detected_events": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "falling_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 116,
+          "candidate": 1,
+          "detected_events": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "falling_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary/falling_call",
+    "case": "stationary",
+    "label": "falling_call",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 1.0,
+        "background_admissions": 0
+      },
+      "guarded_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 1.0,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2200,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 116,
+          "candidate": 1,
+          "detected_events": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "low_rustle"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 116,
+          "candidate": 1,
+          "detected_events": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "low_rustle"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary/low_rustle",
+    "case": "stationary",
+    "label": "low_rustle",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 1.0,
+        "background_admissions": 0
+      },
+      "guarded_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 1.0,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2201,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 117,
+          "detected_events": 0
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "low_rustle"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 117,
+          "detected_events": 0
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "low_rustle"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary/low_rustle",
+    "case": "stationary",
+    "label": "low_rustle",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 0
+      },
+      "guarded_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2200,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 117,
+          "detected_events": 0
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "high_rustle"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 117,
+          "detected_events": 0
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "high_rustle"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary/high_rustle",
+    "case": "stationary",
+    "label": "high_rustle",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 0
+      },
+      "guarded_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2201,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 116,
+          "candidate": 1,
+          "detected_events": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "high_rustle"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 116,
+          "candidate": 1,
+          "detected_events": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "high_rustle"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary/high_rustle",
+    "case": "stationary",
+    "label": "high_rustle",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 1.0,
+        "background_admissions": 0
+      },
+      "guarded_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 1.0,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2200,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 117,
+          "detected_events": 0
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "long_alarm"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 117,
+          "detected_events": 0
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "long_alarm"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary/long_alarm",
+    "case": "stationary",
+    "label": "long_alarm",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 0
+      },
+      "guarded_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2201,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 117,
+          "detected_events": 0
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "long_alarm"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 3,
+          "correct_repeat_recognition": 0,
+          "background": 117,
+          "detected_events": 0
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "long_alarm"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.0,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary/long_alarm",
+    "case": "stationary",
+    "label": "long_alarm",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 0
+      },
+      "guarded_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2200,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 109,
+          "candidate": 1,
+          "background_attention": 5,
+          "learned": 1,
+          "false_admissions": 1,
+          "detected_events": 0,
+          "recognised": 3,
+          "wrong_recognition": 3
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "double_chime"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 1,
+        "final_memory_size": 1,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 109,
+          "candidate": 5,
+          "background_attention": 5,
+          "detected_events": 0
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "double_chime"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary_slow/double_chime",
+    "case": "stationary_slow",
+    "label": "double_chime",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 1
+      },
+      "guarded_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2201,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 108,
+          "candidate": 3,
+          "background_attention": 5,
+          "learned": 1,
+          "false_admissions": 1,
+          "detected_events": 1,
+          "recognised": 2,
+          "wrong_recognition": 2
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "double_chime"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 1,
+        "final_memory_size": 1,
+        "novelty_mean": {
+          "first": 0.3727623224258423,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 108,
+          "candidate": 6,
+          "background_attention": 5,
+          "detected_events": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "double_chime"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary_slow/double_chime",
+    "case": "stationary_slow",
+    "label": "double_chime",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 0.3727623224258423,
+        "background_admissions": 1
+      },
+      "guarded_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 1.0,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2200,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 109,
+          "candidate": 1,
+          "background_attention": 5,
+          "learned": 1,
+          "false_admissions": 1,
+          "detected_events": 0,
+          "recognised": 3,
+          "wrong_recognition": 3
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "rising_call"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 1,
+        "final_memory_size": 1,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 109,
+          "candidate": 5,
+          "background_attention": 5,
+          "detected_events": 0
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "rising_call"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary_slow/rising_call",
+    "case": "stationary_slow",
+    "label": "rising_call",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 1
+      },
+      "guarded_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2201,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 108,
+          "candidate": 3,
+          "background_attention": 5,
+          "learned": 1,
+          "false_admissions": 1,
+          "detected_events": 1,
+          "recognised": 2,
+          "wrong_recognition": 2
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "rising_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 1,
+        "final_memory_size": 1,
+        "novelty_mean": {
+          "first": 0.2837616801261902,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 108,
+          "candidate": 6,
+          "background_attention": 5,
+          "detected_events": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "rising_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary_slow/rising_call",
+    "case": "stationary_slow",
+    "label": "rising_call",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 0.2837616801261902,
+        "background_admissions": 1
+      },
+      "guarded_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 1.0,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2200,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 109,
+          "candidate": 1,
+          "background_attention": 5,
+          "learned": 1,
+          "false_admissions": 1,
+          "detected_events": 0,
+          "recognised": 3,
+          "wrong_recognition": 3
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "falling_call"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 1,
+        "final_memory_size": 1,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 109,
+          "candidate": 5,
+          "background_attention": 5,
+          "detected_events": 0
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "falling_call"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary_slow/falling_call",
+    "case": "stationary_slow",
+    "label": "falling_call",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 1
+      },
+      "guarded_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2201,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 108,
+          "candidate": 3,
+          "background_attention": 5,
+          "learned": 1,
+          "false_admissions": 1,
+          "detected_events": 1,
+          "recognised": 2,
+          "wrong_recognition": 2
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "falling_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 1,
+        "final_memory_size": 1,
+        "novelty_mean": {
+          "first": 0.294816792011261,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 108,
+          "candidate": 6,
+          "background_attention": 5,
+          "detected_events": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "falling_call"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary_slow/falling_call",
+    "case": "stationary_slow",
+    "label": "falling_call",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 0.294816792011261,
+        "background_admissions": 1
+      },
+      "guarded_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 1.0,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2200,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 109,
+          "candidate": 1,
+          "background_attention": 5,
+          "learned": 1,
+          "false_admissions": 1,
+          "detected_events": 0,
+          "recognised": 3,
+          "wrong_recognition": 3
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "low_rustle"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 1,
+        "final_memory_size": 1,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 109,
+          "candidate": 5,
+          "background_attention": 5,
+          "detected_events": 0
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "low_rustle"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary_slow/low_rustle",
+    "case": "stationary_slow",
+    "label": "low_rustle",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 1
+      },
+      "guarded_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2201,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 108,
+          "candidate": 2,
+          "background_attention": 5,
+          "learned": 1,
+          "false_admissions": 1,
+          "recognised": 3,
+          "detected_events": 1,
+          "wrong_recognition": 3
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "low_rustle"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 1,
+        "final_memory_size": 1,
+        "novelty_mean": {
+          "first": 0.13074135780334473,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 108,
+          "candidate": 6,
+          "background_attention": 5,
+          "detected_events": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "low_rustle"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary_slow/low_rustle",
+    "case": "stationary_slow",
+    "label": "low_rustle",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "recognised",
+        "target_novelty": 0.13074135780334473,
+        "background_admissions": 1
+      },
+      "guarded_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "candidate",
+        "target_novelty": 1.0,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2200,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 111,
+          "candidate": 1,
+          "background_attention": 3,
+          "learned": 1,
+          "false_admissions": 1,
+          "detected_events": 0,
+          "recognised": 1,
+          "wrong_recognition": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "high_rustle"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.025210084033613446,
+        "false_admissions": 1,
+        "final_memory_size": 1,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 111,
+          "candidate": 3,
+          "background_attention": 3,
+          "detected_events": 0
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "high_rustle"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.025210084033613446,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary_slow/high_rustle",
+    "case": "stationary_slow",
+    "label": "high_rustle",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 1
+      },
+      "guarded_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2201,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 108,
+          "candidate": 2,
+          "background_attention": 5,
+          "learned": 1,
+          "false_admissions": 1,
+          "recognised": 3,
+          "detected_events": 1,
+          "wrong_recognition": 3
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "high_rustle"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 1,
+        "final_memory_size": 1,
+        "novelty_mean": {
+          "first": 0.13073575496673584,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 108,
+          "candidate": 6,
+          "background_attention": 5,
+          "detected_events": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "high_rustle"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary_slow/high_rustle",
+    "case": "stationary_slow",
+    "label": "high_rustle",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "recognised",
+        "target_novelty": 0.13073575496673584,
+        "background_admissions": 1
+      },
+      "guarded_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "candidate",
+        "target_novelty": 1.0,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2200,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 109,
+          "candidate": 1,
+          "background_attention": 5,
+          "learned": 1,
+          "false_admissions": 1,
+          "detected_events": 0,
+          "recognised": 3,
+          "wrong_recognition": 3
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "long_alarm"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 1,
+        "final_memory_size": 1,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 109,
+          "candidate": 5,
+          "background_attention": 5,
+          "detected_events": 0
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "long_alarm"
+        ],
+        "event_detection_rate": 0.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.04201680672268908,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": null,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary_slow/long_alarm",
+    "case": "stationary_slow",
+    "label": "long_alarm",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 1
+      },
+      "guarded_gain": {
+        "localized_attention": 0,
+        "localized_novel_attention": 0,
+        "target_status": "background",
+        "target_novelty": null,
+        "background_admissions": 0
+      }
+    }
+  },
+  {
+    "seed": 2201,
+    "snr_db": -6,
+    "structured_distractors": false,
+    "metrics": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 109,
+          "candidate": 2,
+          "background_attention": 4,
+          "learned": 1,
+          "false_admissions": 1,
+          "detected_events": 1,
+          "recognised": 2,
+          "wrong_recognition": 2
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "long_alarm"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.03361344537815126,
+        "false_admissions": 1,
+        "final_memory_size": 1,
+        "novelty_mean": {
+          "first": 0.18265950679779053,
+          "repeat": null
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 120,
+          "event_windows": 1,
+          "background_windows": 119,
+          "repeat_windows": 0,
+          "calibrating": 6,
+          "correct_repeat_recognition": 0,
+          "background": 109,
+          "candidate": 5,
+          "background_attention": 4,
+          "detected_events": 1
+        },
+        "learned_labels": [],
+        "observed_labels": [
+          "long_alarm"
+        ],
+        "event_detection_rate": 1.0,
+        "repeat_recognition_rate": null,
+        "background_attention_rate": 0.03361344537815126,
+        "false_admissions": 0,
+        "final_memory_size": 0,
+        "novelty_mean": {
+          "first": 1.0,
+          "repeat": null
+        }
+      }
+    },
+    "suite": "stationary_slow/long_alarm",
+    "case": "stationary_slow",
+    "label": "long_alarm",
+    "one_off": {
+      "adaptive_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 0.18265950679779053,
+        "background_admissions": 1
+      },
+      "guarded_gain": {
+        "localized_attention": 1,
+        "localized_novel_attention": 1,
+        "target_status": "candidate",
+        "target_novelty": 1.0,
+        "background_admissions": 0
+      }
+    }
+  }
+]

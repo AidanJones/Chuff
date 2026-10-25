@@ -1,0 +1,2949 @@
+{
+  "estimates": [
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.7357946846648371,
+          "bootstrap_95": [
+            0.685697308195795,
+            0.7799472556035846
+          ]
+        },
+        "matched_background": {
+          "mean": 0.7086130450136472,
+          "bootstrap_95": [
+            0.6661293679240602,
+            0.7497130300918152
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.7781668459120412,
+          "bootstrap_95": [
+            0.7559752628165559,
+            0.801730065024293
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.027181639651190016,
+          "bootstrap_95": [
+            -0.0011426783479348906,
+            0.06519114340079571
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": -0.04237216124720404,
+          "bootstrap_95": [
+            -0.0787590010887593,
+            -0.00859210777530181
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.6559877546719117,
+          "bootstrap_95": [
+            0.6080513817415149,
+            0.7018558699828273
+          ]
+        },
+        "matched_background": {
+          "mean": 0.5552358459907619,
+          "bootstrap_95": [
+            0.5332210009470936,
+            0.5752285459474499
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.6290002479761169,
+          "bootstrap_95": [
+            0.6052414771246957,
+            0.6529071919075558
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.10075190868114985,
+          "bootstrap_95": [
+            0.0640071226505953,
+            0.13882179820714
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.02698750669579487,
+          "bootstrap_95": [
+            -0.007208784056364871,
+            0.06305874118873417
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.4433278293918952,
+          "bootstrap_95": [
+            0.39117268789301685,
+            0.4988299715286242
+          ]
+        },
+        "matched_background": {
+          "mean": 0.24450910466405942,
+          "bootstrap_95": [
+            0.2199115255858441,
+            0.27093682995216894
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.28826437384447995,
+          "bootstrap_95": [
+            0.2657085846746023,
+            0.30991627633906926
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.19881872472783582,
+          "bootstrap_95": [
+            0.14704452187942435,
+            0.25604863273366774
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.1550634555474153,
+          "bootstrap_95": [
+            0.10987519244075418,
+            0.2049459772823244
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.16444668735333043,
+          "bootstrap_95": [
+            0.05908177905308465,
+            0.2776819814709775
+          ]
+        },
+        "matched_background": {
+          "mean": 0.10560723514211887,
+          "bootstrap_95": [
+            0.0,
+            0.25232558139534883
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.1580915970623454,
+          "bootstrap_95": [
+            0.05654010840108401,
+            0.2689099357156362
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.05883945221121158,
+          "bootstrap_95": [
+            -0.011107959916808468,
+            0.14467868244858917
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.006355090290985003,
+          "bootstrap_95": [
+            0.0008150795769243865,
+            0.01232171680772896
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.16166890957555266,
+          "bootstrap_95": [
+            0.05840108401084011,
+            0.27227874537979285
+          ]
+        },
+        "matched_background": {
+          "mean": 0.10050387596899224,
+          "bootstrap_95": [
+            0.0,
+            0.2393410852713178
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.14116332973726456,
+          "bootstrap_95": [
+            0.05030216802168023,
+            0.24060974052695383
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.06116503360656043,
+          "bootstrap_95": [
+            -0.006887213194977359,
+            0.14526064084170254
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.02050557983828812,
+          "bootstrap_95": [
+            0.008218094157685773,
+            0.03327734256077169
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.12825080911547831,
+          "bootstrap_95": [
+            0.04719831021839631,
+            0.21538530347854778
+          ]
+        },
+        "matched_background": {
+          "mean": 0.03981912144702842,
+          "bootstrap_95": [
+            0.0,
+            0.09186046511627907
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.07980458424625286,
+          "bootstrap_95": [
+            0.028496287661406057,
+            0.1359412515431584
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.08843168766844987,
+          "bootstrap_95": [
+            0.03753098597162443,
+            0.14149177538287008
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.04844622486922543,
+          "bootstrap_95": [
+            0.01876084010840108,
+            0.08164788436692501
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.8815200931428355,
+          "bootstrap_95": [
+            0.8564510326195544,
+            0.9064288694201086
+          ]
+        },
+        "matched_background": {
+          "mean": 0.8812596201150475,
+          "bootstrap_95": [
+            0.8488488491988276,
+            0.9128647320512665
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.8946621003297672,
+          "bootstrap_95": [
+            0.8750984380813095,
+            0.9140408448470243
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.0002604730277881995,
+          "bootstrap_95": [
+            -0.01772431139699814,
+            0.018434479881971045
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": -0.013142007186931592,
+          "bootstrap_95": [
+            -0.029717099620847013,
+            0.003035062822746007
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.839072920016536,
+          "bootstrap_95": [
+            0.795113343810167,
+            0.8776166365518583
+          ]
+        },
+        "matched_background": {
+          "mean": 0.7199037742000087,
+          "bootstrap_95": [
+            0.6843707685159484,
+            0.7487501031138611
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.7722977207034966,
+          "bootstrap_95": [
+            0.7474784981692902,
+            0.7959751352223225
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.11916914581652727,
+          "bootstrap_95": [
+            0.09536822440474965,
+            0.14056338870383997
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.06677519931303957,
+          "bootstrap_95": [
+            0.0398509153800407,
+            0.08540775745257435
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.5271033056540946,
+          "bootstrap_95": [
+            0.4923250848505407,
+            0.558694605105069
+          ]
+        },
+        "matched_background": {
+          "mean": 0.4183882435842433,
+          "bootstrap_95": [
+            0.384429664791016,
+            0.4500108883820159
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.4606345309843644,
+          "bootstrap_95": [
+            0.43581267336202767,
+            0.4872687717297327
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.10871506206985115,
+          "bootstrap_95": [
+            0.08583785803818399,
+            0.13208996425070638
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.06646877466973003,
+          "bootstrap_95": [
+            0.032432970838713895,
+            0.10410527180165022
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.4453313772659513,
+          "bootstrap_95": [
+            0.3853575293143892,
+            0.5184059313187143
+          ]
+        },
+        "matched_background": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.3555649115184868,
+          "bootstrap_95": [
+            0.30998993713199746,
+            0.41331346645620715
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.4453313772659513,
+          "bootstrap_95": [
+            0.3853575293143892,
+            0.5184059313187143
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.08976646574746446,
+          "bootstrap_95": [
+            0.07201679114051779,
+            0.10751552754897102
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.43156277762751427,
+          "bootstrap_95": [
+            0.3677559527992899,
+            0.509394218252585
+          ]
+        },
+        "matched_background": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.28877934281310386,
+          "bootstrap_95": [
+            0.2493401195808726,
+            0.3396955253040902
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.43156277762751427,
+          "bootstrap_95": [
+            0.3677559527992899,
+            0.509394218252585
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.14278343481441047,
+          "bootstrap_95": [
+            0.11532487343764461,
+            0.17093719181408462
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.24393218290683355,
+          "bootstrap_95": [
+            0.1896497531340974,
+            0.3194544268580984
+          ]
+        },
+        "matched_background": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.10453860492250469,
+          "bootstrap_95": [
+            0.08096729855073459,
+            0.13429303222015324
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.24393218290683355,
+          "bootstrap_95": [
+            0.1896497531340974,
+            0.3194544268580984
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.13939357798432891,
+          "bootstrap_95": [
+            0.10728362080566772,
+            0.18498438813252333
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.1528454231525463,
+          "bootstrap_95": [
+            0.08950881458853882,
+            0.21774841791509564
+          ]
+        },
+        "matched_background": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.12354213934581207,
+          "bootstrap_95": [
+            0.0710440127542913,
+            0.17633502536711412
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.1528454231525463,
+          "bootstrap_95": [
+            0.08950881458853882,
+            0.21774841791509564
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.029303283806734214,
+          "bootstrap_95": [
+            0.017752941710083337,
+            0.042236745942669726
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.1528454231525463,
+          "bootstrap_95": [
+            0.08950881458853882,
+            0.21774841791509564
+          ]
+        },
+        "matched_background": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.10078466970987636,
+          "bootstrap_95": [
+            0.05763174635919726,
+            0.1444610123765818
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.1528454231525463,
+          "bootstrap_95": [
+            0.08950881458853882,
+            0.21774841791509564
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.05206075344266993,
+          "bootstrap_95": [
+            0.03146574423415251,
+            0.07351679086291493
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.052455033561599695,
+          "bootstrap_95": [
+            0.02674956161326319,
+            0.07920459517486288
+          ]
+        },
+        "matched_background": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.020088704885171504,
+          "bootstrap_95": [
+            0.009655778055903213,
+            0.031128634624581538
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.052455033561599695,
+          "bootstrap_95": [
+            0.02674956161326319,
+            0.07920459517486288
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.03236632867642819,
+          "bootstrap_95": [
+            0.016613964610234337,
+            0.04848458114139964
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.7162220294038374,
+          "bootstrap_95": [
+            0.6682504677591016,
+            0.7643574547791784
+          ]
+        },
+        "matched_background": {
+          "mean": 0.09793363470424879,
+          "bootstrap_95": [
+            0.06537462111226826,
+            0.12882459782044628
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.6131863995173663,
+          "bootstrap_95": [
+            0.5735108255021816,
+            0.6557971967420899
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.6182883946995886,
+          "bootstrap_95": [
+            0.5594404818274686,
+            0.6794527175915441
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.10303562988647104,
+          "bootstrap_95": [
+            0.08298347941088427,
+            0.12358851309309399
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.6718662222575598,
+          "bootstrap_95": [
+            0.6207236255537565,
+            0.7222360758918807
+          ]
+        },
+        "matched_background": {
+          "mean": 0.04204413202265737,
+          "bootstrap_95": [
+            0.020084556915656766,
+            0.06591254329539832
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.48417584100505195,
+          "bootstrap_95": [
+            0.4443727109142117,
+            0.5247040334302325
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.6298220902349023,
+          "bootstrap_95": [
+            0.5668486228768189,
+            0.6912530706199602
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.1876903812525079,
+          "bootstrap_95": [
+            0.16549055541433857,
+            0.2084411616385793
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.44300953194865356,
+          "bootstrap_95": [
+            0.38479773851819565,
+            0.5131775208351524
+          ]
+        },
+        "matched_background": {
+          "mean": 0.006892265360060826,
+          "bootstrap_95": [
+            0.0,
+            0.013897973715016715
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.22056721013922598,
+          "bootstrap_95": [
+            0.18501174061433145,
+            0.26095078272383165
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.4361172665885927,
+          "bootstrap_95": [
+            0.3777913223868574,
+            0.5063034176782631
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.22244232180942763,
+          "bootstrap_95": [
+            0.1920053273342521,
+            0.2603207172285849
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.5067028409180095,
+          "bootstrap_95": [
+            0.4373157016765143,
+            0.5862876720053183
+          ]
+        },
+        "matched_background": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.41167748304645635,
+          "bootstrap_95": [
+            0.3531275562321059,
+            0.4788917237149181
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.5067028409180095,
+          "bootstrap_95": [
+            0.4373157016765143,
+            0.5862876720053183
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.09502535787155324,
+          "bootstrap_95": [
+            0.07959991345805874,
+            0.11001320505985765
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.49671386082985036,
+          "bootstrap_95": [
+            0.4251843093319602,
+            0.579112085634711
+          ]
+        },
+        "matched_background": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.33565413743332495,
+          "bootstrap_95": [
+            0.2851723663424288,
+            0.39507349981430034
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.49671386082985036,
+          "bootstrap_95": [
+            0.4251843093319602,
+            0.579112085634711
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.16105972339652527,
+          "bootstrap_95": [
+            0.13567739858227218,
+            0.1857268676610499
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.33921561291754604,
+          "bootstrap_95": [
+            0.2914583225762839,
+            0.3977414506008291
+          ]
+        },
+        "matched_background": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.1422308187325368,
+          "bootstrap_95": [
+            0.12046646741073995,
+            0.1676689516762628
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.33921561291754604,
+          "bootstrap_95": [
+            0.2914583225762839,
+            0.3977414506008291
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.19698479418500925,
+          "bootstrap_95": [
+            0.17026968524124148,
+            0.23058868842829094
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.21835114152506602,
+          "bootstrap_95": [
+            0.11048256935999518,
+            0.3388874886927734
+          ]
+        },
+        "matched_background": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.16954723986733275,
+          "bootstrap_95": [
+            0.08671769721309798,
+            0.26213247582473925
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.21835114152506602,
+          "bootstrap_95": [
+            0.11048256935999518,
+            0.3388874886927734
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.04880390165773329,
+          "bootstrap_95": [
+            0.022401809663841327,
+            0.07877101993920164
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.21002976419364566,
+          "bootstrap_95": [
+            0.10690495777123557,
+            0.3283224895176448
+          ]
+        },
+        "matched_background": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.13323706543689634,
+          "bootstrap_95": [
+            0.0671511596369891,
+            0.20968975892148362
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.21002976419364566,
+          "bootstrap_95": [
+            0.10690495777123557,
+            0.3283224895176448
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.07679269875674934,
+          "bootstrap_95": [
+            0.039048738027581506,
+            0.11919146348858267
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.09320441537142327,
+          "bootstrap_95": [
+            0.05043706729744189,
+            0.14502343350739444
+          ]
+        },
+        "matched_background": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.035275307122140845,
+          "bootstrap_95": [
+            0.019198153672885562,
+            0.05494289011437906
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.09320441537142327,
+          "bootstrap_95": [
+            0.05043706729744189,
+            0.14502343350739444
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.05792910824928242,
+          "bootstrap_95": [
+            0.031056738861183816,
+            0.08997936869085743
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.8145396722347756,
+          "bootstrap_95": [
+            0.7596445208106213,
+            0.8731306643111981
+          ]
+        },
+        "matched_background": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.6925591958564279,
+          "bootstrap_95": [
+            0.6370474005130442,
+            0.749907412463993
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.8145396722347756,
+          "bootstrap_95": [
+            0.7596445208106213,
+            0.8731306643111981
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.12198047637834777,
+          "bootstrap_95": [
+            0.10572847692722354,
+            0.13786527964340115
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.7886544329337115,
+          "bootstrap_95": [
+            0.7294696754340859,
+            0.8557331335184294
+          ]
+        },
+        "matched_background": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.5833875484313717,
+          "bootstrap_95": [
+            0.5316090341476567,
+            0.6398574995643936
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.7886544329337115,
+          "bootstrap_95": [
+            0.7294696754340859,
+            0.8557331335184294
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.20526688450233976,
+          "bootstrap_95": [
+            0.19015810913729617,
+            0.21808091970386193
+          ]
+        }
+      }
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "seeds": 10,
+      "metrics": {
+        "observed": {
+          "mean": 0.5094353351659955,
+          "bootstrap_95": [
+            0.42934996518107776,
+            0.5982550809261403
+          ]
+        },
+        "matched_background": {
+          "mean": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ]
+        },
+        "alternative_positions": {
+          "mean": 0.27118867474867153,
+          "bootstrap_95": [
+            0.21725054419119136,
+            0.33153654947664934
+          ]
+        },
+        "excess_over_background": {
+          "mean": 0.5094353351659955,
+          "bootstrap_95": [
+            0.42934996518107776,
+            0.5982550809261403
+          ]
+        },
+        "excess_over_alternatives": {
+          "mean": 0.2382466604173238,
+          "bootstrap_95": [
+            0.20728743665862817,
+            0.27176576389206863
+          ]
+        }
+      }
+    }
+  ],
+  "class_pooled_descriptive": [
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.625,
+      "matched_background": 0.5625,
+      "alternative_positions": 0.6747656249999997
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.7727272727272727,
+      "matched_background": 0.696969696969697,
+      "alternative_positions": 0.7849999999999999
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.6056338028169014,
+      "matched_background": 0.5915492957746479,
+      "alternative_positions": 0.7008450704225353
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 1.0,
+      "matched_background": 1.0,
+      "alternative_positions": 1.0
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.6290322580645161,
+      "matched_background": 0.6935483870967742,
+      "alternative_positions": 0.7116935483870968
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.7464788732394366,
+      "matched_background": 0.676056338028169,
+      "alternative_positions": 0.7752112676056336
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.484375,
+      "matched_background": 0.46875,
+      "alternative_positions": 0.5162499999999999
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.7575757575757576,
+      "matched_background": 0.5,
+      "alternative_positions": 0.6507575757575758
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.5070422535211268,
+      "matched_background": 0.4507042253521127,
+      "alternative_positions": 0.5590845070422534
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.8142857142857143,
+      "matched_background": 0.8428571428571429,
+      "alternative_positions": 0.8275
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.5806451612903226,
+      "matched_background": 0.5,
+      "alternative_positions": 0.5708870967741934
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.7464788732394366,
+      "matched_background": 0.5492957746478874,
+      "alternative_positions": 0.6269718309859156
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.4375,
+      "matched_background": 0.34375,
+      "alternative_positions": 0.2962499999999999
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.6666666666666666,
+      "matched_background": 0.2878787878787879,
+      "alternative_positions": 0.38689393939393935
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.4084507042253521,
+      "matched_background": 0.29577464788732394,
+      "alternative_positions": 0.3333098591549296
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.45161290322580644,
+      "matched_background": 0.3064516129032258,
+      "alternative_positions": 0.3304838709677419
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.676056338028169,
+      "matched_background": 0.2535211267605634,
+      "alternative_positions": 0.3857042253521128
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.296875,
+      "matched_background": 0.109375,
+      "alternative_positions": 0.28796875
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.25757575757575757,
+      "matched_background": 0.06060606060606061,
+      "alternative_positions": 0.24583333333333335
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.08450704225352113,
+      "matched_background": 0.09859154929577464,
+      "alternative_positions": 0.09394366197183099
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.014285714285714285,
+      "matched_background": 0.11428571428571428,
+      "alternative_positions": 0.014285714285714285
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.12903225806451613,
+      "matched_background": 0.11290322580645161,
+      "alternative_positions": 0.11814516129032258
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.22535211267605634,
+      "matched_background": 0.1267605633802817,
+      "alternative_positions": 0.2099295774647887
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.296875,
+      "matched_background": 0.109375,
+      "alternative_positions": 0.269453125
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.25757575757575757,
+      "matched_background": 0.045454545454545456,
+      "alternative_positions": 0.2261363636363636
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.08450704225352113,
+      "matched_background": 0.09859154929577464,
+      "alternative_positions": 0.08028169014084506
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.0,
+      "matched_background": 0.11428571428571428,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.12903225806451613,
+      "matched_background": 0.11290322580645161,
+      "alternative_positions": 0.1075
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.22535211267605634,
+      "matched_background": 0.11267605633802817,
+      "alternative_positions": 0.18739436619718314
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.25,
+      "matched_background": 0.0625,
+      "alternative_positions": 0.16554687499999998
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.18181818181818182,
+      "matched_background": 0.015151515151515152,
+      "alternative_positions": 0.12075757575757576
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.07042253521126761,
+      "matched_background": 0.07042253521126761,
+      "alternative_positions": 0.04408450704225353
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.0,
+      "matched_background": 0.02857142857142857,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.11290322580645161,
+      "matched_background": 0.04838709677419355,
+      "alternative_positions": 0.05903225806451613
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.16901408450704225,
+      "matched_background": 0.014084507042253521,
+      "alternative_positions": 0.10218309859154931
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.875,
+      "matched_background": 0.90625,
+      "alternative_positions": 0.8570312499999997
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.9545454545454546,
+      "matched_background": 0.8787878787878788,
+      "alternative_positions": 0.890151515151515
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.8169014084507042,
+      "matched_background": 0.8169014084507042,
+      "alternative_positions": 0.8670422535211267
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 1.0,
+      "matched_background": 1.0,
+      "alternative_positions": 1.0
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.7903225806451613,
+      "matched_background": 0.8548387096774194,
+      "alternative_positions": 0.8764516129032257
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.8591549295774648,
+      "matched_background": 0.8450704225352113,
+      "alternative_positions": 0.8748591549295773
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.703125,
+      "matched_background": 0.578125,
+      "alternative_positions": 0.6949218749999997
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.9393939393939394,
+      "matched_background": 0.7272727272727273,
+      "alternative_positions": 0.7544696969696967
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.7605633802816901,
+      "matched_background": 0.6056338028169014,
+      "alternative_positions": 0.7356338028169016
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.9857142857142858,
+      "matched_background": 1.0,
+      "alternative_positions": 0.9857142857142858
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.7741935483870968,
+      "matched_background": 0.6935483870967742,
+      "alternative_positions": 0.7368548387096775
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.8591549295774648,
+      "matched_background": 0.6901408450704225,
+      "alternative_positions": 0.7195774647887323
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.484375,
+      "matched_background": 0.421875,
+      "alternative_positions": 0.41476562500000014
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.5606060606060606,
+      "matched_background": 0.3484848484848485,
+      "alternative_positions": 0.4600757575757577
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.4507042253521127,
+      "matched_background": 0.38028169014084506,
+      "alternative_positions": 0.44197183098591536
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.6,
+      "matched_background": 0.6142857142857143,
+      "alternative_positions": 0.5685714285714285
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.4838709677419355,
+      "matched_background": 0.4032258064516129,
+      "alternative_positions": 0.45717741935483874
+    },
+    {
+      "suite": "varied/varied/fast/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.5774647887323944,
+      "matched_background": 0.352112676056338,
+      "alternative_positions": 0.42676056338028173
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.328125,
+      "matched_background": 0.0,
+      "alternative_positions": 0.224765625
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.803030303030303,
+      "matched_background": 0.0,
+      "alternative_positions": 0.6515151515151515
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.323943661971831,
+      "matched_background": 0.0,
+      "alternative_positions": 0.2742957746478873
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.3225806451612903,
+      "matched_background": 0.0,
+      "alternative_positions": 0.265
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.8450704225352113,
+      "matched_background": 0.0,
+      "alternative_positions": 0.678943661971831
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.25,
+      "matched_background": 0.0,
+      "alternative_positions": 0.17421874999999998
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.803030303030303,
+      "matched_background": 0.0,
+      "alternative_positions": 0.5340151515151513
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.323943661971831,
+      "matched_background": 0.0,
+      "alternative_positions": 0.22774647887323946
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.3064516129032258,
+      "matched_background": 0.0,
+      "alternative_positions": 0.2046774193548387
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.8450704225352113,
+      "matched_background": 0.0,
+      "alternative_positions": 0.5564084507042252
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.015625,
+      "matched_background": 0.0,
+      "alternative_positions": 0.008515625
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.5909090909090909,
+      "matched_background": 0.0,
+      "alternative_positions": 0.24636363636363645
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.11267605633802817,
+      "matched_background": 0.0,
+      "alternative_positions": 0.057676056338028164
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.016129032258064516,
+      "matched_background": 0.0,
+      "alternative_positions": 0.005887096774193548
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.676056338028169,
+      "matched_background": 0.0,
+      "alternative_positions": 0.28394366197183096
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.3125,
+      "matched_background": 0.0,
+      "alternative_positions": 0.2571875
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.18181818181818182,
+      "matched_background": 0.0,
+      "alternative_positions": 0.14590909090909093
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.04225352112676056,
+      "matched_background": 0.0,
+      "alternative_positions": 0.03950704225352113
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.04838709677419355,
+      "matched_background": 0.0,
+      "alternative_positions": 0.04032258064516129
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.30985915492957744,
+      "matched_background": 0.0,
+      "alternative_positions": 0.23943661971830982
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.3125,
+      "matched_background": 0.0,
+      "alternative_positions": 0.20953124999999995
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.18181818181818182,
+      "matched_background": 0.0,
+      "alternative_positions": 0.11765151515151515
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.04225352112676056,
+      "matched_background": 0.0,
+      "alternative_positions": 0.03556338028169014
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.04838709677419355,
+      "matched_background": 0.0,
+      "alternative_positions": 0.03282258064516129
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.30985915492957744,
+      "matched_background": 0.0,
+      "alternative_positions": 0.19338028169014085
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.3125,
+      "matched_background": 0.0,
+      "alternative_positions": 0.12351562499999999
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.014084507042253521,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0023943661971830986
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.609375,
+      "matched_background": 0.109375,
+      "alternative_positions": 0.4303906250000001
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.9242424242424242,
+      "matched_background": 0.030303030303030304,
+      "alternative_positions": 0.7681060606060603
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.6619718309859155,
+      "matched_background": 0.08450704225352113,
+      "alternative_positions": 0.5972535211267604
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.4857142857142857,
+      "matched_background": 0.18571428571428572,
+      "alternative_positions": 0.4857142857142857
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.6612903225806451,
+      "matched_background": 0.0967741935483871,
+      "alternative_positions": 0.6237903225806452
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.9154929577464789,
+      "matched_background": 0.09859154929577464,
+      "alternative_positions": 0.744507042253521
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.515625,
+      "matched_background": 0.046875,
+      "alternative_positions": 0.33875
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.9242424242424242,
+      "matched_background": 0.015151515151515152,
+      "alternative_positions": 0.6381060606060606
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.6619718309859155,
+      "matched_background": 0.056338028169014086,
+      "alternative_positions": 0.48760563380281685
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.32857142857142857,
+      "matched_background": 0.02857142857142857,
+      "alternative_positions": 0.3018571428571428
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.6451612903225806,
+      "matched_background": 0.04838709677419355,
+      "alternative_positions": 0.5113709677419354
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.9154929577464789,
+      "matched_background": 0.07042253521126761,
+      "alternative_positions": 0.605281690140845
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.140625,
+      "matched_background": 0.0,
+      "alternative_positions": 0.07687499999999999
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.6818181818181818,
+      "matched_background": 0.0,
+      "alternative_positions": 0.2978030303030304
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.38028169014084506,
+      "matched_background": 0.0,
+      "alternative_positions": 0.17640845070422534
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.2,
+      "matched_background": 0.0,
+      "alternative_positions": 0.2
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.45161290322580644,
+      "matched_background": 0.016129032258064516,
+      "alternative_positions": 0.23782258064516135
+    },
+    {
+      "suite": "varied/varied/slow/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.7746478873239436,
+      "matched_background": 0.028169014084507043,
+      "alternative_positions": 0.31683098591549297
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.34375,
+      "matched_background": 0.0,
+      "alternative_positions": 0.24171875000000004
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 1.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.82780303030303
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.28169014084507044,
+      "matched_background": 0.0,
+      "alternative_positions": 0.24838028169014081
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.3387096774193548,
+      "matched_background": 0.0,
+      "alternative_positions": 0.28225806451612895
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.1,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 1.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.804718309859155
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.296875,
+      "matched_background": 0.0,
+      "alternative_positions": 0.19015625000000003
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 1.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.6818939393939394
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.28169014084507044,
+      "matched_background": 0.0,
+      "alternative_positions": 0.20809859154929577
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.3225806451612903,
+      "matched_background": 0.0,
+      "alternative_positions": 0.22080645161290324
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.25,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 1.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.6564788732394367
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.015625,
+      "matched_background": 0.0,
+      "alternative_positions": 0.008515625
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.8939393939393939,
+      "matched_background": 0.0,
+      "alternative_positions": 0.37053030303030304
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.1267605633802817,
+      "matched_background": 0.0,
+      "alternative_positions": 0.05746478873239437
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "binwise",
+      "iou_threshold": 0.5,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.9295774647887324,
+      "matched_background": 0.0,
+      "alternative_positions": 0.38394366197183094
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.484375,
+      "matched_background": 0.0,
+      "alternative_positions": 0.3959375
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.2727272727272727,
+      "matched_background": 0.0,
+      "alternative_positions": 0.1990909090909091
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.014084507042253521,
+      "matched_background": 0.0,
+      "alternative_positions": 0.014084507042253521
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.04838709677419355,
+      "matched_background": 0.0,
+      "alternative_positions": 0.04314516129032258
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.1,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.4507042253521127,
+      "matched_background": 0.0,
+      "alternative_positions": 0.3377464788732395
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.484375,
+      "matched_background": 0.0,
+      "alternative_positions": 0.321328125
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.24242424242424243,
+      "matched_background": 0.0,
+      "alternative_positions": 0.140530303030303
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.014084507042253521,
+      "matched_background": 0.0,
+      "alternative_positions": 0.014084507042253521
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.04838709677419355,
+      "matched_background": 0.0,
+      "alternative_positions": 0.03774193548387097
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.25,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.43661971830985913,
+      "matched_background": 0.0,
+      "alternative_positions": 0.2659154929577465
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.484375,
+      "matched_background": 0.0,
+      "alternative_positions": 0.190546875
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.030303030303030304,
+      "matched_background": 0.0,
+      "alternative_positions": 0.009393939393939394
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "original",
+      "iou_threshold": 0.5,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 0.04225352112676056,
+      "matched_background": 0.0,
+      "alternative_positions": 0.012253521126760564
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.625,
+      "matched_background": 0.0,
+      "alternative_positions": 0.46117187499999995
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 1.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.8424999999999998
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.7464788732394366,
+      "matched_background": 0.0,
+      "alternative_positions": 0.6257746478873238
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.6,
+      "matched_background": 0.0,
+      "alternative_positions": 0.6
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.8870967741935484,
+      "matched_background": 0.0,
+      "alternative_positions": 0.7814516129032258
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.1,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 1.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.8169718309859153
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.515625,
+      "matched_background": 0.0,
+      "alternative_positions": 0.36890625000000005
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 1.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.6983333333333334
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.704225352112676,
+      "matched_background": 0.0,
+      "alternative_positions": 0.48929577464788737
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.6,
+      "matched_background": 0.0,
+      "alternative_positions": 0.5927142857142857
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.8709677419354839,
+      "matched_background": 0.0,
+      "alternative_positions": 0.647983870967742
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.25,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 1.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.6690845070422535
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "label": "double_chime",
+      "windows": 64,
+      "mean_duration_s": 0.360099609375,
+      "observed": 0.078125,
+      "matched_background": 0.0,
+      "alternative_positions": 0.0321875
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "label": "falling_call",
+      "windows": 66,
+      "mean_duration_s": 0.3504905303030302,
+      "observed": 0.9848484848484849,
+      "matched_background": 0.0,
+      "alternative_positions": 0.4250757575757575
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "label": "high_rustle",
+      "windows": 71,
+      "mean_duration_s": 0.39021478873239446,
+      "observed": 0.2112676056338028,
+      "matched_background": 0.0,
+      "alternative_positions": 0.11056338028169013
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "label": "long_alarm",
+      "windows": 70,
+      "mean_duration_s": 0.8123160714285714,
+      "observed": 0.4714285714285714,
+      "matched_background": 0.0,
+      "alternative_positions": 0.4714285714285714
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "label": "low_rustle",
+      "windows": 62,
+      "mean_duration_s": 0.392297379032258,
+      "observed": 0.20967741935483872,
+      "matched_background": 0.0,
+      "alternative_positions": 0.10129032258064515
+    },
+    {
+      "suite": "varied/varied/stationary/foreground",
+      "mode": "quiet_band",
+      "iou_threshold": 0.5,
+      "label": "rising_call",
+      "windows": 71,
+      "mean_duration_s": 0.3538978873239436,
+      "observed": 1.0,
+      "matched_background": 0.0,
+      "alternative_positions": 0.4185915492957745
+    }
+  ]
+}

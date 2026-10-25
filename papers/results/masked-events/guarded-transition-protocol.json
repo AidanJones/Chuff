@@ -1,0 +1,20 @@
+{
+  "task": "ch-6w4.10.4.2.2.3",
+  "development_seeds": [2200, 2201],
+  "evaluation_seeds": [2400, 2401, 2402, 2403, 2404, 2405, 2406, 2407, 2408, 2409],
+  "frozen_before_evaluation": true,
+  "development_variants": {
+    "v1_unconditional": "Always require current compensated evidence within cosine radius .18 of a proposed stored candidate. Archive retained; rejected because stationary identity48.7->25.2% on development.",
+    "v2_conditional": "In raw mode, two CV values >=.12 in a rolling three-window history activate uncertainty. Three consecutive CV<=.09 windows or entering compensated mode clear it. During uncertainty, require current compensated evidence within the normal .18 cosine radius before committing a confirmed candidate. Outside uncertainty preserve existing admission. Recognition of admitted memories bypasses the gate."
+  },
+  "shadow": "Always-compensated spectral frontend with no admitted/candidate prototype memory; same mixture waveform only; profile/background state remains independent",
+  "comparators": ["quiet_band", "spectral_gain", "calibrated_gain", "adaptive_gain", "guarded_gain_v2"],
+  "main_experiment": "Same ten cases and paired no-target controls as transition-protocol.json;120 one-second windows;-6dB post-channel current-source/residual",
+  "primary": ["After-change background admissions", "After-change localized repeat identity IoU>=.25 versus current adaptive"],
+  "secondary": ["Before/after false attention", "Same-state current-source deletion", "Full-run class coverage and first-admission occurrence", "Matched-class delay reported alongside lost/gained class cohorts", "Mode/detection parity"],
+  "one_off": "One target at zero-based window66 per120-window stream; all six factories crossed with stationary and stationary-to-slow backgrounds, each of10seeds. Compare adaptive/guarded novel attention and localized attention; no importance/one-shot-learning claim.",
+  "uncertainty": "Equal-seed paired bootstrap10000draws RNG731; average the six one-off factory outcomes within each seed before resampling; descriptive intervals without multiplicity adjustment",
+  "no_oracles": "No labels, phases, SNR, expected switches or stems reach actors",
+  "promotion": "Research actor only. A successful fixture result does not authorize changing the live default.",
+  "limitations": ["Fixed source factories", "No additional masker", "No deliberate contaminated initial calibration", "Shared level estimator assumptions", "Semantic importance and field robustness untested"]
+}

@@ -1,0 +1,10 @@
+{
+  "issue": "ch-6w4.9",
+  "date": "2026-10-25",
+  "stage": "Pipeline validated on seeds1500-1501; fixed before evaluation",
+  "evaluation_seeds": [1600,1601,1602,1603,1604,1605,1606,1607,1608,1609],
+  "result_of_development_checks": "6480 decisions, source snapshots, independent transform parameters, component examples, SNR targets and intervention metrics pass audit. All66 software tests pass. No learner parameters changed.",
+  "measurement_context": "Nominal input -6dB becomes approximately -3.2dB post-channel in these two development seeds. This motivates reporting both measurements and a matched post-residual condition; it is not a method-selection signal.",
+  "metadata_correction": "IndependentSourceScene inherited an unused source_resampling_range field from VariedScene in development metadata. Evaluation explicitly marks it null and adds the true independent ranges. Actual source_parameters and all waveform transforms were correct in development; archived development sources are preserved.",
+  "evaluation_rule": "All nine source/reference conditions and three unchanged learners; same prior-state probes and component validations. No algorithm or transform tuning on evaluation outcomes."
+}

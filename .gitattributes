@@ -1,0 +1,4 @@
+# Preserve exact bytes for hashed research sources, observations and outputs.
+# Normalizing JSON line endings would invalidate hashes on another platform.
+papers/results/** -text -whitespace
+papers/data/** -text -whitespace

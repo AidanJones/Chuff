@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter
+from copy import deepcopy
 from dataclasses import asdict
 from datetime import datetime, timezone
 import hashlib
@@ -65,14 +66,16 @@ class WholeClipLearner:
 
 
 def evaluate(seed: int, scene_config: SceneConfig, attention_config: AttentionConfig,
-             *, include_baseline: bool = True) -> tuple[dict, list[dict], np.ndarray]:
+             *, include_baseline: bool = True, learners: dict | None = None,
+             frames=None, counterfactual_probes: bool = False) -> tuple[dict, list[dict], np.ndarray]:
     if scene_config.sample_rate != attention_config.sample_rate:
         raise ValueError("scene and learner sample rates must match")
-    learners = {"foreground": ForegroundLearner(attention_config),
-                "foreground_single_sighting": ForegroundLearner(
-                    AttentionConfig(**{**asdict(attention_config), "confirmations": 1}))}
-    if include_baseline:
-        learners["whole_clip_mfcc"] = WholeClipLearner(scene_config.sample_rate, attention_config.capacity)
+    if learners is None:
+        learners = {"foreground": ForegroundLearner(attention_config),
+                    "foreground_single_sighting": ForegroundLearner(
+                        AttentionConfig(**{**asdict(attention_config), "confirmations": 1}))}
+        if include_baseline:
+            learners["whole_clip_mfcc"] = WholeClipLearner(scene_config.sample_rate, attention_config.capacity)
     assigned = {mode: {} for mode in learners}
     learned_labels = {mode: set() for mode in learners}
     counters = {mode: Counter() for mode in learners}
@@ -80,10 +83,20 @@ def evaluate(seed: int, scene_config: SceneConfig, attention_config: AttentionCo
     occurrences: Counter = Counter()
     rows = []
     clips = []
-    for step, frame in enumerate(AcousticScene(seed, scene_config)):
+    for step, frame in enumerate(AcousticScene(seed, scene_config) if frames is None else frames):
         clips.append(frame.audio)
         repeat = frame.label is not None and occurrences[frame.label] >= attention_config.confirmations
         for mode, learner in learners.items():
+            probe = None
+            probe_current_class = False
+            if counterfactual_probes and frame.label is not None:
+                if frame.without_current_source_audio is None:
+                    raise ValueError("counterfactual probe requires a source-removed waveform")
+                # Clone BEFORE either observation. The branch is discarded and
+                # cannot add memories/background updates to the real trajectory.
+                probe = deepcopy(learner).observe(frame.without_current_source_audio)
+                probe_current_class = (probe.status == "recognised"
+                    and assigned[mode].get(probe.prototype_id) == frame.label)
             # The complete learner interface: no label, stem, event mask or SNR.
             observation = learner.observe(frame.audio)
             count = counters[mode]
@@ -116,7 +129,18 @@ def evaluate(seed: int, scene_config: SceneConfig, attention_config: AttentionCo
                          "active_snr_db_before_channel": frame.active_snr_db,
                          "status": observation.status, "novelty": observation.novelty,
                          "salience": observation.salience, "prototype_id": observation.prototype_id,
-                         "memory_size": learner.memory_size})
+                         "memory_size": learner.memory_size,
+                         "event_start_s": frame.event_start_s, "event_stop_s": frame.event_stop_s,
+                         "previous_source_tail_s": frame.previous_source_tail_s,
+                         "region_start_s": observation.region_start_s,
+                         "region_stop_s": observation.region_stop_s,
+                         "post_channel_background_snr_db": frame.post_channel_background_snr_db,
+                         "post_channel_residual_snr_db": frame.post_channel_residual_snr_db,
+                         "source_parameters": frame.source_parameters})
+            if probe is not None:
+                rows[-1]["without_current_probe"] = dict(status=probe.status, prototype_id=probe.prototype_id,
+                    region_start_s=probe.region_start_s, region_stop_s=probe.region_stop_s,
+                    current_class_recognised=probe_current_class)
         if frame.label is not None:
             occurrences[frame.label] += 1
     metrics = {}

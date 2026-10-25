@@ -1,0 +1,22 @@
+{
+  "issue": "ch-6w4.10.1",
+  "date": "2026-10-25",
+  "status": "Local prospective diagnostic plan, before execution; not externally preregistered",
+  "event_seeds": [700, 701, 702, 703, 704, 705, 706, 707, 708, 709],
+  "environment_seed": "100000 + event seed",
+  "rounds": 120,
+  "snr_db_before_channel": [-6, 0],
+  "suites": ["reference", "source", "joint", "joint_nuisance", "joint_ambience"],
+  "methods": {
+    "original": "Unchanged original frontend",
+    "quiet_band": "Unchanged quiet-band default",
+    "confirm4": "Quiet-band with confirmations=4",
+    "wide": "Quiet-band with match_distance=0.28",
+    "wide_confirm4": "Quiet-band with confirmations=4 and match_distance=0.28"
+  },
+  "repeat_denominator": "After two true occurrences for every method, regardless of confirmation requirement",
+  "outcomes": ["detection", "correct repeat recognition", "six-way repeat error partition", "first admission occurrence", "admissions per class", "false admissions"],
+  "controls": "joint_ambience has both event and nuisance probabilities zero. Its audio is identical across nominal SNR values: do not double count those controls as independent evidence.",
+  "uncertainty": "10000 paired seed bootstrap draws within suite/SNR; contrasts to quiet-band; descriptive intervals without multiplicity adjustment",
+  "interpretation": "Fixed policy sensitivity experiment, no model selection or retuning on these seeds. Do not assume broader matches improve class identity. All stimuli procedural. Admission-time labels are evaluator proxies, not semantics."
+}

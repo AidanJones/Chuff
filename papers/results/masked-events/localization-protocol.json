@@ -1,0 +1,19 @@
+{
+  "issue": "ch-6w4.10.3",
+  "date": "2026-10-25",
+  "status": "Prospective local measurement plan; methods unchanged except passive telemetry",
+  "seeds": [1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009],
+  "rounds": 120,
+  "matrix": "Varied spectrum and channel; stationary, slow and fast modulation; pure ambience and foreground-positive streams",
+  "snr_before_channel_db": -6,
+  "methods": ["original", "quiet_band", "binwise"],
+  "primary_overlap_iou": 0.25,
+  "sensitivity_iou": [0.1, 0.5],
+  "event_interval": "Active source onset/offset before room and microphone filtering",
+  "detector_interval": "Full sample support of the selected STFT frames, including FFT width",
+  "tail_policy": "Flag source room-IR support continuing from previous windows; do not count it as a new event. IIR microphone tail is not finitely bounded. Report background attention with/without finite room-tail flag separately.",
+  "missing_timing": "Unknown, not zero success; fail audit if missing in this experiment",
+  "metrics": ["historical event-window detection", "IoU-localized detection", "identity-correct and IoU-localized repeat recognition", "pure ambience false attention", "background attention with/without room-tail flag"],
+  "uncertainty": "10000 seed bootstrap draws per cell and threshold; paired methods share audio; descriptive, no multiplicity adjustment",
+  "limits": "IoU coincidence is not clean-source attribution; broad regions may overlap by chance. Threshold sensitivity required. No timing truth reaches learner."
+}

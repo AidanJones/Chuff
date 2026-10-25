@@ -1,0 +1,16 @@
+{
+  "task": "ch-6w4.10.4.2.2.2",
+  "development_seeds": [1900, 1901],
+  "evaluation_seeds": [2200, 2201, 2202, 2203, 2204, 2205, 2206, 2207, 2208, 2209],
+  "frozen_before_evaluation": true,
+  "policy": "Initial calibrated-gain choice; after gain profile fit collect a rolling 9-window CV history. Require 7 values >= .12 to enable, or 7 <= .09 to disable. Apply switch on next window; clear history/background/pending confirmations; preserve admitted memory; suppress three settling windows. No data-driven parameter fitting.",
+  "development_observation": "Fast transitions improve and stationary returns recover recall on two development seeds; stationary-to-slow loses some localized identity while reducing false attention. Retain this version for evaluation without parameter changes.",
+  "comparison": "All three existing transition methods plus adaptive; same 10 cases and paired no-target controls as transition-protocol.json",
+  "rounds": 120,
+  "snr_db_post_residual": -6,
+  "primary": "After-change localized repeat identity, IoU >= .25, preserving prior occurrence/admission history",
+  "secondary": ["paired seed identity differences", "false attention/admissions", "same-state source-deletion identity", "gain-mode switches", "latency until five successive windows in the expected final mode"],
+  "information_boundary": "Expected final mode and change times are evaluator-only diagnostic definitions, never supplied to any actor",
+  "uncertainty": "10000 paired seed bootstrap draws, RNG 731; descriptive intervals",
+  "limitations": ["Contaminated startup and independent source overlap tracked separately", "Procedural sources", "Instantaneous changes", "Fixed calibrated spectrum template", "Not a validated live default"]
+}

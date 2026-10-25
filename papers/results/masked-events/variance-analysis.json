@@ -1,0 +1,2286 @@
+{
+  "contrasts_to_reference": [
+    {
+      "condition": "source",
+      "snr_db": -6,
+      "mode": "original",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.003333333333333333,
+      "bootstrap_95": [
+        -0.01,
+        0.0
+      ]
+    },
+    {
+      "condition": "source",
+      "snr_db": -6,
+      "mode": "original",
+      "metric": "event_detection_rate",
+      "mean": -0.009998743086978382,
+      "bootstrap_95": [
+        -0.031374120160884866,
+        0.01153971845148314
+      ]
+    },
+    {
+      "condition": "source",
+      "snr_db": -6,
+      "mode": "original",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "source",
+      "snr_db": -6,
+      "mode": "quiet_band",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.36490562438838303,
+      "bootstrap_95": [
+        -0.43560606060606055,
+        -0.2950886118989567
+      ]
+    },
+    {
+      "condition": "source",
+      "snr_db": -6,
+      "mode": "quiet_band",
+      "metric": "event_detection_rate",
+      "mean": -0.01710046588992069,
+      "bootstrap_95": [
+        -0.04764765662362506,
+        0.014734192457470766
+      ]
+    },
+    {
+      "condition": "source",
+      "snr_db": -6,
+      "mode": "quiet_band",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "room",
+      "snr_db": -6,
+      "mode": "original",
+      "metric": "repeat_recognition_rate",
+      "mean": 0.007539682539682539,
+      "bootstrap_95": [
+        0.0,
+        0.01865079365079365
+      ]
+    },
+    {
+      "condition": "room",
+      "snr_db": -6,
+      "mode": "original",
+      "metric": "event_detection_rate",
+      "mean": 0.000460364798600095,
+      "bootstrap_95": [
+        -0.030749030381383324,
+        0.026927968885689466
+      ]
+    },
+    {
+      "condition": "room",
+      "snr_db": -6,
+      "mode": "original",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "room",
+      "snr_db": -6,
+      "mode": "quiet_band",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.04888797664659735,
+      "bootstrap_95": [
+        -0.1248908730158731,
+        0.02405403584282889
+      ]
+    },
+    {
+      "condition": "room",
+      "snr_db": -6,
+      "mode": "quiet_band",
+      "metric": "event_detection_rate",
+      "mean": 0.015919908244155033,
+      "bootstrap_95": [
+        -0.023482312363230562,
+        0.05585344503655124
+      ]
+    },
+    {
+      "condition": "room",
+      "snr_db": -6,
+      "mode": "quiet_band",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "microphone",
+      "snr_db": -6,
+      "mode": "original",
+      "metric": "repeat_recognition_rate",
+      "mean": 0.04782538023917334,
+      "bootstrap_95": [
+        0.007407407407407407,
+        0.10072100313479623
+      ]
+    },
+    {
+      "condition": "microphone",
+      "snr_db": -6,
+      "mode": "original",
+      "metric": "event_detection_rate",
+      "mean": 0.06285238852491362,
+      "bootstrap_95": [
+        0.0250970066518847,
+        0.10302590679585835
+      ]
+    },
+    {
+      "condition": "microphone",
+      "snr_db": -6,
+      "mode": "original",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "microphone",
+      "snr_db": -6,
+      "mode": "quiet_band",
+      "metric": "repeat_recognition_rate",
+      "mean": 0.02750232207128759,
+      "bootstrap_95": [
+        -0.014562289562289577,
+        0.07493962614652269
+      ]
+    },
+    {
+      "condition": "microphone",
+      "snr_db": -6,
+      "mode": "quiet_band",
+      "metric": "event_detection_rate",
+      "mean": 0.020918952321391338,
+      "bootstrap_95": [
+        0.001388888888888873,
+        0.04322679353167157
+      ]
+    },
+    {
+      "condition": "microphone",
+      "snr_db": -6,
+      "mode": "quiet_band",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "background",
+      "snr_db": -6,
+      "mode": "original",
+      "metric": "repeat_recognition_rate",
+      "mean": 0.004206349206349206,
+      "bootstrap_95": [
+        -0.007222222222222222,
+        0.017063492063492065
+      ]
+    },
+    {
+      "condition": "background",
+      "snr_db": -6,
+      "mode": "original",
+      "metric": "event_detection_rate",
+      "mean": 0.001273073331896861,
+      "bootstrap_95": [
+        -0.029831932773109242,
+        0.029600301659125184
+      ]
+    },
+    {
+      "condition": "background",
+      "snr_db": -6,
+      "mode": "original",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "background",
+      "snr_db": -6,
+      "mode": "quiet_band",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.4058790698445871,
+      "bootstrap_95": [
+        -0.4536796536796537,
+        -0.361783350748868
+      ]
+    },
+    {
+      "condition": "background",
+      "snr_db": -6,
+      "mode": "quiet_band",
+      "metric": "event_detection_rate",
+      "mean": -0.16772550241883094,
+      "bootstrap_95": [
+        -0.2239555083396995,
+        -0.11516203771718478
+      ]
+    },
+    {
+      "condition": "background",
+      "snr_db": -6,
+      "mode": "quiet_band",
+      "metric": "false_admissions",
+      "mean": 0.8,
+      "bootstrap_95": [
+        0.5,
+        1.0
+      ]
+    },
+    {
+      "condition": "joint",
+      "snr_db": -6,
+      "mode": "original",
+      "metric": "repeat_recognition_rate",
+      "mean": 0.003333333333333333,
+      "bootstrap_95": [
+        0.0,
+        0.01
+      ]
+    },
+    {
+      "condition": "joint",
+      "snr_db": -6,
+      "mode": "original",
+      "metric": "event_detection_rate",
+      "mean": 0.02715752583937663,
+      "bootstrap_95": [
+        -0.015171991098730696,
+        0.0700844731796579
+      ]
+    },
+    {
+      "condition": "joint",
+      "snr_db": -6,
+      "mode": "original",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "joint",
+      "snr_db": -6,
+      "mode": "quiet_band",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.6017678011643529,
+      "bootstrap_95": [
+        -0.703392316017316,
+        -0.48474272901428067
+      ]
+    },
+    {
+      "condition": "joint",
+      "snr_db": -6,
+      "mode": "quiet_band",
+      "metric": "event_detection_rate",
+      "mean": -0.14605504789328316,
+      "bootstrap_95": [
+        -0.20694852941176467,
+        -0.08249146992713167
+      ]
+    },
+    {
+      "condition": "joint",
+      "snr_db": -6,
+      "mode": "quiet_band",
+      "metric": "false_admissions",
+      "mean": 0.9,
+      "bootstrap_95": [
+        0.5,
+        1.3
+      ]
+    },
+    {
+      "condition": "source",
+      "snr_db": 0,
+      "mode": "original",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.3672713589092899,
+      "bootstrap_95": [
+        -0.42580997474747484,
+        -0.3149084098372891
+      ]
+    },
+    {
+      "condition": "source",
+      "snr_db": 0,
+      "mode": "original",
+      "metric": "event_detection_rate",
+      "mean": 0.031939630989128845,
+      "bootstrap_95": [
+        0.014250302393684761,
+        0.054289774668182134
+      ]
+    },
+    {
+      "condition": "source",
+      "snr_db": 0,
+      "mode": "original",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "source",
+      "snr_db": 0,
+      "mode": "quiet_band",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.47857499460947733,
+      "bootstrap_95": [
+        -0.5451021711366539,
+        -0.40638346726708796
+      ]
+    },
+    {
+      "condition": "source",
+      "snr_db": 0,
+      "mode": "quiet_band",
+      "metric": "event_detection_rate",
+      "mean": -0.05985032622407085,
+      "bootstrap_95": [
+        -0.0839440072570901,
+        -0.037497347423818016
+      ]
+    },
+    {
+      "condition": "source",
+      "snr_db": 0,
+      "mode": "quiet_band",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "room",
+      "snr_db": 0,
+      "mode": "original",
+      "metric": "repeat_recognition_rate",
+      "mean": 0.050539715712129486,
+      "bootstrap_95": [
+        0.01139208173690932,
+        0.09025974025974023
+      ]
+    },
+    {
+      "condition": "room",
+      "snr_db": 0,
+      "mode": "original",
+      "metric": "event_detection_rate",
+      "mean": 0.03641668689193798,
+      "bootstrap_95": [
+        0.010625243882731372,
+        0.06239544768956532
+      ]
+    },
+    {
+      "condition": "room",
+      "snr_db": 0,
+      "mode": "original",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "room",
+      "snr_db": 0,
+      "mode": "quiet_band",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.0030660878074671325,
+      "bootstrap_95": [
+        -0.039563641339503415,
+        0.029642195767195744
+      ]
+    },
+    {
+      "condition": "room",
+      "snr_db": 0,
+      "mode": "quiet_band",
+      "metric": "event_detection_rate",
+      "mean": -0.003767680390707662,
+      "bootstrap_95": [
+        -0.01853135008622816,
+        0.00985962566844919
+      ]
+    },
+    {
+      "condition": "room",
+      "snr_db": 0,
+      "mode": "quiet_band",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "microphone",
+      "snr_db": 0,
+      "mode": "original",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.0028956228956229014,
+      "bootstrap_95": [
+        -0.04787878787878788,
+        0.030101010101010094
+      ]
+    },
+    {
+      "condition": "microphone",
+      "snr_db": 0,
+      "mode": "original",
+      "metric": "event_detection_rate",
+      "mean": -0.0036953242835595867,
+      "bootstrap_95": [
+        -0.0323529411764706,
+        0.0183257918552036
+      ]
+    },
+    {
+      "condition": "microphone",
+      "snr_db": 0,
+      "mode": "original",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "microphone",
+      "snr_db": 0,
+      "mode": "quiet_band",
+      "metric": "repeat_recognition_rate",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "microphone",
+      "snr_db": 0,
+      "mode": "quiet_band",
+      "metric": "event_detection_rate",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "microphone",
+      "snr_db": 0,
+      "mode": "quiet_band",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "background",
+      "snr_db": 0,
+      "mode": "original",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.22768941467217335,
+      "bootstrap_95": [
+        -0.30215924640493613,
+        -0.15805151266358164
+      ]
+    },
+    {
+      "condition": "background",
+      "snr_db": 0,
+      "mode": "original",
+      "metric": "event_detection_rate",
+      "mean": -0.13717369331608928,
+      "bootstrap_95": [
+        -0.205096752716238,
+        -0.07987518295310618
+      ]
+    },
+    {
+      "condition": "background",
+      "snr_db": 0,
+      "mode": "original",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "background",
+      "snr_db": 0,
+      "mode": "quiet_band",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.21333876532152396,
+      "bootstrap_95": [
+        -0.2749278810270189,
+        -0.1471035063276443
+      ]
+    },
+    {
+      "condition": "background",
+      "snr_db": 0,
+      "mode": "quiet_band",
+      "metric": "event_detection_rate",
+      "mean": -0.05491489918498528,
+      "bootstrap_95": [
+        -0.08356251494500239,
+        -0.03310809176774926
+      ]
+    },
+    {
+      "condition": "background",
+      "snr_db": 0,
+      "mode": "quiet_band",
+      "metric": "false_admissions",
+      "mean": 0.9,
+      "bootstrap_95": [
+        0.7,
+        1.0
+      ]
+    },
+    {
+      "condition": "joint",
+      "snr_db": 0,
+      "mode": "original",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.5549334063127167,
+      "bootstrap_95": [
+        -0.641053391053391,
+        -0.4767636131429235
+      ]
+    },
+    {
+      "condition": "joint",
+      "snr_db": 0,
+      "mode": "original",
+      "metric": "event_detection_rate",
+      "mean": -0.1740559715272771,
+      "bootstrap_95": [
+        -0.23648541096039297,
+        -0.1135487614370326
+      ]
+    },
+    {
+      "condition": "joint",
+      "snr_db": 0,
+      "mode": "original",
+      "metric": "false_admissions",
+      "mean": 0.0,
+      "bootstrap_95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "condition": "joint",
+      "snr_db": 0,
+      "mode": "quiet_band",
+      "metric": "repeat_recognition_rate",
+      "mean": -0.5946601482808379,
+      "bootstrap_95": [
+        -0.6578300679205852,
+        -0.5354467893217894
+      ]
+    },
+    {
+      "condition": "joint",
+      "snr_db": 0,
+      "mode": "quiet_band",
+      "metric": "event_detection_rate",
+      "mean": -0.07558912174227814,
+      "bootstrap_95": [
+        -0.09834552664874581,
+        -0.05160914759260349
+      ]
+    },
+    {
+      "condition": "joint",
+      "snr_db": 0,
+      "mode": "quiet_band",
+      "metric": "false_admissions",
+      "mean": 0.9,
+      "bootstrap_95": [
+        0.6,
+        1.2
+      ]
+    }
+  ],
+  "by_class": [
+    {
+      "suite": "joint",
+      "snr_db": -6,
+      "label": "double_chime",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.13245421245421246,
+          "repeat_events": 55
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.054329004329004324,
+          "bootstrap_95": [
+            0.0,
+            0.12056277056277054
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.537881562881563,
+          "repeat_events": 55
+        }
+      }
+    },
+    {
+      "suite": "joint",
+      "snr_db": -6,
+      "label": "falling_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.18690476190476188,
+          "repeat_events": 39
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.10333333333333332,
+          "bootstrap_95": [
+            0.0,
+            0.22333333333333333
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 39
+        }
+      }
+    },
+    {
+      "suite": "joint",
+      "snr_db": -6,
+      "label": "high_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.01111111111111111,
+          "repeat_events": 43
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.24523809523809526,
+          "bootstrap_95": [
+            0.05,
+            0.47857142857142854
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.5899572649572649,
+          "repeat_events": 43
+        }
+      }
+    },
+    {
+      "suite": "joint",
+      "snr_db": -6,
+      "label": "long_alarm",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.0,
+          "repeat_events": 34
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.04285714285714286,
+          "bootstrap_95": [
+            0.0,
+            0.12857142857142856
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.4638095238095238,
+          "repeat_events": 34
+        }
+      }
+    },
+    {
+      "suite": "joint",
+      "snr_db": -6,
+      "label": "low_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.046785714285714285,
+          "repeat_events": 37
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.16666666666666666,
+          "bootstrap_95": [
+            0.0,
+            0.3666666666666666
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.5771428571428572,
+          "repeat_events": 37
+        }
+      }
+    },
+    {
+      "suite": "joint",
+      "snr_db": -6,
+      "label": "rising_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.022222222222222223,
+          "bootstrap_95": [
+            0.0,
+            0.06666666666666668
+          ],
+          "eligible_seeds": 9,
+          "detection": 0.20381313131313133,
+          "repeat_events": 61
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.25013227513227515,
+          "bootstrap_95": [
+            0.12975859788359786,
+            0.37037037037037035
+          ],
+          "eligible_seeds": 9,
+          "detection": 0.9227272727272726,
+          "repeat_events": 61
+        }
+      }
+    },
+    {
+      "suite": "joint",
+      "snr_db": 0,
+      "label": "double_chime",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.1386147186147186,
+          "bootstrap_95": [
+            0.04317370129870131,
+            0.24718831168831165
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.7871611721611721,
+          "repeat_events": 55
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.14326839826839827,
+          "bootstrap_95": [
+            0.05357142857142857,
+            0.23821103896103887
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9026190476190477,
+          "repeat_events": 55
+        }
+      }
+    },
+    {
+      "suite": "joint",
+      "snr_db": 0,
+      "label": "falling_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.19666666666666666,
+          "bootstrap_95": [
+            0.08666666666666667,
+            0.31
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.8234523809523809,
+          "repeat_events": 39
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.255,
+          "bootstrap_95": [
+            0.15666666666666668,
+            0.34833333333333333
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 39
+        }
+      }
+    },
+    {
+      "suite": "joint",
+      "snr_db": 0,
+      "label": "high_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.3843073593073593,
+          "bootstrap_95": [
+            0.18333333333333332,
+            0.6045454545454545
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.560982905982906,
+          "repeat_events": 43
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.5124458874458874,
+          "bootstrap_95": [
+            0.2636363636363636,
+            0.7571428571428571
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9423076923076923,
+          "repeat_events": 43
+        }
+      }
+    },
+    {
+      "suite": "joint",
+      "snr_db": 0,
+      "label": "long_alarm",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.06944444444444445,
+          "repeat_events": 34
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.5828571428571429,
+          "repeat_events": 34
+        }
+      }
+    },
+    {
+      "suite": "joint",
+      "snr_db": 0,
+      "label": "low_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.31,
+          "bootstrap_95": [
+            0.1433333333333333,
+            0.48
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.6682142857142856,
+          "repeat_events": 37
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.5,
+          "bootstrap_95": [
+            0.2333333333333333,
+            0.7666666666666667
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 37
+        }
+      }
+    },
+    {
+      "suite": "joint",
+      "snr_db": 0,
+      "label": "rising_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.09382716049382717,
+          "bootstrap_95": [
+            0.018518518518518517,
+            0.18888888888888888
+          ],
+          "eligible_seeds": 9,
+          "detection": 0.7926839826839827,
+          "repeat_events": 61
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.39625220458553795,
+          "bootstrap_95": [
+            0.2872574955908289,
+            0.5064814814814814
+          ],
+          "eligible_seeds": 9,
+          "detection": 1.0,
+          "repeat_events": 61
+        }
+      }
+    },
+    {
+      "suite": "microphone",
+      "snr_db": -6,
+      "label": "double_chime",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.05428571428571429,
+          "bootstrap_95": [
+            0.0,
+            0.14857142857142858
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.2724542124542124,
+          "repeat_events": 55
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.4659307359307359,
+          "bootstrap_95": [
+            0.27878787878787875,
+            0.6409632034632033
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.7464652014652015,
+          "repeat_events": 55
+        }
+      }
+    },
+    {
+      "suite": "microphone",
+      "snr_db": -6,
+      "label": "falling_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.03333333333333333,
+          "bootstrap_95": [
+            0.0,
+            0.1
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.14023809523809522,
+          "repeat_events": 39
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.8666666666666668,
+          "bootstrap_95": [
+            0.6666666666666667,
+            1.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 39
+        }
+      }
+    },
+    {
+      "suite": "microphone",
+      "snr_db": -6,
+      "label": "high_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.0,
+          "repeat_events": 43
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.9,
+          "bootstrap_95": [
+            0.8,
+            1.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9583333333333334,
+          "repeat_events": 43
+        }
+      }
+    },
+    {
+      "suite": "microphone",
+      "snr_db": -6,
+      "label": "long_alarm",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.0,
+          "repeat_events": 34
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.21142857142857144,
+          "bootstrap_95": [
+            0.04,
+            0.42857142857142855
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.4526984126984127,
+          "repeat_events": 34
+        }
+      }
+    },
+    {
+      "suite": "microphone",
+      "snr_db": -6,
+      "label": "low_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.03428571428571429,
+          "repeat_events": 37
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.76,
+          "bootstrap_95": [
+            0.5533333333333333,
+            0.9166666666666666
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9407142857142856,
+          "repeat_events": 37
+        }
+      }
+    },
+    {
+      "suite": "microphone",
+      "snr_db": -6,
+      "label": "rising_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.11785714285714285,
+          "bootstrap_95": [
+            0.0,
+            0.23849206349206348
+          ],
+          "eligible_seeds": 9,
+          "detection": 0.3020382395382395,
+          "repeat_events": 61
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.9753086419753088,
+          "bootstrap_95": [
+            0.9259259259259258,
+            1.0
+          ],
+          "eligible_seeds": 9,
+          "detection": 1.0,
+          "repeat_events": 61
+        }
+      }
+    },
+    {
+      "suite": "microphone",
+      "snr_db": 0,
+      "label": "double_chime",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.781060606060606,
+          "bootstrap_95": [
+            0.5787878787878789,
+            0.931060606060606
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9174725274725276,
+          "repeat_events": 55
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.825,
+          "bootstrap_95": [
+            0.6666666666666666,
+            0.9666666666666666
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9633333333333333,
+          "repeat_events": 55
+        }
+      }
+    },
+    {
+      "suite": "microphone",
+      "snr_db": 0,
+      "label": "falling_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.8833333333333334,
+          "bootstrap_95": [
+            0.6833333333333333,
+            1.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.975,
+          "repeat_events": 39
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.9333333333333333,
+          "bootstrap_95": [
+            0.8333333333333334,
+            1.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 39
+        }
+      }
+    },
+    {
+      "suite": "microphone",
+      "snr_db": 0,
+      "label": "high_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.7083333333333333,
+          "bootstrap_95": [
+            0.4416666666666666,
+            0.95
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.8433333333333334,
+          "repeat_events": 43
+        },
+        "quiet_band": {
+          "repeat_recognition": 1.0,
+          "bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 43
+        }
+      }
+    },
+    {
+      "suite": "microphone",
+      "snr_db": 0,
+      "label": "long_alarm",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.0,
+          "repeat_events": 34
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.687142857142857,
+          "bootstrap_95": [
+            0.43714285714285717,
+            0.9028571428571428
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 34
+        }
+      }
+    },
+    {
+      "suite": "microphone",
+      "snr_db": 0,
+      "label": "low_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.6966666666666665,
+          "bootstrap_95": [
+            0.5133333333333333,
+            0.8433333333333334
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9225,
+          "repeat_events": 37
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.8133333333333332,
+          "bootstrap_95": [
+            0.6,
+            0.9666666666666666
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 37
+        }
+      }
+    },
+    {
+      "suite": "microphone",
+      "snr_db": 0,
+      "label": "rising_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.9814814814814815,
+          "bootstrap_95": [
+            0.9444444444444444,
+            1.0
+          ],
+          "eligible_seeds": 9,
+          "detection": 0.9875,
+          "repeat_events": 61
+        },
+        "quiet_band": {
+          "repeat_recognition": 1.0,
+          "bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "eligible_seeds": 9,
+          "detection": 1.0,
+          "repeat_events": 61
+        }
+      }
+    },
+    {
+      "suite": "reference",
+      "snr_db": -6,
+      "label": "double_chime",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.02,
+          "bootstrap_95": [
+            0.0,
+            0.06000000000000001
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.19705738705738707,
+          "repeat_events": 55
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.38545454545454544,
+          "bootstrap_95": [
+            0.2037878787878788,
+            0.5566666666666665
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.6885286935286935,
+          "repeat_events": 55
+        }
+      }
+    },
+    {
+      "suite": "reference",
+      "snr_db": -6,
+      "label": "falling_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.05928571428571429,
+          "repeat_events": 39
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.8416666666666668,
+          "bootstrap_95": [
+            0.6333333333333334,
+            0.9833333333333334
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 39
+        }
+      }
+    },
+    {
+      "suite": "reference",
+      "snr_db": -6,
+      "label": "high_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.0,
+          "repeat_events": 43
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.975,
+          "bootstrap_95": [
+            0.925,
+            1.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9833333333333334,
+          "repeat_events": 43
+        }
+      }
+    },
+    {
+      "suite": "reference",
+      "snr_db": -6,
+      "label": "long_alarm",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.0,
+          "repeat_events": 34
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.14285714285714285,
+          "bootstrap_95": [
+            0.0,
+            0.3571428571428571
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.4019047619047619,
+          "repeat_events": 34
+        }
+      }
+    },
+    {
+      "suite": "reference",
+      "snr_db": -6,
+      "label": "low_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.0,
+          "repeat_events": 37
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.76,
+          "bootstrap_95": [
+            0.5533333333333333,
+            0.9166666666666666
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9207142857142857,
+          "repeat_events": 37
+        }
+      }
+    },
+    {
+      "suite": "reference",
+      "snr_db": -6,
+      "label": "rising_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 9,
+          "detection": 0.17199494949494948,
+          "repeat_events": 61
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.9753086419753088,
+          "bootstrap_95": [
+            0.9259259259259258,
+            1.0
+          ],
+          "eligible_seeds": 9,
+          "detection": 1.0,
+          "repeat_events": 61
+        }
+      }
+    },
+    {
+      "suite": "reference",
+      "snr_db": 0,
+      "label": "double_chime",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.7667748917748918,
+          "bootstrap_95": [
+            0.569047619047619,
+            0.9084415584415584
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9063614163614163,
+          "repeat_events": 55
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.825,
+          "bootstrap_95": [
+            0.6666666666666666,
+            0.9666666666666666
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9633333333333333,
+          "repeat_events": 55
+        }
+      }
+    },
+    {
+      "suite": "reference",
+      "snr_db": 0,
+      "label": "falling_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.8666666666666668,
+          "bootstrap_95": [
+            0.6666666666666667,
+            1.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.975,
+          "repeat_events": 39
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.9333333333333333,
+          "bootstrap_95": [
+            0.8333333333333334,
+            1.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 39
+        }
+      }
+    },
+    {
+      "suite": "reference",
+      "snr_db": 0,
+      "label": "high_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.875,
+          "bootstrap_95": [
+            0.65,
+            1.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.95,
+          "repeat_events": 43
+        },
+        "quiet_band": {
+          "repeat_recognition": 1.0,
+          "bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 43
+        }
+      }
+    },
+    {
+      "suite": "reference",
+      "snr_db": 0,
+      "label": "long_alarm",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.0,
+          "repeat_events": 34
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.687142857142857,
+          "bootstrap_95": [
+            0.43714285714285717,
+            0.9028571428571428
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 34
+        }
+      }
+    },
+    {
+      "suite": "reference",
+      "snr_db": 0,
+      "label": "low_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.6233333333333333,
+          "bootstrap_95": [
+            0.4533333333333333,
+            0.7666666666666666
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.8739285714285714,
+          "repeat_events": 37
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.8133333333333332,
+          "bootstrap_95": [
+            0.6,
+            0.9666666666666666
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 37
+        }
+      }
+    },
+    {
+      "suite": "reference",
+      "snr_db": 0,
+      "label": "rising_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.9592592592592593,
+          "bootstrap_95": [
+            0.9037037037037037,
+            1.0
+          ],
+          "eligible_seeds": 9,
+          "detection": 0.9732142857142858,
+          "repeat_events": 61
+        },
+        "quiet_band": {
+          "repeat_recognition": 1.0,
+          "bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "eligible_seeds": 9,
+          "detection": 1.0,
+          "repeat_events": 61
+        }
+      }
+    },
+    {
+      "suite": "room",
+      "snr_db": -6,
+      "label": "double_chime",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0540909090909091,
+          "bootstrap_95": [
+            0.0,
+            0.11409090909090909
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.23633089133089133,
+          "repeat_events": 55
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.4259307359307359,
+          "bootstrap_95": [
+            0.26471861471861474,
+            0.5747467532467531
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.7836691086691087,
+          "repeat_events": 55
+        }
+      }
+    },
+    {
+      "suite": "room",
+      "snr_db": -6,
+      "label": "falling_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.10428571428571427,
+          "repeat_events": 39
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.8666666666666668,
+          "bootstrap_95": [
+            0.75,
+            0.9666666666666666
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 39
+        }
+      }
+    },
+    {
+      "suite": "room",
+      "snr_db": -6,
+      "label": "high_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.0,
+          "repeat_events": 43
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.9107142857142858,
+          "bootstrap_95": [
+            0.8,
+            1.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9472222222222222,
+          "repeat_events": 43
+        }
+      }
+    },
+    {
+      "suite": "room",
+      "snr_db": -6,
+      "label": "long_alarm",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.0,
+          "repeat_events": 34
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.314047619047619,
+          "bootstrap_95": [
+            0.12357142857142858,
+            0.5357142857142857
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.638968253968254,
+          "repeat_events": 34
+        }
+      }
+    },
+    {
+      "suite": "room",
+      "snr_db": -6,
+      "label": "low_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.0,
+          "repeat_events": 37
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.37166666666666665,
+          "bootstrap_95": [
+            0.19166666666666665,
+            0.5533333333333333
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.7748809523809523,
+          "repeat_events": 37
+        }
+      }
+    },
+    {
+      "suite": "room",
+      "snr_db": -6,
+      "label": "rising_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 9,
+          "detection": 0.12845238095238093,
+          "repeat_events": 61
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.9166666666666666,
+          "bootstrap_95": [
+            0.75,
+            1.0
+          ],
+          "eligible_seeds": 9,
+          "detection": 1.0,
+          "repeat_events": 61
+        }
+      }
+    },
+    {
+      "suite": "room",
+      "snr_db": 0,
+      "label": "double_chime",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.8115800865800866,
+          "bootstrap_95": [
+            0.7047619047619047,
+            0.915151515151515
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9444444444444444,
+          "repeat_events": 55
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.8801082251082251,
+          "bootstrap_95": [
+            0.800108225108225,
+            0.9550000000000001
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9756410256410257,
+          "repeat_events": 55
+        }
+      }
+    },
+    {
+      "suite": "room",
+      "snr_db": 0,
+      "label": "falling_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.9333333333333333,
+          "bootstrap_95": [
+            0.8333333333333334,
+            1.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 39
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.9333333333333333,
+          "bootstrap_95": [
+            0.8333333333333334,
+            1.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 39
+        }
+      }
+    },
+    {
+      "suite": "room",
+      "snr_db": 0,
+      "label": "high_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 1.0,
+          "bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 43
+        },
+        "quiet_band": {
+          "repeat_recognition": 1.0,
+          "bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 43
+        }
+      }
+    },
+    {
+      "suite": "room",
+      "snr_db": 0,
+      "label": "long_alarm",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.0,
+          "repeat_events": 34
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.7585714285714286,
+          "bootstrap_95": [
+            0.5428571428571429,
+            0.9400000000000001
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9777777777777779,
+          "repeat_events": 34
+        }
+      }
+    },
+    {
+      "suite": "room",
+      "snr_db": 0,
+      "label": "low_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.7466666666666667,
+          "bootstrap_95": [
+            0.5266666666666666,
+            0.9333333333333332
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.96,
+          "repeat_events": 37
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.8133333333333332,
+          "bootstrap_95": [
+            0.6,
+            0.9666666666666666
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 37
+        }
+      }
+    },
+    {
+      "suite": "room",
+      "snr_db": 0,
+      "label": "rising_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.9777777777777779,
+          "bootstrap_95": [
+            0.9333333333333333,
+            1.0
+          ],
+          "eligible_seeds": 9,
+          "detection": 1.0,
+          "repeat_events": 61
+        },
+        "quiet_band": {
+          "repeat_recognition": 1.0,
+          "bootstrap_95": [
+            1.0,
+            1.0
+          ],
+          "eligible_seeds": 9,
+          "detection": 1.0,
+          "repeat_events": 61
+        }
+      }
+    },
+    {
+      "suite": "source",
+      "snr_db": -6,
+      "label": "double_chime",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.2107936507936508,
+          "repeat_events": 55
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.06837662337662338,
+          "bootstrap_95": [
+            0.014285714285714285,
+            0.12818181818181817
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.7253418803418803,
+          "repeat_events": 55
+        }
+      }
+    },
+    {
+      "suite": "source",
+      "snr_db": -6,
+      "label": "falling_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.04285714285714286,
+          "repeat_events": 39
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.4066666666666666,
+          "bootstrap_95": [
+            0.23333333333333334,
+            0.5933333333333334
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 39
+        }
+      }
+    },
+    {
+      "suite": "source",
+      "snr_db": -6,
+      "label": "high_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.0,
+          "repeat_events": 43
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.6273809523809524,
+          "bootstrap_95": [
+            0.39166666666666666,
+            0.8357142857142857
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9583333333333334,
+          "repeat_events": 43
+        }
+      }
+    },
+    {
+      "suite": "source",
+      "snr_db": -6,
+      "label": "long_alarm",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.0,
+          "repeat_events": 34
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.3559523809523809,
+          "repeat_events": 34
+        }
+      }
+    },
+    {
+      "suite": "source",
+      "snr_db": -6,
+      "label": "low_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.0,
+          "repeat_events": 37
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.6183333333333334,
+          "bootstrap_95": [
+            0.39166666666666666,
+            0.8083333333333333
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.884047619047619,
+          "repeat_events": 37
+        }
+      }
+    },
+    {
+      "suite": "source",
+      "snr_db": -6,
+      "label": "rising_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 9,
+          "detection": 0.07679292929292929,
+          "repeat_events": 61
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.33902116402116406,
+          "bootstrap_95": [
+            0.20886243386243383,
+            0.4657638888888886
+          ],
+          "eligible_seeds": 9,
+          "detection": 1.0,
+          "repeat_events": 61
+        }
+      }
+    },
+    {
+      "suite": "source",
+      "snr_db": 0,
+      "label": "double_chime",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.13937229437229437,
+          "bootstrap_95": [
+            0.045,
+            0.24023809523809522
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9408058608058608,
+          "repeat_events": 55
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.1448917748917749,
+          "bootstrap_95": [
+            0.06655844155844155,
+            0.22337878787878784
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9817460317460316,
+          "repeat_events": 55
+        }
+      }
+    },
+    {
+      "suite": "source",
+      "snr_db": 0,
+      "label": "falling_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.38666666666666666,
+          "bootstrap_95": [
+            0.23325000000000004,
+            0.5633333333333332
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 39
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.38666666666666666,
+          "bootstrap_95": [
+            0.22000000000000003,
+            0.57
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 39
+        }
+      }
+    },
+    {
+      "suite": "source",
+      "snr_db": 0,
+      "label": "high_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.7273809523809524,
+          "bootstrap_95": [
+            0.4666666666666666,
+            0.9380952380952381
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.9666666666666666,
+          "repeat_events": 43
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.775,
+          "bootstrap_95": [
+            0.5,
+            1.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 43
+        }
+      }
+    },
+    {
+      "suite": "source",
+      "snr_db": 0,
+      "label": "long_alarm",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.11944444444444444,
+          "repeat_events": 34
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.0,
+          "bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.5685714285714286,
+          "repeat_events": 34
+        }
+      }
+    },
+    {
+      "suite": "source",
+      "snr_db": 0,
+      "label": "low_rustle",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.6399999999999999,
+          "bootstrap_95": [
+            0.4432500000000001,
+            0.8166666666666667
+          ],
+          "eligible_seeds": 10,
+          "detection": 0.8864285714285713,
+          "repeat_events": 37
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.8133333333333332,
+          "bootstrap_95": [
+            0.6,
+            0.9666666666666666
+          ],
+          "eligible_seeds": 10,
+          "detection": 1.0,
+          "repeat_events": 37
+        }
+      }
+    },
+    {
+      "suite": "source",
+      "snr_db": 0,
+      "label": "rising_call",
+      "modes": {
+        "original": {
+          "repeat_recognition": 0.2871693121693122,
+          "bootstrap_95": [
+            0.18730158730158727,
+            0.3777810846560846
+          ],
+          "eligible_seeds": 9,
+          "detection": 1.0,
+          "repeat_events": 61
+        },
+        "quiet_band": {
+          "repeat_recognition": 0.3871693121693121,
+          "bootstrap_95": [
+            0.24735449735449735,
+            0.5195767195767195
+          ],
+          "eligible_seeds": 9,
+          "detection": 1.0,
+          "repeat_events": 61
+        }
+      }
+    }
+  ]
+}

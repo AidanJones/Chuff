@@ -1,0 +1,19 @@
+{
+  "task": "ch-6w4.10.4.2.2.1",
+  "development_seeds": [1900, 1901],
+  "evaluation_seeds": [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009],
+  "frozen_before_evaluation": true,
+  "purpose": "Characterize changing-environment failure modes before developing a new adaptive policy",
+  "methods": ["quiet_band", "spectral_gain", "calibrated_gain"],
+  "cases": ["stationary", "slow", "fast", "stationary_fast", "fast_stationary", "stationary_slow", "slow_stationary", "silent_fast", "shallow", "spectral_fast"],
+  "paired_no_target_controls": true,
+  "rounds": 120,
+  "window_seconds": 1,
+  "change_window_zero_based": "60 except silent_fast at 6; constant cases split at 60 for reporting only",
+  "post_channel_current_source_to_residual_snr_db": -6,
+  "primary_endpoint": "After-change localized repeat identity with IoU >= .25; occurrences and admission labels retained from before the change",
+  "secondary_endpoints": ["before-change localized repeat identity", "false attention", "false admissions", "same-state current-source-deletion attention and repeat identity", "calibration and gain-mode telemetry"],
+  "uncertainty": "Equal-seed means, paired seed bootstrap 10000 draws using RNG seed 731; descriptive intervals without multiplicity adjustment",
+  "no_tuning": "Existing method settings retained. No adaptation policy or threshold is selected using these evaluation outcomes.",
+  "limitations": ["Procedural source factories", "No additional simultaneous masker", "No foreground-contaminated initial calibration", "Abrupt rather than cross-faded transitions", "Not calibrated room acoustics", "No hardware capture"]
+}

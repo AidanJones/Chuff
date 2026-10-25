@@ -1,0 +1,11 @@
+{
+  "issue": "ch-6w4.10.4",
+  "date": "2026-10-25",
+  "stage": "Second development stage, declared after observing the archived first stage and before evaluation",
+  "development_seeds": [1100, 1101, 1102],
+  "candidates_time_s": [0.005, 0.01, 0.02],
+  "reason": "Initial 0.05/0.2/0.5 s candidates all attend to 97.5% of fast ambience windows and fail the existing <=10% attention criterion. Profiling observed seed 1100 shows the 0.005/0.02 s normalized gate remains below threshold on sampled fast-ambience windows.",
+  "selection_rule": "Unchanged: no pure-ambience admissions and <=10% attention in every development cell, then highest equal-cell primary localized repeat recognition. Report tradeoffs, no post-evaluation retuning.",
+  "evaluation_plan": "Keep seeds 1200-1209 untouched until second development ends; evaluate all six declared time constants (0.005,0.01,0.02,0.05,0.2,0.5) alongside the three unchanged baselines, preserving failed candidates and reporting the development-selected candidate.",
+  "remaining_scope": "Same six controlled cells and source inventory; no source variation, recordings, transitions, or additional SNR in this experiment. Those generalization tests remain separate work."
+}

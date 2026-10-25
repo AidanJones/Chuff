@@ -1,0 +1,14 @@
+{
+  "issue": "ch-6w4.8",
+  "status": "Local prospective plan, written before variance evaluation; not an external preregistration",
+  "event_seeds": [600, 601, 602, 603, 604, 605, 606, 607, 608, 609],
+  "environment_seed": "100000 + event seed",
+  "rounds": 120,
+  "snr_db_before_channel": [-6, 0],
+  "conditions": ["reference", "source", "room", "microphone", "background", "joint", "joint_background"],
+  "methods": ["original", "quiet_band"],
+  "selection": "Existing defaults frozen; no retuning or selection from these results",
+  "outcomes": ["event detection", "correct repeat recognition", "background attention", "nuisance admissions", "per-class counts"],
+  "uncertainty": "10000 paired seed bootstrap draws within condition/SNR; correlated conditions are not independent replicates",
+  "limitations": "Procedural six-class inventory only; pitch/duration coupled by resampling; fixed room/microphone within run; SNR before channel; no overlap or measured room calibration"
+}
