@@ -308,9 +308,11 @@ benchmark is target-free; after silent startup, late usable-profile fitting
 can encounter ordinary scheduled targets, but this does not isolate a
 controlled contamination effect. Ch-6w4.1 tracks recorded, source-disjoint
 audio. A [pinned ESC-10 input catalog](data/esc10-pilot/README.md) now verifies
-20 clips, attribution, checksums and disjoint original sources; this is not
-a recorded-audio evaluation. Episode-aware mixture/scoring and missing
-speech/footstep/alarm coverage remain ch-6w4.1.2/.3. Ch-6w4.10.6 tracks pitch-tolerant identity with matched masking and
+20 clips, attribution, checksums and disjoint original sources. Paper
+[07](07-recorded-replay-and-source-exclusion.md) adds the first full-duration
+recorded-replay evaluation and source-exclusion scores. Its many background
+admissions limit transfer of the procedural results above. Missing
+speech/footstep/alarm coverage remains ch-6w4.1.3. Ch-6w4.10.6 tracks pitch-tolerant identity with matched masking and
 source-deletion controls. Physical capture/cue-echo measurements remain
 ch-6w4.5 and require bench access.
 

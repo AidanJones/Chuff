@@ -1,0 +1,20 @@
+{
+  "task": "ch-6w4.1.2",
+  "frozen_before_evaluation": true,
+  "development_seeds": [2600, 2601],
+  "evaluation_seeds": [2700, 2701, 2702, 2703, 2704, 2705, 2706, 2707, 2708, 2709],
+  "source_partitions": "Pinned ESC-10 catalog: development fold1 and evaluation fold5; no original Freesound source ID reuse",
+  "methods": ["original", "quiet_band", "calibrated_gain", "adaptive_gain", "guarded_gain"],
+  "no_tuning": "Existing learner settings retained. New rendering/scoring code checked on development only; no selecting source patches or tuning settings on evaluation recordings.",
+  "development_scoring_additions": "Before evaluation, add finite-IR-tail strata, per-recording episode counts and cross-factor input/channel pairing checks. Primary endpoint and all learner/audio parameters unchanged.",
+  "foregrounds": ["dog", "rooster", "crying_baby", "sneezing", "clock_tick"],
+  "backgrounds": ["rain", "sea_waves", "crackling_fire", "helicopter", "chainsaw"],
+  "duration": "210 seconds/stream;10second no-target warmup;20 full5second foreground episodes interleaved with5second no-target gaps;4 balanced shuffled cycles of5 record identities",
+  "background_generation": "Five-second full recorded grains, periodic Hann weights,50% overlap and independent +/-3dB gain; no energy/event cropping",
+  "factors": "Recorded bed or recorded bed with .45-depth1.3Hz amplitude modulation;0 and-6dB full-episode post-channel current-recording/residual SNR; matched no-target controls; independent seeded room/mic variation",
+  "primary": "Third/fourth replay episode recognized from a prototype admitted before that episode, with same-window current-episode-deleted probe failing current recording identity",
+  "secondary": ["Episode detection", "Wrong identity episodes", "Background attention/admissions", "First-episode novel attention", "Source-deletion identity/attention", "Within-window SNR variation and whole-episode calibration"],
+  "intervention": "Per1second window, copy actual prior learner state; remove full current-episode physical channel response for that window, preserving prior episodes; discard branch. Earlier actual learner exposure to this episode remains in prior state.",
+  "uncertainty": "Equal-seed means and10000paired-seed bootstrap draws,RNG731; descriptive intervals without multiplicity adjustment",
+  "limits": ["Replay identity rather than semantic class recognition", "Coarse clip presence, not annotated natural events or onset IoU", "Original recordings contain their own background", "Overlapping recorded background grains are synthetic ambience", "Speech/footsteps/sustained alarms and independent overlapping foregrounds remain separate tasks"]
+}

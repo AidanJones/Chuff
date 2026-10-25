@@ -1,0 +1,4778 @@
+[
+  {
+    "suite": "modulated/-6/control",
+    "seed": 2600,
+    "episodes": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 118,
+          "background_admissions": 9,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.5619047619047619,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "calibrated_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 118,
+          "background_admissions": 9,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.5619047619047619,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 118,
+          "background_admissions": 9,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.5619047619047619,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "original": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 82,
+          "background_admissions": 7,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.3904761904761905,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 206,
+          "background_admissions": 8,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.9809523809523809,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      }
+    }
+  },
+  {
+    "suite": "modulated/-6/control",
+    "seed": 2601,
+    "episodes": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 146,
+          "background_admissions": 7,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.6952380952380952,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "calibrated_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 146,
+          "background_admissions": 7,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.6952380952380952,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 146,
+          "background_admissions": 7,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.6952380952380952,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "original": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 101,
+          "background_admissions": 5,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.48095238095238096,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 201,
+          "background_admissions": 9,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.9571428571428572,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      }
+    }
+  },
+  {
+    "suite": "modulated/-6/positive",
+    "seed": 2600,
+    "episodes": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 62,
+          "background_admissions": 8,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 2,
+          "source_dependent_repeat_episodes": 2,
+          "deletion_correct_repeat_episodes": 1,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 8,
+          "wrong_only_repeat_episodes": 7,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 1
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.2,
+          "source_dependent_repeat": 0.2,
+          "deletion_repeat_identity": 0.1,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.8,
+          "background_attention": 0.5636363636363636,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.1
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      },
+      "calibrated_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 62,
+          "background_admissions": 8,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 2,
+          "source_dependent_repeat_episodes": 2,
+          "deletion_correct_repeat_episodes": 1,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 8,
+          "wrong_only_repeat_episodes": 7,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 1
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.2,
+          "source_dependent_repeat": 0.2,
+          "deletion_repeat_identity": 0.1,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.8,
+          "background_attention": 0.5636363636363636,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.1
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 62,
+          "background_admissions": 8,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 2,
+          "source_dependent_repeat_episodes": 2,
+          "deletion_correct_repeat_episodes": 1,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 8,
+          "wrong_only_repeat_episodes": 7,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 1
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.2,
+          "source_dependent_repeat": 0.2,
+          "deletion_repeat_identity": 0.1,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.8,
+          "background_attention": 0.5636363636363636,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.1
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      },
+      "original": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 45,
+          "background_admissions": 2,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 19,
+          "correct_repeat_episodes": 3,
+          "source_dependent_repeat_episodes": 1,
+          "deletion_correct_repeat_episodes": 3,
+          "deletion_attention_episodes": 17,
+          "wrong_repeat_episodes": 5,
+          "wrong_only_repeat_episodes": 4,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 3,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": 0.95,
+          "repeat_identity": 0.3,
+          "source_dependent_repeat": 0.1,
+          "deletion_repeat_identity": 0.3,
+          "deletion_attention": 0.85,
+          "wrong_repeat_identity": 0.5,
+          "background_attention": 0.4090909090909091,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.0
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 3,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 0,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          }
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 107,
+          "background_admissions": 5,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 5,
+          "source_dependent_repeat_episodes": 3,
+          "deletion_correct_repeat_episodes": 4,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 9,
+          "wrong_only_repeat_episodes": 5,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 1
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.5,
+          "source_dependent_repeat": 0.3,
+          "deletion_repeat_identity": 0.4,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.9,
+          "background_attention": 0.9727272727272728,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.1
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 1
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "suite": "modulated/-6/positive",
+    "seed": 2601,
+    "episodes": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 86,
+          "background_admissions": 4,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 4,
+          "source_dependent_repeat_episodes": 3,
+          "deletion_correct_repeat_episodes": 1,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 9,
+          "wrong_only_repeat_episodes": 6,
+          "first_episode_novel_attention": 4,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 3
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.4,
+          "source_dependent_repeat": 0.3,
+          "deletion_repeat_identity": 0.1,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.9,
+          "background_attention": 0.7818181818181819,
+          "first_episode_novel_attention": 0.8,
+          "strict_episode_exclusion": 0.3
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      },
+      "calibrated_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 86,
+          "background_admissions": 4,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 4,
+          "source_dependent_repeat_episodes": 3,
+          "deletion_correct_repeat_episodes": 1,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 9,
+          "wrong_only_repeat_episodes": 6,
+          "first_episode_novel_attention": 4,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 3
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.4,
+          "source_dependent_repeat": 0.3,
+          "deletion_repeat_identity": 0.1,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.9,
+          "background_attention": 0.7818181818181819,
+          "first_episode_novel_attention": 0.8,
+          "strict_episode_exclusion": 0.3
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 86,
+          "background_admissions": 4,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 4,
+          "source_dependent_repeat_episodes": 3,
+          "deletion_correct_repeat_episodes": 1,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 9,
+          "wrong_only_repeat_episodes": 6,
+          "first_episode_novel_attention": 4,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 3
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.4,
+          "source_dependent_repeat": 0.3,
+          "deletion_repeat_identity": 0.1,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.9,
+          "background_attention": 0.7818181818181819,
+          "first_episode_novel_attention": 0.8,
+          "strict_episode_exclusion": 0.3
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      },
+      "original": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 49,
+          "background_admissions": 4,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 1,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 2,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 8,
+          "wrong_only_repeat_episodes": 7,
+          "first_episode_novel_attention": 4,
+          "distinct_recordings": 5,
+          "admitted_recordings": 2,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.1,
+          "source_dependent_repeat": 0.0,
+          "deletion_repeat_identity": 0.2,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.8,
+          "background_attention": 0.44545454545454544,
+          "first_episode_novel_attention": 0.8,
+          "strict_episode_exclusion": 0.0
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          }
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 104,
+          "background_admissions": 5,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 6,
+          "source_dependent_repeat_episodes": 4,
+          "deletion_correct_repeat_episodes": 3,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 10,
+          "wrong_only_repeat_episodes": 4,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 3
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.6,
+          "source_dependent_repeat": 0.4,
+          "deletion_repeat_identity": 0.3,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 1.0,
+          "background_attention": 0.9454545454545454,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.3
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      }
+    }
+  },
+  {
+    "suite": "modulated/0/control",
+    "seed": 2600,
+    "episodes": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 118,
+          "background_admissions": 9,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.5619047619047619,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "calibrated_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 118,
+          "background_admissions": 9,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.5619047619047619,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 118,
+          "background_admissions": 9,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.5619047619047619,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "original": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 82,
+          "background_admissions": 7,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.3904761904761905,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 206,
+          "background_admissions": 8,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.9809523809523809,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      }
+    }
+  },
+  {
+    "suite": "modulated/0/control",
+    "seed": 2601,
+    "episodes": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 146,
+          "background_admissions": 7,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.6952380952380952,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "calibrated_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 146,
+          "background_admissions": 7,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.6952380952380952,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 146,
+          "background_admissions": 7,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.6952380952380952,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "original": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 101,
+          "background_admissions": 5,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.48095238095238096,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 201,
+          "background_admissions": 9,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.9571428571428572,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      }
+    }
+  },
+  {
+    "suite": "modulated/0/positive",
+    "seed": 2600,
+    "episodes": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 62,
+          "background_admissions": 9,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 5,
+          "source_dependent_repeat_episodes": 4,
+          "deletion_correct_repeat_episodes": 2,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 8,
+          "wrong_only_repeat_episodes": 5,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 3
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.5,
+          "source_dependent_repeat": 0.4,
+          "deletion_repeat_identity": 0.2,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.8,
+          "background_attention": 0.5636363636363636,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.3
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      },
+      "calibrated_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 62,
+          "background_admissions": 9,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 5,
+          "source_dependent_repeat_episodes": 4,
+          "deletion_correct_repeat_episodes": 2,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 8,
+          "wrong_only_repeat_episodes": 5,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 3
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.5,
+          "source_dependent_repeat": 0.4,
+          "deletion_repeat_identity": 0.2,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.8,
+          "background_attention": 0.5636363636363636,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.3
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 62,
+          "background_admissions": 9,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 5,
+          "source_dependent_repeat_episodes": 4,
+          "deletion_correct_repeat_episodes": 2,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 8,
+          "wrong_only_repeat_episodes": 5,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 3
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.5,
+          "source_dependent_repeat": 0.4,
+          "deletion_repeat_identity": 0.2,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.8,
+          "background_attention": 0.5636363636363636,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.3
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      },
+      "original": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 44,
+          "background_admissions": 3,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 2,
+          "source_dependent_repeat_episodes": 1,
+          "deletion_correct_repeat_episodes": 1,
+          "deletion_attention_episodes": 17,
+          "wrong_repeat_episodes": 5,
+          "wrong_only_repeat_episodes": 4,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 2,
+          "strict_episode_exclusion_hits": 1
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.2,
+          "source_dependent_repeat": 0.1,
+          "deletion_repeat_identity": 0.1,
+          "deletion_attention": 0.85,
+          "wrong_repeat_identity": 0.5,
+          "background_attention": 0.4,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.1
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 0,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 1
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          }
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 107,
+          "background_admissions": 4,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 9,
+          "source_dependent_repeat_episodes": 6,
+          "deletion_correct_repeat_episodes": 3,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 9,
+          "wrong_only_repeat_episodes": 1,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 5,
+          "strict_episode_exclusion_hits": 6
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.9,
+          "source_dependent_repeat": 0.6,
+          "deletion_repeat_identity": 0.3,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.9,
+          "background_attention": 0.9727272727272728,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.6
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 2
+          }
+        }
+      }
+    }
+  },
+  {
+    "suite": "modulated/0/positive",
+    "seed": 2601,
+    "episodes": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 86,
+          "background_admissions": 4,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 6,
+          "source_dependent_repeat_episodes": 5,
+          "deletion_correct_repeat_episodes": 1,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 9,
+          "wrong_only_repeat_episodes": 4,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 5,
+          "strict_episode_exclusion_hits": 5
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.6,
+          "source_dependent_repeat": 0.5,
+          "deletion_repeat_identity": 0.1,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.9,
+          "background_attention": 0.7818181818181819,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.5
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      },
+      "calibrated_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 86,
+          "background_admissions": 4,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 6,
+          "source_dependent_repeat_episodes": 5,
+          "deletion_correct_repeat_episodes": 1,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 9,
+          "wrong_only_repeat_episodes": 4,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 5,
+          "strict_episode_exclusion_hits": 5
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.6,
+          "source_dependent_repeat": 0.5,
+          "deletion_repeat_identity": 0.1,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.9,
+          "background_attention": 0.7818181818181819,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.5
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 86,
+          "background_admissions": 4,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 6,
+          "source_dependent_repeat_episodes": 5,
+          "deletion_correct_repeat_episodes": 1,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 9,
+          "wrong_only_repeat_episodes": 4,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 5,
+          "strict_episode_exclusion_hits": 5
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.6,
+          "source_dependent_repeat": 0.5,
+          "deletion_repeat_identity": 0.1,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.9,
+          "background_attention": 0.7818181818181819,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.5
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      },
+      "original": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 49,
+          "background_admissions": 3,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 1,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 2,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 8,
+          "wrong_only_repeat_episodes": 7,
+          "first_episode_novel_attention": 4,
+          "distinct_recordings": 5,
+          "admitted_recordings": 3,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.1,
+          "source_dependent_repeat": 0.0,
+          "deletion_repeat_identity": 0.2,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.8,
+          "background_attention": 0.44545454545454544,
+          "first_episode_novel_attention": 0.8,
+          "strict_episode_exclusion": 0.0
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          }
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 104,
+          "background_admissions": 7,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 6,
+          "source_dependent_repeat_episodes": 5,
+          "deletion_correct_repeat_episodes": 2,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 9,
+          "wrong_only_repeat_episodes": 4,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 4
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.6,
+          "source_dependent_repeat": 0.5,
+          "deletion_repeat_identity": 0.2,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.9,
+          "background_attention": 0.9454545454545454,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.4
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 1
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      }
+    }
+  },
+  {
+    "suite": "recorded/-6/control",
+    "seed": 2600,
+    "episodes": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 97,
+          "background_admissions": 9,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.46190476190476193,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "calibrated_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 97,
+          "background_admissions": 9,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.46190476190476193,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 97,
+          "background_admissions": 9,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.46190476190476193,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "original": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 51,
+          "background_admissions": 4,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.24285714285714285,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 122,
+          "background_admissions": 10,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.580952380952381,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      }
+    }
+  },
+  {
+    "suite": "recorded/-6/control",
+    "seed": 2601,
+    "episodes": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 143,
+          "background_admissions": 6,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.680952380952381,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "calibrated_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 143,
+          "background_admissions": 6,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.680952380952381,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 143,
+          "background_admissions": 6,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.680952380952381,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "original": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 42,
+          "background_admissions": 5,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.2,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 138,
+          "background_admissions": 8,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.6571428571428571,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      }
+    }
+  },
+  {
+    "suite": "recorded/-6/positive",
+    "seed": 2600,
+    "episodes": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 53,
+          "background_admissions": 8,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 2,
+          "source_dependent_repeat_episodes": 2,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 16,
+          "wrong_repeat_episodes": 7,
+          "wrong_only_repeat_episodes": 5,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 2
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.2,
+          "source_dependent_repeat": 0.2,
+          "deletion_repeat_identity": 0.0,
+          "deletion_attention": 0.8,
+          "wrong_repeat_identity": 0.7,
+          "background_attention": 0.4818181818181818,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.2
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 2
+          }
+        }
+      },
+      "calibrated_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 53,
+          "background_admissions": 8,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 2,
+          "source_dependent_repeat_episodes": 2,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 16,
+          "wrong_repeat_episodes": 7,
+          "wrong_only_repeat_episodes": 5,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 2
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.2,
+          "source_dependent_repeat": 0.2,
+          "deletion_repeat_identity": 0.0,
+          "deletion_attention": 0.8,
+          "wrong_repeat_identity": 0.7,
+          "background_attention": 0.4818181818181818,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.2
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 2
+          }
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 53,
+          "background_admissions": 8,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 2,
+          "source_dependent_repeat_episodes": 2,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 16,
+          "wrong_repeat_episodes": 7,
+          "wrong_only_repeat_episodes": 5,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 2
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.2,
+          "source_dependent_repeat": 0.2,
+          "deletion_repeat_identity": 0.0,
+          "deletion_attention": 0.8,
+          "wrong_repeat_identity": 0.7,
+          "background_attention": 0.4818181818181818,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.2
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 2
+          }
+        }
+      },
+      "original": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 25,
+          "background_admissions": 2,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 19,
+          "correct_repeat_episodes": 2,
+          "source_dependent_repeat_episodes": 2,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 15,
+          "wrong_repeat_episodes": 6,
+          "wrong_only_repeat_episodes": 5,
+          "first_episode_novel_attention": 4,
+          "distinct_recordings": 5,
+          "admitted_recordings": 3,
+          "strict_episode_exclusion_hits": 2
+        },
+        "rates": {
+          "episode_detection": 0.95,
+          "repeat_identity": 0.2,
+          "source_dependent_repeat": 0.2,
+          "deletion_repeat_identity": 0.0,
+          "deletion_attention": 0.75,
+          "wrong_repeat_identity": 0.6,
+          "background_attention": 0.22727272727272727,
+          "first_episode_novel_attention": 0.8,
+          "strict_episode_exclusion": 0.2
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 0,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 3,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 2
+          }
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 65,
+          "background_admissions": 3,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 5,
+          "source_dependent_repeat_episodes": 3,
+          "deletion_correct_repeat_episodes": 4,
+          "deletion_attention_episodes": 19,
+          "wrong_repeat_episodes": 9,
+          "wrong_only_repeat_episodes": 4,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 2
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.5,
+          "source_dependent_repeat": 0.3,
+          "deletion_repeat_identity": 0.4,
+          "deletion_attention": 0.95,
+          "wrong_repeat_identity": 0.9,
+          "background_attention": 0.5909090909090909,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.2
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 1
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 1
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "suite": "recorded/-6/positive",
+    "seed": 2601,
+    "episodes": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 79,
+          "background_admissions": 5,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 5,
+          "source_dependent_repeat_episodes": 3,
+          "deletion_correct_repeat_episodes": 2,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 9,
+          "wrong_only_repeat_episodes": 5,
+          "first_episode_novel_attention": 4,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 3
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.5,
+          "source_dependent_repeat": 0.3,
+          "deletion_repeat_identity": 0.2,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.9,
+          "background_attention": 0.7181818181818181,
+          "first_episode_novel_attention": 0.8,
+          "strict_episode_exclusion": 0.3
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      },
+      "calibrated_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 79,
+          "background_admissions": 5,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 5,
+          "source_dependent_repeat_episodes": 3,
+          "deletion_correct_repeat_episodes": 2,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 9,
+          "wrong_only_repeat_episodes": 5,
+          "first_episode_novel_attention": 4,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 3
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.5,
+          "source_dependent_repeat": 0.3,
+          "deletion_repeat_identity": 0.2,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.9,
+          "background_attention": 0.7181818181818181,
+          "first_episode_novel_attention": 0.8,
+          "strict_episode_exclusion": 0.3
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 79,
+          "background_admissions": 5,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 5,
+          "source_dependent_repeat_episodes": 3,
+          "deletion_correct_repeat_episodes": 2,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 9,
+          "wrong_only_repeat_episodes": 5,
+          "first_episode_novel_attention": 4,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 3
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.5,
+          "source_dependent_repeat": 0.3,
+          "deletion_repeat_identity": 0.2,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.9,
+          "background_attention": 0.7181818181818181,
+          "first_episode_novel_attention": 0.8,
+          "strict_episode_exclusion": 0.3
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      },
+      "original": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 23,
+          "background_admissions": 4,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 18,
+          "correct_repeat_episodes": 3,
+          "source_dependent_repeat_episodes": 2,
+          "deletion_correct_repeat_episodes": 1,
+          "deletion_attention_episodes": 14,
+          "wrong_repeat_episodes": 4,
+          "wrong_only_repeat_episodes": 4,
+          "first_episode_novel_attention": 4,
+          "distinct_recordings": 5,
+          "admitted_recordings": 2,
+          "strict_episode_exclusion_hits": 2
+        },
+        "rates": {
+          "episode_detection": 0.9,
+          "repeat_identity": 0.3,
+          "source_dependent_repeat": 0.2,
+          "deletion_repeat_identity": 0.1,
+          "deletion_attention": 0.7,
+          "wrong_repeat_identity": 0.4,
+          "background_attention": 0.20909090909090908,
+          "first_episode_novel_attention": 0.8,
+          "strict_episode_exclusion": 0.2
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 0,
+            "strict_episode_exclusion_hits": 1
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 0,
+            "strict_episode_exclusion_hits": 1
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 3,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 3,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          }
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 75,
+          "background_admissions": 3,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 5,
+          "source_dependent_repeat_episodes": 4,
+          "deletion_correct_repeat_episodes": 4,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 8,
+          "wrong_only_repeat_episodes": 4,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 5,
+          "strict_episode_exclusion_hits": 2
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.5,
+          "source_dependent_repeat": 0.4,
+          "deletion_repeat_identity": 0.4,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.8,
+          "background_attention": 0.6818181818181818,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.2
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 1
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 1
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          }
+        }
+      }
+    }
+  },
+  {
+    "suite": "recorded/0/control",
+    "seed": 2600,
+    "episodes": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 97,
+          "background_admissions": 9,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.46190476190476193,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "calibrated_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 97,
+          "background_admissions": 9,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.46190476190476193,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 97,
+          "background_admissions": 9,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.46190476190476193,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "original": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 51,
+          "background_admissions": 4,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.24285714285714285,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 122,
+          "background_admissions": 10,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.580952380952381,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      }
+    }
+  },
+  {
+    "suite": "recorded/0/control",
+    "seed": 2601,
+    "episodes": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 143,
+          "background_admissions": 6,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.680952380952381,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "calibrated_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 143,
+          "background_admissions": 6,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.680952380952381,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 143,
+          "background_admissions": 6,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.680952380952381,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "original": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 42,
+          "background_admissions": 5,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.2,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 210,
+          "background_attention": 138,
+          "background_admissions": 8,
+          "episodes": 0,
+          "eligible_repeat_episodes": 0,
+          "detected_episodes": 0,
+          "correct_repeat_episodes": 0,
+          "source_dependent_repeat_episodes": 0,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 0,
+          "wrong_repeat_episodes": 0,
+          "wrong_only_repeat_episodes": 0,
+          "first_episode_novel_attention": 0,
+          "distinct_recordings": 0,
+          "admitted_recordings": 0,
+          "strict_episode_exclusion_hits": 0
+        },
+        "rates": {
+          "episode_detection": null,
+          "repeat_identity": null,
+          "source_dependent_repeat": null,
+          "deletion_repeat_identity": null,
+          "deletion_attention": null,
+          "wrong_repeat_identity": null,
+          "background_attention": 0.6571428571428571,
+          "first_episode_novel_attention": null,
+          "strict_episode_exclusion": null
+        },
+        "by_recording": {}
+      }
+    }
+  },
+  {
+    "suite": "recorded/0/positive",
+    "seed": 2600,
+    "episodes": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 52,
+          "background_admissions": 6,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 2,
+          "source_dependent_repeat_episodes": 2,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 16,
+          "wrong_repeat_episodes": 8,
+          "wrong_only_repeat_episodes": 6,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 5,
+          "strict_episode_exclusion_hits": 2
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.2,
+          "source_dependent_repeat": 0.2,
+          "deletion_repeat_identity": 0.0,
+          "deletion_attention": 0.8,
+          "wrong_repeat_identity": 0.8,
+          "background_attention": 0.4727272727272727,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.2
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 2
+          }
+        }
+      },
+      "calibrated_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 52,
+          "background_admissions": 6,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 2,
+          "source_dependent_repeat_episodes": 2,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 16,
+          "wrong_repeat_episodes": 8,
+          "wrong_only_repeat_episodes": 6,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 5,
+          "strict_episode_exclusion_hits": 2
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.2,
+          "source_dependent_repeat": 0.2,
+          "deletion_repeat_identity": 0.0,
+          "deletion_attention": 0.8,
+          "wrong_repeat_identity": 0.8,
+          "background_attention": 0.4727272727272727,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.2
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 2
+          }
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 52,
+          "background_admissions": 6,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 2,
+          "source_dependent_repeat_episodes": 2,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 16,
+          "wrong_repeat_episodes": 8,
+          "wrong_only_repeat_episodes": 6,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 5,
+          "strict_episode_exclusion_hits": 2
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.2,
+          "source_dependent_repeat": 0.2,
+          "deletion_repeat_identity": 0.0,
+          "deletion_attention": 0.8,
+          "wrong_repeat_identity": 0.8,
+          "background_attention": 0.4727272727272727,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.2
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 2
+          }
+        }
+      },
+      "original": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 25,
+          "background_admissions": 3,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 5,
+          "source_dependent_repeat_episodes": 5,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 15,
+          "wrong_repeat_episodes": 4,
+          "wrong_only_repeat_episodes": 1,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 4,
+          "strict_episode_exclusion_hits": 5
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.5,
+          "source_dependent_repeat": 0.5,
+          "deletion_repeat_identity": 0.0,
+          "deletion_attention": 0.75,
+          "wrong_repeat_identity": 0.4,
+          "background_attention": 0.22727272727272727,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.5
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 0,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 0,
+            "strict_episode_exclusion_hits": 1
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 2
+          }
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 65,
+          "background_admissions": 5,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 4,
+          "source_dependent_repeat_episodes": 4,
+          "deletion_correct_repeat_episodes": 2,
+          "deletion_attention_episodes": 19,
+          "wrong_repeat_episodes": 7,
+          "wrong_only_repeat_episodes": 5,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 5,
+          "strict_episode_exclusion_hits": 3
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.4,
+          "source_dependent_repeat": 0.4,
+          "deletion_repeat_identity": 0.2,
+          "deletion_attention": 0.95,
+          "wrong_repeat_identity": 0.7,
+          "background_attention": 0.5909090909090909,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.3
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 0,
+            "strict_episode_exclusion_hits": 1
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 1
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      }
+    }
+  },
+  {
+    "suite": "recorded/0/positive",
+    "seed": 2601,
+    "episodes": {
+      "adaptive_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 77,
+          "background_admissions": 4,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 5,
+          "source_dependent_repeat_episodes": 3,
+          "deletion_correct_repeat_episodes": 2,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 8,
+          "wrong_only_repeat_episodes": 4,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 5,
+          "strict_episode_exclusion_hits": 3
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.5,
+          "source_dependent_repeat": 0.3,
+          "deletion_repeat_identity": 0.2,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.8,
+          "background_attention": 0.7,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.3
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      },
+      "calibrated_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 77,
+          "background_admissions": 4,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 5,
+          "source_dependent_repeat_episodes": 3,
+          "deletion_correct_repeat_episodes": 2,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 8,
+          "wrong_only_repeat_episodes": 4,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 5,
+          "strict_episode_exclusion_hits": 3
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.5,
+          "source_dependent_repeat": 0.3,
+          "deletion_repeat_identity": 0.2,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.8,
+          "background_attention": 0.7,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.3
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      },
+      "guarded_gain": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 77,
+          "background_admissions": 4,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 5,
+          "source_dependent_repeat_episodes": 3,
+          "deletion_correct_repeat_episodes": 2,
+          "deletion_attention_episodes": 20,
+          "wrong_repeat_episodes": 8,
+          "wrong_only_repeat_episodes": 4,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 5,
+          "strict_episode_exclusion_hits": 3
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.5,
+          "source_dependent_repeat": 0.3,
+          "deletion_repeat_identity": 0.2,
+          "deletion_attention": 1.0,
+          "wrong_repeat_identity": 0.8,
+          "background_attention": 0.7,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.3
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 2,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 1
+          }
+        }
+      },
+      "original": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 23,
+          "background_admissions": 5,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 18,
+          "correct_repeat_episodes": 3,
+          "source_dependent_repeat_episodes": 3,
+          "deletion_correct_repeat_episodes": 0,
+          "deletion_attention_episodes": 13,
+          "wrong_repeat_episodes": 6,
+          "wrong_only_repeat_episodes": 4,
+          "first_episode_novel_attention": 4,
+          "distinct_recordings": 5,
+          "admitted_recordings": 2,
+          "strict_episode_exclusion_hits": 3
+        },
+        "rates": {
+          "episode_detection": 0.9,
+          "repeat_identity": 0.3,
+          "source_dependent_repeat": 0.3,
+          "deletion_repeat_identity": 0.0,
+          "deletion_attention": 0.65,
+          "wrong_repeat_identity": 0.6,
+          "background_attention": 0.20909090909090908,
+          "first_episode_novel_attention": 0.8,
+          "strict_episode_exclusion": 0.3
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 0,
+            "strict_episode_exclusion_hits": 1
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 3,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 3,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 1,
+            "strict_episode_exclusion_hits": 0
+          }
+        }
+      },
+      "quiet_band": {
+        "counts": {
+          "windows": 210,
+          "background_windows": 110,
+          "background_attention": 74,
+          "background_admissions": 3,
+          "episodes": 20,
+          "eligible_repeat_episodes": 10,
+          "detected_episodes": 20,
+          "correct_repeat_episodes": 6,
+          "source_dependent_repeat_episodes": 5,
+          "deletion_correct_repeat_episodes": 4,
+          "deletion_attention_episodes": 19,
+          "wrong_repeat_episodes": 6,
+          "wrong_only_repeat_episodes": 4,
+          "first_episode_novel_attention": 5,
+          "distinct_recordings": 5,
+          "admitted_recordings": 5,
+          "strict_episode_exclusion_hits": 3
+        },
+        "rates": {
+          "episode_detection": 1.0,
+          "repeat_identity": 0.6,
+          "source_dependent_repeat": 0.5,
+          "deletion_repeat_identity": 0.4,
+          "deletion_attention": 0.95,
+          "wrong_repeat_identity": 0.6,
+          "background_attention": 0.6727272727272727,
+          "first_episode_novel_attention": 1.0,
+          "strict_episode_exclusion": 0.3
+        },
+        "by_recording": {
+          "1-100032-A-0.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 0,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-187207-A-20.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 0,
+            "wrong_repeat_episodes": 0,
+            "strict_episode_exclusion_hits": 2
+          },
+          "1-21934-A-38.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 2,
+            "source_dependent_repeat_episodes": 2,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 0,
+            "strict_episode_exclusion_hits": 1
+          },
+          "1-26143-A-21.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 0,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          },
+          "1-26806-A-1.wav": {
+            "episodes": 4,
+            "eligible_repeat_episodes": 2,
+            "detected_episodes": 4,
+            "correct_repeat_episodes": 1,
+            "source_dependent_repeat_episodes": 1,
+            "deletion_correct_repeat_episodes": 1,
+            "wrong_repeat_episodes": 2,
+            "strict_episode_exclusion_hits": 0
+          }
+        }
+      }
+    }
+  }
+]

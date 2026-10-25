@@ -1,0 +1,2562 @@
+[
+  {
+    "suite": "modulated/-6/control",
+    "mode": "adaptive_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.4933333333333333,
+        "bootstrap_95": [
+          0.46238095238095245,
+          0.5238095238095237
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.4933333333333333,
+        "bootstrap_95": [
+          0.46238095238095245,
+          0.5238095238095237
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "modulated/-6/control",
+    "mode": "calibrated_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.4933333333333333,
+        "bootstrap_95": [
+          0.46238095238095245,
+          0.5238095238095237
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.4933333333333333,
+        "bootstrap_95": [
+          0.46238095238095245,
+          0.5238095238095237
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "modulated/-6/control",
+    "mode": "guarded_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.4933333333333333,
+        "bootstrap_95": [
+          0.46238095238095245,
+          0.5238095238095237
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.4933333333333333,
+        "bootstrap_95": [
+          0.46238095238095245,
+          0.5238095238095237
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "modulated/-6/control",
+    "mode": "original",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.23285714285714287,
+        "bootstrap_95": [
+          0.16142857142857142,
+          0.30666666666666664
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.23285714285714287,
+        "bootstrap_95": [
+          0.16142857142857142,
+          0.30666666666666664
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "modulated/-6/control",
+    "mode": "quiet_band",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.8895238095238094,
+        "bootstrap_95": [
+          0.8557142857142856,
+          0.9209523809523811
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.8895238095238094,
+        "bootstrap_95": [
+          0.8557142857142856,
+          0.9209523809523811
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "modulated/-6/positive",
+    "mode": "adaptive_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 0.9949999999999999,
+        "bootstrap_95": [
+          0.985,
+          1.0
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.43,
+        "bootstrap_95": [
+          0.35000000000000003,
+          0.5
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.38,
+        "bootstrap_95": [
+          0.30999999999999994,
+          0.45999999999999996
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.14,
+        "bootstrap_95": [
+          0.06999999999999999,
+          0.21000000000000002
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.9649999999999999,
+        "bootstrap_95": [
+          0.925,
+          0.9949999999999999
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.77,
+        "bootstrap_95": [
+          0.6900000000000001,
+          0.85
+        ]
+      },
+      "background_attention": {
+        "mean": 0.5318181818181819,
+        "bootstrap_95": [
+          0.4954545454545454,
+          0.5718181818181819
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.9,
+        "bootstrap_95": [
+          0.8400000000000001,
+          0.96
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.61,
+        "bootstrap_95": [
+          0.5449999999999999,
+          0.675
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.5144444444444445,
+        "bootstrap_95": [
+          0.4655555555555556,
+          0.5666666666666667
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.31999999999999995,
+        "bootstrap_95": [
+          0.25999999999999995,
+          0.4
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "modulated/-6/positive",
+    "mode": "calibrated_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 0.9949999999999999,
+        "bootstrap_95": [
+          0.985,
+          1.0
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.43,
+        "bootstrap_95": [
+          0.35000000000000003,
+          0.5
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.38,
+        "bootstrap_95": [
+          0.30999999999999994,
+          0.45999999999999996
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.14,
+        "bootstrap_95": [
+          0.06999999999999999,
+          0.21000000000000002
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.9649999999999999,
+        "bootstrap_95": [
+          0.925,
+          0.9949999999999999
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.77,
+        "bootstrap_95": [
+          0.6900000000000001,
+          0.85
+        ]
+      },
+      "background_attention": {
+        "mean": 0.5318181818181819,
+        "bootstrap_95": [
+          0.4954545454545454,
+          0.5718181818181819
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.9,
+        "bootstrap_95": [
+          0.8400000000000001,
+          0.96
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.61,
+        "bootstrap_95": [
+          0.5449999999999999,
+          0.675
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.5144444444444445,
+        "bootstrap_95": [
+          0.4655555555555556,
+          0.5666666666666667
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.31999999999999995,
+        "bootstrap_95": [
+          0.25999999999999995,
+          0.4
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "modulated/-6/positive",
+    "mode": "guarded_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 0.9949999999999999,
+        "bootstrap_95": [
+          0.985,
+          1.0
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.43,
+        "bootstrap_95": [
+          0.35000000000000003,
+          0.5
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.38,
+        "bootstrap_95": [
+          0.30999999999999994,
+          0.45999999999999996
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.14,
+        "bootstrap_95": [
+          0.06999999999999999,
+          0.21000000000000002
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.9649999999999999,
+        "bootstrap_95": [
+          0.925,
+          0.9949999999999999
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.77,
+        "bootstrap_95": [
+          0.6900000000000001,
+          0.85
+        ]
+      },
+      "background_attention": {
+        "mean": 0.5318181818181819,
+        "bootstrap_95": [
+          0.4954545454545454,
+          0.5718181818181819
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.9,
+        "bootstrap_95": [
+          0.8400000000000001,
+          0.96
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.61,
+        "bootstrap_95": [
+          0.5449999999999999,
+          0.675
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.5144444444444445,
+        "bootstrap_95": [
+          0.4655555555555556,
+          0.5666666666666667
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.31999999999999995,
+        "bootstrap_95": [
+          0.25999999999999995,
+          0.4
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "modulated/-6/positive",
+    "mode": "original",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 0.8,
+        "bootstrap_95": [
+          0.71,
+          0.8800000000000001
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.16,
+        "bootstrap_95": [
+          0.1,
+          0.22999999999999998
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.10000000000000002,
+        "bootstrap_95": [
+          0.04,
+          0.17
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.1,
+        "bootstrap_95": [
+          0.04,
+          0.17
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.63,
+        "bootstrap_95": [
+          0.51,
+          0.755
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.38,
+        "bootstrap_95": [
+          0.22999999999999998,
+          0.52
+        ]
+      },
+      "background_attention": {
+        "mean": 0.22999999999999998,
+        "bootstrap_95": [
+          0.16272727272727272,
+          0.2963636363636364
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.7,
+        "bootstrap_95": [
+          0.5599999999999999,
+          0.8399999999999999
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.30500000000000005,
+        "bootstrap_95": [
+          0.19499999999999998,
+          0.425
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.21333333333333332,
+        "bootstrap_95": [
+          0.15444444444444444,
+          0.27111111111111114
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.09000000000000001,
+        "bootstrap_95": [
+          0.030000000000000006,
+          0.16999999999999998
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": -0.27999999999999997,
+        "bootstrap_95": [
+          -0.39,
+          -0.16
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": -0.22999999999999998,
+        "bootstrap_95": [
+          -0.33999999999999997,
+          -0.12000000000000002
+        ]
+      }
+    }
+  },
+  {
+    "suite": "modulated/-6/positive",
+    "mode": "quiet_band",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.26,
+        "bootstrap_95": [
+          0.20000000000000004,
+          0.31999999999999995
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.16,
+        "bootstrap_95": [
+          0.1,
+          0.22000000000000003
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.13,
+        "bootstrap_95": [
+          0.06,
+          0.2
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.9949999999999999,
+        "bootstrap_95": [
+          0.985,
+          1.0
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.95,
+        "bootstrap_95": [
+          0.9099999999999999,
+          0.99
+        ]
+      },
+      "background_attention": {
+        "mean": 0.8618181818181819,
+        "bootstrap_95": [
+          0.82,
+          0.8990909090909092
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.9,
+        "bootstrap_95": [
+          0.7999999999999999,
+          1.0
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.8699999999999999,
+        "bootstrap_95": [
+          0.8150000000000001,
+          0.9199999999999999
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.86,
+        "bootstrap_95": [
+          0.8133333333333332,
+          0.9
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.15000000000000002,
+        "bootstrap_95": [
+          0.1,
+          0.21000000000000002
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": -0.22000000000000003,
+        "bootstrap_95": [
+          -0.33,
+          -0.12
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": -0.17,
+        "bootstrap_95": [
+          -0.27999999999999997,
+          -0.06000000000000001
+        ]
+      }
+    }
+  },
+  {
+    "suite": "modulated/0/control",
+    "mode": "adaptive_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.4933333333333333,
+        "bootstrap_95": [
+          0.46238095238095245,
+          0.5238095238095237
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.4933333333333333,
+        "bootstrap_95": [
+          0.46238095238095245,
+          0.5238095238095237
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "modulated/0/control",
+    "mode": "calibrated_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.4933333333333333,
+        "bootstrap_95": [
+          0.46238095238095245,
+          0.5238095238095237
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.4933333333333333,
+        "bootstrap_95": [
+          0.46238095238095245,
+          0.5238095238095237
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "modulated/0/control",
+    "mode": "guarded_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.4933333333333333,
+        "bootstrap_95": [
+          0.46238095238095245,
+          0.5238095238095237
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.4933333333333333,
+        "bootstrap_95": [
+          0.46238095238095245,
+          0.5238095238095237
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "modulated/0/control",
+    "mode": "original",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.23285714285714287,
+        "bootstrap_95": [
+          0.16142857142857142,
+          0.30666666666666664
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.23285714285714287,
+        "bootstrap_95": [
+          0.16142857142857142,
+          0.30666666666666664
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "modulated/0/control",
+    "mode": "quiet_band",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.8895238095238094,
+        "bootstrap_95": [
+          0.8557142857142856,
+          0.9209523809523811
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.8895238095238094,
+        "bootstrap_95": [
+          0.8557142857142856,
+          0.9209523809523811
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "modulated/0/positive",
+    "mode": "adaptive_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 0.9949999999999999,
+        "bootstrap_95": [
+          0.985,
+          1.0
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.58,
+        "bootstrap_95": [
+          0.5,
+          0.6699999999999999
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.5499999999999999,
+        "bootstrap_95": [
+          0.48,
+          0.6299999999999999
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.09,
+        "bootstrap_95": [
+          0.05,
+          0.13000000000000003
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.97,
+        "bootstrap_95": [
+          0.9299999999999999,
+          1.0
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.7,
+        "bootstrap_95": [
+          0.6100000000000001,
+          0.78
+        ]
+      },
+      "background_attention": {
+        "mean": 0.5354545454545455,
+        "bootstrap_95": [
+          0.5,
+          0.5736363636363637
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.9800000000000001,
+        "bootstrap_95": [
+          0.9400000000000001,
+          1.0
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.6299999999999999,
+        "bootstrap_95": [
+          0.575,
+          0.6849999999999999
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.5144444444444445,
+        "bootstrap_95": [
+          0.4666666666666667,
+          0.5655555555555556
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.41,
+          0.6
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "modulated/0/positive",
+    "mode": "calibrated_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 0.9949999999999999,
+        "bootstrap_95": [
+          0.985,
+          1.0
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.58,
+        "bootstrap_95": [
+          0.5,
+          0.6699999999999999
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.5499999999999999,
+        "bootstrap_95": [
+          0.48,
+          0.6299999999999999
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.09,
+        "bootstrap_95": [
+          0.05,
+          0.13000000000000003
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.97,
+        "bootstrap_95": [
+          0.9299999999999999,
+          1.0
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.7,
+        "bootstrap_95": [
+          0.6100000000000001,
+          0.78
+        ]
+      },
+      "background_attention": {
+        "mean": 0.5354545454545455,
+        "bootstrap_95": [
+          0.5,
+          0.5736363636363637
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.9800000000000001,
+        "bootstrap_95": [
+          0.9400000000000001,
+          1.0
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.6299999999999999,
+        "bootstrap_95": [
+          0.575,
+          0.6849999999999999
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.5144444444444445,
+        "bootstrap_95": [
+          0.4666666666666667,
+          0.5655555555555556
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.41,
+          0.6
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "modulated/0/positive",
+    "mode": "guarded_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 0.9949999999999999,
+        "bootstrap_95": [
+          0.985,
+          1.0
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.58,
+        "bootstrap_95": [
+          0.5,
+          0.6699999999999999
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.5499999999999999,
+        "bootstrap_95": [
+          0.48,
+          0.6299999999999999
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.09,
+        "bootstrap_95": [
+          0.05,
+          0.13000000000000003
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.97,
+        "bootstrap_95": [
+          0.9299999999999999,
+          1.0
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.7,
+        "bootstrap_95": [
+          0.6100000000000001,
+          0.78
+        ]
+      },
+      "background_attention": {
+        "mean": 0.5354545454545455,
+        "bootstrap_95": [
+          0.5,
+          0.5736363636363637
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.9800000000000001,
+        "bootstrap_95": [
+          0.9400000000000001,
+          1.0
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.6299999999999999,
+        "bootstrap_95": [
+          0.575,
+          0.6849999999999999
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.5144444444444445,
+        "bootstrap_95": [
+          0.4666666666666667,
+          0.5655555555555556
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.5,
+        "bootstrap_95": [
+          0.41,
+          0.6
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "modulated/0/positive",
+    "mode": "original",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 0.805,
+        "bootstrap_95": [
+          0.74,
+          0.8699999999999999
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.24,
+        "bootstrap_95": [
+          0.16999999999999998,
+          0.32
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.22000000000000003,
+        "bootstrap_95": [
+          0.15000000000000002,
+          0.3
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.06000000000000001,
+        "bootstrap_95": [
+          0.01,
+          0.11000000000000001
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.615,
+        "bootstrap_95": [
+          0.48,
+          0.755
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.41000000000000003,
+        "bootstrap_95": [
+          0.29,
+          0.5199999999999999
+        ]
+      },
+      "background_attention": {
+        "mean": 0.2290909090909091,
+        "bootstrap_95": [
+          0.16272727272727275,
+          0.29365909090909065
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.7,
+        "bootstrap_95": [
+          0.6,
+          0.8
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.305,
+        "bootstrap_95": [
+          0.19,
+          0.425
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.21222222222222223,
+        "bootstrap_95": [
+          0.15666666666666668,
+          0.2666666666666666
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.19,
+        "bootstrap_95": [
+          0.12000000000000002,
+          0.26
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": -0.32999999999999996,
+        "bootstrap_95": [
+          -0.42000000000000004,
+          -0.21000000000000002
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": -0.31,
+        "bootstrap_95": [
+          -0.41000000000000003,
+          -0.19999999999999996
+        ]
+      }
+    }
+  },
+  {
+    "suite": "modulated/0/positive",
+    "mode": "quiet_band",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 1.0,
+        "bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.38,
+        "bootstrap_95": [
+          0.27999999999999997,
+          0.4800000000000001
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.30999999999999994,
+        "bootstrap_95": [
+          0.2,
+          0.42000000000000004
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.09000000000000001,
+        "bootstrap_95": [
+          0.030000000000000006,
+          0.15
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.9949999999999999,
+        "bootstrap_95": [
+          0.985,
+          1.0
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.9099999999999999,
+        "bootstrap_95": [
+          0.8699999999999999,
+          0.95
+        ]
+      },
+      "background_attention": {
+        "mean": 0.8281818181818181,
+        "bootstrap_95": [
+          0.7836363636363636,
+          0.8709090909090909
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.9400000000000001,
+        "bootstrap_95": [
+          0.86,
+          1.0
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.8,
+        "bootstrap_95": [
+          0.7350000000000001,
+          0.8699999999999999
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.8344444444444443,
+        "bootstrap_95": [
+          0.7822222222222223,
+          0.8811111111111112
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.29,
+        "bootstrap_95": [
+          0.18000000000000002,
+          0.41
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": -0.24,
+        "bootstrap_95": [
+          -0.36000000000000004,
+          -0.13999999999999999
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": -0.21000000000000002,
+        "bootstrap_95": [
+          -0.35000000000000003,
+          -0.07999999999999999
+        ]
+      }
+    }
+  },
+  {
+    "suite": "recorded/-6/control",
+    "mode": "adaptive_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.4766666666666667,
+        "bootstrap_95": [
+          0.44142857142857145,
+          0.5114285714285713
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.4766666666666667,
+        "bootstrap_95": [
+          0.44142857142857145,
+          0.5114285714285713
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "recorded/-6/control",
+    "mode": "calibrated_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.4766666666666667,
+        "bootstrap_95": [
+          0.44142857142857145,
+          0.5114285714285713
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.4766666666666667,
+        "bootstrap_95": [
+          0.44142857142857145,
+          0.5114285714285713
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "recorded/-6/control",
+    "mode": "guarded_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.4766666666666667,
+        "bootstrap_95": [
+          0.44142857142857145,
+          0.5114285714285713
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.4766666666666667,
+        "bootstrap_95": [
+          0.44142857142857145,
+          0.5114285714285713
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "recorded/-6/control",
+    "mode": "original",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.2261904761904762,
+        "bootstrap_95": [
+          0.18809523809523812,
+          0.2595238095238095
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.2261904761904762,
+        "bootstrap_95": [
+          0.18809523809523812,
+          0.2595238095238095
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "recorded/-6/control",
+    "mode": "quiet_band",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.5995238095238096,
+        "bootstrap_95": [
+          0.5733333333333333,
+          0.6242857142857143
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.5995238095238096,
+        "bootstrap_95": [
+          0.5733333333333333,
+          0.6242857142857143
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "recorded/-6/positive",
+    "mode": "adaptive_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 0.9949999999999999,
+        "bootstrap_95": [
+          0.985,
+          1.0
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.5299999999999999,
+        "bootstrap_95": [
+          0.45,
+          0.6002499999999964
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.43000000000000005,
+        "bootstrap_95": [
+          0.38,
+          0.4800000000000001
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.16000000000000003,
+        "bootstrap_95": [
+          0.09,
+          0.22999999999999998
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.9650000000000001,
+        "bootstrap_95": [
+          0.93,
+          0.9949999999999999
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.77,
+        "bootstrap_95": [
+          0.69,
+          0.85
+        ]
+      },
+      "background_attention": {
+        "mean": 0.5190909090909092,
+        "bootstrap_95": [
+          0.4827272727272726,
+          0.5599999999999999
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.8800000000000001,
+        "bootstrap_95": [
+          0.7999999999999999,
+          0.96
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.61,
+        "bootstrap_95": [
+          0.5399999999999999,
+          0.685
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.4988888888888889,
+        "bootstrap_95": [
+          0.45888888888888885,
+          0.5455555555555556
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.38,
+        "bootstrap_95": [
+          0.33999999999999997,
+          0.43
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "recorded/-6/positive",
+    "mode": "calibrated_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 0.9949999999999999,
+        "bootstrap_95": [
+          0.985,
+          1.0
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.5299999999999999,
+        "bootstrap_95": [
+          0.45,
+          0.6002499999999964
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.43000000000000005,
+        "bootstrap_95": [
+          0.38,
+          0.4800000000000001
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.16000000000000003,
+        "bootstrap_95": [
+          0.09,
+          0.22999999999999998
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.9650000000000001,
+        "bootstrap_95": [
+          0.93,
+          0.9949999999999999
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.77,
+        "bootstrap_95": [
+          0.69,
+          0.85
+        ]
+      },
+      "background_attention": {
+        "mean": 0.5190909090909092,
+        "bootstrap_95": [
+          0.4827272727272726,
+          0.5599999999999999
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.8800000000000001,
+        "bootstrap_95": [
+          0.7999999999999999,
+          0.96
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.61,
+        "bootstrap_95": [
+          0.5399999999999999,
+          0.685
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.4988888888888889,
+        "bootstrap_95": [
+          0.45888888888888885,
+          0.5455555555555556
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.38,
+        "bootstrap_95": [
+          0.33999999999999997,
+          0.43
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "recorded/-6/positive",
+    "mode": "guarded_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 0.9949999999999999,
+        "bootstrap_95": [
+          0.985,
+          1.0
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.5299999999999999,
+        "bootstrap_95": [
+          0.45,
+          0.6002499999999964
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.43000000000000005,
+        "bootstrap_95": [
+          0.38,
+          0.4800000000000001
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.16000000000000003,
+        "bootstrap_95": [
+          0.09,
+          0.22999999999999998
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.9650000000000001,
+        "bootstrap_95": [
+          0.93,
+          0.9949999999999999
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.77,
+        "bootstrap_95": [
+          0.69,
+          0.85
+        ]
+      },
+      "background_attention": {
+        "mean": 0.5190909090909092,
+        "bootstrap_95": [
+          0.4827272727272726,
+          0.5599999999999999
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.8800000000000001,
+        "bootstrap_95": [
+          0.7999999999999999,
+          0.96
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.61,
+        "bootstrap_95": [
+          0.5399999999999999,
+          0.685
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.4988888888888889,
+        "bootstrap_95": [
+          0.45888888888888885,
+          0.5455555555555556
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.38,
+        "bootstrap_95": [
+          0.33999999999999997,
+          0.43
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "recorded/-6/positive",
+    "mode": "original",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 0.835,
+        "bootstrap_95": [
+          0.775,
+          0.8899999999999999
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.15999999999999998,
+        "bootstrap_95": [
+          0.07999999999999999,
+          0.24024999999999644
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.14,
+        "bootstrap_95": [
+          0.06999999999999999,
+          0.22000000000000003
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.06000000000000001,
+        "bootstrap_95": [
+          0.0,
+          0.13
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.6449999999999999,
+        "bootstrap_95": [
+          0.5650000000000001,
+          0.71
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.51,
+        "bootstrap_95": [
+          0.4,
+          0.6199999999999999
+        ]
+      },
+      "background_attention": {
+        "mean": 0.21636363636363637,
+        "bootstrap_95": [
+          0.17181818181818181,
+          0.2581818181818182
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.6799999999999999,
+        "bootstrap_95": [
+          0.6199999999999999,
+          0.74
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.22000000000000003,
+        "bootstrap_95": [
+          0.14,
+          0.31
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.21555555555555556,
+        "bootstrap_95": [
+          0.17444444444444446,
+          0.2533333333333333
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.13000000000000003,
+        "bootstrap_95": [
+          0.06,
+          0.21000000000000002
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": -0.29000000000000004,
+        "bootstrap_95": [
+          -0.39,
+          -0.19
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": -0.25,
+        "bootstrap_95": [
+          -0.34,
+          -0.14999999999999997
+        ]
+      }
+    }
+  },
+  {
+    "suite": "recorded/-6/positive",
+    "mode": "quiet_band",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 0.975,
+        "bootstrap_95": [
+          0.9549999999999998,
+          0.9949999999999999
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.25999999999999995,
+        "bootstrap_95": [
+          0.17,
+          0.36
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.16999999999999998,
+        "bootstrap_95": [
+          0.07999999999999999,
+          0.26999999999999996
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.1,
+        "bootstrap_95": [
+          0.04,
+          0.15000000000000002
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.9399999999999998,
+        "bootstrap_95": [
+          0.9049999999999999,
+          0.97
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.8600000000000001,
+        "bootstrap_95": [
+          0.82,
+          0.9
+        ]
+      },
+      "background_attention": {
+        "mean": 0.5809090909090908,
+        "bootstrap_95": [
+          0.5645454545454545,
+          0.5981818181818181
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.8400000000000001,
+        "bootstrap_95": [
+          0.74,
+          0.9200000000000002
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.6300000000000001,
+        "bootstrap_95": [
+          0.575,
+          0.6849999999999999
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.57,
+        "bootstrap_95": [
+          0.5488888888888889,
+          0.5944444444444443
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.16,
+        "bootstrap_95": [
+          0.07999999999999999,
+          0.25
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": -0.26,
+        "bootstrap_95": [
+          -0.37,
+          -0.14
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": -0.22000000000000003,
+        "bootstrap_95": [
+          -0.32,
+          -0.11000000000000001
+        ]
+      }
+    }
+  },
+  {
+    "suite": "recorded/0/control",
+    "mode": "adaptive_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.4766666666666667,
+        "bootstrap_95": [
+          0.44142857142857145,
+          0.5114285714285713
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.4766666666666667,
+        "bootstrap_95": [
+          0.44142857142857145,
+          0.5114285714285713
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "recorded/0/control",
+    "mode": "calibrated_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.4766666666666667,
+        "bootstrap_95": [
+          0.44142857142857145,
+          0.5114285714285713
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.4766666666666667,
+        "bootstrap_95": [
+          0.44142857142857145,
+          0.5114285714285713
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "recorded/0/control",
+    "mode": "guarded_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.4766666666666667,
+        "bootstrap_95": [
+          0.44142857142857145,
+          0.5114285714285713
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.4766666666666667,
+        "bootstrap_95": [
+          0.44142857142857145,
+          0.5114285714285713
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "recorded/0/control",
+    "mode": "original",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.2261904761904762,
+        "bootstrap_95": [
+          0.18809523809523812,
+          0.2595238095238095
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.2261904761904762,
+        "bootstrap_95": [
+          0.18809523809523812,
+          0.2595238095238095
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "recorded/0/control",
+    "mode": "quiet_band",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": null,
+      "repeat_identity": null,
+      "source_dependent_repeat": null,
+      "deletion_repeat_identity": null,
+      "deletion_attention": null,
+      "wrong_repeat_identity": null,
+      "background_attention": {
+        "mean": 0.5995238095238096,
+        "bootstrap_95": [
+          0.5733333333333333,
+          0.6242857142857143
+        ]
+      },
+      "first_episode_novel_attention": null,
+      "room_tail_background_attention": null,
+      "no_room_tail_background_attention": {
+        "mean": 0.5995238095238096,
+        "bootstrap_95": [
+          0.5733333333333333,
+          0.6242857142857143
+        ]
+      },
+      "strict_episode_exclusion": null
+    }
+  },
+  {
+    "suite": "recorded/0/positive",
+    "mode": "adaptive_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 0.9949999999999999,
+        "bootstrap_95": [
+          0.985,
+          1.0
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.59,
+        "bootstrap_95": [
+          0.5199999999999999,
+          0.6699999999999999
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.53,
+        "bootstrap_95": [
+          0.45999999999999996,
+          0.5900000000000001
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.1,
+        "bootstrap_95": [
+          0.030000000000000006,
+          0.18
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.9650000000000001,
+        "bootstrap_95": [
+          0.93,
+          0.9949999999999999
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.6799999999999999,
+        "bootstrap_95": [
+          0.6,
+          0.76
+        ]
+      },
+      "background_attention": {
+        "mean": 0.5154545454545454,
+        "bootstrap_95": [
+          0.479090909090909,
+          0.5572727272727274
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.9200000000000002,
+        "bootstrap_95": [
+          0.86,
+          0.9800000000000001
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.615,
+        "bootstrap_95": [
+          0.55,
+          0.6849999999999999
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.49333333333333335,
+        "bootstrap_95": [
+          0.45111111111111113,
+          0.5422222222222223
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.49000000000000005,
+        "bootstrap_95": [
+          0.43,
+          0.5499999999999999
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "recorded/0/positive",
+    "mode": "calibrated_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 0.9949999999999999,
+        "bootstrap_95": [
+          0.985,
+          1.0
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.59,
+        "bootstrap_95": [
+          0.5199999999999999,
+          0.6699999999999999
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.53,
+        "bootstrap_95": [
+          0.45999999999999996,
+          0.5900000000000001
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.1,
+        "bootstrap_95": [
+          0.030000000000000006,
+          0.18
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.9650000000000001,
+        "bootstrap_95": [
+          0.93,
+          0.9949999999999999
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.6799999999999999,
+        "bootstrap_95": [
+          0.6,
+          0.76
+        ]
+      },
+      "background_attention": {
+        "mean": 0.5154545454545454,
+        "bootstrap_95": [
+          0.479090909090909,
+          0.5572727272727274
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.9200000000000002,
+        "bootstrap_95": [
+          0.86,
+          0.9800000000000001
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.615,
+        "bootstrap_95": [
+          0.55,
+          0.6849999999999999
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.49333333333333335,
+        "bootstrap_95": [
+          0.45111111111111113,
+          0.5422222222222223
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.49000000000000005,
+        "bootstrap_95": [
+          0.43,
+          0.5499999999999999
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "recorded/0/positive",
+    "mode": "guarded_gain",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 0.9949999999999999,
+        "bootstrap_95": [
+          0.985,
+          1.0
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.59,
+        "bootstrap_95": [
+          0.5199999999999999,
+          0.6699999999999999
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.53,
+        "bootstrap_95": [
+          0.45999999999999996,
+          0.5900000000000001
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.1,
+        "bootstrap_95": [
+          0.030000000000000006,
+          0.18
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.9650000000000001,
+        "bootstrap_95": [
+          0.93,
+          0.9949999999999999
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.6799999999999999,
+        "bootstrap_95": [
+          0.6,
+          0.76
+        ]
+      },
+      "background_attention": {
+        "mean": 0.5154545454545454,
+        "bootstrap_95": [
+          0.479090909090909,
+          0.5572727272727274
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.9200000000000002,
+        "bootstrap_95": [
+          0.86,
+          0.9800000000000001
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.615,
+        "bootstrap_95": [
+          0.55,
+          0.6849999999999999
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.49333333333333335,
+        "bootstrap_95": [
+          0.45111111111111113,
+          0.5422222222222223
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.49000000000000005,
+        "bootstrap_95": [
+          0.43,
+          0.5499999999999999
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": 0.0,
+        "bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "suite": "recorded/0/positive",
+    "mode": "original",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 0.8699999999999999,
+        "bootstrap_95": [
+          0.8099999999999999,
+          0.925
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.4,
+        "bootstrap_95": [
+          0.25999999999999995,
+          0.56
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.38,
+        "bootstrap_95": [
+          0.25000000000000006,
+          0.52
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.05,
+        "bootstrap_95": [
+          0.0,
+          0.12
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.6100000000000001,
+        "bootstrap_95": [
+          0.51,
+          0.685
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.39999999999999997,
+        "bootstrap_95": [
+          0.31999999999999995,
+          0.49000000000000005
+        ]
+      },
+      "background_attention": {
+        "mean": 0.20909090909090908,
+        "bootstrap_95": [
+          0.17,
+          0.24727272727272723
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.82,
+        "bootstrap_95": [
+          0.72,
+          0.9200000000000002
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.21000000000000002,
+        "bootstrap_95": [
+          0.14500000000000002,
+          0.29000000000000004
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.2088888888888889,
+        "bootstrap_95": [
+          0.17333333333333334,
+          0.2422222222222222
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.35,
+        "bootstrap_95": [
+          0.24000000000000005,
+          0.47000000000000003
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": -0.15,
+        "bootstrap_95": [
+          -0.27999999999999997,
+          0.009999999999999986
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": -0.14,
+        "bootstrap_95": [
+          -0.26,
+          0.009999999999999992
+        ]
+      }
+    }
+  },
+  {
+    "suite": "recorded/0/positive",
+    "mode": "quiet_band",
+    "seeds": 10,
+    "metrics": {
+      "episode_detection": {
+        "mean": 0.99,
+        "bootstrap_95": [
+          0.975,
+          1.0
+        ]
+      },
+      "repeat_identity": {
+        "mean": 0.5599999999999999,
+        "bootstrap_95": [
+          0.45999999999999996,
+          0.6499999999999999
+        ]
+      },
+      "source_dependent_repeat": {
+        "mean": 0.5199999999999999,
+        "bootstrap_95": [
+          0.39,
+          0.63
+        ]
+      },
+      "deletion_repeat_identity": {
+        "mean": 0.08,
+        "bootstrap_95": [
+          0.030000000000000006,
+          0.13000000000000003
+        ]
+      },
+      "deletion_attention": {
+        "mean": 0.9299999999999999,
+        "bootstrap_95": [
+          0.8899999999999999,
+          0.9650000000000001
+        ]
+      },
+      "wrong_repeat_identity": {
+        "mean": 0.8,
+        "bootstrap_95": [
+          0.7299999999999999,
+          0.8600000000000001
+        ]
+      },
+      "background_attention": {
+        "mean": 0.5681818181818181,
+        "bootstrap_95": [
+          0.5518181818181818,
+          0.5845454545454545
+        ]
+      },
+      "first_episode_novel_attention": {
+        "mean": 0.9800000000000001,
+        "bootstrap_95": [
+          0.9400000000000001,
+          1.0
+        ]
+      },
+      "room_tail_background_attention": {
+        "mean": 0.62,
+        "bootstrap_95": [
+          0.5650000000000001,
+          0.675
+        ]
+      },
+      "no_room_tail_background_attention": {
+        "mean": 0.5566666666666666,
+        "bootstrap_95": [
+          0.5388888888888889,
+          0.5788888888888888
+        ]
+      },
+      "strict_episode_exclusion": {
+        "mean": 0.48,
+        "bootstrap_95": [
+          0.37,
+          0.5700000000000001
+        ]
+      },
+      "source_dependent_repeat_minus_adaptive": {
+        "mean": -0.009999999999999998,
+        "bootstrap_95": [
+          -0.13999999999999999,
+          0.10999999999999999
+        ]
+      },
+      "strict_episode_exclusion_minus_adaptive": {
+        "mean": -0.010000000000000009,
+        "bootstrap_95": [
+          -0.11000000000000001,
+          0.09
+        ]
+      }
+    }
+  }
+]

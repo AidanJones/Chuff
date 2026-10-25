@@ -359,5 +359,43 @@ that window. Ch-6w4.10.7 tracks evaluator-only provenance diagnostics.
 
 `papers/data/esc10-pilot/README.md` describes the pinned attributed catalog,
 ignored audio cache, fetch command and offline checksum/source-disjointness
-audit. Recorded-mixture and episode-aware scoring remain separate Beads work;
-the procedural results above are not recorded-audio accuracy claims.
+audit. Paper 07 adds full-duration recorded replay; the procedural results
+above remain distinct from those recorded-input outcomes.
+
+## Full-duration recorded replay
+
+Complete five-second ESC-10 recordings are injected into continuous recorded
+backgrounds under independent room/mic simulation. Actors observe one-second
+windows; only third/fourth replay episodes count as repeat opportunities,
+and same-episode admissions cannot earn repeat credit. These are recording
+identities with embedded ambience, not annotated natural events or semantic
+categories.
+
+```powershell
+uv run python -m chuff_mpu.sim.recorded_experiment --phase development --partition development --seed-start 2600 --seeds 2 --catalog ../papers/data/esc10-pilot --cache ../data/cache/esc10 --output ../eval/results/my-recorded-dev
+uv run python -m chuff_mpu.sim.recorded_experiment --phase evaluation --partition evaluation --seed-start 2700 --seeds 10 --catalog ../papers/data/esc10-pilot --cache ../data/cache/esc10 --output ../eval/results/my-recorded-eval
+uv run python -m chuff_mpu.sim.audit_recorded ../eval/results/my-recorded-eval
+uv run python -m chuff_mpu.sim.recorded_exclusion ../eval/results/my-recorded-eval --output ../eval/results/my-recorded-exclusion
+uv run python -m chuff_mpu.sim.recorded_exclusion ../eval/results/my-recorded-eval --output ../eval/results/my-recorded-exclusion --audit
+```
+
+Fetch the ignored cache with `recorded_catalog fetch` first. Phase and source
+partition must match. Each stream is 210 seconds, with twenty full episodes.
+The two nominal SNR controls are identical without targets. SNR measures the
+whole-recording post-channel current/residual ratio; raw rows retain large
+within-window variation caused by source pauses.
+
+The planned source-conditioned endpoint requires one correct recognition
+window whose matching source-removal probe fails. The stricter secondary
+endpoint also rejects episodes if any probe recognizes the recording.
+Per-window probes copy actual prior state, remove the full current-episode
+physical response and discard updates. They retain earlier actual exposure
+and are not one all-episode counterfactual history. Neither endpoint proves
+which natural event within the noisy recording was encoded.
+
+Source/config/input hashes, per-recording metrics and attributed full
+component examples support audits. Secondary diagnostics preserve their
+sources and raw-input hashes. Original source IDs are disjoint across
+partitions; uncertainty is conditional on these fixed clips. Existing
+learners remain unchanged. Broader category coverage, active-support SNR
+and published frontend baselines remain open Beads tasks.

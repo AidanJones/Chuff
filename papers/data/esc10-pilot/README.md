@@ -1,7 +1,8 @@
 # Pinned recorded-audio input catalog
 
-This is input preparation for Beads ch-6w4.1, not a recorded-audio accuracy
-result. `catalog.json` selects one original source per category and split:
+This catalog supplies inputs for Beads ch-6w4.1. It contains no accuracy
+results; [paper 07](../../07-recorded-replay-and-source-exclusion.md) reports
+the subsequent full-duration replay pilot. `catalog.json` selects one original source per category and split:
 ten development clips from fold 1 and ten evaluation clips from fold 5.
 The builder excludes any original Freesound `src_file` already used in the
 other split, including another excerpt/take. It also requires ESC-10
