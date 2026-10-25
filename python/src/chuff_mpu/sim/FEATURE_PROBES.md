@@ -103,5 +103,12 @@ histories across eight frontend families on synthetic full-duration recorded
 scenes and no-target controls. They also exercise source removal, older-tail
 removal, region changes, absent/zero features, schedule errors, copied-branch
 isolation, archive tampering and overwrite protection. These tests validate
-the instrument, not real-recording foreground dependence. Empirical results
-remain the separate observed replay task.
+the instrument. The completed observed replay and independent auditor are
+`feature_dependence.py` and `audit_feature_dependence.py`; their 28,813 probe
+windows preserve all 126,000 original decisions and cover every candidate
+observation. `feature_dependence_report.py` splits recording windows, gaps
+with/without source tails and pure controls, plus an overlapping target-window
+subset where removal changes the audio. It reports both pooled counts and
+equal-seed ratios, never silently dropping undefined denominators. See paper
+10 and the two `published-feature-dependence*` result archives for commands
+and empirical limits. Fixed-region extraction remains a separate follow-up.

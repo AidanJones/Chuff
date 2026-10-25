@@ -324,6 +324,17 @@ framing (ch-6w4.7.3), and MCRA noise/feature-state drift diagnostics
 initialization and representation drift from a presumed implementation
 failure. Existing observed recordings can support diagnosis; revised methods
 require a new frozen source split for evaluation.
+
+The provenance and feature-removal diagnostics are now documented in
+[paper 09](09-candidate-birth-and-admission-labels.md) and
+[paper 10](10-selected-features-and-background-reproducibility.md). A separate
+`ContinuousSTFT` v1 primitive (ch-6w4.7.3.1) now matches one-shot complex
+spectra under arbitrary chunking and recovers a boundary-impulse frame
+omitted by separate clips. This establishes framing behavior only. Its
+explicit sample ownership and unpadded tail accounting are documented in
+`python/src/chuff_mpu/STREAMING_STFT.md`. Learner integration and decision
+timing remain ch-6w4.7.3.2; the frozen comparison above still uses clip framing.
+
 Active-support calibration without cropping remains ch-6w4.1.4; broader
 categories and more original recordings remain ch-6w4.1.3. Importance and
 one-off relevance learning remain ch-6w4.3. These methods can emphasize

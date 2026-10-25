@@ -213,12 +213,13 @@ compare detection, regions and similarity to the stored vector. Such probes
 are evaluator evidence; clean stems must not become a deployable admission
 oracle.
 
-The probe instrument now preserves exact legacy observations and histories
-in eight-family tests, with saved-vector checks and explicit identical-
-audio/zero-feature controls. The full recorded probe replay is pending in
-ch-6w4.10.8.2; instrument validation alone does not establish feature
-dependence on these recordings. The probe-engine checkpoint passes all 149
-software tests, with the original grader still at 1.0.
+The completed [feature-dependence replay in paper 10](10-selected-features-and-background-reproducibility.md)
+preserves all 126,000 original decisions and covers 28,813 candidate feature
+observations, including never-admitted candidates. It distinguishes unchanged
+audio, region reselection and bed-reproducible stored matches. Quiet160 has
+152/853 bed-reproducible births in recording-labelled windows where removal
+actually changes the delivered waveform. This remains evaluator evidence
+conditional on prior actual exposure, not a semantic label or admission rule.
 
 The source-diversity, active-support-SNR,
 continuous-framing and MCRA-state investigations in paper 08 remain relevant.
