@@ -151,6 +151,10 @@ prototype. Source removal tests current-episode dependence of recognition,
 not the origin of every stored feature. Pure no-target controls remain
 unambiguous evidence that the system commits background prototypes. The
 candidate-provenance audit in ch-6w4.10.7 addresses the mixed-stream ambiguity.
+Its evaluator-only tracer now passes exact decision/memory comparisons
+across eight frontend families and isolates copied-branch histories;
+recorded replay and birth-label rescoring remain pending. No reported score
+has been replaced by a birth-label diagnostic.
 Here, background denotes the experimental bed; it does not mean every sound
 in that recording is intrinsically unimportant to a robot.
 

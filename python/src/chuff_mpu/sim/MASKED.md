@@ -460,3 +460,11 @@ matplotlib renderer; it does not change the experiment dependencies.
 Paper 08 reports the foreground/background trade-offs and source-specific
 failures, including admission-label ambiguity. New methods need fresh
 frozen evaluation sources; these recordings are now observed evidence.
+
+Evaluator-only candidate tracing is available in `memory_provenance.py`;
+see `PROVENANCE.md` for its fresh-actor API and event semantics. It preserves
+exact decisions and memory vectors in cross-family tests, logs stored and
+current feature hashes separately, and isolates source-removal branch
+histories. It supplies no labels to actors. Birth-label rescoring is still
+separate observed-data work in Beads ch-6w4.10.7.2; the existing published
+scores remain unchanged.
